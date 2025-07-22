@@ -1,12 +1,6 @@
+# robots.txt for askmeister.com
+
 User-agent: *
-Allow: /
-Disallow: /private/
-Disallow: /account/
-Disallow: /api/
-Disallow: /*?*
-Disallow: /*.json$
+Disallow:
 
-# Explicitly allow JS for SPAs
-Allow: /*.js$
-
-Sitemap: https://www.askmeister.com/sitemap.xml
+Sitemap: https://askmeister.com/sitemap.xml
