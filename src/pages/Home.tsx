@@ -197,6 +197,8 @@ const Home = () => {
         <meta property="og:description" content="Transform your business with WhatsApp marketing automation, AI chatbots, and trusted WhatsApp API. Join top companies using our no.1 chatbot builder." />
         <meta property="og:url" content="https://askmeister.com" />
       </Helmet>
+      
+
     <div className="pt-16">
       {/* Hero Section - WATI Inspired */}
       <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-20 overflow-hidden">
