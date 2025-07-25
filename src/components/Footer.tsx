@@ -33,16 +33,16 @@ const Footer = () => {
             </div>
             
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-[#25D366] transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61578309674729" className="text-gray-300 hover:text-[#25D366] transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-[#25D366] transition-colors">
+              <a href="https://x.com/AskMeister" className="text-gray-300 hover:text-[#25D366] transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-[#25D366] transition-colors">
+              <a href="https://www.linkedin.com/in/ask-meister-42a0a4377/" className="text-gray-300 hover:text-[#25D366] transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-[#25D366] transition-colors">
+              <a href="https://www.instagram.com/ask_meister?igsh=M2liNjdoZXY0dmhq&utm_source=qr" className="text-gray-300 hover:text-[#25D366] transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
