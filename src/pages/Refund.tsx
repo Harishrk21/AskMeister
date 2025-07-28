@@ -56,7 +56,7 @@ const Refund = () => {
           <div className="bg-[#25D366]/10 rounded-xl p-8 mb-12">
             <h2 className="text-2xl font-bold text-[#1C1C1C] mb-4">30-Day Money-Back Guarantee</h2>
             <p className="text-gray-700 text-lg">
-              We stand behind our service with a 30-day money-back guarantee. If you're not satisfied with AskMeister, 
+              We stand behind our service with a 30-day money-back guarantee. If you're not satisfied with Ask Meister, 
               we'll refund your subscription fee when requested within 30 days of your initial purchase.
             </p>
           </div>
@@ -197,7 +197,7 @@ const Refund = () => {
               <div>
                 <h3 className="text-lg font-semibold text-yellow-800 mb-2">Important Note</h3>
                 <p className="text-yellow-700">
-                  This refund policy applies only to AskMeister subscription fees. Third-party charges, 
+                  This refund policy applies only to Ask Meister subscription fees. Third-party charges, 
                   including WhatsApp API message costs, payment processing fees, and integration costs, 
                   are subject to the respective provider's refund policies.
                 </p>

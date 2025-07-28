@@ -96,7 +96,7 @@ const Automation = () => {
   return (
      <>
       <Helmet>
-        <title>WhatsApp Marketing Automation | AI-Powered Workflows | AskMeister</title>
+        <title>WhatsApp Marketing Automation | AI-Powered Workflows | Ask Meister</title>
         <meta name="description" content="Automate WhatsApp marketing with AI-powered workflows. 24/7 customer engagement, lead nurturing, and business automation for maximum ROI." />
         <meta name="keywords" content="whatsapp automation, marketing automation, whatsapp workflows, ai automation, business automation, customer engagement automation, lead nurturing, automated messaging" />
         <link rel="canonical" href="https://askmeister.com/features/automation" />

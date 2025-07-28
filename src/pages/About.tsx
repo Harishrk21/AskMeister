@@ -24,7 +24,7 @@ const About = () => {
     {
       icon: Target,
       title: 'Purpose Driven',
-      description: 'From hospital bots to AskMeister™, we build products with impact.'
+      description: 'From hospital bots to Ask Meister™, we build products with impact.'
     },
     {
       icon: TrendingUp,
@@ -46,29 +46,29 @@ const About = () => {
     },
     {
       year: '2023',
-      title: 'AskMeister™ Concept Realized',
+      title: 'Ask Meister™ Concept Realized',
       description: 'Realized that small businesses struggle with expensive Meta/Google ads – WhatsApp could be the answer.'
     },
     {
       year: '2024',
-      title: 'Launched AskMeister™',
+      title: 'Launched Ask Meister™',
       description: 'Released our WhatsApp marketing platform with pre-approved templates, click-to-action forms & no spam flags.'
     },
     {
       year: '2025',
       title: 'Early Traction',
-      description: 'AskMeister™ adopted by businesses seeking low-cost, high-impact marketing via WhatsApp.'
+      description: 'Ask Meister™ adopted by businesses seeking low-cost, high-impact marketing via WhatsApp.'
     }
   ];
 
   return (
      <>
       <Helmet>
-        <title>About AskMeister| Leading WhatsApp Marketing Company | Top Companies Trust Us</title>
-        <meta name="description" content="Learn about AskMeister, the leading WhatsApp marketing platform trusted by top companies worldwide. Our mission to transform business communication through automation." />
-        <meta name="keywords" content="about mAskMeister, whatsapp marketing company, top companies using chatbot, leading whatsapp platform, business communication, company story, team" />
+        <title>About Ask Meister| Leading WhatsApp Marketing Company | Top Companies Trust Us</title>
+        <meta name="description" content="Learn about Ask Meister, the leading WhatsApp marketing platform trusted by top companies worldwide. Our mission to transform business communication through automation." />
+        <meta name="keywords" content="about mAsk Meister, whatsapp marketing company, top companies using chatbot, leading whatsapp platform, business communication, company story, team" />
         <link rel="canonical" href="https://askmeister.com/about" />
-        <meta property="og:title" content="About AskMeister | Leading WhatsApp Marketing Company" />
+        <meta property="og:title" content="About Ask Meister | Leading WhatsApp Marketing Company" />
         <meta property="og:description" content="Discover the story behind the leading WhatsApp marketing platform trusted by businesses worldwide." />
         <meta property="og:url" content="https://askmeister.com/about" />
       </Helmet>
@@ -77,10 +77,10 @@ const About = () => {
       <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-[#1C1C1C] mb-6">
-            About <span className="text-[#25D366] block">AskMeister™</span>
+            About <span className="text-[#25D366] block">Ask Meister™</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            Product of <strong>Meister Solutions</strong>, initially focused on enterprise consulting for Sitecore & BigCommerce. We then built hospital chatbots before launching AskMeister™ in 2024 — making affordable WhatsApp marketing accessible to growing businesses.
+            Product of <strong>Meister Solutions</strong>, initially focused on enterprise consulting for Sitecore & BigCommerce. We then built hospital chatbots before launching Ask Meister™ in 2024 — making affordable WhatsApp marketing accessible to growing businesses.
           </p>
           <p className="text-gray-600 italic">
             Check out our parent company at <a href="https://meistersolutions.net" className="text-[#25D366] underline">meistersolutions.net</a> to learn more.
@@ -118,10 +118,10 @@ const About = () => {
                 In 2020, we expanded into healthcare automation, building dynamic hospital chatbots for scheduling, appointments, follow-ups, and adopting database integrations.
               </p>
               <p>
-                Seeing the high cost of Meta and Google ads for small businesses, we recognized WhatsApp as an affordable marketing channel—and so AskMeister™ was born.
+                Seeing the high cost of Meta and Google ads for small businesses, we recognized WhatsApp as an affordable marketing channel—and so Ask Meister™ was born.
               </p>
               <p>
-                Since our 2024 launch, AskMeister™ lets businesses send pre-approved templates, include forms, links, and click-to-call features without spam risk. We’re growing with a community focused on cost-effective, high-impact messaging.
+                Since our 2024 launch, Ask Meister™ lets businesses send pre-approved templates, include forms, links, and click-to-call features without spam risk. We’re growing with a community focused on cost-effective, high-impact messaging.
               </p>
             </div>
           </div>
@@ -197,7 +197,7 @@ const About = () => {
       {/* CTA */}
       <section className="py-20 bg-[#25D366]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Grow with AskMeister™?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Grow with Ask Meister™?</h2>
           <p className="text-lg text-white/90 mb-8">
             Join early adopters using WhatsApp to market smarter, engage better, and spend less.
           </p>

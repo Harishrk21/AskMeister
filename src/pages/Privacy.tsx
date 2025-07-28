@@ -20,7 +20,7 @@ const Privacy = () => {
           <div className="prose prose-lg max-w-none">
             <h2>1. Introduction</h2>
             <p>
-              Meister Solutions ("we," "our," or "us") operates AskMeister, a WhatsApp marketing automation platform. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our service.
+              Meister Solutions ("we," "our," or "us") operates Ask Meister, a WhatsApp marketing automation platform. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our service.
             </p>
 
             <h2>2. Information We Collect</h2>

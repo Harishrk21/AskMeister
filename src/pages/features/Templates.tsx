@@ -354,7 +354,7 @@ See you there!
   return (
       <>
       <Helmet>
-        <title>WhatsApp Message Templates | Pre-approved Templates & Builder | AskMeister</title>
+        <title>WhatsApp Message Templates | Pre-approved Templates & Builder | Ask Meister</title>
         <meta name="description" content="Access 500+ WhatsApp message templates for business. Pre-approved templates for promotions, notifications, and customer engagement. Easy template builder included." />
         <meta name="keywords" content="whatsapp templates, message templates, whatsapp business templates, pre-approved templates, template builder, promotional templates, notification templates" />
         <link rel="canonical" href="https://askmeister.com/features/templates" />

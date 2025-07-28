@@ -69,7 +69,7 @@ const BlogDetail = () => {
       <h2>Conclusion</h2>
       <p>WhatsApp marketing automation is a powerful tool that can significantly boost your business growth when implemented correctly. Start with these proven strategies and gradually expand your automation as you learn what works best for your audience.</p>
       
-      <p>Ready to implement these strategies? <a href="/pricing">Get started with AskMeister</a> and take your WhatsApp marketing to the next level.</p>
+      <p>Ready to implement these strategies? <a href="/pricing">Get started with Ask Meister</a> and take your WhatsApp marketing to the next level.</p>
     `,
     image: 'https://images.pexels.com/photos/3985062/pexels-photo-3985062.jpeg?auto=compress&cs=tinysrgb&w=800',
     author: 'Sarah Johnson',
@@ -194,7 +194,7 @@ const BlogDetail = () => {
             <div>
               <div className="font-medium text-[#1C1C1C]">{blogPost.author}</div>
               <div className="text-gray-600 text-sm">
-                Marketing Expert at AskMeister with 5+ years of experience in WhatsApp marketing automation.
+                Marketing Expert at Ask Meister with 5+ years of experience in WhatsApp marketing automation.
               </div>
             </div>
           </div>
@@ -245,7 +245,7 @@ const BlogDetail = () => {
             Ready to Implement These Strategies?
           </h2>
           <p className="text-lg text-white/90 mb-8">
-            Start your WhatsApp marketing automation journey with AskMeister today.
+            Start your WhatsApp marketing automation journey with Ask Meister today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

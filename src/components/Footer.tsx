@@ -16,7 +16,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-[#25D366] rounded-lg flex items-center justify-center">
                 <MessageCircle className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold">AskMeister</span>
+              <span className="text-xl font-bold">Ask Meister</span>
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
               Transform your business communication with powerful WhatsApp marketing automation. 
@@ -122,7 +122,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-600 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300 text-sm">
-            © {currentYear} AskMeister by Meister Solutions. All rights reserved.
+            © {currentYear} Ask Meister by Meister Solutions. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">

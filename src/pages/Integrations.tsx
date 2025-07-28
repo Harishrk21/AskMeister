@@ -114,7 +114,7 @@ const Integrations = () => {
               <span className="text-[#25D366] block">Every Business</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Connect AskMeister with your favorite tools and platforms. 
+              Connect Ask Meister with your favorite tools and platforms. 
               Automate your workflows and create seamless customer experiences.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

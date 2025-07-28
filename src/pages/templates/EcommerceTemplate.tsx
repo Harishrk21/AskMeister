@@ -136,13 +136,13 @@ const EcommerceTemplate = () => {
   return (
      <>
       <Helmet>
-        <title>WhatsApp for E-commerce | Boost Online Sales & Customer Support | AskMeister</title>
+        <title>WhatsApp for E-commerce | Boost Online Sales & Customer Support | Ask Meister</title>
         <meta name="description" content="Boost e-commerce sales with WhatsApp automation. Order management, abandoned cart recovery, customer support, and promotional campaigns for online stores." />
         <meta name="keywords" content="whatsapp for ecommerce, online store automation, abandoned cart recovery, order tracking, ecommerce chatbot, customer support, promotional campaigns, sales automation" />
         <link rel="canonical" href="https://askmeister.com/solutions/ecommerce" />
         <meta property="og:title" content="WhatsApp for E-commerce | Boost Online Sales" />
         <meta property="og:description" content="Transform your online store with WhatsApp automation for sales, support, and customer engagement." />
-        <meta property="og:url" content="https://meisternotify.com/solutions/ecommerce" />
+        <meta property="og:url" content="https://askmeister.com/solutions/ecommerce" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}
@@ -352,7 +352,7 @@ const EcommerceTemplate = () => {
             Ready to Boost Your E-commerce Sales?
           </h2>
           <p className="text-lg text-green-100 mb-8">
-            Join thousands of online stores already using AskMeister to increase sales and customer satisfaction.
+            Join thousands of online stores already using Ask Meister to increase sales and customer satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

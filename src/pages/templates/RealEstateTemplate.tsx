@@ -137,7 +137,7 @@ const RealEstateTemplate = () => {
   return (
     <>
   <Helmet>
-    <title>WhatsApp for Real Estate | Automate Inquiries & Follow-ups | AskMeister</title>
+    <title>WhatsApp for Real Estate | Automate Inquiries & Follow-ups | Ask Meister</title>
     <meta
       name="description"
       content="Streamline real estate sales with WhatsApp automation. Automate property inquiries, schedule site visits, follow-ups, and engage leads instantly."

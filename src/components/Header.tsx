@@ -113,7 +113,7 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-2 sm:space-x-4 flex-shrink-0">
             <img
               src={logo}
-              alt="AskMeister Logo"
+              alt="Ask Meister Logo"
               className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 object-contain"
             />
             <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold tracking-tight leading-tight">

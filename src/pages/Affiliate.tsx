@@ -53,7 +53,7 @@ const Affiliate = () => {
     {
       step: '2',
       title: 'Promote',
-      description: 'Share AskMeister with your audience using our marketing materials.'
+      description: 'Share Ask Meister with your audience using our marketing materials.'
     },
     {
       step: '3',
@@ -86,14 +86,14 @@ const Affiliate = () => {
       name: 'Mark Thompson',
       role: 'Digital Marketing Consultant',
       earnings: '$3,200/month',
-      quote: 'AskMeister\'s affiliate program has been a game-changer for my business. The commissions are generous and the product sells itself.',
+      quote: 'Ask Meister\'s affiliate program has been a game-changer for my business. The commissions are generous and the product sells itself.',
       image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150'
     },
     {
       name: 'Sarah Johnson',
       role: 'Business Coach',
       earnings: '$2,800/month',
-      quote: 'I love recommending tools that actually help my clients grow. AskMeister delivers results, and the affiliate program is fantastic.',
+      quote: 'I love recommending tools that actually help my clients grow. Ask Meister delivers results, and the affiliate program is fantastic.',
       image: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=150'
     }
   ];

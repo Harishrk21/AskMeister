@@ -96,7 +96,7 @@ const Analytics = () => {
   return (
       <>
       <Helmet>
-        <title>WhatsApp Marketing Analytics | Business Insights & Performance Tracking | AskMeister</title>
+        <title>WhatsApp Marketing Analytics | Business Insights & Performance Tracking | Ask Meister</title>
         <meta name="description" content="Get deep business insights with WhatsApp marketing analytics. Track performance, engagement metrics, ROI, and campaign success with real-time reporting." />
         <meta name="keywords" content="whatsapp analytics, business insights, marketing analytics, performance tracking, whatsapp metrics, campaign analytics, roi tracking, engagement analytics, marketing reports" />
         <link rel="canonical" href="https://askmeister.com/features/analytics" />

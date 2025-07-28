@@ -85,7 +85,7 @@ const Blog = () => {
   return (
      <>
       <Helmet>
-        <title>WhatsApp Marketing Blog | Business Insights & Tips | AskMeister</title>
+        <title>WhatsApp Marketing Blog | Business Insights & Tips | Ask Meister</title>
         <meta name="description" content="Latest WhatsApp marketing insights, business tips, automation strategies, and industry trends. Learn from experts and grow your business with proven techniques." />
         <meta name="keywords" content="whatsapp marketing blog, business insights, marketing tips, automation strategies, whatsapp trends, marketing guides, business growth, customer engagement tips" />
         <link rel="canonical" href="https://askmeister.com/blog" />

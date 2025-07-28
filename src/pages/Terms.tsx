@@ -20,12 +20,12 @@ const Terms = () => {
           <div className="prose prose-lg max-w-none">
             <h2>1. Acceptance of Terms</h2>
             <p>
-              By accessing and using AskMeister ("Service"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
+              By accessing and using Ask Meister ("Service"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
             </p>
 
             <h2>2. Description of Service</h2>
             <p>
-              AskMeister is a WhatsApp marketing automation platform that allows businesses to send messages, create automated workflows, and manage customer communications through the WhatsApp Business API.
+              Ask Meister is a WhatsApp marketing automation platform that allows businesses to send messages, create automated workflows, and manage customer communications through the WhatsApp Business API.
             </p>
 
             <h2>3. User Accounts</h2>

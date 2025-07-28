@@ -96,7 +96,7 @@ const LiveChat = () => {
   return (
      <>
       <Helmet>
-        <title>WhatsApp Live Chat | Collaborative Customer Support | AskMeister</title>
+        <title>WhatsApp Live Chat | Collaborative Customer Support | Ask Meister</title>
         <meta name="description" content="Manage WhatsApp conversations as a team with shared inbox, agent assignment, and collaboration tools. Perfect for customer support teams and businesses." />
         <meta name="keywords" content="whatsapp team inbox, shared inbox, team collaboration, customer support, agent assignment, whatsapp support, team messaging, collaborative support" />
         <link rel="canonical" href="https://askmeister.com/features/livechat" />

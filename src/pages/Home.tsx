@@ -10,6 +10,7 @@ import analytics from '../assets/analytics.png';
 import security from '../assets/security.webp';
 import home from '../assets/home.png';
 import uploadingcontacts from '../assets/uploadingcontacts.gif';
+
 const Home = () => {
   const features = [
     {
@@ -82,7 +83,7 @@ const Home = () => {
       name: 'Sarah Johnson',
       role: 'Marketing Director',
       company: 'TechStart Inc.',
-      content: 'AskMeister transformed our customer communication. We saw 300% increase in engagement rates within the first month!',
+      content: 'Ask Meister transformed our customer communication. We saw 300% increase in engagement rates within the first month!',
       rating: 5,
       image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150'
     },
@@ -111,7 +112,6 @@ const Home = () => {
   { number: 'Secure', label: 'Meta Verified Tech Provider', icon: Globe }
 ];
 
-
   const useCases = [
   {
     title: 'Auto-response for Website Inquiries',
@@ -138,7 +138,6 @@ const Home = () => {
     description: 'Guide customers from inquiry to checkout with automated flows.'
   }
 ];
-
 
   const industries = [
     {
@@ -186,19 +185,34 @@ const Home = () => {
     }
   ];
 
+  // Quick navigation links for better internal linking
+  const quickLinks = [
+    { title: 'WhatsApp API Integration', link: '/whatsapp-api' },
+    { title: 'Pricing Plans', link: '/pricing' },
+    { title: 'Marketing Tools', link: '/tools' },
+    { title: 'WhatsApp Chatbots', link: '/chatbots' },
+    { title: 'Analytics Dashboard', link: '/features/analytics' },
+    { title: 'Bulk Messaging', link: '/features/bulk-messaging' },
+    { title: 'Templates Library', link: '/features/templates' },
+    { title: 'Live Chat Support', link: '/features/livechat' }
+  ];
+
   return (
     <>
     <Helmet>
-        <title>AskMeister - #1 WhatsApp Marketing & Chatbot Platform | Trusted WhatsApp API</title>
-        <meta name="description" content="Leading WhatsApp marketing platform with AI chatbots, business insights, and trusted WhatsApp API. Used by top companies for promotions, automation, and customer engagement. Start your free trial today!" />
-        <meta name="keywords" content="whatsapp chatbot, whatsapp marketing, chatbot builder, business insights, promotions, trusted whatsapp api, top companies using chatbot, no.1 chatbot, whatsapp automation, bulk messaging, ai chatbot, marketing automation" />
+        <title>Best WhatsApp Marketing Platform 2024 | AI Chatbot Builder & Bulk Messaging Tool - Ask Meister</title>
+        <meta name="description" content="Leading WhatsApp marketing platform with AI chatbots, bulk messaging, business automation & WhatsApp API integration. Trusted by 10,000+ businesses for promotions, customer engagement & sales growth. Start free trial!" />
+        <meta name="keywords" content="whatsapp marketing, whatsapp chatbot, bulk messaging, ai chatbot builder, whatsapp api, business automation, customer engagement, whatsapp business solution, marketing automation platform, chatbot platform" />
         <link rel="canonical" href="https://askmeister.com" />
-        <meta property="og:title" content="AskMeister - #1 WhatsApp Marketing & Chatbot Platform" />
-        <meta property="og:description" content="Transform your business with WhatsApp marketing automation, AI chatbots, and trusted WhatsApp API. Join top companies using our no.1 chatbot builder." />
+        <meta property="og:title" content="Best WhatsApp Marketing Platform 2024 | AI Chatbot Builder - Ask Meister" />
+        <meta property="og:description" content="Transform your business with WhatsApp marketing automation, AI chatbots & bulk messaging. Join 10,000+ businesses using our WhatsApp marketing platform." />
         <meta property="og:url" content="https://askmeister.com" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Best WhatsApp Marketing Platform 2024 | AI Chatbot Builder" />
+        <meta name="twitter:description" content="Leading WhatsApp marketing platform with AI chatbots & bulk messaging. Start your free trial today!" />
       </Helmet>
       
-
     <div className="pt-16">
       {/* Hero Section - WATI Inspired */}
       <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-20 overflow-hidden">
@@ -208,16 +222,16 @@ const Home = () => {
               <div className="space-y-6">
                 <div className="inline-flex items-center bg-[#25D366]/10 text-[#25D366] px-4 py-2 rounded-full text-sm font-medium">
                   <Award className="w-4 h-4 mr-2" />
-                  #1 WhatsApp Business Solution
+                  #1 WhatsApp Marketing Platform 2024
                 </div>
                 <h1 className="text-5xl md:text-7xl font-bold text-[#1C1C1C] leading-tight">
-                  Grow Your Business with 
-                  <span className="text-[#25D366] block">WhatsApp Marketing</span>
+                  Best WhatsApp Marketing Platform with 
+                  <span className="text-[#25D366] block">AI Chatbot Builder</span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Connect with customers instantly through WhatsApp. Send bulk messages, 
-                  automate conversations with Innovative chatbots, and boost sales with the world's 
-                  most popular messaging platform.
+                  Transform your business with our WhatsApp marketing platform. Send bulk messages, 
+                  build AI chatbots, automate customer engagement, and grow sales with the world's 
+                  leading WhatsApp business solution trusted by 10,000+ companies.
                 </p>
               </div>
               
@@ -236,8 +250,7 @@ const Home = () => {
                   }}
                   className="border-2 border-[#25D366] text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#25D366] hover:text-white transition-all duration-300 inline-flex items-center justify-center"
                 >
-                  {/* <Play className="w-5 h-5 mr-2" /> */}
-                  Let's Explore
+                  Watch Demo
                 </button>
               </div>
 
@@ -259,7 +272,7 @@ const Home = () => {
               <div className="relative z-10">
                 <img
                   src={home}
-                  alt="WhatsApp Marketing Dashboard"
+                  alt="WhatsApp Marketing Dashboard - Bulk Messaging and Chatbot Platform"
                   className="w-full h-auto rounded-2xl shadow-2xl"
                 />
               </div>
@@ -279,52 +292,82 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Quick Navigation Links for SEO */}
+      <section className="py-12 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-semibold text-[#1C1C1C] mb-2">
+              Explore WhatsApp Marketing Solutions
+            </h2>
+            <p className="text-gray-600">Quick access to our key features and services</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+            {quickLinks.map((link, index) => (
+              <Link
+                key={index}
+                to={link.link}
+                className="text-center p-3 rounded-lg border border-gray-200 hover:border-[#25D366] hover:bg-[#25D366]/5 transition-all duration-300 group"
+              >
+                <span className="text-sm font-medium text-gray-700 group-hover:text-[#25D366]">
+                  {link.title}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Demo Video Section */}
-      
+      <section id="demo-video" className="py-20 bg-[#F7F7F7]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
+              See Our WhatsApp Marketing Dashboard in Action
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Watch how easy it is to manage your WhatsApp marketing campaigns, build chatbots, and send bulk messages with our intuitive dashboard.
+            </p>
+          </div>
 
-<section id="demo-video" className="py-20 bg-[#F7F7F7]">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="text-center mb-16">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
-        See Our Dashboard in Action
-      </h2>
-      <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-        Watch how easy it is to manage your WhatsApp marketing campaigns with our intuitive dashboard.
-      </p>
-    </div>
-
-    <div className="max-w-4xl mx-auto">
-      <div className="bg-white rounded-xl p-8 shadow-lg">
-        <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden">
-          <img 
-            src={uploadingcontacts}
-            alt="Dashboard Demo GIF" 
-            className="w-full h-full object-cover rounded-lg" 
-          />
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-xl p-8 shadow-lg">
+              <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden">
+                <img 
+                  src={uploadingcontacts}
+                  alt="WhatsApp Marketing Dashboard Demo - Contact Upload and Bulk Messaging" 
+                  className="w-full h-full object-cover rounded-lg" 
+                />
+              </div>
+              <div className="mt-6 text-center">
+                <h3 className="text-xl font-semibold text-[#1C1C1C] mb-2">
+                 One-Step Drag & Drop Contact Upload for Bulk WhatsApp Marketing
+                </h3>
+                <p className="text-gray-600">
+                  See how easy it is to import contacts and send bulk WhatsApp messages instantly with our marketing automation platform
+                </p>
+                <div className="mt-4">
+                  <Link
+                    to="/features/bulk-messaging"
+                    className="text-[#25D366] hover:underline font-medium"
+                  >
+                    Learn more about bulk messaging features →
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="mt-6 text-center">
-          <h3 className="text-xl font-semibold text-[#1C1C1C] mb-2">
-           One Step drag and drop to upload your contacts
-          </h3>
-          <p className="text-gray-600">
-            See how easy to import contacts and send Messages Instantly
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       {/* Industry Solutions Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
-              Industry-Specific Solutions
+              WhatsApp Marketing Solutions for Every Industry
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Tailored WhatsApp marketing solutions for every industry with specialized features and workflows
+              Tailored WhatsApp business solutions with industry-specific chatbot templates, automation workflows, and marketing strategies
             </p>
           </div>
 
@@ -337,7 +380,7 @@ const Home = () => {
               >
                 <div className="text-4xl mb-4">{industry.icon}</div>
                 <h3 className="text-xl font-semibold text-[#1C1C1C] mb-3 group-hover:text-[#25D366] transition-colors">
-                  {industry.title}
+                  WhatsApp Marketing for {industry.title}
                 </h3>
                 <p className="text-gray-600 mb-4">{industry.description}</p>
                 <ul className="space-y-2 mb-4">
@@ -349,24 +392,34 @@ const Home = () => {
                   ))}
                 </ul>
                 <div className="flex items-center text-[#25D366] font-medium group-hover:underline">
-                  Learn More
+                  Explore {industry.title} Solutions
                   <ArrowRight className="w-4 h-4 ml-1" />
                 </div>
               </Link>
             ))}
           </div>
+
+          <div className="text-center mt-12">
+            <Link
+              to="/contact"
+              className="bg-[#25D366] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#128C7E] transition-colors inline-flex items-center"
+            >
+              Get Custom Industry Solution
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Use Cases Section - Replaces "Trusted by Leading Companies" */}
-      <section className="py-20">
+      {/* Use Cases Section */}
+      <section className="py-20 bg-[#F7F7F7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
-              Real-World Use Cases
-            </h2>
+            <h3 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
+              Real-World WhatsApp Marketing Use Cases
+            </h3>
             <p className="text-lg text-gray-600">
-              See how businesses across different industries leverage AskMeister
+              See how businesses across different industries leverage Ask Meister's WhatsApp marketing platform for growth
             </p>
           </div>
 
@@ -374,9 +427,9 @@ const Home = () => {
             {useCases.map((useCase, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group hover:-translate-y-2">
                 <div className="text-4xl mb-4 text-center">{useCase.icon}</div>
-                <h3 className="text-lg font-semibold text-[#1C1C1C] mb-2 group-hover:text-[#25D366] transition-colors">
+                <h4 className="text-lg font-semibold text-[#1C1C1C] mb-2 group-hover:text-[#25D366] transition-colors">
                   {useCase.title}
-                </h3>
+                </h4>
                 <div className="text-sm text-[#25D366] font-medium mb-3">{useCase.industry}</div>
                 <p className="text-gray-600 text-sm leading-relaxed">{useCase.description}</p>
               </div>
@@ -385,25 +438,25 @@ const Home = () => {
 
           <div className="text-center mt-12">
             <Link
-              to="/contact"
+              to="/tools"
               className="text-[#25D366] hover:underline font-medium"
             >
-              Explore more use cases →
+              Explore more WhatsApp marketing use cases →
             </Link>
           </div>
         </div>
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 bg-[#F7F7F7]">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
-              How It Works
-            </h2>
+            <h3 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
+              How Our WhatsApp Marketing Platform Works
+            </h3>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Get started with WhatsApp marketing in just 4 simple steps. 
-              No technical knowledge required!
+              Get started with WhatsApp marketing automation in just 4 simple steps. 
+              No technical knowledge required for our chatbot builder and bulk messaging tools!
             </p>
           </div>
 
@@ -417,7 +470,7 @@ const Home = () => {
                   <div className="w-8 h-8 bg-[#25D366] text-white rounded-full flex items-center justify-center text-sm font-bold absolute -top-3 -right-3">
                     {step.step}
                   </div>
-                  <h3 className="text-xl font-semibold text-[#1C1C1C] mb-2">{step.title}</h3>
+                  <h4 className="text-xl font-semibold text-[#1C1C1C] mb-2">{step.title}</h4>
                   <p className="text-gray-600">{step.description}</p>
                 </div>
                 {index < howItWorks.length - 1 && (
@@ -428,18 +481,27 @@ const Home = () => {
               </div>
             ))}
           </div>
+
+          <div className="text-center mt-12">
+            <Link
+              to="/whatsapp-api"
+              className="text-[#25D366] hover:underline font-medium"
+            >
+              Learn more about WhatsApp API integration →
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="py-20">
+      <section className="py-20 bg-[#F7F7F7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
-              Powerful Features for Modern Businesses
-            </h2>
+            <h3 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
+              Powerful WhatsApp Marketing Features for Modern Businesses
+            </h3>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Everything you need to create, manage, and optimize your WhatsApp marketing campaigns.
+              Everything you need to create, manage, and optimize your WhatsApp marketing campaigns with our comprehensive business automation platform.
             </p>
           </div>
 
@@ -449,14 +511,14 @@ const Home = () => {
                 <div className="aspect-video mb-6 rounded-lg overflow-hidden">
                   <img
                     src={feature.image}
-                    alt={feature.title}
+                    alt={`${feature.title} - WhatsApp Marketing Feature`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="w-12 h-12 bg-[#25D366]/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#25D366]/20 transition-colors">
                   <feature.icon className="w-6 h-6 text-[#25D366]" />
                 </div>
-                <h3 className="text-xl font-semibold text-[#1C1C1C] mb-3">{feature.title}</h3>
+                <h4 className="text-xl font-semibold text-[#1C1C1C] mb-3">{feature.title}</h4>
                 <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </div>
             ))}
@@ -467,7 +529,7 @@ const Home = () => {
               to="/whatsapp-api"
               className="bg-[#25D366] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#128C7E] transition-colors inline-flex items-center"
             >
-              Explore All Features
+              Explore All WhatsApp Marketing Features
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
           </div>
@@ -475,14 +537,14 @@ const Home = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-[#F7F7F7]">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
-              Trusted by leading Businesses
-            </h2>
+            <h3 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
+              Why 10,000+ Businesses Trust Our WhatsApp Marketing Platform
+            </h3>
             <p className="text-lg text-gray-600">
-              See what our customers are saying about AskMeister
+              See what our customers are saying about Ask Meister's WhatsApp marketing and chatbot solutions
             </p>
           </div>
 
@@ -498,7 +560,7 @@ const Home = () => {
                 <div className="flex items-center">
                   <img
                     src={testimonial.image}
-                    alt={testimonial.name}
+                    alt={`${testimonial.name} - ${testimonial.company} WhatsApp Marketing Success Story`}
                     className="w-12 h-12 rounded-full mr-4"
                   />
                   <div>
@@ -509,31 +571,100 @@ const Home = () => {
               </div>
             ))}
           </div>
+
+          <div className="text-center mt-12">
+            <Link
+              to="/about"
+              className="text-[#25D366] hover:underline font-medium"
+            >
+              Read more customer success stories →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Internal Links Section for SEO */}
+      <section className="py-16 bg-[#F7F7F7]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl font-bold text-[#1C1C1C] mb-4">
+              Explore More WhatsApp Marketing Resources
+            </h3>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white rounded-lg p-6 shadow-md">
+              <h4 className="font-semibold text-[#1C1C1C] mb-3">Platform Features</h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link to="/features/automation" className="text-gray-600 hover:text-[#25D366]">Marketing Automation</Link></li>
+                <li><Link to="/features/analytics" className="text-gray-600 hover:text-[#25D366]">Analytics Dashboard</Link></li>
+                <li><Link to="/features/livechat" className="text-gray-600 hover:text-[#25D366]">Live Chat Support</Link></li>
+                <li><Link to="/features/templates" className="text-gray-600 hover:text-[#25D366]">Message Templates</Link></li>
+                <li><Link to="/features/bulk-messaging" className="text-gray-600 hover:text-[#25D366]">Bulk Messaging</Link></li>
+              </ul>
+            </div>
+            
+            <div className="bg-white rounded-lg p-6 shadow-md">
+              <h4 className="font-semibold text-[#1C1C1C] mb-3">Chatbot Solutions</h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link to="/chatbots" className="text-gray-600 hover:text-[#25D366]">AI Chatbot Builder</Link></li>
+                <li><Link to="/solutions/education" className="text-gray-600 hover:text-[#25D366]">Education Chatbots</Link></li>
+                <li><Link to="/solutions/healthcare" className="text-gray-600 hover:text-[#25D366]">Healthcare Bots</Link></li>
+                <li><Link to="/solutions/ecommerce" className="text-gray-600 hover:text-[#25D366]">E-commerce Bots</Link></li>
+                <li><Link to="/solutions/real-estate" className="text-gray-600 hover:text-[#25D366]">Real Estate Bots</Link></li>
+              </ul>
+            </div>
+            
+            <div className="bg-white rounded-lg p-6 shadow-md">
+              <h4 className="font-semibold text-[#1C1C1C] mb-3">Business Resources</h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link to="/pricing" className="text-gray-600 hover:text-[#25D366]">Pricing Plans</Link></li>
+                <li><Link to="/whatsapp-api" className="text-gray-600 hover:text-[#25D366]">WhatsApp API</Link></li>
+                <li><Link to="/tools" className="text-gray-600 hover:text-[#25D366]">Marketing Tools</Link></li>
+                <li><Link to="/blog" className="text-gray-600 hover:text-[#25D366]">Marketing Blog</Link></li>
+                <li><Link to="/help" className="text-gray-600 hover:text-[#25D366]">Help Center</Link></li>
+              </ul>
+            </div>
+            
+            <div className="bg-white rounded-lg p-6 shadow-md">
+              <h4 className="font-semibold text-[#1C1C1C] mb-3">Company Info</h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link to="/about" className="text-gray-600 hover:text-[#25D366]">About Ask Meister</Link></li>
+                <li><Link to="/contact" className="text-gray-600 hover:text-[#25D366]">Contact Sales</Link></li>
+                <li><Link to="/careers" className="text-gray-600 hover:text-[#25D366]">Careers</Link></li>
+                <li><Link to="/affiliate" className="text-gray-600 hover:text-[#25D366]">Partner Program</Link></li>
+                <li><Link to="/privacy" className="text-gray-600 hover:text-[#25D366]">Privacy Policy</Link></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-[#25D366]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Ready to Transform Your Business Communication?
-          </h2>
+          <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Ready to Transform Your Business with WhatsApp Marketing?
+          </h3>
           <p className="text-lg text-white/90 mb-8">
-            Join thousands of businesses already using AskMeister to grow their revenue through WhatsApp marketing.
+            Join 10,000+ businesses already using Ask Meister's WhatsApp marketing platform to grow their revenue through automated messaging, AI chatbots, and customer engagement tools.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-white text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="bg-white text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
             >
-              Start Free Trial
+              Start Free Trial - No Credit Card Required
             </Link>
             <Link
               to="/contact"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#25D366] transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#25D366] transition-colors inline-flex items-center justify-center"
             >
-              Book a Demo
+              Schedule Demo Call
             </Link>
+          </div>
+          <div className="mt-6 text-sm text-white/80">
+            ✅ Free 14-day trial • ✅ No setup fees • ✅ Cancel anytime
           </div>
         </div>
       </section>

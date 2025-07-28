@@ -164,9 +164,9 @@ const WhatsAppAPI = () => {
   return (
      <>
       <Helmet>
-        <title>Trusted WhatsApp Business API | Official WhatsApp API Partner | Meister Notify</title>
+        <title>Trusted WhatsApp Business API | Official WhatsApp API Partner | Ask Meister</title>
         <meta name="description" content="Official WhatsApp Business API integration with 99.9% delivery rate. Trusted WhatsApp API for business messaging, chatbots, and marketing automation." />
-        <meta name="keywords" content="trusted whatsapp api, whatsapp business api, official whatsapp api, whatsapp api integration, business messaging api, whatsapp cloud api, reliable whatsapp api" />
+        <meta name="keywords" content="trusted whatsapp api, whatsapp business api, official whatsapp api, whatsapp api integration, business messaging api, whatsapp cloud api, reliable whatsapp api,Ask Meister" />
         <link rel="canonical" href="https://meisternotify.com/whatsapp-api" />
         <meta property="og:title" content="Trusted WhatsApp Business API | Official Partner" />
         <meta property="og:description" content="Get access to official WhatsApp Business API with maximum reliability and compliance." />
@@ -211,7 +211,7 @@ const WhatsAppAPI = () => {
       <div className="flex justify-center md:justify-end">
         <img
           src={allinone}
-          alt="AskMeister Dashboard"
+          alt="Ask Meister Dashboard"
           className="w-full max-w-md md:max-w-lg rounded-2xl shadow-2xl"
         />
       </div>

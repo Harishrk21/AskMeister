@@ -222,7 +222,7 @@ const Chatbots = () => {
   return (
      <>
       <Helmet>
-        <title>AI WhatsApp Chatbots | No.1 Chatbot Builder for Business | AskMeister</title>
+        <title>AI WhatsApp Chatbots | No.1 Chatbot Builder for Business | Ask Meister</title>
         <meta name="description" content="Build intelligent WhatsApp chatbots with our no.1 chatbot builder. AI-powered automation for top companies across industries. Trusted by businesses worldwide for customer engagement." />
         <meta name="keywords" content="whatsapp chatbot, ai chatbot, chatbot builder, no.1 chatbot, intelligent chatbots, whatsapp automation, business chatbot, customer engagement, top companies using chatbot, chatbot for business" />
         <link rel="canonical" href="https://askmeister/chatbots" />
@@ -283,7 +283,7 @@ const Chatbots = () => {
                     <Bot className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <div className="font-semibold text-[#1C1C1C]">AskMeister</div>
+                    <div className="font-semibold text-[#1C1C1C]">Ask Meister</div>
                     <div className="text-sm text-gray-500">Online • Typing...</div>
                   </div>
                 </div>

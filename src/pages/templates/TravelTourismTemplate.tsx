@@ -138,7 +138,7 @@ const TravelTourismTemplate = () => {
   return (
     <>
   <Helmet>
-    <title>WhatsApp for Travel & Tourism | Automate Bookings & Support | AskMeister</title>
+    <title>WhatsApp for Travel & Tourism | Automate Bookings & Support | Ask Meister</title>
     <meta
       name="description"
       content="Enhance customer experience in the travel industry with WhatsApp. Automate tour inquiries, bookings, itineraries, and 24/7 travel support."
@@ -365,7 +365,7 @@ const TravelTourismTemplate = () => {
             Ready to Transform Your Travel Business?
           </h2>
           <p className="text-lg text-green-100 mb-8">
-            Join travel companies already using AskMeister to enhance guest experiences and streamline operations.
+            Join travel companies already using Ask Meister to enhance guest experiences and streamline operations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button

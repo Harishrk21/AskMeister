@@ -10,7 +10,7 @@ const Help = () => {
       category: 'Getting Started',
       questions: [
         {
-          question: 'How do I get started with AskMeister?',
+          question: 'How do I get started with Ask Meister?',
           answer: 'Getting started is easy! Sign up for a free account, connect your WhatsApp Business account, and you can start sending messages within minutes. Our onboarding guide will walk you through each step.'
         },
         {
@@ -197,7 +197,7 @@ const Help = () => {
               How-to Guides
             </h2>
             <p className="text-lg text-gray-600">
-              Step-by-step guides to help you get the most out of AskMeister
+              Step-by-step guides to help you get the most out of Ask Meister
             </p>
           </div>
           

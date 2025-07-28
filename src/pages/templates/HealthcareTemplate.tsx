@@ -146,7 +146,7 @@ const HealthcareTemplate = () => {
       name: 'Dr. Emily Chen',
       role: 'Chief Medical Officer',
       hospital: 'Metropolitan General Hospital',
-      content: 'AskMeister revolutionized our patient communication. Appointment no-shows dropped by 60% and patient satisfaction increased significantly.',
+      content: 'Ask Meister revolutionized our patient communication. Appointment no-shows dropped by 60% and patient satisfaction increased significantly.',
       image: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=150'
     },
     {
@@ -161,7 +161,7 @@ const HealthcareTemplate = () => {
   return (
      <>
       <Helmet>
-        <title>WhatsApp for Healthcare | Hospital Appointment Booking & Patient Care | AskMeister</title>
+        <title>WhatsApp for Healthcare | Hospital Appointment Booking & Patient Care | Ask Meister</title>
         <meta name="description" content="Revolutionize healthcare with WhatsApp automation. Multi-department appointment booking, patient care, HIPAA-compliant messaging for hospitals and clinics." />
         <meta name="keywords" content="whatsapp for healthcare, hospital automation, appointment booking, patient care, medical chatbot, healthcare messaging, hospital communication, patient engagement" />
         <link rel="canonical" href="https://askmeister.com/solutions/healthcare" />
@@ -383,7 +383,7 @@ const HealthcareTemplate = () => {
             Ready to Transform Patient Care?
           </h2>
           <p className="text-lg text-green-100 mb-8">
-            Join leading hospitals and clinics already using AskMeister to enhance patient communication and care.
+            Join leading hospitals and clinics already using Ask Meister to enhance patient communication and care.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

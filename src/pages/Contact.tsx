@@ -66,11 +66,11 @@ const Contact = () => {
   return (
      <>
       <Helmet>
-        <title>Contact Us | WhatsApp Marketing Experts | AskMeister Support</title>
+        <title>Contact Us | WhatsApp Marketing Experts | Ask Meister Support</title>
         <meta name="description" content="Get in touch with WhatsApp marketing experts. Free consultation, demo, and support for chatbot builder, business insights, and WhatsApp API integration." />
         <meta name="keywords" content="whatsapp marketing contact, chatbot support, whatsapp api help, business consultation, marketing experts, customer support, free demo, whatsapp automation help" />
         <link rel="canonical" href="https://askmeister.com/contact" />
-        <meta property="og:title" content="Contact WhatsApp Marketing Experts |AskMeister" />
+        <meta property="og:title" content="Contact WhatsApp Marketing Experts |Ask Meister" />
         <meta property="og:description" content="Get expert help with WhatsApp marketing, chatbots, and business automation. Free consultation available." />
         <meta property="og:url" content="https://askmeister.com/contact" />
       </Helmet>
@@ -80,7 +80,7 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-[#1C1C1C] mb-6">
             Get in Touch with
-            <span className="text-[#25D366] block">AskMeister</span>
+            <span className="text-[#25D366] block">Ask Meister</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8">
             Ready to transform your business communication with WhatsApp marketing? 
@@ -247,7 +247,7 @@ const Contact = () => {
                   Chat with our WhatsApp marketing experts for instant assistance.
                 </p>
                 <a
-                  href="https://wa.me/919739414675?text=Hi, I'm interested in AskMeister WhatsApp marketing solutions"
+                  href="https://wa.me/919739414675?text=Hi, I'm interested in Ask Meister WhatsApp marketing solutions"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#25D366] text-white px-6 py-2 rounded-lg hover:bg-[#128C7E] transition-colors inline-flex items-center"
@@ -266,7 +266,7 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
-              Why Choose AskMeister?
+              Why Choose Ask Meister?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               We're not just another WhatsApp marketing tool. We're your growth partner.
@@ -308,7 +308,7 @@ const Contact = () => {
             Ready to Get Started?
           </h2>
           <p className="text-lg text-white/90 mb-8">
-            Join hundreds of businesses already growing with AskMeister WhatsApp marketing.
+            Join hundreds of businesses already growing with Ask Meister WhatsApp marketing.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {/* <a
@@ -318,7 +318,7 @@ const Contact = () => {
               Start Your Free Demo
             </a> */}
             <a
-  href="https://wa.me/919739414675?text=Hi,%20I%20want%20to%20know%20more%20about%20AskMeister%20pricing"
+  href="https://wa.me/919739414675?text=Hi,%20I%20want%20to%20know%20more%20about%20Ask Meister%20pricing"
   target="_blank"
   rel="noopener noreferrer"
   className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#25D366] transition-colors"

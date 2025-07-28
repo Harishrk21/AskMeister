@@ -113,7 +113,7 @@ const EducationTemplate = () => {
       name: 'Dr. Sarah Wilson',
       role: 'Principal',
       school: 'Greenwood International School',
-      content: 'AskMeister transformed our parent communication. We now have 95% parent engagement compared to 40% with traditional methods.',
+      content: 'Ask Meister transformed our parent communication. We now have 95% parent engagement compared to 40% with traditional methods.',
       image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=150&q=80'
     },
     {
@@ -128,7 +128,7 @@ const EducationTemplate = () => {
   return (
       <>
       <Helmet>
-        <title>WhatsApp for Education | Student Communication & Admission Automation |AskMeister</title>
+        <title>WhatsApp for Education | Student Communication & Admission Automation |Ask Meister</title>
         <meta name="description" content="Transform education with WhatsApp automation. Quick admission forms, parent notifications, student engagement, and automated communication for schools and universities." />
         <meta name="keywords" content="whatsapp for education, student communication, admission automation, parent notifications, educational chatbot, school automation, university messaging, student engagement" />
         <link rel="canonical" href="https://askmeister.com/solutions/education" />
@@ -319,7 +319,7 @@ const EducationTemplate = () => {
             Ready to Transform Your Educational Institution?
           </h2>
           <p className="text-lg text-green-100 mb-8">
-            Join hundreds of schools and universities already using AskMeister to enhance their communication.
+            Join hundreds of schools and universities already using Ask Meister to enhance their communication.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

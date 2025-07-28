@@ -1,6 +1,6 @@
-# robots.txt for askmeister.com
+# robots.txt for Ask Meister.com
 
 User-agent: *
 Disallow:
 
-Sitemap: https://askmeister.com/sitemap.xml
+Sitemap: https://www.askmeister.com/sitemap.xml

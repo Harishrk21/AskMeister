@@ -123,7 +123,7 @@ const BulkMessaging = () => {
   return (
       <>
       <Helmet>
-        <title>WhatsApp Bulk Messaging | Send Thousands of Messages Instantly | AskMeister</title>
+        <title>WhatsApp Bulk Messaging | Send Thousands of Messages Instantly | Ask Meister</title>
         <meta name="description" content="Send bulk WhatsApp messages to thousands instantly. 99.9% delivery rate with smart targeting and analytics. Perfect for promotions and marketing campaigns." />
         <meta name="keywords" content="whatsapp bulk messaging, bulk whatsapp sender, mass whatsapp messaging, whatsapp broadcast, bulk messaging software, whatsapp marketing campaigns, promotional messages" />
         <link rel="canonical" href="https://askmeister.com/features/bulk-messaging" />
