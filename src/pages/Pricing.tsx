@@ -45,16 +45,27 @@ const Pricing = () => {
     }
   ];
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((q) => ({
+      '@type': 'Question',
+      name: q.question,
+      acceptedAnswer: { '@type': 'Answer', text: q.answer }
+    }))
+  };
+
   return (
     <>
       <Helmet>
         <title>WhatsApp Marketing Pricing | ₹8,000/month All Features | Trusted WhatsApp API</title>
-        <meta name="description" content="Simple pricing for WhatsApp marketing platform. ₹8,000/month includes AI chatbots, bulk messaging, automation, analytics. Trusted WhatsApp API with no hidden costs." />
+        <meta name="description" content="WhatsApp marketing pricing: ₹8,000/month – bulk messaging, WhatsApp Business API, AI chatbot, automation. No hidden costs. Start free trial." />
         <meta name="keywords" content="whatsapp marketing pricing, whatsapp api pricing, chatbot pricing, bulk messaging cost, whatsapp automation pricing, business messaging rates, affordable whatsapp marketing" />
-        <link rel="canonical" href="https://askmeister.com/pricing" />
+        <link rel="canonical" href="https://www.askmeister.com/pricing" />
         <meta property="og:title" content="WhatsApp Marketing Pricing | ₹8,000/month All Features" />
         <meta property="og:description" content="Simple, transparent pricing for complete WhatsApp marketing solution. All features included." />
-        <meta property="og:url" content="https://askmeister.com/pricing" />
+        <meta property="og:url" content="https://www.askmeister.com/pricing" />
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}

@@ -1,8 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Terms = () => {
   return (
+    <>
+      <Helmet>
+        <title>Terms of Service | Ask Meister WhatsApp Marketing Platform</title>
+        <meta name="description" content="Terms of Service for Ask Meister. Read our terms governing use of our WhatsApp marketing, chatbot, and automation platform." />
+        <link rel="canonical" href="https://www.askmeister.com/terms" />
+      </Helmet>
     <div className="pt-16">
       {/* Header */}
       <section className="bg-[#F7F7F7] py-16">
@@ -134,6 +141,7 @@ const Terms = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

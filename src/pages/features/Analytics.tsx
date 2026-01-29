@@ -97,12 +97,12 @@ const Analytics = () => {
       <>
       <Helmet>
         <title>WhatsApp Marketing Analytics | Business Insights & Performance Tracking | Ask Meister</title>
-        <meta name="description" content="Get deep business insights with WhatsApp marketing analytics. Track performance, engagement metrics, ROI, and campaign success with real-time reporting." />
+        <meta name="description" content="WhatsApp marketing analytics: track bulk messaging, chatbot & campaign performance. Delivery rates, ROI, real-time reports. Free with Ask Meister." />
         <meta name="keywords" content="whatsapp analytics, business insights, marketing analytics, performance tracking, whatsapp metrics, campaign analytics, roi tracking, engagement analytics, marketing reports" />
-        <link rel="canonical" href="https://askmeister.com/features/analytics" />
+        <link rel="canonical" href="https://www.askmeister.com/features/analytics" />
         <meta property="og:title" content="WhatsApp Marketing Analytics | Business Insights" />
         <meta property="og:description" content="Advanced analytics and business insights for WhatsApp marketing campaigns and customer engagement." />
-        <meta property="og:url" content="https://askmeister.com/features/analytics" />
+        <meta property="og:url" content="https://www.askmeister.com/features/analytics" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}

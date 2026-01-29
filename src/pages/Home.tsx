@@ -201,16 +201,16 @@ const Home = () => {
     <>
     <Helmet>
         <title>Best WhatsApp Marketing Platform 2024 | AI Chatbot Builder & Bulk Messaging Tool - Ask Meister</title>
-        <meta name="description" content="Leading WhatsApp marketing platform with AI chatbots, bulk messaging, business automation & WhatsApp API integration. Trusted by 10,000+ businesses for promotions, customer engagement & sales growth. Start free trial!" />
+        <meta name="description" content="WhatsApp marketing platform: bulk messaging, WhatsApp Business API & AI chatbot builder. Send bulk messages, automate campaigns. Free trial – trusted by 10,000+ businesses." />
         <meta name="keywords" content="whatsapp marketing, whatsapp chatbot, bulk messaging, ai chatbot builder, whatsapp api, business automation, customer engagement, whatsapp business solution, marketing automation platform, chatbot platform" />
-        <link rel="canonical" href="https://askmeister.com" />
+        <link rel="canonical" href="https://www.askmeister.com/" />
         <meta property="og:title" content="Best WhatsApp Marketing Platform 2024 | AI Chatbot Builder - Ask Meister" />
-        <meta property="og:description" content="Transform your business with WhatsApp marketing automation, AI chatbots & bulk messaging. Join 10,000+ businesses using our WhatsApp marketing platform." />
-        <meta property="og:url" content="https://askmeister.com" />
+        <meta property="og:description" content="WhatsApp marketing platform: bulk messaging, WhatsApp Business API & AI chatbot. Automate campaigns. Free trial – trusted by 10,000+ businesses." />
+        <meta property="og:url" content="https://www.askmeister.com/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Best WhatsApp Marketing Platform 2024 | AI Chatbot Builder" />
-        <meta name="twitter:description" content="Leading WhatsApp marketing platform with AI chatbots & bulk messaging. Start your free trial today!" />
+        <meta name="twitter:description" content="WhatsApp marketing platform: bulk messaging, WhatsApp Business API & AI chatbot. Free trial – trusted by 10,000+ businesses." />
       </Helmet>
       
     <div className="pt-16">

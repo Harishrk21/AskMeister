@@ -141,19 +141,19 @@ const TravelTourismTemplate = () => {
     <title>WhatsApp for Travel & Tourism | Automate Bookings & Support | Ask Meister</title>
     <meta
       name="description"
-      content="Enhance customer experience in the travel industry with WhatsApp. Automate tour inquiries, bookings, itineraries, and 24/7 travel support."
+      content="WhatsApp for travel & tourism: booking automation, itinerary updates, bulk messaging for hotels & tours. 24/7 support. Free trial."
     />
     <meta
       name="keywords"
       content="whatsapp for travel, travel chatbot, tour booking automation, itinerary updates, customer support, tourism marketing, holiday packages"
     />
-    <link rel="canonical" href="https://askmeister.com/solutions/travel-and-tourism" />
+    <link rel="canonical" href="https://www.askmeister.com/solutions/travel-and-tourism" />
     <meta property="og:title" content="WhatsApp for Travel & Tourism | Automate Bookings & Support" />
     <meta
       property="og:description"
       content="Automate bookings, respond to queries instantly, and provide seamless travel support via WhatsApp for your tourism business."
     />
-    <meta property="og:url" content="https://askmeister.com/solutions/travel-and-tourism" />
+    <meta property="og:url" content="https://www.askmeister.com/solutions/travel-and-tourism" />
   </Helmet>
 
 

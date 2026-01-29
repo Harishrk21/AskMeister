@@ -137,12 +137,12 @@ const EcommerceTemplate = () => {
      <>
       <Helmet>
         <title>WhatsApp for E-commerce | Boost Online Sales & Customer Support | Ask Meister</title>
-        <meta name="description" content="Boost e-commerce sales with WhatsApp automation. Order management, abandoned cart recovery, customer support, and promotional campaigns for online stores." />
+        <meta name="description" content="WhatsApp for e-commerce: order updates, abandoned cart recovery, bulk messaging for online stores. WooCommerce & Shopify integration. Free trial." />
         <meta name="keywords" content="whatsapp for ecommerce, online store automation, abandoned cart recovery, order tracking, ecommerce chatbot, customer support, promotional campaigns, sales automation" />
-        <link rel="canonical" href="https://askmeister.com/solutions/ecommerce" />
+        <link rel="canonical" href="https://www.askmeister.com/solutions/ecommerce" />
         <meta property="og:title" content="WhatsApp for E-commerce | Boost Online Sales" />
         <meta property="og:description" content="Transform your online store with WhatsApp automation for sales, support, and customer engagement." />
-        <meta property="og:url" content="https://askmeister.com/solutions/ecommerce" />
+        <meta property="og:url" content="https://www.askmeister.com/solutions/ecommerce" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}

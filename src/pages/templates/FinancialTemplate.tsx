@@ -163,12 +163,12 @@ const FinancialTemplate = () => {
      <>
       <Helmet>
         <title>WhatsApp for Banking & Finance | Secure Financial Services Automation | Ask Meister</title>
-        <meta name="description" content="Transform financial services with secure WhatsApp banking. Transaction alerts, payment reminders, investment updates, and 24/7 customer support with bank-grade security." />
+        <meta name="description" content="WhatsApp for banking & finance: transaction alerts, payment reminders, secure messaging. Bulk messaging for banks & financial services. Free trial." />
         <meta name="keywords" content="whatsapp banking, financial services automation, secure banking, transaction alerts, payment reminders, investment updates, financial chatbot, banking automation" />
-        <link rel="canonical" href="https://askmeister.com/solutions/financial" />
+        <link rel="canonical" href="https://www.askmeister.com/solutions/financial" />
         <meta property="og:title" content="WhatsApp for Banking & Finance | Secure Automation" />
         <meta property="og:description" content="Secure financial services automation with WhatsApp for banking, payments, and customer support." />
-        <meta property="og:url" content="https://askmeister.com/solutions/financial" />
+        <meta property="og:url" content="https://www.askmeister.com/solutions/financial" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}

@@ -124,12 +124,12 @@ const BulkMessaging = () => {
       <>
       <Helmet>
         <title>WhatsApp Bulk Messaging | Send Thousands of Messages Instantly | Ask Meister</title>
-        <meta name="description" content="Send bulk WhatsApp messages to thousands instantly. 99.9% delivery rate with smart targeting and analytics. Perfect for promotions and marketing campaigns." />
+        <meta name="description" content="Bulk WhatsApp messaging: send thousands of messages instantly. WhatsApp bulk sender with 99.9% delivery, templates & analytics. Start free trial." />
         <meta name="keywords" content="whatsapp bulk messaging, bulk whatsapp sender, mass whatsapp messaging, whatsapp broadcast, bulk messaging software, whatsapp marketing campaigns, promotional messages" />
-        <link rel="canonical" href="https://askmeister.com/features/bulk-messaging" />
+        <link rel="canonical" href="https://www.askmeister.com/features/bulk-messaging" />
         <meta property="og:title" content="WhatsApp Bulk Messaging | Send Thousands Instantly" />
         <meta property="og:description" content="Professional bulk messaging solution with 99.9% delivery rate and smart targeting." />
-        <meta property="og:url" content="https://askmeister.com/features/bulk-messaging" />
+        <meta property="og:url" content="https://www.askmeister.com/features/bulk-messaging" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}

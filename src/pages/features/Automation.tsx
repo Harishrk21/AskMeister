@@ -97,12 +97,12 @@ const Automation = () => {
      <>
       <Helmet>
         <title>WhatsApp Marketing Automation | AI-Powered Workflows | Ask Meister</title>
-        <meta name="description" content="Automate WhatsApp marketing with AI-powered workflows. 24/7 customer engagement, lead nurturing, and business automation for maximum ROI." />
+        <meta name="description" content="WhatsApp automation: AI workflows for bulk messaging, chatbots & campaigns. 24/7 engagement, lead nurturing. WhatsApp marketing automation – free trial." />
         <meta name="keywords" content="whatsapp automation, marketing automation, whatsapp workflows, ai automation, business automation, customer engagement automation, lead nurturing, automated messaging" />
-        <link rel="canonical" href="https://askmeister.com/features/automation" />
+        <link rel="canonical" href="https://www.askmeister.com/features/automation" />
         <meta property="og:title" content="WhatsApp Marketing Automation | AI-Powered Workflows" />
         <meta property="og:description" content="Automate your WhatsApp marketing with intelligent workflows and AI-powered customer engagement." />
-        <meta property="og:url" content="https://askmeister.com/features/automation" />
+        <meta property="og:url" content="https://www.askmeister.com/features/automation" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}

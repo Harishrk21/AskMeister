@@ -86,12 +86,12 @@ const Blog = () => {
      <>
       <Helmet>
         <title>WhatsApp Marketing Blog | Business Insights & Tips | Ask Meister</title>
-        <meta name="description" content="Latest WhatsApp marketing insights, business tips, automation strategies, and industry trends. Learn from experts and grow your business with proven techniques." />
+        <meta name="description" content="WhatsApp marketing blog: bulk messaging tips, WhatsApp Business API guides, chatbot & automation strategies. Free guides for business growth." />
         <meta name="keywords" content="whatsapp marketing blog, business insights, marketing tips, automation strategies, whatsapp trends, marketing guides, business growth, customer engagement tips" />
-        <link rel="canonical" href="https://askmeister.com/blog" />
+        <link rel="canonical" href="https://www.askmeister.com/blog" />
         <meta property="og:title" content="WhatsApp Marketing Blog | Business Insights & Tips" />
         <meta property="og:description" content="Expert insights and tips for WhatsApp marketing, automation, and business growth strategies." />
-        <meta property="og:url" content="https://askmeister.com/blog" />
+        <meta property="og:url" content="https://www.askmeister.com/blog" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}

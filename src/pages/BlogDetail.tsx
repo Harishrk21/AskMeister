@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Calendar, User, ArrowLeft, Share2, BookOpen, Tag, Clock } from 'lucide-react';
 
 const BlogDetail = () => {
@@ -103,7 +104,42 @@ const BlogDetail = () => {
     }
   ];
 
+  const canonicalUrl = `https://www.askmeister.com/blog/${blogPost.slug}`;
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: blogPost.title,
+    description: blogPost.excerpt,
+    image: blogPost.image,
+    datePublished: blogPost.date,
+    dateModified: blogPost.date,
+    author: { '@type': 'Person', name: blogPost.author },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Ask Meister',
+      logo: { '@type': 'ImageObject', url: 'https://www.askmeister.com/og-banner.webp' }
+    },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl }
+  };
+
   return (
+    <>
+      <Helmet>
+        <title>{blogPost.title} | Ask Meister Blog</title>
+        <meta name="description" content={blogPost.excerpt} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={`${blogPost.title} | Ask Meister`} />
+        <meta property="og:description" content={blogPost.excerpt} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content={blogPost.image} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={blogPost.title} />
+        <meta name="twitter:description" content={blogPost.excerpt} />
+        <meta name="twitter:image" content={blogPost.image} />
+        <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
+      </Helmet>
     <div className="pt-16">
       {/* Back Button */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -264,6 +300,7 @@ const BlogDetail = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

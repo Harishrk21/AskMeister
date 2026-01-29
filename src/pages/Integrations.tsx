@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { ArrowRight, CheckCircle, ExternalLink } from 'lucide-react';
 
 const Integrations = () => {
@@ -104,6 +105,15 @@ const Integrations = () => {
   ];
 
   return (
+    <>
+      <Helmet>
+        <title>WhatsApp Integrations | WooCommerce, Shopify, Zapier & CRM | Ask Meister</title>
+        <meta name="description" content="WhatsApp API integrations: WooCommerce, Shopify, Zapier, HubSpot, Salesforce. Connect bulk messaging & chatbot to your CRM & store. Free trial." />
+        <link rel="canonical" href="https://www.askmeister.com/integrations" />
+        <meta property="og:title" content="WhatsApp Integrations | E-commerce, CRM & Automation | Ask Meister" />
+        <meta property="og:description" content="Integrate WhatsApp with your e-commerce, CRM, and automation tools. One-click connections." />
+        <meta property="og:url" content="https://www.askmeister.com/integrations" />
+      </Helmet>
     <div className="pt-16">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-20">
@@ -258,6 +268,7 @@ const Integrations = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

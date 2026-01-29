@@ -1,8 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Privacy = () => {
   return (
+    <>
+      <Helmet>
+        <title>Privacy Policy | Ask Meister WhatsApp Marketing Platform</title>
+        <meta name="description" content="Privacy Policy for Ask Meister. Learn how we collect, use, and protect your data when you use our WhatsApp marketing platform." />
+        <link rel="canonical" href="https://www.askmeister.com/privacy" />
+      </Helmet>
     <div className="pt-16">
       {/* Header */}
       <section className="bg-[#F7F7F7] py-16">
@@ -175,6 +182,7 @@ const Privacy = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

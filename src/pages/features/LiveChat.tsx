@@ -97,12 +97,12 @@ const LiveChat = () => {
      <>
       <Helmet>
         <title>WhatsApp Live Chat | Collaborative Customer Support | Ask Meister</title>
-        <meta name="description" content="Manage WhatsApp conversations as a team with shared inbox, agent assignment, and collaboration tools. Perfect for customer support teams and businesses." />
+        <meta name="description" content="WhatsApp live chat & team inbox: shared inbox, agent assignment, customer support. Manage bulk messaging & chatbots as a team. Free trial." />
         <meta name="keywords" content="whatsapp team inbox, shared inbox, team collaboration, customer support, agent assignment, whatsapp support, team messaging, collaborative support" />
-        <link rel="canonical" href="https://askmeister.com/features/livechat" />
+        <link rel="canonical" href="https://www.askmeister.com/features/livechat" />
         <meta property="og:title" content="WhatsApp LiveChat| Collaborative Customer Support" />
         <meta property="og:description" content="Collaborate seamlessly with team inbox for WhatsApp customer support and messaging." />
-        <meta property="og:url" content="https://askmeister.com/features/livechat" />
+        <meta property="og:url" content="https://www.askmeister.com/features/livechat" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}

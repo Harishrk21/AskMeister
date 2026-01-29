@@ -67,12 +67,12 @@ const Contact = () => {
      <>
       <Helmet>
         <title>Contact Us | WhatsApp Marketing Experts | Ask Meister Support</title>
-        <meta name="description" content="Get in touch with WhatsApp marketing experts. Free consultation, demo, and support for chatbot builder, business insights, and WhatsApp API integration." />
+        <meta name="description" content="Contact Ask Meister: free WhatsApp marketing demo, WhatsApp API & bulk messaging support. Get help with chatbot builder & automation. Reply within 24 hours." />
         <meta name="keywords" content="whatsapp marketing contact, chatbot support, whatsapp api help, business consultation, marketing experts, customer support, free demo, whatsapp automation help" />
-        <link rel="canonical" href="https://askmeister.com/contact" />
+        <link rel="canonical" href="https://www.askmeister.com/contact" />
         <meta property="og:title" content="Contact WhatsApp Marketing Experts |Ask Meister" />
         <meta property="og:description" content="Get expert help with WhatsApp marketing, chatbots, and business automation. Free consultation available." />
-        <meta property="og:url" content="https://askmeister.com/contact" />
+        <meta property="og:url" content="https://www.askmeister.com/contact" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}

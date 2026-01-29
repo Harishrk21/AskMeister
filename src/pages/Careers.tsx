@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { MapPin, Clock, DollarSign, Users, Heart, Zap, Target, Coffee } from 'lucide-react';
 
 const Careers = () => {
@@ -147,6 +148,15 @@ const Careers = () => {
   ];
 
   return (
+    <>
+      <Helmet>
+        <title>Careers | Join Our Team | Ask Meister</title>
+        <meta name="description" content="Join Ask Meister. We're hiring for engineering, marketing, customer success & more. Build the future of WhatsApp marketing with us." />
+        <link rel="canonical" href="https://www.askmeister.com/careers" />
+        <meta property="og:title" content="Careers at Ask Meister | We're Hiring" />
+        <meta property="og:description" content="Join our team building the leading WhatsApp marketing platform. Open roles in engineering, product, and more." />
+        <meta property="og:url" content="https://www.askmeister.com/careers" />
+      </Helmet>
     <div className="pt-16">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-20">
@@ -359,6 +369,7 @@ const Careers = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

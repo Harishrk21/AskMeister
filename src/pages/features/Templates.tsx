@@ -355,12 +355,12 @@ See you there!
       <>
       <Helmet>
         <title>WhatsApp Message Templates | Pre-approved Templates & Builder | Ask Meister</title>
-        <meta name="description" content="Access 500+ WhatsApp message templates for business. Pre-approved templates for promotions, notifications, and customer engagement. Easy template builder included." />
+        <meta name="description" content="WhatsApp message templates: 500+ pre-approved templates for bulk messaging & campaigns. Template builder for business. Compliant with WhatsApp API." />
         <meta name="keywords" content="whatsapp templates, message templates, whatsapp business templates, pre-approved templates, template builder, promotional templates, notification templates" />
-        <link rel="canonical" href="https://askmeister.com/features/templates" />
+        <link rel="canonical" href="https://www.askmeister.com/features/templates" />
         <meta property="og:title" content="WhatsApp Message Templates | Pre-approved Templates" />
         <meta property="og:description" content="Professional WhatsApp message templates for business communication and marketing campaigns." />
-        <meta property="og:url" content="https://askmeister.com/features/templates" />
+        <meta property="og:url" content="https://www.askmeister.com/features/templates" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}

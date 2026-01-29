@@ -64,13 +64,13 @@ const About = () => {
   return (
      <>
       <Helmet>
-        <title>About Ask Meister| Leading WhatsApp Marketing Company | Top Companies Trust Us</title>
-        <meta name="description" content="Learn about Ask Meister, the leading WhatsApp marketing platform trusted by top companies worldwide. Our mission to transform business communication through automation." />
-        <meta name="keywords" content="about mAsk Meister, whatsapp marketing company, top companies using chatbot, leading whatsapp platform, business communication, company story, team" />
-        <link rel="canonical" href="https://askmeister.com/about" />
+        <title>About Ask Meister | Leading WhatsApp Marketing Company | Top Companies Trust Us</title>
+        <meta name="description" content="About Ask Meister: WhatsApp marketing platform for bulk messaging & WhatsApp Business API. Trusted by 10,000+ businesses. Our story & mission." />
+        <meta name="keywords" content="about Ask Meister, whatsapp marketing company, top companies using chatbot, leading whatsapp platform, business communication, company story, team" />
+        <link rel="canonical" href="https://www.askmeister.com/about" />
         <meta property="og:title" content="About Ask Meister | Leading WhatsApp Marketing Company" />
         <meta property="og:description" content="Discover the story behind the leading WhatsApp marketing platform trusted by businesses worldwide." />
-        <meta property="og:url" content="https://askmeister.com/about" />
+        <meta property="og:url" content="https://www.askmeister.com/about" />
       </Helmet>
     <div className="pt-16">
       {/* Hero */}

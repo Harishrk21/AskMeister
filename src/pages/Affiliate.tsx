@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { DollarSign, Users, TrendingUp, Gift, CheckCircle, ArrowRight } from 'lucide-react';
 
 const Affiliate = () => {
@@ -99,6 +100,15 @@ const Affiliate = () => {
   ];
 
   return (
+    <>
+      <Helmet>
+        <title>Affiliate Program | Earn 30% Recurring Commission | Ask Meister</title>
+        <meta name="description" content="Join Ask Meister affiliate program. Earn up to 30% recurring commission promoting our WhatsApp marketing platform. Free to join, marketing materials included." />
+        <link rel="canonical" href="https://www.askmeister.com/affiliate" />
+        <meta property="og:title" content="Affiliate Program | Earn with Ask Meister" />
+        <meta property="og:description" content="Earn up to 30% recurring commission promoting the leading WhatsApp marketing platform." />
+        <meta property="og:url" content="https://www.askmeister.com/affiliate" />
+      </Helmet>
     <div className="pt-16">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-20">
@@ -308,6 +318,7 @@ const Affiliate = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

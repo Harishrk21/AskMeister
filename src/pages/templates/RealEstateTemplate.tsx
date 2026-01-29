@@ -140,19 +140,19 @@ const RealEstateTemplate = () => {
     <title>WhatsApp for Real Estate | Automate Inquiries & Follow-ups | Ask Meister</title>
     <meta
       name="description"
-      content="Streamline real estate sales with WhatsApp automation. Automate property inquiries, schedule site visits, follow-ups, and engage leads instantly."
+      content="WhatsApp for real estate: bulk property messaging, property chatbot, lead nurturing. Automate inquiries & follow-ups. Free trial."
     />
     <meta
       name="keywords"
       content="whatsapp for real estate, property sales automation, real estate chatbot, schedule site visits, customer engagement, lead follow-ups, property marketing"
     />
-    <link rel="canonical" href="https://askmeister.com/solutions/real-estate" />
+    <link rel="canonical" href="https://www.askmeister.com/solutions/real-estate" />
     <meta property="og:title" content="WhatsApp for Real Estate | Automate Inquiries & Follow-ups" />
     <meta
       property="og:description"
       content="Use WhatsApp automation to convert real estate leads faster. Automate inquiries, schedule visits, and engage clients easily."
     />
-    <meta property="og:url" content="https://askmeister.com/solutions/real-estate" />
+    <meta property="og:url" content="https://www.askmeister.com/solutions/real-estate" />
   </Helmet>
 
 

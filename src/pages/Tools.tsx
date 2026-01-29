@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { 
   Link2, QrCode, Code, Download, Copy, ExternalLink, MessageCircle, 
   Users, Hash, FileText, Clock, Share2, Smartphone, Globe 
@@ -338,6 +339,15 @@ END:VCARD`,
   };
 
   return (
+    <>
+      <Helmet>
+        <title>Free WhatsApp Tools | Link Generator, QR Code & Chat Button | Ask Meister</title>
+        <meta name="description" content="Free WhatsApp link generator, QR code creator & chat button. Create wa.me links, QR codes for bulk messaging. No signup – use instantly." />
+        <link rel="canonical" href="https://www.askmeister.com/tools" />
+        <meta property="og:title" content="Free WhatsApp Tools | Link & QR Generator | Ask Meister" />
+        <meta property="og:description" content="Create WhatsApp links, QR codes, and chat buttons for your website. Free tools for business." />
+        <meta property="og:url" content="https://www.askmeister.com/tools" />
+      </Helmet>
     <div className="pt-16">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-20">
@@ -399,6 +409,7 @@ END:VCARD`,
         </div>
       </section>
     </div>
+    </>
   );
 };
 

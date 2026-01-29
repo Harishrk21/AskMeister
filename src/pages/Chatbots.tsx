@@ -223,12 +223,12 @@ const Chatbots = () => {
      <>
       <Helmet>
         <title>AI WhatsApp Chatbots | No.1 Chatbot Builder for Business | Ask Meister</title>
-        <meta name="description" content="Build intelligent WhatsApp chatbots with our no.1 chatbot builder. AI-powered automation for top companies across industries. Trusted by businesses worldwide for customer engagement." />
+        <meta name="description" content="WhatsApp chatbot builder: AI chatbots for business. No-code builder, automation, customer engagement. Trusted by 10,000+ businesses – start free trial." />
         <meta name="keywords" content="whatsapp chatbot, ai chatbot, chatbot builder, no.1 chatbot, intelligent chatbots, whatsapp automation, business chatbot, customer engagement, top companies using chatbot, chatbot for business" />
-        <link rel="canonical" href="https://askmeister/chatbots" />
+        <link rel="canonical" href="https://www.askmeister.com/chatbots" />
         <meta property="og:title" content="AI WhatsApp Chatbots | No.1 Chatbot Builder for Business" />
         <meta property="og:description" content="Build intelligent WhatsApp chatbots with our no.1 chatbot builder. Trusted by top companies worldwide." />
-        <meta property="og:url" content="https://askmeister.com/chatbots" />
+        <meta property="og:url" content="https://www.askmeister.com/chatbots" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}

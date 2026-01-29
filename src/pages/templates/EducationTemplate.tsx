@@ -128,13 +128,13 @@ const EducationTemplate = () => {
   return (
       <>
       <Helmet>
-        <title>WhatsApp for Education | Student Communication & Admission Automation |Ask Meister</title>
-        <meta name="description" content="Transform education with WhatsApp automation. Quick admission forms, parent notifications, student engagement, and automated communication for schools and universities." />
+        <title>WhatsApp for Education | Student Communication & Admission Automation | Ask Meister</title>
+        <meta name="description" content="WhatsApp for education: admission forms, parent notifications, student engagement. Bulk messaging for schools & universities. Free trial." />
         <meta name="keywords" content="whatsapp for education, student communication, admission automation, parent notifications, educational chatbot, school automation, university messaging, student engagement" />
-        <link rel="canonical" href="https://askmeister.com/solutions/education" />
+        <link rel="canonical" href="https://www.askmeister.com/solutions/education" />
         <meta property="og:title" content="WhatsApp for Education | Student Communication Automation" />
         <meta property="og:description" content="Streamline education communication with WhatsApp automation for admissions, student support, and parent engagement." />
-        <meta property="og:url" content="https://askmeister.com/solutions/education" />
+        <meta property="og:url" content="https://www.askmeister.com/solutions/education" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}

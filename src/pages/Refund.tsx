@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Clock, CheckCircle, XCircle, AlertCircle } from 'lucide-react';
 
 const Refund = () => {
@@ -39,6 +40,12 @@ const Refund = () => {
   ];
 
   return (
+    <>
+      <Helmet>
+        <title>Refund Policy | 30-Day Money-Back Guarantee | Ask Meister</title>
+        <meta name="description" content="Ask Meister refund policy. 30-day money-back guarantee. Learn how to request a refund and eligibility criteria." />
+        <link rel="canonical" href="https://www.askmeister.com/refund" />
+      </Helmet>
     <div className="pt-16">
       {/* Header */}
       <section className="bg-[#F7F7F7] py-16">
@@ -220,6 +227,7 @@ const Refund = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 
