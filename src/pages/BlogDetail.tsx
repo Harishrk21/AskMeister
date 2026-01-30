@@ -74,7 +74,7 @@ const BlogDetail = () => {
     `,
     image: 'https://images.pexels.com/photos/3985062/pexels-photo-3985062.jpeg?auto=compress&cs=tinysrgb&w=800',
     author: 'Sarah Johnson',
-    date: '2024-01-15',
+    date: '2026-01-15',
     category: 'Marketing Tips',
     readTime: '8 min read',
     tags: ['automation', 'marketing', 'whatsapp', 'strategy']
@@ -83,7 +83,7 @@ const BlogDetail = () => {
   const relatedPosts = [
     {
       slug: 'whatsapp-business-api-complete-guide',
-      title: 'WhatsApp Business API: Complete Guide for 2024',
+      title: 'WhatsApp Business API: Complete Guide for 2026',
       image: 'https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=300',
       category: 'API',
       readTime: '12 min read'

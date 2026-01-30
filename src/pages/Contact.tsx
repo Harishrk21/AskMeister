@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { Mail, Phone, MapPin, Clock, MessageCircle, Send, CheckCircle } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+
 const Contact = () => {
+  const [searchParams] = useSearchParams();
+  const showThankYou = searchParams.get('thankyou') === '1';
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -19,17 +23,14 @@ const Contact = () => {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We\'ll get back to you within 24 hours.');
+    // Form submits to FormSubmit.co – no preventDefault so POST goes through
   };
 
   const contactInfo = [
     {
       icon: Mail,
       title: 'Email Us',
-      details: 'contact@askmeister.com',
+      details: 'harish.dev@askmeister.com',
       description: 'Get support within 24 hours'
     },
     {
@@ -63,6 +64,35 @@ const Contact = () => {
     
   ];
 
+  const localBusinessSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'Ask Meister',
+    description: 'WhatsApp marketing platform: bulk messaging, WhatsApp Business API & AI chatbot. Free demo and support.',
+    url: 'https://www.askmeister.com',
+    telephone: '+919043943736',
+    email: 'harish.dev@askmeister.com',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '4, 3A, Asvini Amarisa, Ramapuram',
+      addressLocality: 'Chennai',
+      postalCode: '600089',
+      addressCountry: 'IN'
+    },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '18:00'
+    },
+    sameAs: [
+      'https://www.facebook.com/profile.php?id=61578309674729',
+      'https://x.com/AskMeister',
+      'https://www.linkedin.com/in/ask-meister-42a0a4377/',
+      'https://www.instagram.com/ask_meister'
+    ]
+  };
+
   return (
      <>
       <Helmet>
@@ -70,9 +100,10 @@ const Contact = () => {
         <meta name="description" content="Contact Ask Meister: free WhatsApp marketing demo, WhatsApp API & bulk messaging support. Get help with chatbot builder & automation. Reply within 24 hours." />
         <meta name="keywords" content="whatsapp marketing contact, chatbot support, whatsapp api help, business consultation, marketing experts, customer support, free demo, whatsapp automation help" />
         <link rel="canonical" href="https://www.askmeister.com/contact" />
-        <meta property="og:title" content="Contact WhatsApp Marketing Experts |Ask Meister" />
+        <meta property="og:title" content="Contact WhatsApp Marketing Experts | Ask Meister" />
         <meta property="og:description" content="Get expert help with WhatsApp marketing, chatbots, and business automation. Free consultation available." />
         <meta property="og:url" content="https://www.askmeister.com/contact" />
+        <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}
@@ -95,8 +126,21 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div className="bg-white rounded-xl shadow-lg p-8">
+              {showThankYou && (
+                <div className="mb-6 p-4 bg-[#25D366]/10 border border-[#25D366]/30 rounded-lg text-[#128C7E] font-medium">
+                  Thank you! We&apos;ll get back to you within 24 hours.
+                </div>
+              )}
               <h2 className="text-2xl font-bold text-[#1C1C1C] mb-6">Send us a Message</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                action="https://formsubmit.co/harish.dev@askmeister.com"
+                method="POST"
+                onSubmit={handleSubmit}
+                className="space-y-6"
+              >
+                <input type="hidden" name="_next" value="https://www.askmeister.com/contact?thankyou=1" />
+                <input type="hidden" name="_subject" value="Ask Meister – New contact form submission" />
+                <input type="hidden" name="_captcha" value="false" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">

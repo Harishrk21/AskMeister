@@ -200,16 +200,16 @@ const Home = () => {
   return (
     <>
     <Helmet>
-        <title>Best WhatsApp Marketing Platform 2024 | AI Chatbot Builder & Bulk Messaging Tool - Ask Meister</title>
+        <title>Best WhatsApp Marketing Platform 2026 | AI Chatbot Builder & Bulk Messaging Tool - Ask Meister</title>
         <meta name="description" content="WhatsApp marketing platform: bulk messaging, WhatsApp Business API & AI chatbot builder. Send bulk messages, automate campaigns. Free trial – trusted by 10,000+ businesses." />
         <meta name="keywords" content="whatsapp marketing, whatsapp chatbot, bulk messaging, ai chatbot builder, whatsapp api, business automation, customer engagement, whatsapp business solution, marketing automation platform, chatbot platform" />
         <link rel="canonical" href="https://www.askmeister.com/" />
-        <meta property="og:title" content="Best WhatsApp Marketing Platform 2024 | AI Chatbot Builder - Ask Meister" />
+        <meta property="og:title" content="Best WhatsApp Marketing Platform 2026 | AI Chatbot Builder - Ask Meister" />
         <meta property="og:description" content="WhatsApp marketing platform: bulk messaging, WhatsApp Business API & AI chatbot. Automate campaigns. Free trial – trusted by 10,000+ businesses." />
         <meta property="og:url" content="https://www.askmeister.com/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Best WhatsApp Marketing Platform 2024 | AI Chatbot Builder" />
+        <meta name="twitter:title" content="Best WhatsApp Marketing Platform 2026 | AI Chatbot Builder" />
         <meta name="twitter:description" content="WhatsApp marketing platform: bulk messaging, WhatsApp Business API & AI chatbot. Free trial – trusted by 10,000+ businesses." />
       </Helmet>
       

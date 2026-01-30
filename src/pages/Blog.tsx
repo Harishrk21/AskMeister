@@ -13,18 +13,18 @@ const Blog = () => {
       excerpt: 'Discover proven automation strategies that can boost your customer engagement and sales. Learn from real case studies and best practices.',
       image: 'https://images.pexels.com/photos/3985062/pexels-photo-3985062.jpeg?auto=compress&cs=tinysrgb&w=600',
       author: 'Sarah Johnson',
-      date: '2024-01-15',
+      date: '2026-01-15',
       category: 'Marketing Tips',
       readTime: '8 min read',
       featured: true
     },
     {
       slug: 'whatsapp-business-api-complete-guide',
-      title: 'WhatsApp Business API: Complete Guide for 2024',
+      title: 'WhatsApp Business API: Complete Guide for 2026',
       excerpt: 'Everything you need to know about WhatsApp Business API, from setup to advanced features. Maximize your business communication potential.',
       image: 'https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=600',
       author: 'Michael Chen',
-      date: '2024-01-12',
+      date: '2026-01-12',
       category: 'API',
       readTime: '12 min read',
       featured: false
@@ -35,7 +35,7 @@ const Blog = () => {
       excerpt: 'Learn how to create compelling broadcast messages that your customers actually want to read. Increase open rates and drive more conversions.',
       image: 'https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&w=600',
       author: 'Emily Rodriguez',
-      date: '2024-01-10',
+      date: '2026-01-10',
       category: 'Broadcasts',
       readTime: '6 min read',
       featured: false
@@ -46,7 +46,7 @@ const Blog = () => {
       excerpt: 'Step-by-step guide to creating a WhatsApp chatbot that helps customers, answers questions, and drives more sales for your online store.',
       image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=600',
       author: 'David Kim',
-      date: '2024-01-08',
+      date: '2026-01-08',
       category: 'Chatbots',
       readTime: '10 min read',
       featured: false
@@ -57,7 +57,7 @@ const Blog = () => {
       excerpt: 'Learn how to provide exceptional customer support through WhatsApp. Reduce response times and improve customer satisfaction.',
       image: 'https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=600',
       author: 'Lisa Wang',
-      date: '2024-01-05',
+      date: '2026-01-05',
       category: 'Marketing Tips',
       readTime: '7 min read',
       featured: false
@@ -68,7 +68,7 @@ const Blog = () => {
       excerpt: 'Create automated workflows that nurture leads, onboard customers, and drive repeat sales. Boost your ROI with smart automation.',
       image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600',
       author: 'Robert Taylor',
-      date: '2024-01-03',
+      date: '2026-01-03',
       category: 'Automation',
       readTime: '9 min read',
       featured: false

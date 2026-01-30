@@ -252,7 +252,7 @@ const Chatbots = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/Contact" className="bg-[#25D366] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#128C7E] transition-colors inline-flex items-center justify-center">
+                <Link to="/contact" className="bg-[#25D366] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#128C7E] transition-colors inline-flex items-center justify-center">
                   Build Your Bot
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>

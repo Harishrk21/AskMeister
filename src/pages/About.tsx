@@ -55,7 +55,7 @@ const About = () => {
       description: 'Released our WhatsApp marketing platform with pre-approved templates, click-to-action forms & no spam flags.'
     },
     {
-      year: '2025',
+      year: '2026',
       title: 'Early Traction',
       description: 'Ask Meister™ adopted by businesses seeking low-cost, high-impact marketing via WhatsApp.'
     }
