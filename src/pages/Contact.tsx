@@ -22,7 +22,7 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = () => {
     // Form submits to FormSubmit.co – no preventDefault so POST goes through
   };
 
@@ -331,7 +331,7 @@ const Contact = () => {
                 <span className="text-2xl">💰</span>
               </div>
               <h3 className="text-xl font-semibold text-[#1C1C1C] mb-2">Affordable Pricing</h3>
-              <p className="text-gray-600">₹8,000/month for all features - no hidden costs</p>
+              <p className="text-gray-600">₹8,000/year for all features - no hidden costs</p>
             </div>
             
             <div className="text-center">

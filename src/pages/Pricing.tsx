@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { CheckCircle, ArrowRight, MessageCircle, Users, Zap, BarChart3, Bot, Shield } from 'lucide-react';
+import { ArrowRight, MessageCircle, Users, Zap, BarChart3, Bot, Shield } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 const Pricing = () => {
   const features = [
@@ -20,7 +19,7 @@ const Pricing = () => {
 
   const faqs = [
     {
-      question: 'What\'s included in the ₹8,000/month plan?',
+      question: 'What\'s included in the ₹8,000/year plan?',
       answer: 'Everything! Unlimited messages, contacts, AI chatbots, automation, analytics, team collaboration, and 24/7 support. No hidden costs or usage limits.'
     },
     {
@@ -58,11 +57,11 @@ const Pricing = () => {
   return (
     <>
       <Helmet>
-        <title>WhatsApp Marketing Pricing | ₹8,000/month All Features | Trusted WhatsApp API</title>
-        <meta name="description" content="WhatsApp marketing pricing: ₹8,000/month – bulk messaging, WhatsApp Business API, AI chatbot, automation. No hidden costs. Start free trial." />
+        <title>WhatsApp Marketing Pricing | ₹8,000/year All Features | Trusted WhatsApp API</title>
+        <meta name="description" content="WhatsApp marketing pricing: ₹8,000/year – bulk messaging, WhatsApp Business API, AI chatbot, automation. No hidden costs. Start free trial." />
         <meta name="keywords" content="whatsapp marketing pricing, whatsapp api pricing, chatbot pricing, bulk messaging cost, whatsapp automation pricing, business messaging rates, affordable whatsapp marketing" />
         <link rel="canonical" href="https://www.askmeister.com/pricing" />
-        <meta property="og:title" content="WhatsApp Marketing Pricing | ₹8,000/month All Features" />
+        <meta property="og:title" content="WhatsApp Marketing Pricing | ₹8,000/year All Features" />
         <meta property="og:description" content="Simple, transparent pricing for complete WhatsApp marketing solution. All features included." />
         <meta property="og:url" content="https://www.askmeister.com/pricing" />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -163,7 +162,7 @@ const Pricing = () => {
                 <span className="text-2xl">✅</span>
               </div>
               <h3 className="text-xl font-semibold text-[#1C1C1C] mb-2">No Hidden Costs</h3>
-              <p className="text-gray-600">₹8,000/month includes everything. No surprise charges, no usage limits, no extra fees.</p>
+              <p className="text-gray-600">₹8,000/year includes everything. No surprise charges, no usage limits, no extra fees.</p>
             </div>
             
             <div className="text-center">
@@ -201,7 +200,7 @@ const Pricing = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div className="bg-[#25D366]/10 p-6 rounded-lg">
                 <div className="text-3xl font-bold text-[#25D366] mb-2">₹8,000</div>
-                <div className="text-sm text-gray-600">Monthly Investment</div>
+                <div className="text-sm text-gray-600">Yearly Investment</div>
               </div>
               
               <div className="bg-green-50 p-6 rounded-lg">
