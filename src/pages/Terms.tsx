@@ -8,7 +8,14 @@ const Terms = () => {
       <Helmet>
         <title>Terms of Service | Ask Meister WhatsApp Marketing Platform</title>
         <meta name="description" content="Terms of Service for Ask Meister. Read our terms governing use of our WhatsApp marketing, chatbot, and automation platform." />
+        <meta name="keywords" content="ask meister terms, terms of service, whatsapp marketing terms, business messaging terms, platform terms and conditions, ask meister legal" />
         <link rel="canonical" href="https://www.askmeister.com/terms" />
+        <meta property="og:title" content="Terms of Service | Ask Meister" />
+        <meta property="og:description" content="Read Ask Meister terms governing use of WhatsApp marketing, chatbot, and automation services." />
+        <meta property="og:url" content="https://www.askmeister.com/terms" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Terms of Service | Ask Meister" />
+        <meta name="twitter:description" content="Review the terms for using Ask Meister services." />
       </Helmet>
     <div className="pt-16">
       {/* Header */}

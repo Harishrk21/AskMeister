@@ -6,105 +6,233 @@ import { Calendar, User, ArrowLeft, Share2, BookOpen, Tag, Clock } from 'lucide-
 const BlogDetail = () => {
   const { slug } = useParams();
 
-  // Mock blog post data - in real app, this would come from an API
-  const blogPost = {
-    slug: 'whatsapp-marketing-automation-guide',
-    title: '10 WhatsApp Marketing Automation Strategies That Actually Work',
-    excerpt: 'Discover proven automation strategies that can boost your customer engagement and sales. Learn from real case studies and best practices.',
-    content: `
-      <h2>Introduction</h2>
-      <p>WhatsApp marketing automation has revolutionized how businesses communicate with their customers. With over 2 billion active users worldwide, WhatsApp provides an unparalleled opportunity to reach customers where they are most active.</p>
-      
-      <h2>Why WhatsApp Marketing Automation Matters</h2>
-      <p>In today's fast-paced digital world, customers expect instant responses and personalized experiences. WhatsApp marketing automation allows businesses to:</p>
-      <ul>
-        <li>Provide 24/7 customer support</li>
-        <li>Send personalized messages at scale</li>
-        <li>Automate repetitive tasks</li>
-        <li>Increase customer engagement rates</li>
-        <li>Drive more sales and conversions</li>
-      </ul>
-      
-      <h2>10 Proven WhatsApp Marketing Automation Strategies</h2>
-      
-      <h3>1. Welcome Message Automation</h3>
-      <p>Set up automated welcome messages for new subscribers. This creates a great first impression and sets expectations for future communications.</p>
-      
-      <h3>2. Abandoned Cart Recovery</h3>
-      <p>Automatically send reminders to customers who have left items in their shopping cart. Include product images and a direct checkout link.</p>
-      
-      <h3>3. Order Confirmation and Updates</h3>
-      <p>Keep customers informed about their orders with automated messages for confirmation, shipping updates, and delivery notifications.</p>
-      
-      <h3>4. Birthday and Anniversary Messages</h3>
-      <p>Send personalized birthday wishes and anniversary messages with special offers to make customers feel valued.</p>
-      
-      <h3>5. Lead Nurturing Sequences</h3>
-      <p>Create automated sequences to nurture leads based on their interests and behavior. Provide valuable content and gradually introduce your products.</p>
-      
-      <h3>6. Customer Feedback Collection</h3>
-      <p>Automatically ask for feedback after purchases or service interactions. Use this data to improve your offerings.</p>
-      
-      <h3>7. Appointment Reminders</h3>
-      <p>Send automated reminders for appointments, bookings, or scheduled services to reduce no-shows.</p>
-      
-      <h3>8. Reactivation Campaigns</h3>
-      <p>Automatically reach out to inactive customers with special offers or updates to re-engage them.</p>
-      
-      <h3>9. Educational Content Drip</h3>
-      <p>Share valuable educational content automatically to position your brand as an expert in your field.</p>
-      
-      <h3>10. Event and Promotion Announcements</h3>
-      <p>Automatically notify customers about upcoming events, sales, or new product launches.</p>
-      
-      <h2>Best Practices for WhatsApp Automation</h2>
-      <ul>
-        <li>Always get explicit consent before adding contacts</li>
-        <li>Keep messages concise and valuable</li>
-        <li>Personalize messages using customer data</li>
-        <li>Test different message timings</li>
-        <li>Monitor engagement metrics regularly</li>
-        <li>Provide easy opt-out options</li>
-      </ul>
-      
-      <h2>Conclusion</h2>
-      <p>WhatsApp marketing automation is a powerful tool that can significantly boost your business growth when implemented correctly. Start with these proven strategies and gradually expand your automation as you learn what works best for your audience.</p>
-      
-      <p>Ready to implement these strategies? <a href="/pricing">Get started with Ask Meister</a> and take your WhatsApp marketing to the next level.</p>
-    `,
-    image: 'https://images.pexels.com/photos/3985062/pexels-photo-3985062.jpeg?auto=compress&cs=tinysrgb&w=800',
-    author: 'Sarah Johnson',
-    date: '2026-01-15',
-    category: 'Marketing Tips',
-    readTime: '8 min read',
-    tags: ['automation', 'marketing', 'whatsapp', 'strategy']
-  };
-
-  const relatedPosts = [
-    {
+  const postsBySlug = {
+    'whatsapp-marketing-automation-guide': {
+      slug: 'whatsapp-marketing-automation-guide',
+      title: '10 WhatsApp Marketing Automation Strategies That Actually Work',
+      excerpt: 'Discover proven automation strategies that can boost your customer engagement and sales. Learn from real case studies and best practices.',
+      content: `
+        <h2>Why automation matters for modern WhatsApp marketing</h2>
+        <p>Customers expect fast, personalized communication. WhatsApp automation helps teams deliver that experience without increasing manual workload. The goal is not to remove human support, but to free your team for high-value conversations.</p>
+        <h2>10 strategies that consistently improve performance</h2>
+        <h3>1. Welcome flow with segmentation</h3>
+        <p>Use the first interaction to collect intent, product interest, and preferred language. This creates cleaner lists and better campaign targeting.</p>
+        <h3>2. Abandoned cart reminders</h3>
+        <p>Trigger reminders based on cart events. Include dynamic product info and one-click checkout links for recovery.</p>
+        <h3>3. Order lifecycle notifications</h3>
+        <p>Automate payment confirmations, shipping updates, and delivery alerts to reduce support tickets.</p>
+        <h3>4. Lead qualification chatbot</h3>
+        <p>Ask 3-5 key questions and route qualified leads to sales instantly.</p>
+        <h3>5. Re-engagement campaigns</h3>
+        <p>Create inactivity-based automations to bring back dormant contacts with relevant offers.</p>
+        <h3>6. Feedback loop after purchase</h3>
+        <p>Collect NPS or star ratings and trigger follow-up actions based on satisfaction level.</p>
+        <h3>7. Appointment reminders</h3>
+        <p>Reduce no-shows using scheduled reminders and reschedule quick actions.</p>
+        <h3>8. Educational drip sequences</h3>
+        <p>Send structured learning content to nurture leads over time.</p>
+        <h3>9. Event and launch broadcasts</h3>
+        <p>Use targeted lists to announce webinars, launches, or offers with better relevance.</p>
+        <h3>10. Human takeover automation</h3>
+        <p>Define intent-based handoff rules so high-intent chats move to an agent without delay.</p>
+        <h2>Execution checklist</h2>
+        <ul>
+          <li>Collect clear opt-in before campaigns.</li>
+          <li>Map events to workflows before building automations.</li>
+          <li>Track conversion and response time by campaign.</li>
+          <li>Review automation outcomes weekly and optimize.</li>
+        </ul>
+      `,
+      image: 'https://images.pexels.com/photos/3985062/pexels-photo-3985062.jpeg?auto=compress&cs=tinysrgb&w=800',
+      author: 'Ask Meister Team',
+      date: '2026-01-15',
+      category: 'Marketing Tips',
+      readTime: '8 min read',
+      tags: ['automation', 'marketing', 'whatsapp', 'strategy']
+    },
+    'whatsapp-business-api-complete-guide': {
       slug: 'whatsapp-business-api-complete-guide',
       title: 'WhatsApp Business API: Complete Guide for 2026',
-      image: 'https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=300',
+      excerpt: 'Everything you need to know about WhatsApp Business API, from setup to advanced features. Maximize your business communication potential.',
+      content: `
+        <h2>What the WhatsApp Business API is</h2>
+        <p>The API enables scalable business messaging on WhatsApp with template messaging, webhook-based events, and automation support. It is built for teams that need reliability, governance, and integration with CRM and backend systems.</p>
+        <h2>Core capabilities you should use first</h2>
+        <ul>
+          <li>Template messaging for outbound notifications and campaigns.</li>
+          <li>Webhook events for delivery, read receipts, and replies.</li>
+          <li>Conversation routing to support and sales teams.</li>
+          <li>Contact segmentation and campaign analytics.</li>
+        </ul>
+        <h2>Implementation roadmap</h2>
+        <h3>Step 1: Business verification and onboarding</h3>
+        <p>Complete business setup and number verification to avoid delays later.</p>
+        <h3>Step 2: Template strategy</h3>
+        <p>Prepare category-specific templates (utility, authentication, marketing) with clear CTA flow.</p>
+        <h3>Step 3: CRM integration</h3>
+        <p>Connect customer attributes and lifecycle stages for personalized messaging.</p>
+        <h3>Step 4: Automation triggers</h3>
+        <p>Use events such as cart abandonment, payment success, and support ticket status changes.</p>
+        <h3>Step 5: Monitoring and optimization</h3>
+        <p>Track quality rating, delivery rates, and response outcomes to maintain performance.</p>
+        <h2>Common mistakes to avoid</h2>
+        <ul>
+          <li>Sending broad messages without segmentation.</li>
+          <li>Using long, unclear templates with weak CTA.</li>
+          <li>Not setting up escalation from bot to human.</li>
+          <li>Ignoring analytics after deployment.</li>
+        </ul>
+      `,
+      image: 'https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=800',
+      author: 'Ask Meister Team',
+      date: '2026-01-12',
       category: 'API',
-      readTime: '12 min read'
+      readTime: '12 min read',
+      tags: ['whatsapp api', 'integration', 'automation', 'business']
     },
-    {
+    'broadcast-messages-best-practices': {
       slug: 'broadcast-messages-best-practices',
-      title: 'WhatsApp Broadcast Messages: Best Practices',
-      image: 'https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&w=300',
+      title: 'WhatsApp Broadcast Messages: Best Practices for Higher Engagement',
+      excerpt: 'Learn how to create compelling broadcast messages that your customers actually want to read. Increase open rates and drive more conversions.',
+      content: `
+        <h2>Broadcast performance depends on relevance</h2>
+        <p>The strongest broadcast campaigns are segmented, short, and timing-aware. Generic messaging causes lower replies and can reduce quality outcomes.</p>
+        <h2>Best practices for campaigns that convert</h2>
+        <h3>Segment before sending</h3>
+        <p>Build audiences by behavior, purchase stage, geography, and language.</p>
+        <h3>Write clear CTA-first copy</h3>
+        <p>Use one objective per campaign and one CTA per message.</p>
+        <h3>Optimize timing windows</h3>
+        <p>Test send times by segment and avoid over-frequency.</p>
+        <h3>Use templates with dynamic fields</h3>
+        <p>Personalization improves relevance and click-through performance.</p>
+        <h3>Measure and iterate</h3>
+        <p>Track delivery, read rate, replies, clicks, and downstream conversions.</p>
+        <h2>Quick campaign QA checklist</h2>
+        <ul>
+          <li>Audience and message intent match.</li>
+          <li>Template is approved and personalized.</li>
+          <li>CTA destination is mobile friendly.</li>
+          <li>UTM tags and attribution are in place.</li>
+        </ul>
+      `,
+      image: 'https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&w=800',
+      author: 'Ask Meister Team',
+      date: '2026-01-10',
       category: 'Broadcasts',
-      readTime: '6 min read'
+      readTime: '6 min read',
+      tags: ['broadcast', 'campaigns', 'engagement', 'messaging']
     },
-    {
+    'chatbot-ecommerce-sales': {
       slug: 'chatbot-ecommerce-sales',
-      title: 'How to Build a WhatsApp Chatbot for E-commerce',
-      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=300',
+      title: 'How to Build a WhatsApp Chatbot That Increases E-commerce Sales',
+      excerpt: 'Step-by-step guide to creating a WhatsApp chatbot that helps customers, answers questions, and drives more sales for your online store.',
+      content: `
+        <h2>Why ecommerce chatbots drive revenue</h2>
+        <p>WhatsApp chatbots can handle high-intent conversations in real time, reduce friction in buying journeys, and improve repeat purchases.</p>
+        <h2>Blueprint for a conversion-focused ecommerce bot</h2>
+        <h3>Intent-based entry points</h3>
+        <p>Start with order tracking, product discovery, and support intents.</p>
+        <h3>Catalog and recommendation flow</h3>
+        <p>Use preference questions to recommend SKUs and bundles.</p>
+        <h3>Abandoned cart recovery</h3>
+        <p>Trigger personalized reminders with direct checkout links.</p>
+        <h3>Post-purchase support</h3>
+        <p>Automate delivery updates and reorder prompts.</p>
+        <h3>Agent handoff rules</h3>
+        <p>Route complex queries or high-value buyers to a live agent.</p>
+        <h2>Metrics that matter</h2>
+        <ul>
+          <li>Conversation-to-checkout conversion rate.</li>
+          <li>Recovered cart value.</li>
+          <li>Support response time reduction.</li>
+          <li>Repeat order rate after bot interactions.</li>
+        </ul>
+      `,
+      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
+      author: 'Ask Meister Team',
+      date: '2026-01-08',
       category: 'Chatbots',
-      readTime: '10 min read'
+      readTime: '10 min read',
+      tags: ['ecommerce', 'chatbot', 'sales', 'conversion']
+    },
+    'customer-support-whatsapp': {
+      slug: 'customer-support-whatsapp',
+      title: 'Transforming Customer Support with WhatsApp: A Complete Guide',
+      excerpt: 'Learn how to provide exceptional customer support through WhatsApp. Reduce response times and improve customer satisfaction.',
+      content: `
+        <h2>Support teams need speed and context</h2>
+        <p>WhatsApp support works best when teams combine automation for repetitive tasks and human agents for complex issues.</p>
+        <h2>Support framework that scales</h2>
+        <h3>Unified inbox and assignment logic</h3>
+        <p>Distribute conversations by queue, language, and priority.</p>
+        <h3>Auto-responses for first touch</h3>
+        <p>Share acknowledgement, expected response time, and self-help options.</p>
+        <h3>Knowledge shortcuts for agents</h3>
+        <p>Use template snippets and macros for common issues.</p>
+        <h3>SLA and escalation rules</h3>
+        <p>Promote unresolved conversations to senior agents automatically.</p>
+        <h2>Key support outcomes</h2>
+        <ul>
+          <li>Lower first response time.</li>
+          <li>Higher resolution within SLA.</li>
+          <li>Improved CSAT via faster updates.</li>
+          <li>Reduced repetitive support workload.</li>
+        </ul>
+      `,
+      image: 'https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=800',
+      author: 'Ask Meister Team',
+      date: '2026-01-05',
+      category: 'Marketing Tips',
+      readTime: '7 min read',
+      tags: ['support', 'customer experience', 'whatsapp', 'operations']
+    },
+    'automation-workflows-setup': {
+      slug: 'automation-workflows-setup',
+      title: 'Setting Up WhatsApp Automation Workflows for Maximum ROI',
+      excerpt: 'Create automated workflows that nurture leads, onboard customers, and drive repeat sales. Boost your ROI with smart automation.',
+      content: `
+        <h2>Workflow design drives ROI</h2>
+        <p>High-performing workflows map directly to lifecycle stages: acquisition, activation, retention, and expansion.</p>
+        <h2>Workflow architecture for business impact</h2>
+        <h3>Lead capture to qualification</h3>
+        <p>Use short qualification paths and branch based on intent.</p>
+        <h3>Onboarding sequences</h3>
+        <p>Guide users through setup milestones with timed nudges.</p>
+        <h3>Retention and win-back</h3>
+        <p>Trigger campaigns based on inactivity or churn indicators.</p>
+        <h3>Upsell and cross-sell paths</h3>
+        <p>Promote relevant offers from behavior and purchase history.</p>
+        <h2>How to optimize monthly</h2>
+        <ul>
+          <li>Audit drop-off points in each flow branch.</li>
+          <li>Run message-copy A/B tests.</li>
+          <li>Refine trigger timing by segment.</li>
+          <li>Link campaign outcomes to revenue events.</li>
+        </ul>
+      `,
+      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
+      author: 'Ask Meister Team',
+      date: '2026-01-03',
+      category: 'Automation',
+      readTime: '9 min read',
+      tags: ['workflow', 'automation', 'roi', 'lifecycle']
     }
-  ];
+  } as const;
 
-  const canonicalUrl = `https://www.askmeister.com/blog/${blogPost.slug}`;
+  const blogPost = postsBySlug[slug as keyof typeof postsBySlug] || postsBySlug['whatsapp-marketing-automation-guide'];
+  const hasMatchedSlug = Boolean(slug && postsBySlug[slug as keyof typeof postsBySlug]);
+  const relatedPosts = Object.values(postsBySlug).filter((post) => post.slug !== blogPost.slug).slice(0, 3);
+
+  const canonicalSlug = hasMatchedSlug ? slug! : blogPost.slug;
+  const canonicalUrl = `https://www.askmeister.com/blog/${canonicalSlug}`;
+  const keywordContent = [
+    'whatsapp marketing',
+    'whatsapp automation',
+    'whatsapp business api',
+    'chatbot marketing',
+    ...blogPost.tags
+  ].join(', ');
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -128,6 +256,8 @@ const BlogDetail = () => {
       <Helmet>
         <title>{blogPost.title} | Ask Meister Blog</title>
         <meta name="description" content={blogPost.excerpt} />
+        <meta name="keywords" content={keywordContent} />
+        {!hasMatchedSlug && <meta name="robots" content="noindex,follow" />}
         <link rel="canonical" href={canonicalUrl} />
         <meta property="og:title" content={`${blogPost.title} | Ask Meister`} />
         <meta property="og:description" content={blogPost.excerpt} />

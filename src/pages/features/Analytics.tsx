@@ -48,25 +48,25 @@ const Analytics = () => {
       title: 'Message Delivery',
       description: 'Track successful message deliveries',
       icon: '📨',
-      value: '99.9%'
+      value: 'Dashboard'
     },
     {
       title: 'Open Rates',
       description: 'Monitor message open and read rates',
       icon: '👁️',
-      value: '95%'
+      value: 'Trends'
     },
     {
       title: 'Response Rate',
       description: 'Measure customer engagement',
       icon: '💬',
-      value: '45%'
+      value: 'Engagement'
     },
     {
       title: 'Conversion Rate',
       description: 'Track sales and conversions',
       icon: '🎯',
-      value: '12%'
+      value: 'Funnels'
     }
   ];
 
@@ -82,8 +82,8 @@ const Analytics = () => {
       icon: Clock
     },
     {
-      metric: '50+',
-      description: 'Analytics metrics',
+      metric: 'Metrics',
+      description: 'Campaign & channel signals',
       icon: BarChart3
     },
     {
@@ -98,7 +98,7 @@ const Analytics = () => {
       <Helmet>
         <title>WhatsApp Marketing Analytics | Business Insights & Performance Tracking | Ask Meister</title>
         <meta name="description" content="WhatsApp marketing analytics: track bulk messaging, chatbot & campaign performance. Delivery rates, ROI, real-time reports. Free with Ask Meister." />
-        <meta name="keywords" content="whatsapp analytics, business insights, marketing analytics, performance tracking, whatsapp metrics, campaign analytics, roi tracking, engagement analytics, marketing reports" />
+        <meta name="keywords" content="whatsapp analytics dashboard, whatsapp campaign tracking, whatsapp click tracking, whatsapp engagement analytics, whatsapp marketing insights, whatsapp message analytics" />
         <link rel="canonical" href="https://www.askmeister.com/features/analytics" />
         <meta property="og:title" content="WhatsApp Marketing Analytics | Business Insights" />
         <meta property="og:description" content="Advanced analytics and business insights for WhatsApp marketing campaigns and customer engagement." />

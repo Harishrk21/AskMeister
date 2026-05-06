@@ -24,7 +24,7 @@ const BulkMessaging = () => {
       icon: Send,
       title: 'Instant Broadcasting',
       description: 'Send messages to thousands of contacts instantly with our high-speed delivery engine.',
-      benefits: ['99.9% delivery rate', 'Real-time sending', 'No delays or queues']
+      benefits: ['Delivery visibility in-product', 'Real-time sending where supported', 'Queue-friendly batching']
     },
     {
       icon: Target,
@@ -99,23 +99,23 @@ const BulkMessaging = () => {
 
   const benefits = [
     {
-      metric: '10,000+',
-      description: 'Messages per minute',
+      metric: 'Templates',
+      description: 'Approved WhatsApp template workflows',
       icon: Send
     },
     {
-      metric: '99.9%',
-      description: 'Delivery success rate',
+      metric: 'Lists',
+      description: 'Segments built from opted-in contacts',
       icon: Target
     },
     {
-      metric: '5x',
-      description: 'Higher engagement than email',
+      metric: 'Reports',
+      description: 'Delivery & engagement visibility',
       icon: BarChart3
     },
     {
-      metric: '24/7',
-      description: 'Campaign monitoring',
+      metric: 'Compliance',
+      description: 'Designed around Meta policies',
       icon: Clock
     }
   ];
@@ -123,12 +123,12 @@ const BulkMessaging = () => {
   return (
       <>
       <Helmet>
-        <title>WhatsApp Bulk Messaging | Send Thousands of Messages Instantly | Ask Meister</title>
-        <meta name="description" content="Bulk WhatsApp messaging: send thousands of messages instantly. WhatsApp bulk sender with 99.9% delivery, templates & analytics. Start free trial." />
-        <meta name="keywords" content="whatsapp bulk messaging, bulk whatsapp sender, mass whatsapp messaging, whatsapp broadcast, bulk messaging software, whatsapp marketing campaigns, promotional messages" />
+        <title>WhatsApp Bulk Messaging | Broadcasts & Templates | Ask Meister</title>
+        <meta name="description" content="Bulk WhatsApp messaging with templates, segmentation, and reporting. Actual throughput depends on WhatsApp limits, approvals, and list quality—contact us to scope volume." />
+        <meta name="keywords" content="whatsapp bulk messaging software, bulk whatsapp sender, send whatsapp messages in bulk, whatsapp broadcast tool, whatsapp mass messaging, whatsapp campaign sender" />
         <link rel="canonical" href="https://www.askmeister.com/features/bulk-messaging" />
-        <meta property="og:title" content="WhatsApp Bulk Messaging | Send Thousands Instantly" />
-        <meta property="og:description" content="Professional bulk messaging solution with 99.9% delivery rate and smart targeting." />
+        <meta property="og:title" content="WhatsApp Bulk Messaging | Ask Meister" />
+        <meta property="og:description" content="Broadcast campaigns using approved WhatsApp templates, segmentation, and analytics." />
         <meta property="og:url" content="https://www.askmeister.com/features/bulk-messaging" />
       </Helmet>
     <div className="pt-16">
@@ -143,12 +143,11 @@ const BulkMessaging = () => {
                   Bulk Messaging Feature
                 </div>
                 <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
-                  Reach Thousands with
-                  <span className="text-green-600 block">Bulk WhatsApp Messages</span>
+                  Bulk WhatsApp messaging
+                  <span className="text-green-600 block">Broadcasts &amp; campaigns</span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Send personalized messages to thousands of contacts instantly. Our powerful bulk messaging 
-                  engine ensures high delivery rates and maximum engagement for your campaigns.
+                  Send template-based messages to opted-in audiences. Delivery and engagement depend on Meta policies, template approval, and list quality—not guaranteed rates.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -156,7 +155,7 @@ const BulkMessaging = () => {
                   to="/contact"
                   className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center"
                 >
-                  Start Free Trial
+                  Request demo
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 <Link
@@ -279,14 +278,14 @@ const BulkMessaging = () => {
             Ready to Start Bulk Messaging?
           </h2>
           <p className="text-lg text-green-100 mb-8">
-            Join thousands of businesses already using our bulk messaging feature to grow their customer engagement.
+            Ask Meister helps teams in Tamil Nadu and India run compliant bulk messaging flows—scope fit on a call.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
               className="bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
             >
-              Start Free Trial
+              Contact sales
             </Link>
             <Link
               to="/pricing"

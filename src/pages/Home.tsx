@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
-import { MessageCircle, Users, Zap, BarChart3, CheckCircle, Star, ArrowRight, Play, Shield, Clock, TrendingUp, Bot, Globe, Award } from 'lucide-react';
+import { MessageCircle, Users, Zap, BarChart3, CheckCircle, ArrowRight, Play, Shield, Clock, TrendingUp, Bot, Globe, Award } from 'lucide-react';
 import EDU1 from '../assets/EDU1.jpg';
 import auto from '../assets/auto.png';
 import chatbot from '../assets/chatbot.png';
@@ -16,7 +16,7 @@ const Home = () => {
     {
       icon: MessageCircle,
       title: 'Bulk WhatsApp Broadcasting',
-      description: 'Send personalized messages to thousands of contacts instantly with our powerful broadcast engine.',
+      description: 'Send personalized messages to large opted-in lists using broadcast flows aligned with WhatsApp policies.',
       image: 'https://www.wati.io/wp-content/uploads/2024/11/Broadcast-new1.webp'
     },
     {
@@ -78,30 +78,18 @@ const Home = () => {
     }
   ];
 
-  const testimonials = [
+  const useCaseHighlights = [
     {
-      name: 'Sarah Johnson',
-      role: 'Marketing Director',
-      company: 'TechStart Inc.',
-      content: 'Ask Meister transformed our customer communication. We saw 300% increase in engagement rates within the first month!',
-      rating: 5,
-      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150'
+      title: 'Support & sales teams',
+      text: 'Route WhatsApp conversations to the right person, use approved templates, and keep a clear history of customer context—without promising specific revenue outcomes.'
     },
     {
-      name: 'Michael Chen',
-      role: 'E-commerce Owner',
-      company: 'Fashion Forward',
-      content: 'The AI chatbots saved us 20 hours per week. Our sales increased by 45% in just 3 months with automated follow-ups.',
-      rating: 5,
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150'
+      title: 'Campaigns & reminders',
+      text: 'Send utility and marketing messages where your audience has opted in. Volume and deliverability depend on Meta policies, list quality, and template approval—not shortcuts.'
     },
     {
-      name: 'Emily Rodriguez',
-      role: 'Digital Marketer',
-      company: 'Growth Agency',
-      content: 'Best WhatsApp marketing tool we\'ve used. The ROI is incredible and the chatbot features are game-changing.',
-      rating: 5,
-      image: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=150'
+      title: 'Automation & chatbots',
+      text: 'Build flows for FAQs, lead capture, and hand-off to humans when needed. Automation should complement your team, not replace compliance.'
     }
   ];
 
@@ -194,23 +182,55 @@ const Home = () => {
     { title: 'Analytics Dashboard', link: '/features/analytics' },
     { title: 'Bulk Messaging', link: '/features/bulk-messaging' },
     { title: 'Templates Library', link: '/features/templates' },
-    { title: 'Live Chat Support', link: '/features/livechat' }
+    { title: 'Live Chat Support', link: '/features/livechat' },
+    { title: 'Chennai marketing', link: '/whatsapp-marketing-chennai' },
+    { title: 'Case studies', link: '/case-studies' }
   ];
 
   return (
     <>
     <Helmet>
-        <title>Best WhatsApp Marketing Platform 2026 | AI Chatbot Builder & Bulk Messaging Tool - Ask Meister</title>
-        <meta name="description" content="WhatsApp marketing platform: bulk messaging, WhatsApp Business API & AI chatbot builder. Send bulk messages, automate campaigns. Free trial – trusted by 10,000+ businesses." />
-        <meta name="keywords" content="whatsapp marketing, whatsapp chatbot, bulk messaging, ai chatbot builder, whatsapp api, business automation, customer engagement, whatsapp business solution, marketing automation platform, chatbot platform" />
+        <title>WhatsApp Marketing Platform in Chennai | Ask Meister</title>
+        <meta name="description" content="Ask Meister helps Tamil Nadu businesses use WhatsApp for bulk messaging, Business API campaigns, chatbots & automation. Chennai HQ. Contact us for a demo." />
+        <meta name="keywords" content="whatsapp marketing platform, whatsapp business api provider, bulk whatsapp messaging software, whatsapp chatbot builder, whatsapp marketing automation, whatsapp crm tool, whatsapp lead generation, whatsapp notification system, whatsapp engagement platform, whatsapp marketing software india, whatsapp sales automation, ecommerce whatsapp automation" />
         <link rel="canonical" href="https://www.askmeister.com/" />
-        <meta property="og:title" content="Best WhatsApp Marketing Platform 2026 | AI Chatbot Builder - Ask Meister" />
-        <meta property="og:description" content="WhatsApp marketing platform: bulk messaging, WhatsApp Business API & AI chatbot. Automate campaigns. Free trial – trusted by 10,000+ businesses." />
+        <meta property="og:title" content="WhatsApp Marketing Platform in Chennai | Ask Meister" />
+        <meta property="og:description" content="Ask Meister helps Tamil Nadu businesses use WhatsApp for bulk messaging, Business API campaigns, chatbots & automation. Demo by request." />
         <meta property="og:url" content="https://www.askmeister.com/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Best WhatsApp Marketing Platform 2026 | AI Chatbot Builder" />
-        <meta name="twitter:description" content="WhatsApp marketing platform: bulk messaging, WhatsApp Business API & AI chatbot. Free trial – trusted by 10,000+ businesses." />
+        <meta name="twitter:title" content="WhatsApp Marketing Platform in Chennai | Ask Meister" />
+        <meta name="twitter:description" content="WhatsApp Business Platform support for Tamil Nadu: bulk messaging, API onboarding, chatbots & automation." />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'What is WhatsApp marketing?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'WhatsApp marketing uses the WhatsApp Business Platform for template messaging, opted-in campaigns, and automation. Meta’s policies, pricing, and template approval apply.'
+              }
+            },
+            {
+              '@type': 'Question',
+              name: 'Does Ask Meister serve Tamil Nadu and Chennai?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes. Ask Meister supports businesses across Tamil Nadu, with operations anchored in Chennai.'
+              }
+            },
+            {
+              '@type': 'Question',
+              name: 'Do you guarantee message delivery or sales results?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'No. Outcomes depend on list quality, compliance, offers, and operations. Ask Meister provides software and guidance—not guaranteed placement or revenue.'
+              }
+            }
+          ]
+        })}</script>
       </Helmet>
       
     <div className="pt-16">
@@ -222,16 +242,14 @@ const Home = () => {
               <div className="space-y-6">
                 <div className="inline-flex items-center bg-[#25D366]/10 text-[#25D366] px-4 py-2 rounded-full text-sm font-medium">
                   <Award className="w-4 h-4 mr-2" />
-                  #1 WhatsApp Marketing Platform 2024
+                  WhatsApp Business Platform · Tamil Nadu
                 </div>
                 <h1 className="text-5xl md:text-7xl font-bold text-[#1C1C1C] leading-tight">
-                  Best WhatsApp Marketing Platform with 
-                  <span className="text-[#25D366] block">AI Chatbot Builder</span>
+                  WhatsApp marketing platform for Tamil Nadu businesses
+                  <span className="text-[#25D366] block">Bulk messaging, API &amp; chatbots</span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Transform your business with our WhatsApp marketing platform. Send bulk messages, 
-                  build AI chatbots, automate customer engagement, and grow sales with the world's 
-                  leading WhatsApp business solution trusted by 10,000+ companies.
+                  Ask Meister helps you run compliant WhatsApp campaigns: broadcasts with approved templates, chatbots and automation, and analytics—without shortcuts that risk account quality.
                 </p>
               </div>
               
@@ -240,7 +258,7 @@ const Home = () => {
                   to="/contact"
                   className="bg-[#25D366] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#128C7E] transition-all duration-300 inline-flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
-                  Start Free Trial
+                  Request a demo
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 <button
@@ -292,6 +310,31 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="py-8 bg-[#F0FFF4] border-b border-[#25D366]/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <p className="text-gray-700 text-sm md:text-base">
+            Based in Chennai — WhatsApp marketing for Tamil Nadu:{' '}
+            <span className="text-[#128C7E] font-medium">Chennai</span>,{' '}
+            <span className="text-[#128C7E] font-medium">Coimbatore</span>,{' '}
+            <span className="text-[#128C7E] font-medium">Madurai</span>, and statewide.
+          </p>
+          <div className="flex flex-wrap gap-3 shrink-0">
+            <Link
+              to="/whatsapp-marketing-chennai"
+              className="text-sm font-semibold text-[#25D366] hover:text-[#128C7E] underline underline-offset-2"
+            >
+              Chennai page
+            </Link>
+            <Link
+              to="/whatsapp-marketing-tamil-nadu"
+              className="text-sm font-semibold text-[#25D366] hover:text-[#128C7E] underline underline-offset-2"
+            >
+              Tamil Nadu page
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Quick Navigation Links for SEO */}
       <section className="py-12 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -301,7 +344,7 @@ const Home = () => {
             </h2>
             <p className="text-gray-600">Quick access to our key features and services</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
             {quickLinks.map((link, index) => (
               <Link
                 key={index}
@@ -536,50 +579,62 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Honest use-case framing (no fabricated testimonials) */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h3 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
-              Why 10,000+ Businesses Trust Our WhatsApp Marketing Platform
-            </h3>
-            <p className="text-lg text-gray-600">
-              See what our customers are saying about Ask Meister's WhatsApp marketing and chatbot solutions
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
+              How teams use WhatsApp with Ask Meister
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              The examples below describe typical patterns—not guaranteed results. Every business must follow WhatsApp and Meta policies, obtain opt-in where required, and get templates approved.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-                <div className="flex items-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-600 mb-6 italic">"{testimonial.content}"</p>
-                <div className="flex items-center">
-                  <img
-                    src={testimonial.image}
-                    alt={`${testimonial.name} - ${testimonial.company} WhatsApp Marketing Success Story`}
-                    className="w-12 h-12 rounded-full mr-4"
-                  />
-                  <div>
-                    <div className="font-semibold text-[#1C1C1C]">{testimonial.name}</div>
-                    <div className="text-sm text-gray-500">{testimonial.role} at {testimonial.company}</div>
-                  </div>
-                </div>
+            {useCaseHighlights.map((item, index) => (
+              <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <CheckCircle className="w-10 h-10 text-[#25D366] mb-4" />
+                <h3 className="text-xl font-semibold text-[#1C1C1C] mb-3">{item.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
 
           <div className="text-center mt-12">
-            <Link
-              to="/about"
-              className="text-[#25D366] hover:underline font-medium"
-            >
-              Read more customer success stories →
+            <Link to="/case-studies" className="text-[#25D366] hover:underline font-medium">
+              Case studies &amp; stories →
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white border-y border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-gray-700 space-y-4 leading-relaxed">
+          <h2 className="text-2xl font-bold text-[#1C1C1C] mb-4">WhatsApp marketing in Tamil Nadu &amp; Chennai</h2>
+          <p>
+            Customers in Chennai, Coimbatore, Madurai, and smaller towns already rely on WhatsApp for daily communication. For businesses, that means support, reminders, and marketing must respect user
+            expectations: clear opt-in, transparent frequency, and messages that match approved WhatsApp categories (utility, authentication, marketing where allowed).
+          </p>
+          <p>
+            Ask Meister focuses on the WhatsApp Business Platform—template workflows, team inbox behavior, automation that hands off to humans when needed, and reporting you can act on. We do not promise
+            search rankings, viral reach, or specific revenue; those outcomes depend on your offer, operations, and compliance.
+          </p>
+          <p>
+            If you serve retail, education, clinics, real estate, or services, start from our{' '}
+            <Link to="/whatsapp-api" className="text-[#25D366] hover:underline">
+              WhatsApp API overview
+            </Link>
+            ,{' '}
+            <Link to="/features/bulk-messaging" className="text-[#25D366] hover:underline">
+              bulk messaging
+            </Link>
+            , and{' '}
+            <Link to="/contact" className="text-[#25D366] hover:underline">
+              contact
+            </Link>{' '}
+            team for onboarding questions.
+          </p>
         </div>
       </section>
 
@@ -620,6 +675,8 @@ const Home = () => {
               <ul className="space-y-2 text-sm">
                 <li><Link to="/pricing" className="text-gray-600 hover:text-[#25D366]">Pricing Plans</Link></li>
                 <li><Link to="/whatsapp-api" className="text-gray-600 hover:text-[#25D366]">WhatsApp API</Link></li>
+                <li><Link to="/whatsapp-marketing-chennai" className="text-gray-600 hover:text-[#25D366]">Chennai marketing</Link></li>
+                <li><Link to="/whatsapp-marketing-tamil-nadu" className="text-gray-600 hover:text-[#25D366]">Tamil Nadu marketing</Link></li>
                 <li><Link to="/tools" className="text-gray-600 hover:text-[#25D366]">Marketing Tools</Link></li>
                 <li><Link to="/blog" className="text-gray-600 hover:text-[#25D366]">Marketing Blog</Link></li>
                 <li><Link to="/help" className="text-gray-600 hover:text-[#25D366]">Help Center</Link></li>
@@ -631,6 +688,8 @@ const Home = () => {
               <ul className="space-y-2 text-sm">
                 <li><Link to="/about" className="text-gray-600 hover:text-[#25D366]">About Ask Meister</Link></li>
                 <li><Link to="/contact" className="text-gray-600 hover:text-[#25D366]">Contact Sales</Link></li>
+                <li><Link to="/case-studies" className="text-gray-600 hover:text-[#25D366]">Case studies</Link></li>
+                <li><Link to="/free-trial" className="text-gray-600 hover:text-[#25D366]">Get started</Link></li>
                 <li><Link to="/careers" className="text-gray-600 hover:text-[#25D366]">Careers</Link></li>
                 <li><Link to="/affiliate" className="text-gray-600 hover:text-[#25D366]">Partner Program</Link></li>
                 <li><Link to="/privacy" className="text-gray-600 hover:text-[#25D366]">Privacy Policy</Link></li>
@@ -647,24 +706,24 @@ const Home = () => {
             Ready to Transform Your Business with WhatsApp Marketing?
           </h3>
           <p className="text-lg text-white/90 mb-8">
-            Join 10,000+ businesses already using Ask Meister's WhatsApp marketing platform to grow their revenue through automated messaging, AI chatbots, and customer engagement tools.
+            Talk to us about WhatsApp broadcasts, chatbots, and analytics for your team—anchored in Chennai, serving businesses across Tamil Nadu and India.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
               className="bg-white text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
             >
-              Start Free Trial - No Credit Card Required
+              Contact for demo
             </Link>
             <Link
-              to="/contact"
+              to="/free-trial"
               className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#25D366] transition-colors inline-flex items-center justify-center"
             >
-              Schedule Demo Call
+              How trial &amp; onboarding work
             </Link>
           </div>
           <div className="mt-6 text-sm text-white/80">
-            ✅ Free 14-day trial • ✅ No setup fees • ✅ Cancel anytime
+            Demo and onboarding terms are confirmed when you speak with our team—nothing on this page is a binding commercial offer.
           </div>
         </div>
       </section>

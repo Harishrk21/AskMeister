@@ -4,10 +4,10 @@ import { Users, Target, Award, Globe, MessageCircle, Zap, Heart, TrendingUp } fr
 import { Helmet } from 'react-helmet-async';
 const About = () => {
   const stats = [
-    { number: '50+', label: 'Projects Delivered', icon: Users },
-    { number: '500K+', label: 'Messages Delivered', icon: MessageCircle },
-    { number: '5', label: 'Years in Business', icon: Globe },
-    { number: '24/7', label: 'Global Support', icon: Award }
+    { number: 'IN', label: 'India & Tamil Nadu focus', icon: Globe },
+    { number: 'API', label: 'WhatsApp Business platform', icon: MessageCircle },
+    { number: '2024', label: 'Ask Meister launch', icon: Users },
+    { number: 'CS', label: 'Chennai registered office', icon: Award }
   ];
 
   const values = [
@@ -64,12 +64,12 @@ const About = () => {
   return (
      <>
       <Helmet>
-        <title>About Ask Meister | Leading WhatsApp Marketing Company | Top Companies Trust Us</title>
-        <meta name="description" content="About Ask Meister: WhatsApp marketing platform for bulk messaging & WhatsApp Business API. Trusted by 10,000+ businesses. Our story & mission." />
-        <meta name="keywords" content="about Ask Meister, whatsapp marketing company, top companies using chatbot, leading whatsapp platform, business communication, company story, team" />
+        <title>About Ask Meister | WhatsApp Platform for Tamil Nadu | Ask Meister</title>
+        <meta name="description" content="About Ask Meister: WhatsApp marketing software from Meister Solutions. Built for bulk messaging, Business API, and chatbots—Chennai HQ, customers across India." />
+        <meta name="keywords" content="about Ask Meister, whatsapp marketing company, whatsapp business platform, business communication, company story, meister solutions" />
         <link rel="canonical" href="https://www.askmeister.com/about" />
-        <meta property="og:title" content="About Ask Meister | Leading WhatsApp Marketing Company" />
-        <meta property="og:description" content="Discover the story behind the leading WhatsApp marketing platform trusted by businesses worldwide." />
+        <meta property="og:title" content="About Ask Meister | WhatsApp Platform for Tamil Nadu" />
+        <meta property="og:description" content="How Ask Meister helps businesses use the WhatsApp Business Platform for bulk messaging, API campaigns, and chatbots." />
         <meta property="og:url" content="https://www.askmeister.com/about" />
       </Helmet>
     <div className="pt-16">

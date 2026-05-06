@@ -95,6 +95,9 @@ const Footer = () => {
                 <li><Link to="/blog" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Blog</Link></li>
                 <li><Link to="/contact" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Contact</Link></li>
                 <li><Link to="/help" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Help Center</Link></li>
+                <li><Link to="/whatsapp-marketing-chennai" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Chennai</Link></li>
+                <li><Link to="/whatsapp-marketing-tamil-nadu" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Tamil Nadu</Link></li>
+                <li><Link to="/case-studies" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Case studies</Link></li>
               </ul>
             </div>
 
@@ -104,11 +107,11 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-4 h-4 text-[#25D366]" />
-                  <span className="text-gray-300 text-sm">harish.dev@askmeister.com</span>
+                  <span className="text-gray-300 text-sm">harishradhakrishnan2001@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-4 h-4 text-[#25D366]" />
-                  <span className="text-gray-300 text-sm">+91 90439 43736</span>
+                  <span className="text-gray-300 text-sm">+91 72998 17996</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-4 h-4 text-[#25D366]" />

@@ -343,6 +343,7 @@ END:VCARD`,
       <Helmet>
         <title>Free WhatsApp Tools | Link Generator, QR Code & Chat Button | Ask Meister</title>
         <meta name="description" content="Free WhatsApp link generator, QR code creator & chat button. Create wa.me links, QR codes for bulk messaging. No signup – use instantly." />
+        <meta name="keywords" content="whatsapp tools, whatsapp link generator, wa.me link generator, whatsapp qr code generator, whatsapp chat button, whatsapp business tools, click to whatsapp link, whatsapp utility tools" />
         <link rel="canonical" href="https://www.askmeister.com/tools" />
         <meta property="og:title" content="Free WhatsApp Tools | Link & QR Generator | Ask Meister" />
         <meta property="og:description" content="Create WhatsApp links, QR codes, and chat buttons for your website. Free tools for business." />

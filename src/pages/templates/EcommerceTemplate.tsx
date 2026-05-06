@@ -86,41 +86,24 @@ const EcommerceTemplate = () => {
 
   const benefits = [
     {
-      metric: '45%',
-      description: 'Increase in sales conversion',
+      metric: 'Orders',
+      description: 'Shipping & delivery updates',
       icon: TrendingUp
     },
     {
-      metric: '25%',
-      description: 'Cart recovery rate',
+      metric: 'Cart',
+      description: 'Recovery prompts (opt-in)',
       icon: ShoppingCart
     },
     {
-      metric: '80%',
-      description: 'Customer satisfaction',
+      metric: 'Support',
+      description: 'FAQs before human agents',
       icon: Star
     },
     {
-      metric: '60%',
-      description: 'Faster order processing',
+      metric: 'Speed',
+      description: 'Chat-first assistance',
       icon: Clock
-    }
-  ];
-
-  const testimonials = [
-    {
-      name: 'Karthika',
-      role: 'E-commerce Manager',
-      company: 'Fashion Forward Store',
-      content: 'Our cart abandonment recovery improved by 40% after implementing WhatsApp automation. Sales increased by 35% in just 2 months.',
-      image: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=150'
-    },
-    {
-      name: 'David Kumar',
-      role: 'Founder',
-      company: 'TechGadgets Online',
-      content: 'Customer support became so much easier. Our chatbot handles 80% of queries automatically, and customers love the instant responses.',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150'
     }
   ];
 
@@ -137,8 +120,8 @@ const EcommerceTemplate = () => {
      <>
       <Helmet>
         <title>WhatsApp for E-commerce | Boost Online Sales & Customer Support | Ask Meister</title>
-        <meta name="description" content="WhatsApp for e-commerce: order updates, abandoned cart recovery, bulk messaging for online stores. WooCommerce & Shopify integration. Free trial." />
-        <meta name="keywords" content="whatsapp for ecommerce, online store automation, abandoned cart recovery, order tracking, ecommerce chatbot, customer support, promotional campaigns, sales automation" />
+        <meta name="description" content="WhatsApp for e-commerce: order updates, cart reminders for opted-in shoppers, and support chat—integrations depend on your stack; contact us to confirm." />
+        <meta name="keywords" content="whatsapp shopify integration, abandoned cart whatsapp, ecommerce whatsapp automation, whatsapp ecommerce marketing" />
         <link rel="canonical" href="https://www.askmeister.com/solutions/ecommerce" />
         <meta property="og:title" content="WhatsApp for E-commerce | Boost Online Sales" />
         <meta property="og:description" content="Transform your online store with WhatsApp automation for sales, support, and customer engagement." />
@@ -170,7 +153,7 @@ const EcommerceTemplate = () => {
                   to="/pricing"
                   className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center"
                 >
-                  Start Free Trial
+                  Contact for demo
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 <Link
@@ -311,37 +294,16 @@ const EcommerceTemplate = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Honest note instead of unaudited testimonials */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              What E-commerce Owners Say
-            </h2>
-            <p className="text-lg text-gray-600">
-              Hear from store owners who transformed their business with WhatsApp
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
-                <p className="text-gray-600 mb-6 italic text-lg">"{testimonial.content}"</p>
-                <div className="flex items-center">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-16 h-16 rounded-full mr-4"
-                  />
-                  <div>
-                    <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                    <div className="text-green-600">{testimonial.role}</div>
-                    <div className="text-sm text-gray-500">{testimonial.company}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+            Results vary by store
+          </h2>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            WhatsApp can speed up order updates and support, but revenue still depends on product, pricing, and logistics. We do not publish named customer metrics unless they are verified and approved—ask
+            our team for implementation guidance instead of relying on invented success stories.
+          </p>
         </div>
       </section>
 
@@ -352,14 +314,14 @@ const EcommerceTemplate = () => {
             Ready to Boost Your E-commerce Sales?
           </h2>
           <p className="text-lg text-green-100 mb-8">
-            Join thousands of online stores already using Ask Meister to increase sales and customer satisfaction.
+            Talk to us about WhatsApp order updates, cart reminders (where permitted), and support workflows for your storefront.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/pricing"
               className="bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
             >
-              Start Free Trial
+              Contact for demo
             </Link>
             <Link
               to="/contact"

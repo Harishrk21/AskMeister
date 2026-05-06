@@ -12,7 +12,7 @@ const Blog = () => {
       title: '10 WhatsApp Marketing Automation Strategies That Actually Work',
       excerpt: 'Discover proven automation strategies that can boost your customer engagement and sales. Learn from real case studies and best practices.',
       image: 'https://images.pexels.com/photos/3985062/pexels-photo-3985062.jpeg?auto=compress&cs=tinysrgb&w=600',
-      author: 'Sarah Johnson',
+      author: 'Ask Meister Team',
       date: '2026-01-15',
       category: 'Marketing Tips',
       readTime: '8 min read',
@@ -23,7 +23,7 @@ const Blog = () => {
       title: 'WhatsApp Business API: Complete Guide for 2026',
       excerpt: 'Everything you need to know about WhatsApp Business API, from setup to advanced features. Maximize your business communication potential.',
       image: 'https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=600',
-      author: 'Michael Chen',
+      author: 'Ask Meister Team',
       date: '2026-01-12',
       category: 'API',
       readTime: '12 min read',
@@ -34,7 +34,7 @@ const Blog = () => {
       title: 'WhatsApp Broadcast Messages: Best Practices for Higher Engagement',
       excerpt: 'Learn how to create compelling broadcast messages that your customers actually want to read. Increase open rates and drive more conversions.',
       image: 'https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&w=600',
-      author: 'Emily Rodriguez',
+      author: 'Ask Meister Team',
       date: '2026-01-10',
       category: 'Broadcasts',
       readTime: '6 min read',
@@ -45,7 +45,7 @@ const Blog = () => {
       title: 'How to Build a WhatsApp Chatbot That Increases E-commerce Sales',
       excerpt: 'Step-by-step guide to creating a WhatsApp chatbot that helps customers, answers questions, and drives more sales for your online store.',
       image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=600',
-      author: 'David Kim',
+      author: 'Ask Meister Team',
       date: '2026-01-08',
       category: 'Chatbots',
       readTime: '10 min read',
@@ -56,7 +56,7 @@ const Blog = () => {
       title: 'Transforming Customer Support with WhatsApp: A Complete Guide',
       excerpt: 'Learn how to provide exceptional customer support through WhatsApp. Reduce response times and improve customer satisfaction.',
       image: 'https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=600',
-      author: 'Lisa Wang',
+      author: 'Ask Meister Team',
       date: '2026-01-05',
       category: 'Marketing Tips',
       readTime: '7 min read',
@@ -67,7 +67,7 @@ const Blog = () => {
       title: 'Setting Up WhatsApp Automation Workflows for Maximum ROI',
       excerpt: 'Create automated workflows that nurture leads, onboard customers, and drive repeat sales. Boost your ROI with smart automation.',
       image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600',
-      author: 'Robert Taylor',
+      author: 'Ask Meister Team',
       date: '2026-01-03',
       category: 'Automation',
       readTime: '9 min read',
@@ -85,8 +85,8 @@ const Blog = () => {
   return (
      <>
       <Helmet>
-        <title>WhatsApp Marketing Blog | Business Insights & Tips | Ask Meister</title>
-        <meta name="description" content="WhatsApp marketing blog: bulk messaging tips, WhatsApp Business API guides, chatbot & automation strategies. Free guides for business growth." />
+        <title>WhatsApp Marketing Tips & Guides | Ask Meister Blog</title>
+        <meta name="description" content="WhatsApp marketing blog: bulk messaging, WhatsApp Business API, chatbot and automation guidance for teams in India and Tamil Nadu." />
         <meta name="keywords" content="whatsapp marketing blog, business insights, marketing tips, automation strategies, whatsapp trends, marketing guides, business growth, customer engagement tips" />
         <link rel="canonical" href="https://www.askmeister.com/blog" />
         <meta property="og:title" content="WhatsApp Marketing Blog | Business Insights & Tips" />

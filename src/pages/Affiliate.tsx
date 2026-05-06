@@ -7,18 +7,18 @@ const Affiliate = () => {
   const benefits = [
     {
       icon: DollarSign,
-      title: 'High Commissions',
-      description: 'Earn up to 30% recurring commission on every referral that converts to a paid plan.'
+      title: 'Partner commissions',
+      description: 'Commission structure is shared with approved affiliates—terms depend on your agreement and geography.'
     },
     {
       icon: Users,
-      title: 'Lifetime Earnings',
-      description: 'Get paid for as long as your referrals remain active customers - no limits!'
+      title: 'Recurring potential',
+      description: 'Where contracts allow, partners may earn on ongoing subscriptions—exact duration is defined in your affiliate agreement.'
     },
     {
       icon: TrendingUp,
-      title: 'Growing Market',
-      description: 'WhatsApp marketing is exploding. Join the fastest-growing communication channel.'
+      title: 'Growing channel',
+      description: 'WhatsApp is widely used for business messaging in India—help teams adopt it responsibly.'
     },
     {
       icon: Gift,
@@ -29,19 +29,19 @@ const Affiliate = () => {
 
   const commissionTiers = [
     {
-      referrals: '1-10',
-      commission: '20%',
-      bonus: 'Welcome bonus: $50'
+      referrals: 'Early referrals',
+      commission: 'Rate on approval',
+      bonus: 'Outlined in partner agreement'
     },
     {
-      referrals: '11-25',
-      commission: '25%',
-      bonus: 'Performance bonus: $200'
+      referrals: 'Growing volume',
+      commission: 'Tier review',
+      bonus: 'Based on qualified conversions'
     },
     {
-      referrals: '26+',
-      commission: '30%',
-      bonus: 'Elite bonus: $500'
+      referrals: 'Established partners',
+      commission: 'Custom discussion',
+      bonus: 'Subject to compliance & caps'
     }
   ];
 
@@ -66,11 +66,11 @@ const Affiliate = () => {
   const faqs = [
     {
       question: 'How much can I earn?',
-      answer: 'You can earn up to 30% recurring commission on every paid customer you refer. Top affiliates earn $5,000+ per month.'
+      answer: 'Rates and caps are shared only after your application is reviewed. Earnings depend on referred customers, plan types, and your executed affiliate agreement.'
     },
     {
       question: 'When do I get paid?',
-      answer: 'Commissions are paid monthly via PayPal or bank transfer. Minimum payout is $100.'
+      answer: 'Commissions are paid monthly via PayPal or bank transfer. Reach out to confirm current payout terms.'
     },
     {
       question: 'How do I track my referrals?',
@@ -82,31 +82,15 @@ const Affiliate = () => {
     }
   ];
 
-  const testimonials = [
-    {
-      name: 'Mark Thompson',
-      role: 'Digital Marketing Consultant',
-      earnings: '$3,200/month',
-      quote: 'Ask Meister\'s affiliate program has been a game-changer for my business. The commissions are generous and the product sells itself.',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150'
-    },
-    {
-      name: 'Sarah Johnson',
-      role: 'Business Coach',
-      earnings: '$2,800/month',
-      quote: 'I love recommending tools that actually help my clients grow. Ask Meister delivers results, and the affiliate program is fantastic.',
-      image: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=150'
-    }
-  ];
-
   return (
     <>
       <Helmet>
-        <title>Affiliate Program | Earn 30% Recurring Commission | Ask Meister</title>
-        <meta name="description" content="Join Ask Meister affiliate program. Earn up to 30% recurring commission promoting our WhatsApp marketing platform. Free to join, marketing materials included." />
+        <title>Affiliate Program | Ask Meister</title>
+        <meta name="description" content="Apply to the Ask Meister affiliate program. Commission terms and materials are provided to approved partners after review." />
+        <meta name="keywords" content="ask meister affiliate program, whatsapp marketing affiliate, recurring commission affiliate, saas affiliate program, referral partner program, affiliate marketing whatsapp tools" />
         <link rel="canonical" href="https://www.askmeister.com/affiliate" />
         <meta property="og:title" content="Affiliate Program | Earn with Ask Meister" />
-        <meta property="og:description" content="Earn up to 30% recurring commission promoting the leading WhatsApp marketing platform." />
+        <meta property="og:description" content="Affiliate program for Ask Meister—commission details provided when you apply and qualify." />
         <meta property="og:url" content="https://www.askmeister.com/affiliate" />
       </Helmet>
     <div className="pt-16">
@@ -118,8 +102,7 @@ const Affiliate = () => {
             <span className="text-[#25D366] block">Affiliate Program</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            Join thousands of partners earning recurring commissions by promoting 
-            the #1 WhatsApp marketing platform.
+            Promote Ask Meister’s WhatsApp marketing platform. Commission structure and eligibility are shared when you apply—we avoid exaggerated income claims.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-[#25D366] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#128C7E] transition-colors">
@@ -143,7 +126,7 @@ const Affiliate = () => {
               Why Join Our Affiliate Program?
             </h2>
             <p className="text-lg text-gray-600">
-              Earn generous commissions while helping businesses grow
+              Commission details are shared after your application is reviewed
             </p>
           </div>
           
@@ -238,37 +221,12 @@ const Affiliate = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
       <section className="py-20 bg-[#F7F7F7]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
-              Success Stories
-            </h2>
-            <p className="text-lg text-gray-600">
-              See what our top affiliates are saying
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
-                <div className="flex items-center mb-6">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-16 h-16 rounded-full mr-4"
-                  />
-                  <div>
-                    <div className="font-semibold text-[#1C1C1C]">{testimonial.name}</div>
-                    <div className="text-gray-600 text-sm">{testimonial.role}</div>
-                    <div className="text-[#25D366] font-bold text-sm">{testimonial.earnings}</div>
-                  </div>
-                </div>
-                <p className="text-gray-600 italic">"{testimonial.quote}"</p>
-              </div>
-            ))}
-          </div>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-700">
+          <h2 className="text-3xl font-bold text-[#1C1C1C] mb-4">Partner stories</h2>
+          <p>
+            We only publish named affiliate earnings with written consent. Ask us for the current partner overview and agreement terms after you apply.
+          </p>
         </div>
       </section>
 

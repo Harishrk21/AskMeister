@@ -50,15 +50,15 @@ const WhatsAppAPI = () => {
   const comparison = [
     {
       feature: 'Message Delivery Rate',
-      official: '99.9%',
-      unofficial: '60-80%',
-      description: 'Official API ensures highest delivery rates'
+      official: 'Designed for scale on approved routes',
+      unofficial: 'Often inconsistent',
+      description: 'Official API routes still depend on quality, opt-in, and policy compliance'
     },
     {
       feature: 'Account Safety',
-      official: 'Completely Safe',
-      unofficial: 'Risk of Ban',
-      description: 'No risk of WhatsApp account suspension'
+      official: 'Policy-aligned paths',
+      unofficial: 'Higher enforcement risk',
+      description: 'Unofficial methods can violate WhatsApp terms; risk is never zero for any channel'
     },
     {
       feature: 'Message Templates',
@@ -68,15 +68,15 @@ const WhatsAppAPI = () => {
     },
     {
       feature: 'Support & Reliability',
-      official: '24/7 Enterprise Support',
-      unofficial: 'Limited Support',
-      description: 'Direct support from WhatsApp team'
+      official: 'Vendor + partner support (varies by plan)',
+      unofficial: 'Often minimal',
+      description: 'Your platform provider handles product support; Meta sets channel policies'
     },
     {
       feature: 'Business Verification',
-      official: 'Green Tick Verified',
-      unofficial: 'No Verification',
-      description: 'Official business verification badge'
+      official: 'Eligibility-based (Meta decision)',
+      unofficial: 'Not available',
+      description: 'The verified badge is granted by Meta when businesses meet their criteria'
     }
   ];
 
@@ -125,7 +125,7 @@ const WhatsAppAPI = () => {
       title: 'Construction',
       description: 'Project updates, safety alerts, equipment tracking, team coordination',
       image: construction,
-      route: '/solutions/construction',
+      route: '/contact',
       chatbots: [
         'Project status updates',
         'Safety protocol reminders',
@@ -138,7 +138,7 @@ const WhatsAppAPI = () => {
       title: 'Agriculture',
       description: 'Weather alerts, crop monitoring, market prices, farming tips',
       image: agri,
-      route: '/solutions/agriculture',
+      route: '/contact',
       chatbots: [
         'Weather and crop advisories',
         'Market price updates',
@@ -165,12 +165,12 @@ const WhatsAppAPI = () => {
      <>
       <Helmet>
         <title>Trusted WhatsApp Business API | Official WhatsApp API Partner | Ask Meister</title>
-        <meta name="description" content="WhatsApp Business API: official API for bulk messaging & chatbots. 99.9% delivery. Trusted WhatsApp API for business – start free trial." />
-        <meta name="keywords" content="trusted whatsapp api, whatsapp business api, official whatsapp api, whatsapp api integration, business messaging api, whatsapp cloud api, reliable whatsapp api,Ask Meister" />
-        <link rel="canonical" href="https://meisternotify.com/whatsapp-api" />
+        <meta name="description" content="WhatsApp Business API for bulk messaging, templates, and chatbots. Delivery and limits depend on Meta policies and your setup—contact Ask Meister for onboarding." />
+        <meta name="keywords" content="whatsapp business api provider india, official whatsapp api provider, meta whatsapp cloud api, whatsapp api integration service, whatsapp api setup guide, whatsapp api documentation, whatsapp api webhook, whatsapp api authentication, whatsapp api endpoint, whatsapp api for crm, send message via whatsapp api, cloud whatsapp api, get whatsapp api access, apply whatsapp business api, rest api whatsapp integration, developer whatsapp api, whatsapp api onboarding, whatsapp api verification" />
+        <link rel="canonical" href="https://www.askmeister.com/whatsapp-api" />
         <meta property="og:title" content="Trusted WhatsApp Business API | Official Partner" />
         <meta property="og:description" content="Get access to official WhatsApp Business API with maximum reliability and compliance." />
-        <meta property="og:url" content="https://meisternotify.com/whatsapp-api" />
+        <meta property="og:url" content="https://www.askmeister.com/whatsapp-api" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}

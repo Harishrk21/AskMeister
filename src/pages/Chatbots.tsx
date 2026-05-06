@@ -22,7 +22,7 @@ const Chatbots = () => {
   {
     icon: MessageCircle,
     title: 'Bulk Message Sending',
-    description: 'Easily send messages to thousands of customers using pre-approved WhatsApp templates.'
+    description: 'Send template messages to opted-in customers using WhatsApp-approved templates.'
   },
   {
     icon: Zap,
@@ -191,43 +191,46 @@ const Chatbots = () => {
 
   const successStories = [
     {
-      company: 'RetailMax',
-      industry: 'E-commerce Platform',
+      company: 'Retail support pattern',
+      industry: 'E-commerce / retail',
       icon: ShoppingCart,
       color: 'green-500',
-      quote: 'Our chatbot handles 85% of customer inquiries automatically, reducing response time from hours to seconds.',
-      metric: '↑ 40% Sales Increase',
-      timeframe: '3 months'
+      quote:
+        'Illustrative: many shops start with FAQs, order status, and hand-off to agents—results depend on catalog complexity and staffing.',
+      metric: 'Goal: faster replies',
+      timeframe: 'Varies'
     },
     {
-      company: 'CityHealth',
-      industry: 'Healthcare Network',
+      company: 'Clinic coordination pattern',
+      industry: 'Healthcare',
       icon: Stethoscope,
       color: 'red-500',
-      quote: 'Appointment booking is now seamless with 95% accuracy. Patient satisfaction scores improved significantly.',
-      metric: '↓ 60% No-shows',
-      timeframe: '2 months'
+      quote:
+        'Illustrative: clinics may automate reminders and intake steps where regulations allow; medical advice still belongs with licensed staff.',
+      metric: 'Goal: fewer missed slots',
+      timeframe: 'Varies'
     },
     {
-      company: 'EduTech Institute',
-      industry: 'Online Education',
+      company: 'Education updates pattern',
+      industry: 'Schools / coaching',
       icon: GraduationCap,
       color: 'yellow-500',
-      quote: 'Student engagement increased by 50% with automated reminders and instant support availability.',
-      metric: '↑ 50% Engagement',
-      timeframe: '4 months'
+      quote:
+        'Illustrative: institutes use WhatsApp for schedules and announcements to opted-in parents—always alongside official channels you already use.',
+      metric: 'Goal: clearer comms',
+      timeframe: 'Varies'
     }
   ];
 
   return (
      <>
       <Helmet>
-        <title>AI WhatsApp Chatbots | No.1 Chatbot Builder for Business | Ask Meister</title>
-        <meta name="description" content="WhatsApp chatbot builder: AI chatbots for business. No-code builder, automation, customer engagement. Trusted by 10,000+ businesses – start free trial." />
-        <meta name="keywords" content="whatsapp chatbot, ai chatbot, chatbot builder, no.1 chatbot, intelligent chatbots, whatsapp automation, business chatbot, customer engagement, top companies using chatbot, chatbot for business" />
+        <title>WhatsApp Chatbot Builder &amp; Automation | Ask Meister</title>
+        <meta name="description" content="WhatsApp chatbot builder for businesses in India: flows, automation, and handoff to humans. No fabricated rankings—see if Ask Meister fits your use case." />
+        <meta name="keywords" content="whatsapp chatbot software, ai whatsapp chatbot, automated whatsapp chatbot, best whatsapp chatbot builder, chatbot for whatsapp business, create whatsapp chatbot, chatbot automation whatsapp, no code whatsapp chatbot, whatsapp ai automation, whatsapp chatbot for sales, whatsapp chatbot integration, whatsapp chatbot marketing, whatsapp chatbot platform, whatsapp chatbot service, whatsapp chatbot software india" />
         <link rel="canonical" href="https://www.askmeister.com/chatbots" />
-        <meta property="og:title" content="AI WhatsApp Chatbots | No.1 Chatbot Builder for Business" />
-        <meta property="og:description" content="Build intelligent WhatsApp chatbots with our no.1 chatbot builder. Trusted by top companies worldwide." />
+        <meta property="og:title" content="WhatsApp Chatbot Builder &amp; Automation | Ask Meister" />
+        <meta property="og:description" content="Build WhatsApp chatbots and automation with Ask Meister. Results depend on your flows and compliance." />
         <meta property="og:url" content="https://www.askmeister.com/chatbots" />
       </Helmet>
     <div className="pt-16">
@@ -560,25 +563,25 @@ const Chatbots = () => {
 </div>
 
 
-    {/* Success Stories */}
+    {/* Capabilities (no fabricated benchmark stats) */}
     <div className="text-center">
-      <h3 className="text-3xl font-bold text-[#1C1C1C] mb-8">Trusted by Leading Businesses</h3>
+      <h3 className="text-3xl font-bold text-[#1C1C1C] mb-8">What you can build</h3>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div className="bg-white rounded-xl p-6 shadow-lg">
-          <div className="text-3xl font-bold text-[#25D366] mb-2">99.9%</div>
-          <div className="text-sm text-gray-600">Message Delivery</div>
+          <div className="text-xl font-bold text-[#25D366] mb-2">Flows</div>
+          <div className="text-sm text-gray-600">FAQ, routing, handoff</div>
         </div>
         <div className="bg-white rounded-xl p-6 shadow-lg">
-          <div className="text-3xl font-bold text-[#25D366] mb-2">50k+</div>
-          <div className="text-sm text-gray-600">Active Chatbots</div>
+          <div className="text-xl font-bold text-[#25D366] mb-2">Templates</div>
+          <div className="text-sm text-gray-600">Aligned with WhatsApp rules</div>
         </div>
         <div className="bg-white rounded-xl p-6 shadow-lg">
-          <div className="text-3xl font-bold text-[#25D366] mb-2">24/7</div>
-          <div className="text-sm text-gray-600">Support Available</div>
+          <div className="text-xl font-bold text-[#25D366] mb-2">Team inbox</div>
+          <div className="text-sm text-gray-600">Collaborate on chats</div>
         </div>
         <div className="bg-white rounded-xl p-6 shadow-lg">
-          <div className="text-3xl font-bold text-[#25D366] mb-2">95%</div>
-          <div className="text-sm text-gray-600">Customer Satisfaction</div>
+          <div className="text-xl font-bold text-[#25D366] mb-2">India focus</div>
+          <div className="text-sm text-gray-600">Tamil Nadu &amp; nationwide</div>
         </div>
       </div>
     </div>
@@ -747,8 +750,10 @@ const Chatbots = () => {
       <section className="py-20 bg-[#F7F7F7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">Success Stories</h2>
-            <p className="text-lg text-gray-600">See how businesses are transforming their operations with our AI chatbots</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">Typical patterns (not guarantees)</h2>
+            <p className="text-lg text-gray-600">
+              Examples only—your outcomes depend on flows, compliance, and operations. We do not publish unaudited performance claims as facts.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

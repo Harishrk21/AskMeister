@@ -3,6 +3,15 @@ import { useSearchParams } from 'react-router-dom';
 import { Mail, Phone, MapPin, Clock, MessageCircle, Send, CheckCircle } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 
+/**
+ * FormSubmit.co — use a literal `https://formsubmit.co/your@email.com` action (not %40 encoding).
+ * First time: check inbox for FormSubmit’s “Confirm your form” link or you won’t receive mail.
+ * https://formsubmit.co
+ */
+const CONTACT_EMAIL = 'harishradhakrishnan2001@gmail.com';
+const FORM_SUBMIT_ACTION = 'https://formsubmit.co/harishradhakrishnan2001@gmail.com';
+const WHATSAPP_NUMBER_E164 = '917299817996';
+
 const Contact = () => {
   const [searchParams] = useSearchParams();
   const showThankYou = searchParams.get('thankyou') === '1';
@@ -30,13 +39,13 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      details: 'harish.dev@askmeister.com',
+      details: CONTACT_EMAIL,
       description: 'Get support within 24 hours'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+91 90439 43736',  ],
+      details: ['+91 72998 17996'],
       description: 'Mon-Fri from 9am to 6pm IST'
     },
     {
@@ -70,8 +79,8 @@ const Contact = () => {
     name: 'Ask Meister',
     description: 'WhatsApp marketing platform: bulk messaging, WhatsApp Business API & AI chatbot. Free demo and support.',
     url: 'https://www.askmeister.com',
-    telephone: '+919043943736',
-    email: 'harish.dev@askmeister.com',
+    telephone: '+917299817996',
+    email: CONTACT_EMAIL,
     address: {
       '@type': 'PostalAddress',
       streetAddress: '4, 3A, Asvini Amarisa, Ramapuram',
@@ -96,8 +105,8 @@ const Contact = () => {
   return (
      <>
       <Helmet>
-        <title>Contact Us | WhatsApp Marketing Experts | Ask Meister Support</title>
-        <meta name="description" content="Contact Ask Meister: free WhatsApp marketing demo, WhatsApp API & bulk messaging support. Get help with chatbot builder & automation. Reply within 24 hours." />
+        <title>Contact Ask Meister | WhatsApp Marketing Chennai &amp; Tamil Nadu</title>
+        <meta name="description" content="Contact Ask Meister in Chennai: WhatsApp Business API, bulk messaging, and chatbot support. We reply to business inquiries as soon as we can during working hours." />
         <meta name="keywords" content="whatsapp marketing contact, chatbot support, whatsapp api help, business consultation, marketing experts, customer support, free demo, whatsapp automation help" />
         <link rel="canonical" href="https://www.askmeister.com/contact" />
         <meta property="og:title" content="Contact WhatsApp Marketing Experts | Ask Meister" />
@@ -133,14 +142,14 @@ const Contact = () => {
               )}
               <h2 className="text-2xl font-bold text-[#1C1C1C] mb-6">Send us a Message</h2>
               <form
-                action="https://formsubmit.co/harish.dev@askmeister.com"
+                action={FORM_SUBMIT_ACTION}
                 method="POST"
                 onSubmit={handleSubmit}
                 className="space-y-6"
               >
                 <input type="hidden" name="_next" value="https://www.askmeister.com/contact?thankyou=1" />
                 <input type="hidden" name="_subject" value="Ask Meister – New contact form submission" />
-                <input type="hidden" name="_captcha" value="false" />
+                {/* Omit _captcha so FormSubmit default reCAPTCHA applies (disabling it can limit or block delivery). */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -291,7 +300,7 @@ const Contact = () => {
                   Chat with our WhatsApp marketing experts for instant assistance.
                 </p>
                 <a
-                  href="https://wa.me/919739414675?text=Hi, I'm interested in Ask Meister WhatsApp marketing solutions"
+                  href={`https://wa.me/${WHATSAPP_NUMBER_E164}?text=${encodeURIComponent("Hi, I'm interested in Ask Meister WhatsApp marketing solutions")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#25D366] text-white px-6 py-2 rounded-lg hover:bg-[#128C7E] transition-colors inline-flex items-center"
@@ -330,8 +339,8 @@ const Contact = () => {
               <div className="w-16 h-16 bg-[#25D366]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">💰</span>
               </div>
-              <h3 className="text-xl font-semibold text-[#1C1C1C] mb-2">Affordable Pricing</h3>
-              <p className="text-gray-600">₹8,000/year for all features - no hidden costs</p>
+              <h3 className="text-xl font-semibold text-[#1C1C1C] mb-2">Flexible Plans</h3>
+              <p className="text-gray-600">Talk to our team for a plan recommendation based on your business needs.</p>
             </div>
             
             <div className="text-center">
@@ -362,13 +371,13 @@ const Contact = () => {
               Start Your Free Demo
             </a> */}
             <a
-  href="https://wa.me/919739414675?text=Hi,%20I%20want%20to%20know%20more%20about%20Ask Meister%20pricing"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#25D366] transition-colors"
->
-  Chat on WhatsApp
-</a>
+              href={`https://wa.me/${WHATSAPP_NUMBER_E164}?text=${encodeURIComponent('Hi, I want to know more about Ask Meister plans')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#25D366] transition-colors"
+            >
+              Chat on WhatsApp
+            </a>
 
           </div>
         </div>

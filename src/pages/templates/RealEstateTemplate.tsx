@@ -11,7 +11,7 @@ const RealEstateTemplate = () => {
     {
       icon: MessageCircle,
       title: 'Bulk WhatsApp Messaging',
-      description: 'Send property listings, market updates, and promotional messages to thousands of leads instantly.',
+      description: 'Send property listings, market updates, and promotional messages to opted-in leads using approved templates.',
       benefits: ['Mass property broadcasts', 'Personalized messaging', 'Automated follow-ups']
     },
     {
@@ -49,7 +49,7 @@ const RealEstateTemplate = () => {
   const useCases = [
     {
       title: 'Bulk Property Broadcasting',
-      description: 'Reach thousands of potential buyers with property listings',
+      description: 'Reach interested buyers with property listings (subject to opt-in and policies)',
       steps: [
         'Upload property listings with photos and details',
         'Segment audience by budget and location',
@@ -87,41 +87,24 @@ const RealEstateTemplate = () => {
 
   const benefits = [
     {
-      metric: '250%',
-      description: 'Increase in lead generation',
+      metric: 'Speed',
+      description: 'Faster first replies',
       icon: TrendingUp
     },
     {
-      metric: '60%',
-      description: 'Faster response times',
+      metric: 'Follow-up',
+      description: 'Templates & reminders',
       icon: Zap
     },
     {
-      metric: '40%',
-      description: 'Higher conversion rates',
+      metric: 'Routing',
+      description: 'Qualify before site visits',
       icon: BarChart3
     },
     {
-      metric: '80%',
-      description: 'Time saved on admin tasks',
+      metric: 'Admin',
+      description: 'Less repetitive typing',
       icon: Calendar
-    }
-  ];
-
-  const testimonials = [
-    {
-      name: 'Sarah Johnson',
-      role: 'Real Estate Agent',
-      location: 'Los Angeles, CA',
-      content: 'The bulk messaging feature helped me reach 1000+ leads daily. My property sales increased by 200% in just 3 months!',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150'
-    },
-    {
-      name: 'Michael Chen',
-      role: 'Property Developer',
-      location: 'Dubai, UAE',
-      content: 'The AI chatbot handles 80% of our inquiries automatically. It schedules viewings while I sleep and qualifies leads perfectly.',
-      image: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=150'
     }
   ];
 
@@ -140,11 +123,11 @@ const RealEstateTemplate = () => {
     <title>WhatsApp for Real Estate | Automate Inquiries & Follow-ups | Ask Meister</title>
     <meta
       name="description"
-      content="WhatsApp for real estate: bulk property messaging, property chatbot, lead nurturing. Automate inquiries & follow-ups. Free trial."
+      content="WhatsApp for real estate: lead follow-up, visit reminders, and brochures—subject to RERA/ad rules in your region and WhatsApp policies."
     />
     <meta
       name="keywords"
-      content="whatsapp for real estate, property sales automation, real estate chatbot, schedule site visits, customer engagement, lead follow-ups, property marketing"
+      content="property leads whatsapp, real estate whatsapp automation, whatsapp marketing for real estate, real estate lead nurturing"
     />
     <link rel="canonical" href="https://www.askmeister.com/solutions/real-estate" />
     <meta property="og:title" content="WhatsApp for Real Estate | Automate Inquiries & Follow-ups" />
@@ -172,8 +155,7 @@ const RealEstateTemplate = () => {
                   <span className="text-green-600 block">with WhatsApp API</span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Supercharge your real estate business with bulk messaging, AI chatbots, and automated 
-                  lead nurturing through WhatsApp to sell more properties faster.
+                  Use WhatsApp for faster replies, structured follow-ups, and chatbots where appropriate. Sales outcomes depend on inventory, pricing, and compliance—not messaging alone.
                 </p>
               </div>
               
@@ -326,37 +308,12 @@ const RealEstateTemplate = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Success Stories
-            </h2>
-            <p className="text-lg text-gray-600">
-              Real estate professionals share their transformation stories
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
-                <p className="text-gray-600 mb-6 italic text-lg">"{testimonial.content}"</p>
-                <div className="flex items-center">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-16 h-16 rounded-full mr-4"
-                  />
-                  <div>
-                    <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                    <div className="text-green-600">{testimonial.role}</div>
-                    <div className="text-sm text-gray-500">{testimonial.location}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">No fabricated broker stories</h2>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            We do not display unaudited sales claims. WhatsApp is best used for timely responses, document sharing, and visit coordination alongside your existing CRM and legal workflow.
+          </p>
         </div>
       </section>
 
@@ -367,14 +324,14 @@ const RealEstateTemplate = () => {
             Ready to Scale Your Real Estate Business?
           </h2>
           <p className="text-lg text-green-100 mb-8">
-            Join thousands of agents and developers using WhatsApp automation to sell more properties.
+            Ask Meister supports brokers and developers who want structured WhatsApp follow-up—without promising transaction counts.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
                       <Link
                         to="/pricing"
                         className="bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
                       >
-                        Start Free Trial
+                        Contact for demo
                       </Link>
                       <Link
                         to="/contact"

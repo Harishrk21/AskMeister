@@ -163,7 +163,7 @@ const HealthcareTemplate = () => {
       <Helmet>
         <title>WhatsApp for Healthcare | Hospital Appointment Booking & Patient Care | Ask Meister</title>
         <meta name="description" content="WhatsApp for healthcare: appointment booking, patient reminders, HIPAA-compliant messaging. Bulk messaging for hospitals & clinics. Free trial." />
-        <meta name="keywords" content="whatsapp for healthcare, hospital automation, appointment booking, patient care, medical chatbot, healthcare messaging, hospital communication, patient engagement" />
+        <meta name="keywords" content="whatsapp appointment reminders, whatsapp for clinics, patient engagement whatsapp, healthcare whatsapp automation" />
         <link rel="canonical" href="https://www.askmeister.com/solutions/healthcare" />
         <meta property="og:title" content="WhatsApp for Healthcare | Hospital Automation" />
         <meta property="og:description" content="Transform patient care with WhatsApp automation for appointments, communication, and healthcare management." />

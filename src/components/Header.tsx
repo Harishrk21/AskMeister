@@ -66,7 +66,7 @@ const Header = () => {
   ];
 
   const features = [
-    { name: 'Bulk Messaging', href: '/features/bulk-messaging', description: 'Send messages to thousands instantly', icon: '📢' },
+    { name: 'Bulk Messaging', href: '/features/bulk-messaging', description: 'Broadcasts with approved templates', icon: '📢' },
     { name: 'Automation', href: '/features/automation', description: 'Automate your WhatsApp workflows', icon: '🤖' },
     { name: 'Analytics', href: '/features/analytics', description: 'Track performance and engagement', icon: '📊' },
     { name: 'Live Chat', href: '/features/LiveChat', description: 'Collaborate with your team', icon: '💬' },

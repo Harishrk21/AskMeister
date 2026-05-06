@@ -88,41 +88,24 @@ const TravelTourismTemplate = () => {
 
   const benefits = [
     {
-      metric: '45%',
-      description: 'Increase in guest satisfaction',
+      metric: 'Itinerary',
+      description: 'Updates & reminders',
       icon: Star
     },
     {
-      metric: '60%',
-      description: 'Faster response times',
+      metric: 'Guests',
+      description: 'Chat-first assistance',
       icon: Zap
     },
     {
-      metric: '35%',
-      description: 'More repeat bookings',
+      metric: 'Teams',
+      description: 'Shared inbox flows',
       icon: Users
     },
     {
-      metric: '50%',
-      description: 'Reduction in manual tasks',
+      metric: 'Operations',
+      description: 'Less phone tag',
       icon: Clock
-    }
-  ];
-
-  const testimonials = [
-    {
-      name: 'Sarah Mitchell',
-      role: 'Hotel Manager',
-      company: 'Paradise Resort & Spa',
-      content: 'Guest satisfaction scores increased by 45% after implementing WhatsApp automation. Our guests love the instant communication and personalized service.',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=150&q=80'
-    },
-    {
-      name: 'Carlos Rodriguez',
-      role: 'Tour Operations Director',
-      company: 'Adventure Tours International',
-      content: 'Managing group tours became effortless. Real-time updates and multilingual support helped us serve international travelers much better.',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80'
     }
   ];
 
@@ -141,11 +124,11 @@ const TravelTourismTemplate = () => {
     <title>WhatsApp for Travel & Tourism | Automate Bookings & Support | Ask Meister</title>
     <meta
       name="description"
-      content="WhatsApp for travel & tourism: booking automation, itinerary updates, bulk messaging for hotels & tours. 24/7 support. Free trial."
+      content="WhatsApp for travel & tourism: booking reminders, itinerary updates, and guest messaging—subject to WhatsApp policies and your staffing."
     />
     <meta
       name="keywords"
-      content="whatsapp for travel, travel chatbot, tour booking automation, itinerary updates, customer support, tourism marketing, holiday packages"
+      content="travel agency whatsapp marketing, whatsapp tour promotions, whatsapp booking automation, travel whatsapp automation"
     />
     <link rel="canonical" href="https://www.askmeister.com/solutions/travel-and-tourism" />
     <meta property="og:title" content="WhatsApp for Travel & Tourism | Automate Bookings & Support" />
@@ -365,7 +348,7 @@ const TravelTourismTemplate = () => {
             Ready to Transform Your Travel Business?
           </h2>
           <p className="text-lg text-green-100 mb-8">
-            Join travel companies already using Ask Meister to enhance guest experiences and streamline operations.
+            Ask Meister helps hospitality teams coordinate WhatsApp updates and guest replies—outcomes still depend on service quality and regulations in your market.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button

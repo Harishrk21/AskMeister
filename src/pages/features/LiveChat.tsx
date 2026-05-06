@@ -72,7 +72,7 @@ const LiveChat = () => {
 
   const analyticsMetrics = [
     {
-      metric: '99.9%',
+      metric: 'SLA-ready',
       description: 'Message delivery rate',
       icon: Send
     },
@@ -98,7 +98,7 @@ const LiveChat = () => {
       <Helmet>
         <title>WhatsApp Live Chat | Collaborative Customer Support | Ask Meister</title>
         <meta name="description" content="WhatsApp live chat & team inbox: shared inbox, agent assignment, customer support. Manage bulk messaging & chatbots as a team. Free trial." />
-        <meta name="keywords" content="whatsapp team inbox, shared inbox, team collaboration, customer support, agent assignment, whatsapp support, team messaging, collaborative support" />
+        <meta name="keywords" content="whatsapp live chat software, multi agent whatsapp inbox, shared whatsapp inbox, team whatsapp chat software, whatsapp customer support tool, whatsapp live support system, whatsapp helpdesk software" />
         <link rel="canonical" href="https://www.askmeister.com/features/livechat" />
         <meta property="og:title" content="WhatsApp LiveChat| Collaborative Customer Support" />
         <meta property="og:description" content="Collaborate seamlessly with team inbox for WhatsApp customer support and messaging." />
@@ -253,7 +253,7 @@ const LiveChat = () => {
                 <div className="space-y-3">
                   {[
                     { name: "John Customer", message: "Template sent", time: "2:30 PM", status: "delivered" },
-                    { name: "Sarah Johnson", message: "Campaign delivered", time: "2:25 PM", status: "read" },
+                    { name: "Team member", message: "Campaign delivered", time: "2:25 PM", status: "read" },
                     { name: "Mike Wilson", message: "Bot conversation", time: "2:20 PM", status: "active" },
                     { name: "Lisa Brown", message: "Template opened", time: "2:15 PM", status: "read" }
                   ].map((contact, index) => (

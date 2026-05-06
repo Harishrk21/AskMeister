@@ -109,7 +109,7 @@ Your order has been confirmed!
 
 📋 Order Details:
 • Order ID: {{order_id}}
-• Amount: ₹{{amount}}
+• Amount: {{amount}}
 • Items: {{item_count}} items
 
 📅 Expected Delivery: {{delivery_date}}
@@ -154,7 +154,7 @@ Get {{discount}}% OFF on all products!
 
 ⏰ Limited time offer - Only {{hours}} hours left!
 🛒 Use code: {{promo_code}}
-💰 Save up to ₹{{max_savings}}
+💰 Save up to {{max_savings}}
 
 Shop now: {{shop_link}}
 
