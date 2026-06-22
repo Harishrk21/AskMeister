@@ -10,7 +10,7 @@ const Careers = () => {
       department: 'Engineering',
       location: 'San Francisco, CA / Remote',
       type: 'Full-time',
-      salary: 'Competitive (INR) — discussed when shortlisted',
+      salary: 'Competitive — discussed when shortlisted',
       description: 'Join our engineering team to build scalable WhatsApp marketing solutions. Work with React, Node.js, and modern cloud technologies.',
       requirements: [
         '5+ years of full-stack development experience',
@@ -24,7 +24,7 @@ const Careers = () => {
       department: 'Marketing',
       location: 'San Francisco, CA',
       type: 'Full-time',
-      salary: 'Competitive (INR) — discussed when shortlisted',
+      salary: 'Competitive — discussed when shortlisted',
       description: 'Drive product marketing strategy for our WhatsApp marketing platform. Lead go-to-market initiatives and customer success stories.',
       requirements: [
         '3+ years of product marketing experience',
@@ -38,7 +38,7 @@ const Careers = () => {
       department: 'Customer Success',
       location: 'Remote',
       type: 'Full-time',
-      salary: 'Competitive (INR) — discussed when shortlisted',
+      salary: 'Competitive — discussed when shortlisted',
       description: 'Help our customers achieve success with WhatsApp marketing. Build relationships and drive customer retention and growth.',
       requirements: [
         '2+ years of customer success experience',
@@ -52,7 +52,7 @@ const Careers = () => {
       department: 'Engineering',
       location: 'San Francisco, CA / Remote',
       type: 'Full-time',
-      salary: 'Competitive (INR) — discussed when shortlisted',
+      salary: 'Competitive — discussed when shortlisted',
       description: 'Build and maintain infrastructure for our WhatsApp marketing platform with focus on scalability, reliability, and security.',
       requirements: [
         '4+ years of DevOps/Infrastructure experience',
@@ -66,7 +66,7 @@ const Careers = () => {
       department: 'Design',
       location: 'San Francisco, CA',
       type: 'Full-time',
-      salary: 'Competitive (INR) — discussed when shortlisted',
+      salary: 'Competitive — discussed when shortlisted',
       description: 'Design intuitive and beautiful user experiences for our WhatsApp marketing platform. Work closely with product and engineering teams.',
       requirements: [
         '3+ years of UX/UI design experience',
@@ -80,7 +80,7 @@ const Careers = () => {
       department: 'Sales',
       location: 'San Francisco, CA / Remote',
       type: 'Full-time',
-      salary: 'Competitive (INR) — discussed when shortlisted',
+      salary: 'Competitive — discussed when shortlisted',
       description: 'Generate and qualify leads for our sales team. Be the first point of contact for potential customers interested in WhatsApp marketing.',
       requirements: [
         '1+ years of sales or business development experience',
@@ -115,7 +115,7 @@ const Careers = () => {
     {
       icon: Zap,
       title: 'Learning Budget',
-      description: '$2,000 annual learning and development budget for courses and conferences'
+      description: 'Annual learning and development budget for courses and conferences'
     },
     {
       icon: Coffee,

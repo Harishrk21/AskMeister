@@ -176,7 +176,7 @@ const Refund = () => {
 
             <h2>7. WhatsApp API Credits</h2>
             <p>
-              Please note that WhatsApp API credits (message costs) are non-refundable as these are charged directly by WhatsApp. 
+              Please note that WhatsApp API credits (message usage charges) are non-refundable as these are charged directly by WhatsApp. 
               Only our platform subscription fees are eligible for refund.
             </p>
 
@@ -189,7 +189,7 @@ const Refund = () => {
 
             <h2>9. Free Trial and Free Plan</h2>
             <p>
-              Our free trial and free plan are provided at no cost and are not eligible for refunds. 
+              Our free trial and free plan are provided without charge and are not eligible for refunds. 
               However, if you upgrade to a paid plan during or after your free trial, the paid subscription 
               is covered by our refund policy.
             </p>
@@ -212,7 +212,7 @@ const Refund = () => {
                 <h3 className="text-lg font-semibold text-yellow-800 mb-2">Important Note</h3>
                 <p className="text-yellow-700">
                   This refund policy applies only to Ask Meister subscription fees. Third-party charges, 
-                  including WhatsApp API message costs, payment processing fees, and integration costs, 
+                  including WhatsApp API message usage charges, payment processing fees, and integration charges, 
                   are subject to the respective provider's refund policies.
                 </p>
               </div>

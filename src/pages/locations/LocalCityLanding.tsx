@@ -6,7 +6,7 @@ import { TN_CITY_PAGES } from '../../data/localCities';
 import NotFound from '../NotFound';
 
 const SITE = 'https://www.askmeister.com';
-const PHONE_DISPLAY = '+91 72998 17996';
+const PHONE_DISPLAY = '+91 7299817996';
 const PHONE_E164 = '+917299817996';
 
 const LocalCityLanding = () => {

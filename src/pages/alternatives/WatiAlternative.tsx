@@ -20,7 +20,7 @@ const WatiAlternative = () => (
     faq={[
       {
         q: 'What should I look for in a WATI alternative?',
-        a: 'Evaluate WhatsApp Business Platform support, automation depth, analytics, onboarding help, and pricing for your volume—Ask Meister may fit teams that want those areas covered.'
+        a: 'Evaluate WhatsApp Business Platform support, automation depth, analytics, onboarding help, and support for your volume—Ask Meister may fit teams that want those areas covered.'
       },
       {
         q: 'Can I migrate from WATI without losing campaign flow?',

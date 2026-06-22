@@ -45,7 +45,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+91 72998 17996'],
+      details: ['+91 7299817996'],
       description: 'Mon-Fri from 9am to 6pm IST'
     },
     {
@@ -224,7 +224,7 @@ const Contact = () => {
                   >
                     <option value="">Select an option</option>
                     <option value="demo">Request a Demo</option>
-                    <option value="pricing">Pricing Information</option>
+                    <option value="plans">Plan Information</option>
                     <option value="integration">Custom Integration</option>
                     <option value="support">Technical Support</option>
                     <option value="partnership">Partnership Inquiry</option>

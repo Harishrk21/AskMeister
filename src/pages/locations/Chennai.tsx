@@ -107,7 +107,7 @@ const Chennai = () => {
             <ul className="space-y-2 text-gray-700">
               <li>சென்னையில் வாட்ஸ்அப் மார்க்கெட்டிங் சாஃப்ட்வேர்</li>
               <li>chennai whatsapp api provider</li>
-              <li>whatsapp marketing software price chennai</li>
+              <li>whatsapp marketing software chennai</li>
             </ul>
           </div>
         </section>

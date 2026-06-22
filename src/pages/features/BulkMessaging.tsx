@@ -159,10 +159,10 @@ const BulkMessaging = () => {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 <Link
-                  to="/pricing"
+                  to="/contact"
                   className="border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 hover:text-white transition-colors"
                 >
-                  See Pricing
+                  Contact Sales
                 </Link>
               </div>
 
@@ -288,10 +288,10 @@ const BulkMessaging = () => {
               Contact sales
             </Link>
             <Link
-              to="/pricing"
+              to="/contact"
               className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-green-600 transition-colors"
             >
-              View Pricing
+              Contact Sales
             </Link>
           </div>
         </div>

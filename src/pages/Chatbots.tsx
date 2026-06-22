@@ -259,9 +259,9 @@ const Chatbots = () => {
                   Build Your Bot
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
-                <Link to="/pricing" className="border-2 border-[#25D366] text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#25D366] hover:text-white transition-colors inline-flex items-center justify-center">
+                <Link to="/contact" className="border-2 border-[#25D366] text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#25D366] hover:text-white transition-colors inline-flex items-center justify-center">
                   {/* <Play className="w-5 h-5 mr-2" /> */}
-                  See Pricing
+                  Contact Sales
                 </Link>
               </div>
 
@@ -636,7 +636,7 @@ const Chatbots = () => {
                     <p className="text-gray-600 text-sm mb-4">{bot.description}</p>
                     
                     <div className="space-y-2 mb-4">
-                      <div className="text-sm font-medium text-[#25D366]">{bot.price}</div>
+                      <div className="text-sm font-medium text-[#25D366]">{bot.tagline}</div>
                       <div className="text-xs text-gray-500">Setup in {bot.setupTime}</div>
                     </div>
                     
@@ -787,7 +787,7 @@ const Chatbots = () => {
             Start automating your customer conversations today with our intelligent WhatsApp chatbots.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/pricing" className="bg-white text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center">
+            <Link to="/contact" className="bg-white text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center">
               Start Building
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>

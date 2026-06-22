@@ -57,7 +57,7 @@ const About = () => {
     {
       year: '2026',
       title: 'Early Traction',
-      description: 'Ask Meister™ adopted by businesses seeking low-cost, high-impact marketing via WhatsApp.'
+      description: 'Ask Meister™ adopted by businesses seeking high-impact marketing via WhatsApp.'
     }
   ];
 
@@ -118,10 +118,10 @@ const About = () => {
                 In 2020, we expanded into healthcare automation, building dynamic hospital chatbots for scheduling, appointments, follow-ups, and adopting database integrations.
               </p>
               <p>
-                Seeing the high cost of Meta and Google ads for small businesses, we recognized WhatsApp as an affordable marketing channel—and so Ask Meister™ was born.
+                Seeing the high pressure of Meta and Google ads for small businesses, we recognized WhatsApp as an affordable marketing channel—and so Ask Meister™ was born.
               </p>
               <p>
-                Since our 2024 launch, Ask Meister™ lets businesses send pre-approved templates, include forms, links, and click-to-call features without spam risk. We’re growing with a community focused on cost-effective, high-impact messaging.
+                Since our 2024 launch, Ask Meister™ lets businesses send pre-approved templates, include forms, links, and click-to-call features without spam risk. We’re growing with a community focused on high-impact messaging.
               </p>
             </div>
           </div>
@@ -202,7 +202,7 @@ const About = () => {
             Join early adopters using WhatsApp to market smarter, engage better, and spend less.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/pricing" className="bg-white text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">Get Started Free</Link>
+            <Link to="/contact" className="bg-white text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">Get Started Free</Link>
             <Link to="/contact" className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#25D366] transition-colors">Contact Us</Link>
           </div>
         </div>

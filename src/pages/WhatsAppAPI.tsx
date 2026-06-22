@@ -22,8 +22,8 @@ const WhatsAppAPI = () => {
     },
     {
       icon: Zap,
-      title: '0% Markup on API Costs',
-      description: 'Pay only WhatsApp\'s official rates. No hidden fees or markup on conversation costs.'
+      title: 'Transparent API onboarding',
+      description: 'Use official WhatsApp Business API onboarding with policy-aligned messaging workflows.'
     },
     {
       icon: BarChart3,
@@ -136,12 +136,12 @@ const WhatsAppAPI = () => {
     {
       icon: Wheat,
       title: 'Agriculture',
-      description: 'Weather alerts, crop monitoring, market prices, farming tips',
+      description: 'Weather alerts, crop monitoring, market trends, farming tips',
       image: agri,
       route: '/contact',
       chatbots: [
         'Weather and crop advisories',
-        'Market price updates',
+        'Market updates',
         'Farming best practices',
         'Equipment rental assistance'
       ]
@@ -189,11 +189,11 @@ const WhatsAppAPI = () => {
         </h1>
         <p className="text-xl text-gray-600 mb-8 leading-relaxed">
           Connect with your customers through the official WhatsApp Business API. 
-          Enjoy maximum deliverability, enhanced security, and zero markup on API costs.
+          Enjoy maximum deliverability, enhanced security, and clear onboarding support for API setup.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <Link
-            to="/pricing"
+            to="/contact"
             className="bg-[#25D366] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#128C7E] transition-colors"
           >
             Get API Access
@@ -427,7 +427,7 @@ const WhatsAppAPI = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              to="/pricing"
+              to="/contact"
               className="bg-white text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
             >
               Get API Access Now

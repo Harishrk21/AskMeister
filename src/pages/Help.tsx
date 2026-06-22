@@ -41,11 +41,11 @@ const Help = () => {
       ]
     },
     {
-      category: 'Pricing & Billing',
+      category: 'Plans & Billing',
       questions: [
         {
-          question: 'How much does it cost to send messages?',
-          answer: 'We charge WhatsApp\'s official API rates with 0% markup. Pricing varies by country and message type. Check our pricing calculator for exact costs.'
+          question: 'How do plan and billing details work?',
+          answer: 'Plan and billing details depend on your WhatsApp setup and usage category. Contact our team and we will explain the billing model for your account.'
         },
         {
           question: 'Can I upgrade or downgrade my plan?',

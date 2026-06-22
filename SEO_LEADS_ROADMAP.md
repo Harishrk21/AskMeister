@@ -25,7 +25,7 @@ Actionable next steps to grow visibility and leads from search. Do these in orde
 | Action | How |
 |--------|-----|
 | **Create/claim profile** | Go to [business.google.com](https://business.google.com). Use business name “Ask Meister” and address (Ramapuram, Chennai). |
-| **Complete profile** | Add: category (e.g. Software Company / Marketing Agency), phone (+91 72998 17996), website, hours (Mon–Fri 9–6 IST). |
+| **Complete profile** | Add: category (e.g. Software Company / Marketing Agency), phone (+91 7299817996), website, hours (Mon–Fri 9–6 IST). |
 | **Add photos** | Logo, team/office, product screenshots. |
 | **Post regularly** | Weekly posts: “WhatsApp API demo”, “Bulk messaging tips”, “New feature”, offers. |
 | **Collect reviews** | Ask happy customers for Google reviews; reply to all. |

@@ -176,7 +176,7 @@ const Home = () => {
   // Quick navigation links for better internal linking
   const quickLinks = [
     { title: 'WhatsApp API Integration', link: '/whatsapp-api' },
-    { title: 'Pricing Plans', link: '/pricing' },
+    { title: 'Contact Sales', link: '/contact' },
     { title: 'Marketing Tools', link: '/tools' },
     { title: 'WhatsApp Chatbots', link: '/chatbots' },
     { title: 'Analytics Dashboard', link: '/features/analytics' },
@@ -210,7 +210,7 @@ const Home = () => {
               name: 'What is WhatsApp marketing?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'WhatsApp marketing uses the WhatsApp Business Platform for template messaging, opted-in campaigns, and automation. Meta’s policies, pricing, and template approval apply.'
+                text: 'WhatsApp marketing uses the WhatsApp Business Platform for template messaging, opted-in campaigns, and automation. Meta’s policies and template approval apply.'
               }
             },
             {
@@ -673,7 +673,7 @@ const Home = () => {
             <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="font-semibold text-[#1C1C1C] mb-3">Business Resources</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link to="/pricing" className="text-gray-600 hover:text-[#25D366]">Pricing Plans</Link></li>
+                <li><Link to="/contact" className="text-gray-600 hover:text-[#25D366]">Contact Sales</Link></li>
                 <li><Link to="/whatsapp-api" className="text-gray-600 hover:text-[#25D366]">WhatsApp API</Link></li>
                 <li><Link to="/whatsapp-marketing-chennai" className="text-gray-600 hover:text-[#25D366]">Chennai marketing</Link></li>
                 <li><Link to="/whatsapp-marketing-tamil-nadu" className="text-gray-600 hover:text-[#25D366]">Tamil Nadu marketing</Link></li>

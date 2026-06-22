@@ -24,11 +24,11 @@ const TamilNadu = () => {
       },
       {
         '@type': 'Question',
-        name: 'WhatsApp API cost India / Tamil Nadu—how does pricing work?',
+        name: 'How does WhatsApp API onboarding work in Tamil Nadu?',
         acceptedAnswer: {
           '@type': 'Answer',
           text:
-            'WhatsApp conversation charges follow Meta pricing by region and category. Ask Meister can explain platform fees and help you estimate usage for Tamil Nadu campaigns—contact us for details.'
+            'Ask Meister helps with onboarding, templates, and campaign setup for Tamil Nadu businesses. Contact us for implementation guidance.'
         }
       },
       {

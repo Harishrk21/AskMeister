@@ -23,7 +23,7 @@ const RealEstateTemplate = () => {
     {
       icon: TrendingUp,
       title: 'Market Analytics',
-      description: 'Real-time property market insights, price trends, and investment opportunities.',
+      description: 'Real-time property market insights and investment opportunities.',
       benefits: ['Market reports', 'Price analytics', 'Investment insights']
     },
     {
@@ -155,12 +155,12 @@ const RealEstateTemplate = () => {
                   <span className="text-green-600 block">with WhatsApp API</span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Use WhatsApp for faster replies, structured follow-ups, and chatbots where appropriate. Sales outcomes depend on inventory, pricing, and compliance—not messaging alone.
+                  Use WhatsApp for faster replies, structured follow-ups, and chatbots where appropriate. Sales outcomes depend on inventory, process, and compliance—not messaging alone.
                 </p>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-  <Link to="/pricing">
+  <Link to="/contact">
     <button
       className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center"
     >
@@ -328,7 +328,7 @@ const RealEstateTemplate = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
                       <Link
-                        to="/pricing"
+                        to="/contact"
                         className="bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
                       >
                         Contact for demo

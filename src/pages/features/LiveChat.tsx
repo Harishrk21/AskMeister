@@ -339,9 +339,9 @@ const LiveChat = () => {
       Start Free Trial
     </button>
   </Link>
-  <Link to="/pricing">
+  <Link to="/contact">
     <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-green-600 transition-colors">
-      View Pricing
+      Contact Sales
     </button>
   </Link>
 </div>

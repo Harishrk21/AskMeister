@@ -46,7 +46,7 @@ const AlternativeLanding = ({
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-[#1C1C1C] mb-6">{primaryKeyword}</h1>
             <p className="text-xl text-gray-600 mb-8">
-              Compare {competitorName} with Ask Meister for WhatsApp automation, templates, and support—your fit depends on workflows, pricing, and onboarding (evaluate with a demo).
+              Compare {competitorName} with Ask Meister for WhatsApp automation, templates, and support—your fit depends on workflows and onboarding (evaluate with a demo).
             </p>
             <Link
               to="/contact"

@@ -25,7 +25,7 @@ const WhatsAppMarketingForEcommerce = () => {
         <section className="max-w-4xl mx-auto px-4 py-14">
           <h1 className="text-4xl font-bold text-[#1C1C1C] mb-4">WhatsApp marketing for e-commerce</h1>
           <p className="text-gray-700 mb-6">
-            Online sellers use WhatsApp for transactional updates and customer questions when shoppers expect chat-speed replies. Delivery outcomes depend on your catalog, pricing, and operations—we
+            Online sellers use WhatsApp for transactional updates and customer questions when shoppers expect chat-speed replies. Delivery outcomes depend on your catalog and operations—we
             provide the messaging layer on top of the official WhatsApp Business Platform.
           </p>
           <Link

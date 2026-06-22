@@ -55,7 +55,7 @@ const Footer = () => {
               <li><Link to="/whatsapp-api" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">WhatsApp API</Link></li>
               <li><Link to="/chatbots" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">ChatBots</Link></li>
               <li><Link to="/tools" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Free Tools</Link></li>
-              <li><Link to="/pricing" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Pricing</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Contact Sales</Link></li>
               {/* <li><Link to="/affiliate" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Affiliate Program</Link></li> */}
             </ul>
           </div>
@@ -111,7 +111,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-4 h-4 text-[#25D366]" />
-                  <span className="text-gray-300 text-sm">+91 72998 17996</span>
+                  <span className="text-gray-300 text-sm">+91 7299817996</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-4 h-4 text-[#25D366]" />

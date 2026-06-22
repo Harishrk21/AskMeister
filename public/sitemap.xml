@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Home & Core Pages -->
   <url>
-    <loc>https://www.askmeister.com/</loc>
+    <loc>https://askmeister.com/</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/whatsapp-api</loc>
+    <loc>https://askmeister.com/whatsapp-api</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/tools</loc>
+    <loc>https://askmeister.com/tools</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/chatbots</loc>
+    <loc>https://askmeister.com/chatbots</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -28,43 +28,43 @@
 
   <!-- Blog Section -->
   <url>
-    <loc>https://www.askmeister.com/blog</loc>
+    <loc>https://askmeister.com/blog</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/blog/whatsapp-marketing-automation-guide</loc>
+    <loc>https://askmeister.com/blog/whatsapp-marketing-automation-guide</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/blog/whatsapp-business-api-complete-guide</loc>
+    <loc>https://askmeister.com/blog/whatsapp-business-api-complete-guide</loc>
     <lastmod>2026-01-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/blog/broadcast-messages-best-practices</loc>
+    <loc>https://askmeister.com/blog/broadcast-messages-best-practices</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/blog/chatbot-ecommerce-sales</loc>
+    <loc>https://askmeister.com/blog/chatbot-ecommerce-sales</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/blog/customer-support-whatsapp</loc>
+    <loc>https://askmeister.com/blog/customer-support-whatsapp</loc>
     <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/blog/automation-workflows-setup</loc>
+    <loc>https://askmeister.com/blog/automation-workflows-setup</loc>
     <lastmod>2026-01-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -72,61 +72,61 @@
 
   <!-- Company Pages -->
   <url>
-    <loc>https://www.askmeister.com/about</loc>
+    <loc>https://askmeister.com/about</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/contact</loc>
+    <loc>https://askmeister.com/contact</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/integrations</loc>
+    <loc>https://askmeister.com/integrations</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/help</loc>
+    <loc>https://askmeister.com/help</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/affiliate</loc>
+    <loc>https://askmeister.com/affiliate</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/alternatives/wati-alternative</loc>
+    <loc>https://askmeister.com/alternatives/wati-alternative</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/alternatives/aisensy-alternative</loc>
+    <loc>https://askmeister.com/alternatives/aisensy-alternative</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/alternatives/interakt-alternative</loc>
+    <loc>https://askmeister.com/alternatives/interakt-alternative</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/alternatives/gallabox-alternative</loc>
+    <loc>https://askmeister.com/alternatives/gallabox-alternative</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/careers</loc>
+    <loc>https://askmeister.com/careers</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -134,73 +134,73 @@
 
   <!-- Location / local intent -->
   <url>
-    <loc>https://www.askmeister.com/whatsapp-marketing-chennai</loc>
+    <loc>https://askmeister.com/whatsapp-marketing-chennai</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/whatsapp-marketing-tamil-nadu</loc>
+    <loc>https://askmeister.com/whatsapp-marketing-tamil-nadu</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/whatsapp-marketing-coimbatore</loc>
+    <loc>https://askmeister.com/whatsapp-marketing-coimbatore</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/whatsapp-marketing-madurai</loc>
+    <loc>https://askmeister.com/whatsapp-marketing-madurai</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/whatsapp-marketing-trichy</loc>
+    <loc>https://askmeister.com/whatsapp-marketing-trichy</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/whatsapp-marketing-salem</loc>
+    <loc>https://askmeister.com/whatsapp-marketing-salem</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/whatsapp-marketing-tiruppur</loc>
+    <loc>https://askmeister.com/whatsapp-marketing-tiruppur</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/whatsapp-marketing-for-ecommerce</loc>
+    <loc>https://askmeister.com/whatsapp-marketing-for-ecommerce</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/whatsapp-marketing-for-restaurants-chennai</loc>
+    <loc>https://askmeister.com/whatsapp-marketing-for-restaurants-chennai</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/whatsapp-marketing-for-real-estate-chennai</loc>
+    <loc>https://askmeister.com/whatsapp-marketing-for-real-estate-chennai</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/case-studies</loc>
+    <loc>https://askmeister.com/case-studies</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/free-trial</loc>
+    <loc>https://askmeister.com/free-trial</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -208,19 +208,19 @@
 
   <!-- Legal Pages -->
   <url>
-    <loc>https://www.askmeister.com/terms</loc>
+    <loc>https://askmeister.com/terms</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/privacy</loc>
+    <loc>https://askmeister.com/privacy</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/refund</loc>
+    <loc>https://askmeister.com/refund</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -228,31 +228,31 @@
 
   <!-- Feature Pages -->
   <url>
-    <loc>https://www.askmeister.com/features/livechat</loc>
+    <loc>https://askmeister.com/features/livechat</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/features/automation</loc>
+    <loc>https://askmeister.com/features/automation</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/features/analytics</loc>
+    <loc>https://askmeister.com/features/analytics</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/features/templates</loc>
+    <loc>https://askmeister.com/features/templates</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/features/bulk-messaging</loc>
+    <loc>https://askmeister.com/features/bulk-messaging</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -260,37 +260,37 @@
 
   <!-- Industry Solutions -->
   <url>
-    <loc>https://www.askmeister.com/solutions/education</loc>
+    <loc>https://askmeister.com/solutions/education</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/solutions/healthcare</loc>
+    <loc>https://askmeister.com/solutions/healthcare</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/solutions/ecommerce</loc>
+    <loc>https://askmeister.com/solutions/ecommerce</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/solutions/travel-and-tourism</loc>
+    <loc>https://askmeister.com/solutions/travel-and-tourism</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/solutions/real-estate</loc>
+    <loc>https://askmeister.com/solutions/real-estate</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.askmeister.com/solutions/financial</loc>
+    <loc>https://askmeister.com/solutions/financial</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
