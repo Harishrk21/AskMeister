@@ -44,7 +44,7 @@ const RestaurantsChennai = () => {
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
-      <div className="pt-16">
+      <div className="page-wrap">
         <SeoBreadcrumbs
           items={[
             { name: 'Chennai', path: '/whatsapp-marketing-chennai' },
@@ -53,18 +53,18 @@ const RestaurantsChennai = () => {
         />
 
         <section className="max-w-4xl mx-auto px-4 py-14">
-          <h1 className="text-4xl font-bold text-[#1C1C1C] mb-4">WhatsApp for Chennai restaurants & cloud kitchens</h1>
-          <p className="text-gray-700 mb-6">
+          <h1 className="text-4xl font-bold text-white mb-4">WhatsApp for Chennai restaurants & cloud kitchens</h1>
+          <p className="text-ink-muted mb-6">
             Many diners already use WhatsApp daily. Restaurants use the WhatsApp Business Platform for reservation reminders, OTP-style confirmations where applicable, and broadcast updates to opted-in
             customers—always subject to Meta’s commerce and messaging policies.
           </p>
-          <h2 className="text-2xl font-semibold text-[#1C1C1C] mb-2">Typical use cases</h2>
-          <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-8">
+          <h2 className="text-2xl font-semibold text-white mb-2">Typical use cases</h2>
+          <ul className="list-disc pl-6 text-ink-muted space-y-2 mb-8">
             <li>Hours, holiday closures, and festival menus</li>
             <li>Links to order online (your website or partner)</li>
             <li>Repeat-customer follow-up for opted-in lists</li>
           </ul>
-          <Link to="/contact" className="text-[#25D366] font-semibold hover:underline">
+          <Link to="/contact" className="text-brand font-semibold hover:underline">
             Discuss setup →
           </Link>
         </section>

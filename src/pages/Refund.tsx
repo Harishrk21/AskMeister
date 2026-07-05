@@ -53,12 +53,12 @@ const Refund = () => {
         <meta name="twitter:title" content="Refund Policy | Ask Meister" />
         <meta name="twitter:description" content="Understand refund terms and how to submit a refund request." />
       </Helmet>
-    <div className="pt-16">
+    <div className="page-wrap">
       {/* Header */}
-      <section className="bg-[#F7F7F7] py-16">
+      <section className="bg-surface-muted py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-[#1C1C1C] mb-4">Refund Policy</h1>
-          <p className="text-lg text-gray-600">
+          <h1 className="text-4xl font-bold text-white mb-4">Refund Policy</h1>
+          <p className="text-lg text-ink-muted">
             Last updated: January 1, 2026
           </p>
         </div>
@@ -67,9 +67,9 @@ const Refund = () => {
       {/* Overview */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#25D366]/10 rounded-xl p-8 mb-12">
-            <h2 className="text-2xl font-bold text-[#1C1C1C] mb-4">30-Day Money-Back Guarantee</h2>
-            <p className="text-gray-700 text-lg">
+          <div className="bg-brand/10 rounded-xl p-8 mb-12">
+            <h2 className="text-2xl font-bold text-white mb-4">30-Day Money-Back Guarantee</h2>
+            <p className="text-ink-muted text-lg">
               We stand behind our service with a 30-day money-back guarantee. If you're not satisfied with Ask Meister, 
               we'll refund your subscription fee when requested within 30 days of your initial purchase.
             </p>
@@ -91,13 +91,13 @@ const Refund = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 not-prose mb-8">
               <div className="bg-green-50 rounded-lg p-6">
                 <div className="flex items-center mb-4">
-                  <CheckCircle className="w-6 h-6 text-green-600 mr-2" />
+                  <CheckCircle className="w-6 h-6 text-brand mr-2" />
                   <h3 className="text-lg font-semibold text-green-800">Eligible for Refund</h3>
                 </div>
                 <ul className="space-y-2">
                   {eligibleScenarios.map((scenario, index) => (
                     <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-brand rounded-full mt-2 mr-3 flex-shrink-0"></div>
                       <span className="text-green-700">{scenario}</span>
                     </li>
                   ))}
@@ -129,12 +129,12 @@ const Refund = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
             {refundTimeline.map((item, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                <div className="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                   {item.step}
                 </div>
-                <h3 className="text-xl font-semibold text-[#1C1C1C] mb-2">{item.title}</h3>
-                <p className="text-gray-600 mb-2">{item.description}</p>
-                <div className="flex items-center justify-center text-sm text-[#25D366] font-medium">
+                <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
+                <p className="text-ink-muted mb-2">{item.description}</p>
+                <div className="flex items-center justify-center text-sm text-brand font-medium">
                   <Clock className="w-4 h-4 mr-1" />
                   {item.timeframe}
                 </div>
@@ -219,14 +219,14 @@ const Refund = () => {
             </div>
           </div>
 
-          <div className="mt-8 p-6 bg-[#F7F7F7] rounded-lg">
-            <h3 className="text-lg font-semibold text-[#1C1C1C] mb-4">Need Help with a Refund?</h3>
-            <p className="text-gray-600 mb-4">
+          <div className="mt-8 p-6 bg-surface-muted rounded-lg">
+            <h3 className="text-lg font-semibold text-white mb-4">Need Help with a Refund?</h3>
+            <p className="text-ink-muted mb-4">
               Our customer success team is here to help resolve any issues and process refund requests quickly and fairly.
             </p>
             <Link
               to="/contact"
-              className="bg-[#25D366] text-white px-6 py-2 rounded-lg hover:bg-[#128C7E] transition-colors inline-block"
+              className="bg-brand text-white px-6 py-2 rounded-lg hover:bg-brand-dark transition-colors inline-block"
             >
               Contact Support
             </Link>

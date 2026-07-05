@@ -332,23 +332,23 @@ See you there!
 
   const benefits = [
     {
-      metric: '500+',
-      description: 'Ready-to-use templates',
+      metric: 'Industry',
+      description: 'Starter templates by vertical',
       icon: FileText
     },
     {
-      metric: '50+',
-      description: 'Supported languages',
+      metric: 'Multi-lang',
+      description: 'English, Hindi & regional copy',
       icon: Globe
     },
     {
-      metric: '99%',
-      description: 'Approval success rate',
+      metric: 'Compliant',
+      description: 'Built for Meta approval rules',
       icon: CheckCircle
     },
     {
-      metric: '24h',
-      description: 'Average approval time',
+      metric: 'Fast',
+      description: 'Typical BSP review turnaround',
       icon: Zap
     }
   ];
@@ -357,17 +357,17 @@ See you there!
       <>
       <Helmet>
         <title>WhatsApp Message Templates | Pre-approved Templates & Builder | Ask Meister</title>
-        <meta name="description" content="WhatsApp message templates: 500+ pre-approved templates for bulk messaging & campaigns. Template builder for business. Compliant with WhatsApp API." />
+        <meta name="description" content="WhatsApp message templates for bulk messaging and campaigns. Industry starter templates, template builder, and Meta-compliant approval support." />
         <meta name="keywords" content="whatsapp templates, message templates, whatsapp business templates, pre-approved templates, template builder, promotional templates, notification templates" />
         <link rel="canonical" href="https://askmeister.com/whatsapp-message-templates" />
         <meta property="og:title" content="WhatsApp Message Templates | Pre-approved Templates" />
         <meta property="og:description" content="Professional WhatsApp message templates for business communication and marketing campaigns." />
         <meta property="og:url" content="https://askmeister.com/whatsapp-message-templates" />
       </Helmet>
-    <div className="pt-16">
+    <div className="page-wrap">
       <SeoBreadcrumbs items={[{ name: 'WhatsApp message templates', path: '/whatsapp-message-templates' }]} />
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-50 via-white to-yellow-50 py-20">
+      <section className="page-hero py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -376,11 +376,11 @@ See you there!
                   <FileText className="w-4 h-4 mr-2" />
                   Templates Feature
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
                   WhatsApp Message
-                  <span className="text-green-600 block">Templates Made Easy</span>
+                  <span className="text-brand block">Templates Made Easy</span>
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-xl text-ink-muted leading-relaxed">
                   Create, manage, and get approval for WhatsApp message templates with ease. 
                   Access hundreds of pre-built templates or create custom ones for your business.
                 </p>
@@ -389,14 +389,14 @@ See you there!
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center"
+                  className="bg-brand text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-dark transition-colors inline-flex items-center justify-center"
                 >
                   Start Free Trial
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 <Link
                   to="/contact"
-                  className="border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 hover:text-white transition-colors"
+                  className="border-2 border-brand text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand hover:text-white transition-colors"
                 >
                   Schedule Demo
                 </Link>
@@ -406,10 +406,10 @@ See you there!
                 {benefits.map((benefit, index) => (
                   <div key={index} className="text-center">
                     <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-2">
-                      <benefit.icon className="w-6 h-6 text-green-600" />
+                      <benefit.icon className="w-6 h-6 text-brand" />
                     </div>
-                    <div className="text-2xl font-bold text-green-600">{benefit.metric}</div>
-                    <div className="text-sm text-gray-600">{benefit.description}</div>
+                    <div className="text-2xl font-bold text-brand">{benefit.metric}</div>
+                    <div className="text-sm text-ink-muted">{benefit.description}</div>
                   </div>
                 ))}
               </div>
@@ -421,7 +421,7 @@ See you there!
     alt="Templates Dashboard"
     className="w-full max-h-[600px] object-contain rounded-2xl shadow-2xl"
   />
-  <div className="absolute -top-4 -right-4 bg-green-600 text-white p-3 rounded-full animate-bounce">
+  <div className="absolute -top-4 -right-4 bg-brand text-white p-3 rounded-full animate-bounce">
     <FileText className="w-6 h-6" />
   </div>
 </div>
@@ -434,10 +434,10 @@ See you there!
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Ready-to-Use Templates
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
               Copy and customize these professional templates for your business needs
             </p>
           </div>
@@ -448,16 +448,16 @@ See you there!
                 <div className="flex items-center mb-8">
                   <span className="text-4xl mr-4">{category.icon}</span>
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900">{category.title}</h3>
-                    <p className="text-gray-600">{category.description}</p>
+                    <h3 className="text-2xl font-bold text-white">{category.title}</h3>
+                    <p className="text-ink-muted">{category.description}</p>
                   </div>
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {category.templates.map((template, templateIndex) => (
-                    <div key={templateIndex} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                    <div key={templateIndex} className="glass-card p-6">
                       <div className="flex items-center justify-between mb-4">
-                        <h4 className="text-lg font-semibold text-gray-900">{template.name}</h4>
+                        <h4 className="text-lg font-semibold text-white">{template.name}</h4>
                         <button
                           onClick={() => copyToClipboard(template.content, template.id)}
                           className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
@@ -470,13 +470,13 @@ See you there!
                         </button>
                       </div>
                       
-                      <div className="bg-gray-50 rounded-lg p-4">
-                        <pre className="text-sm text-gray-700 whitespace-pre-wrap font-sans leading-relaxed">
+                      <div className="bg-surface-muted rounded-lg p-4">
+                        <pre className="text-sm text-ink-muted whitespace-pre-wrap font-sans leading-relaxed">
                           {template.content}
                         </pre>
                       </div>
                       
-                      <div className="mt-4 text-xs text-gray-500">
+                      <div className="mt-4 text-xs text-slate-400">
                         {/* Variables like {{name}}, {{company_name}} will be automatically replaced with actual values */}
                       </div>
                     </div>
@@ -489,30 +489,30 @@ See you there!
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Advanced Template Features
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
               Powerful tools to create, manage, and optimize your message templates
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+              <div key={index} className="glass-card p-6">
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-green-600" />
+                  <feature.icon className="w-6 h-6 text-brand" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600 mb-4">{feature.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
+                <p className="text-ink-muted mb-4">{feature.description}</p>
                 <ul className="space-y-2">
                   {feature.benefits.map((benefit, benefitIndex) => (
                     <li key={benefitIndex} className="flex items-center text-sm">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                      <span className="text-gray-600">{benefit}</span>
+                      <span className="text-ink-muted">{benefit}</span>
                     </li>
                   ))}
                 </ul>
@@ -526,37 +526,37 @@ See you there!
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               How to Use These Templates
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-ink-muted">
               Simple steps to customize and use our templates
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                 1
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Copy Template</h3>
-              <p className="text-gray-600">Click the "Copy Template" button to copy the template to your clipboard</p>
+              <h3 className="text-xl font-semibold text-white mb-2">Copy Template</h3>
+              <p className="text-ink-muted">Click the "Copy Template" button to copy the template to your clipboard</p>
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                 2
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Customize Variables</h3>
-               <p className="text-gray-600">Replace variables like "Name" and "CompanyName" with your actual values</p> 
+              <h3 className="text-xl font-semibold text-white mb-2">Customize Variables</h3>
+               <p className="text-ink-muted">Replace variables like "Name" and "CompanyName" with your actual values</p> 
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                 3
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Send Messages</h3>
-              <p className="text-gray-600">Use the customized template in your WhatsApp marketing campaigns</p>
+              <h3 className="text-xl font-semibold text-white mb-2">Send Messages</h3>
+              <p className="text-ink-muted">Use the customized template in your WhatsApp marketing campaigns</p>
             </div>
           </div>
         </div>
@@ -565,7 +565,7 @@ See you there!
       <InternalLinksHub currentPath="/whatsapp-message-templates" />
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-600">
+      <section className="py-20 bg-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Create Professional Templates?
@@ -576,13 +576,13 @@ See you there!
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="bg-white text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-surface-elevated transition-colors"
             >
               Start Free Trial
             </Link>
             <Link
               to="/contact"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-green-600 transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-brand transition-colors"
             >
               Contact Sales
             </Link>

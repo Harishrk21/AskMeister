@@ -10,9 +10,6 @@ type Props = {
   items: BreadcrumbItem[];
 };
 
-/**
- * Visual + BreadcrumbList JSON-LD for inner pages (plan §6.4).
- */
 const SeoBreadcrumbs = ({ items }: Props) => {
   if (!items.length) return null;
 
@@ -38,10 +35,10 @@ const SeoBreadcrumbs = ({ items }: Props) => {
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
-      <nav aria-label="Breadcrumb" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-gray-600">
+      <nav aria-label="Breadcrumb" className="container-wide py-3 text-sm text-ink-muted border-b border-white/5">
         <ol className="flex flex-wrap items-center gap-1">
           <li>
-            <Link to="/" className="inline-flex items-center gap-1 text-[#25D366] hover:underline">
+            <Link to="/" className="inline-flex items-center gap-1 text-brand hover:text-brand-light transition-colors">
               <Home className="w-4 h-4" />
               Home
             </Link>
@@ -50,11 +47,11 @@ const SeoBreadcrumbs = ({ items }: Props) => {
             const isLast = i === items.length - 1;
             return (
               <li key={`${item.name}-${i}`} className="flex items-center gap-1">
-                <ChevronRight className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                <ChevronRight className="w-4 h-4 text-slate-600 flex-shrink-0" />
                 {isLast || !item.path ? (
-                  <span className="text-gray-800 font-medium">{item.name}</span>
+                  <span className="text-ink-soft font-medium">{item.name}</span>
                 ) : (
-                  <Link to={item.path} className="text-[#25D366] hover:underline">
+                  <Link to={item.path} className="text-brand hover:text-brand-light transition-colors">
                     {item.name}
                   </Link>
                 )}

@@ -86,7 +86,7 @@ const LocalCityLanding = () => {
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
-      <div className="pt-16">
+      <div className="page-wrap">
         <SeoBreadcrumbs
           items={[
             { name: 'Tamil Nadu', path: '/whatsapp-marketing-tamil-nadu' },
@@ -94,13 +94,13 @@ const LocalCityLanding = () => {
           ]}
         />
 
-        <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-14 md:py-18">
+        <section className="page-hero py-14 md:py-18">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#1C1C1C] mb-4">{config.h1}</h1>
-            <p className="text-lg text-gray-600 mb-6">{config.intro}</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{config.h1}</h1>
+            <p className="text-lg text-ink-muted mb-6">{config.intro}</p>
             <Link
               to="/contact"
-              className="inline-block bg-[#25D366] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#128C7E] transition-colors"
+              className="inline-block bg-brand text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-dark transition-colors"
             >
               Talk to us
             </Link>
@@ -108,36 +108,36 @@ const LocalCityLanding = () => {
         </section>
 
         <section className="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#1C1C1C] mb-4">Industries we often support here</h2>
-          <ul className="list-disc pl-6 text-gray-700 space-y-2">
+          <h2 className="text-2xl font-bold text-white mb-4">Industries we often support here</h2>
+          <ul className="list-disc pl-6 text-ink-muted space-y-2">
             {config.industries.map((line) => (
               <li key={line}>{line}</li>
             ))}
           </ul>
-          <p className="mt-6 text-sm text-gray-500">
+          <p className="mt-6 text-sm text-slate-400">
             Examples are illustrative only; your onboarding depends on opt-in lists, template approval, and Meta policies.
           </p>
         </section>
 
-        <section className="py-12 bg-[#F7F7F7]">
+        <section className="py-12 bg-surface-muted">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-[#1C1C1C] mb-4">Map & contact</h2>
-            <p className="text-gray-700 mb-4">
+            <h2 className="text-2xl font-bold text-white mb-4">Map & contact</h2>
+            <p className="text-ink-muted mb-4">
               Our registered office is in Chennai; we support customers statewide. Open the map for {config.cityName} to orient local search users—no claim of a separate branch unless you add one.
             </p>
             <a
               href={mapsHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-[#25D366] font-semibold hover:underline"
+              className="inline-flex items-center gap-2 text-brand font-semibold hover:underline"
             >
               <MapPin className="w-5 h-5" />
               View {config.cityName} on Google Maps
               <ExternalLink className="w-4 h-4" />
             </a>
-            <p className="mt-6 text-gray-700">
+            <p className="mt-6 text-ink-muted">
               Phone:{' '}
-              <a href={`tel:${PHONE_E164}`} className="text-[#25D366] font-medium">
+              <a href={`tel:${PHONE_E164}`} className="text-brand font-medium">
                 {PHONE_DISPLAY}
               </a>
             </p>

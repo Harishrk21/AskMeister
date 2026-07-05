@@ -141,10 +141,10 @@ const RealEstateTemplate = () => {
   </Helmet>
 
 
-    <div className="pt-16">
+    <div className="page-wrap">
       <SeoBreadcrumbs items={[{ name: 'WhatsApp automation for real estate', path: '/whatsapp-automation-for-real-estate' }]} />
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-50 via-white to-indigo-50 py-20">
+      <section className="page-hero py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -153,11 +153,11 @@ const RealEstateTemplate = () => {
                   <Home className="w-4 h-4 mr-2" />
                   Real Estate Solution
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
                   Transform Real Estate
-                  <span className="text-green-600 block">with WhatsApp API</span>
+                  <span className="text-brand block">with WhatsApp API</span>
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-xl text-ink-muted leading-relaxed">
                   Use WhatsApp for faster replies, structured follow-ups, and chatbots where appropriate. Sales outcomes depend on inventory, process, and compliance—not messaging alone.
                 </p>
               </div>
@@ -165,7 +165,7 @@ const RealEstateTemplate = () => {
               <div className="flex flex-col sm:flex-row gap-4">
   <Link to="/contact">
     <button
-      className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center"
+      className="bg-brand text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-dark transition-colors inline-flex items-center justify-center"
     >
       Start Free Trial
       <ArrowRight className="w-5 h-5 ml-2" />
@@ -174,7 +174,7 @@ const RealEstateTemplate = () => {
   
   <Link to="/contact">
     <button
-      className="border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 hover:text-white transition-colors"
+      className="border-2 border-brand text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand hover:text-white transition-colors"
     >
       Schedule Demo
     </button>
@@ -185,10 +185,10 @@ const RealEstateTemplate = () => {
                 {benefits.map((benefit, index) => (
                   <div key={index} className="text-center">
                     <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-2">
-                      <benefit.icon className="w-6 h-6 text-green-600" />
+                      <benefit.icon className="w-6 h-6 text-brand" />
                     </div>
-                    <div className="text-2xl font-bold text-green-600">{benefit.metric}</div>
-                    <div className="text-sm text-gray-600">{benefit.description}</div>
+                    <div className="text-2xl font-bold text-brand">{benefit.metric}</div>
+                    <div className="text-sm text-ink-muted">{benefit.description}</div>
                   </div>
                 ))}
               </div>
@@ -200,7 +200,7 @@ const RealEstateTemplate = () => {
                 alt="Real Estate WhatsApp Automation"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
-              <div className="absolute -top-4 -right-4 bg-green-600 text-white p-3 rounded-full animate-bounce">
+              <div className="absolute -top-4 -right-4 bg-brand text-white p-3 rounded-full animate-bounce">
                 <MessageCircle className="w-6 h-6" />
               </div>
             </div>
@@ -212,10 +212,10 @@ const RealEstateTemplate = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               All Property Types Covered
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
               Our solution works for all types of real estate properties and markets
             </p>
           </div>
@@ -223,10 +223,10 @@ const RealEstateTemplate = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             {propertyTypes.map((property, index) => (
               <div key={index} className="text-center group">
-                <div className="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-green-100 transition-colors">
+                <div className="w-20 h-20 bg-surface-elevated rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-green-100 transition-colors">
                   <span className="text-3xl">{property.icon}</span>
                 </div>
-                <div className="font-semibold text-gray-900 text-sm">{property.name}</div>
+                <div className="font-semibold text-white text-sm">{property.name}</div>
               </div>
             ))}
           </div>
@@ -234,30 +234,30 @@ const RealEstateTemplate = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Powerful Real Estate Features
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
               Everything you need to dominate your real estate market
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+              <div key={index} className="glass-card p-6">
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-green-600" />
+                  <feature.icon className="w-6 h-6 text-brand" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600 mb-4">{feature.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
+                <p className="text-ink-muted mb-4">{feature.description}</p>
                 <ul className="space-y-2">
                   {feature.benefits.map((benefit, benefitIndex) => (
                     <li key={benefitIndex} className="flex items-center text-sm">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                      <span className="text-gray-600">{benefit}</span>
+                      <span className="text-ink-muted">{benefit}</span>
                     </li>
                   ))}
                 </ul>
@@ -271,10 +271,10 @@ const RealEstateTemplate = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Real Estate Solutions That Work
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-ink-muted">
               See how agents and developers are scaling their business with WhatsApp
             </p>
           </div>
@@ -283,16 +283,16 @@ const RealEstateTemplate = () => {
             {useCases.map((useCase, index) => (
               <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                 <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{useCase.title}</h3>
-                  <p className="text-lg text-gray-600 mb-6">{useCase.description}</p>
+                  <h3 className="text-2xl font-bold text-white mb-4">{useCase.title}</h3>
+                  <p className="text-lg text-ink-muted mb-6">{useCase.description}</p>
                   
                   <div className="space-y-3">
                     {useCase.steps.map((step, stepIndex) => (
                       <div key={stepIndex} className="flex items-center">
-                        <div className="w-6 h-6 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
+                        <div className="w-6 h-6 bg-brand text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
                           {stepIndex + 1}
                         </div>
-                        <span className="text-gray-700">{step}</span>
+                        <span className="text-ink-muted">{step}</span>
                       </div>
                     ))}
                   </div>
@@ -311,10 +311,10 @@ const RealEstateTemplate = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">No fabricated broker stories</h2>
-          <p className="text-lg text-gray-600 leading-relaxed">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">No fabricated broker stories</h2>
+          <p className="text-lg text-ink-muted leading-relaxed">
             We do not display unaudited sales claims. WhatsApp is best used for timely responses, document sharing, and visit coordination alongside your existing CRM and legal workflow.
           </p>
         </div>
@@ -323,7 +323,7 @@ const RealEstateTemplate = () => {
       <InternalLinksHub currentPath="/whatsapp-automation-for-real-estate" />
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-600">
+      <section className="py-20 bg-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Scale Your Real Estate Business?
@@ -334,13 +334,13 @@ const RealEstateTemplate = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
                       <Link
                         to="/contact"
-                        className="bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
+                        className="bg-white text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-surface-elevated transition-colors"
                       >
                         Contact for demo
                       </Link>
                       <Link
                         to="/contact"
-                        className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-green-600 transition-colors"
+                        className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-brand transition-colors"
                       >
                         Schedule Demo
                       </Link>

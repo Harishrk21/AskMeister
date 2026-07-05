@@ -73,26 +73,10 @@ const LiveChat = () => {
   ];
 
   const analyticsMetrics = [
-    {
-      metric: 'SLA-ready',
-      description: 'Message delivery rate',
-      icon: Send
-    },
-    {
-      metric: '24/7',
-      description: 'Live monitoring',
-      icon: Eye
-    },
-    {
-      metric: '85%',
-      description: 'Read rate tracking',
-      icon: CheckCircle
-    },
-    {
-      metric: '3x',
-      description: 'Response speed',
-      icon: Zap
-    }
+    { metric: 'SLA-ready', description: 'Delivery tracking', icon: Send },
+    { metric: '24/7', description: 'Inbox monitoring', icon: Eye },
+    { metric: 'Team', description: 'Agent assignment', icon: CheckCircle },
+    { metric: 'Fast', description: 'Reply workflows', icon: Zap },
   ];
 
   return (
@@ -106,10 +90,10 @@ const LiveChat = () => {
         <meta property="og:description" content="Collaborate seamlessly with team inbox for WhatsApp customer support and messaging." />
         <meta property="og:url" content="https://askmeister.com/whatsapp-live-chat" />
       </Helmet>
-    <div className="pt-16">
+    <div className="page-wrap">
       <SeoBreadcrumbs items={[{ name: 'WhatsApp live chat', path: '/whatsapp-live-chat' }]} />
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-50 via-white to-green-50 py-20">
+      <section className="page-hero py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -118,22 +102,22 @@ const LiveChat = () => {
                   <MessageCircle className="w-4 h-4 mr-2" />
                   Live Chat Feature
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
                   WhatsApp Live Chat
-                  <span className="text-green-600 block">Dashboard</span>
+                  <span className="text-brand block">Dashboard</span>
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-xl text-ink-muted leading-relaxed">
                   Manage WhatsApp conversations in real-time with live analytics, campaign scheduling, 
                   and seamless chatbot integration. Experience WhatsApp Web reimagined for business.
                 </p>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center">
+                <button className="bg-brand text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-dark transition-colors inline-flex items-center justify-center">
                   Start Free Trial
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </button>
-                <button className="border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 hover:text-white transition-colors">
+                <button className="border-2 border-brand text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand hover:text-white transition-colors">
                   Schedule Demo
                 </button>
               </div>
@@ -142,10 +126,10 @@ const LiveChat = () => {
                 {analyticsMetrics.map((metric, index) => (
                   <div key={index} className="text-center">
                     <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-2">
-                      <metric.icon className="w-6 h-6 text-green-600" />
+                      <metric.icon className="w-6 h-6 text-brand" />
                     </div>
-                    <div className="text-2xl font-bold text-green-600">{metric.metric}</div>
-                    <div className="text-sm text-gray-600">{metric.description}</div>
+                    <div className="text-2xl font-bold text-brand">{metric.metric}</div>
+                    <div className="text-sm text-ink-muted">{metric.description}</div>
                   </div>
                 ))}
               </div>
@@ -157,7 +141,7 @@ const LiveChat = () => {
                 alt="Live Chat Dashboard"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
-              <div className="absolute -top-4 -right-4 bg-green-600 text-white p-3 rounded-full animate-bounce">
+              <div className="absolute -top-4 -right-4 bg-brand text-white p-3 rounded-full animate-bounce">
                 <MessageCircle className="w-6 h-6" />
               </div>
             </div>
@@ -169,27 +153,27 @@ const LiveChat = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               WhatsApp-Style Live Interface
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
               Experience the familiar WhatsApp interface with powerful business features
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {liveFeatures.map((feature, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+              <div key={index} className="glass-card p-6">
                 <div className="text-center mb-4">
                   <span className="text-4xl mb-2 block">{feature.icon}</span>
-                  <h3 className="text-xl font-semibold text-gray-900">{feature.title}</h3>
-                  <p className="text-gray-600 text-sm mt-2">{feature.description}</p>
+                  <h3 className="text-xl font-semibold text-white">{feature.title}</h3>
+                  <p className="text-ink-muted text-sm mt-2">{feature.description}</p>
                 </div>
                 <ul className="space-y-2">
                   {feature.details.map((detail, detailIndex) => (
                     <li key={detailIndex} className="flex items-center text-sm">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                      <span className="text-gray-600">{detail}</span>
+                      <span className="text-ink-muted">{detail}</span>
                     </li>
                   ))}
                 </ul>
@@ -200,30 +184,30 @@ const LiveChat = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Complete WhatsApp Marketing Suite
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
               Everything you need to manage WhatsApp campaigns and customer conversations
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+              <div key={index} className="glass-card p-6">
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-green-600" />
+                  <feature.icon className="w-6 h-6 text-brand" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600 mb-4">{feature.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
+                <p className="text-ink-muted mb-4">{feature.description}</p>
                 <ul className="space-y-2">
                   {feature.benefits.map((benefit, benefitIndex) => (
                     <li key={benefitIndex} className="flex items-center text-sm">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                      <span className="text-gray-600">{benefit}</span>
+                      <span className="text-ink-muted">{benefit}</span>
                     </li>
                   ))}
                 </ul>
@@ -237,21 +221,21 @@ const LiveChat = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Familiar WhatsApp Interface
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
               Left panel shows contacts who received templates, right panel for live conversations
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+          <div className="glass-card overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2 h-96">
               {/* Left Panel - Contacts */}
-              <div className="bg-gray-50 p-6 border-r border-gray-200">
+              <div className="bg-surface-muted p-6 border-r border-white/10">
                 <div className="flex items-center mb-6">
-                  <Users className="w-6 h-6 text-green-600 mr-3" />
-                  <h3 className="text-lg font-semibold text-gray-900">Contact List</h3>
+                  <Users className="w-6 h-6 text-brand mr-3" />
+                  <h3 className="text-lg font-semibold text-white">Contact List</h3>
                 </div>
                 <div className="space-y-3">
                   {[
@@ -260,17 +244,17 @@ const LiveChat = () => {
                     { name: "Mike Wilson", message: "Bot conversation", time: "2:20 PM", status: "active" },
                     { name: "Lisa Brown", message: "Template opened", time: "2:15 PM", status: "read" }
                   ].map((contact, index) => (
-                    <div key={index} className="flex items-center p-3 bg-white rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                    <div key={index} className="flex items-center p-3 glass-card hover:bg-surface-muted cursor-pointer transition-colors">
                       <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
-                        <User className="w-5 h-5 text-green-600" />
+                        <User className="w-5 h-5 text-brand" />
                       </div>
                       <div className="flex-1">
                         <div className="flex items-center justify-between">
-                          <span className="font-medium text-gray-900">{contact.name}</span>
-                          <span className="text-xs text-gray-500">{contact.time}</span>
+                          <span className="font-medium text-white">{contact.name}</span>
+                          <span className="text-xs text-slate-400">{contact.time}</span>
                         </div>
                         <div className="flex items-center justify-between">
-                          <span className="text-sm text-gray-600">{contact.message}</span>
+                          <span className="text-sm text-ink-muted">{contact.message}</span>
                           <div className={`w-2 h-2 rounded-full ${
                             contact.status === 'read' ? 'bg-blue-500' :
                             contact.status === 'delivered' ? 'bg-gray-400' :
@@ -286,18 +270,18 @@ const LiveChat = () => {
               {/* Right Panel - Chat */}
               <div className="p-6">
                 <div className="flex items-center mb-6">
-                  <MessageCircle className="w-6 h-6 text-green-600 mr-3" />
-                  <h3 className="text-lg font-semibold text-gray-900">Live Chat</h3>
+                  <MessageCircle className="w-6 h-6 text-brand mr-3" />
+                  <h3 className="text-lg font-semibold text-white">Live Chat</h3>
                   <div className="ml-auto flex items-center">
                     <Bot className="w-5 h-5 text-blue-500 mr-2" />
-                    <span className="text-sm text-gray-600">Bot Active</span>
+                    <span className="text-sm text-ink-muted">Bot Active</span>
                   </div>
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-start">
-                    <div className="bg-gray-100 rounded-lg p-3 max-w-xs">
-                      <p className="text-sm text-gray-800">Hello! How can I help you today?</p>
-                      <span className="text-xs text-gray-500 mt-1 block">Template sent</span>
+                    <div className="bg-surface-elevated rounded-lg p-3 max-w-xs">
+                      <p className="text-sm text-white">Hello! How can I help you today?</p>
+                      <span className="text-xs text-slate-400 mt-1 block">Template sent</span>
                     </div>
                   </div>
                   <div className="flex items-start justify-end">
@@ -308,17 +292,17 @@ const LiveChat = () => {
                   </div>
                   <div className="flex items-start">
                     <div className="bg-blue-100 rounded-lg p-3 max-w-xs">
-                      <p className="text-sm text-gray-800">I'd be happy to help! Let me connect you with a specialist.</p>
+                      <p className="text-sm text-white">I'd be happy to help! Let me connect you with a specialist.</p>
                       <span className="text-xs text-blue-600 mt-1 block">Bot → Human takeover</span>
                     </div>
                   </div>
                 </div>
                 <div className="mt-6 flex items-center space-x-2">
-                  <Image className="w-5 h-5 text-gray-400" />
-                  <Video className="w-5 h-5 text-gray-400" />
-                  <FileText className="w-5 h-5 text-gray-400" />
-                  <div className="flex-1 bg-gray-100 rounded-full px-4 py-2">
-                    <span className="text-sm text-gray-500">Type a message...</span>
+                  <Image className="w-5 h-5 text-slate-500" />
+                  <Video className="w-5 h-5 text-slate-500" />
+                  <FileText className="w-5 h-5 text-slate-500" />
+                  <div className="flex-1 bg-surface-elevated rounded-full px-4 py-2">
+                    <span className="text-sm text-slate-400">Type a message...</span>
                   </div>
                 </div>
               </div>
@@ -330,7 +314,7 @@ const LiveChat = () => {
       <InternalLinksHub currentPath="/whatsapp-live-chat" />
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-600">
+      <section className="py-20 bg-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Transform Your WhatsApp Marketing?
@@ -340,12 +324,12 @@ const LiveChat = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
   <Link to="/contact">
-    <button className="bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+    <button className="bg-white text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-surface-elevated transition-colors">
       Start Free Trial
     </button>
   </Link>
   <Link to="/contact">
-    <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-green-600 transition-colors">
+    <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-brand transition-colors">
       Contact Sales
     </button>
   </Link>

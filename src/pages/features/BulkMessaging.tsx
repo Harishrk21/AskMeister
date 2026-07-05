@@ -133,10 +133,10 @@ const BulkMessaging = () => {
         <meta property="og:description" content="Broadcast campaigns using approved WhatsApp templates, segmentation, and analytics." />
         <meta property="og:url" content="https://askmeister.com/whatsapp-bulk-messaging" />
       </Helmet>
-    <div className="pt-16">
+    <div className="page-wrap">
       <SeoBreadcrumbs items={[{ name: 'WhatsApp bulk messaging', path: '/whatsapp-bulk-messaging' }]} />
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-50 via-white to-green-50 py-20">
+      <section className="page-hero py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -145,25 +145,25 @@ const BulkMessaging = () => {
                   <MessageCircle className="w-4 h-4 mr-2" />
                   Bulk Messaging Feature
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
                   Bulk WhatsApp messaging
-                  <span className="text-green-600 block">Broadcasts &amp; campaigns</span>
+                  <span className="text-brand block">Broadcasts &amp; campaigns</span>
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-xl text-ink-muted leading-relaxed">
                   Send template-based messages to opted-in audiences. Delivery and engagement depend on Meta policies, template approval, and list quality—not guaranteed rates.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center"
+                  className="bg-brand text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-dark transition-colors inline-flex items-center justify-center"
                 >
                   Request demo
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 <Link
                   to="/contact"
-                  className="border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 hover:text-white transition-colors"
+                  className="border-2 border-brand text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand hover:text-white transition-colors"
                 >
                   Contact Sales
                 </Link>
@@ -173,10 +173,10 @@ const BulkMessaging = () => {
                 {benefits.map((benefit, index) => (
                   <div key={index} className="text-center">
                     <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-2">
-                      <benefit.icon className="w-6 h-6 text-green-600" />
+                      <benefit.icon className="w-6 h-6 text-brand" />
                     </div>
-                    <div className="text-2xl font-bold text-green-600">{benefit.metric}</div>
-                    <div className="text-sm text-gray-600">{benefit.description}</div>
+                    <div className="text-2xl font-bold text-brand">{benefit.metric}</div>
+                    <div className="text-sm text-ink-muted">{benefit.description}</div>
                   </div>
                 ))}
               </div>
@@ -188,7 +188,7 @@ const BulkMessaging = () => {
                 alt="Bulk Messaging Dashboard"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
-              <div className="absolute -top-4 -right-4 bg-green-600 text-white p-3 rounded-full animate-bounce">
+              <div className="absolute -top-4 -right-4 bg-brand text-white p-3 rounded-full animate-bounce">
                 <Send className="w-6 h-6" />
               </div>
             </div>
@@ -200,27 +200,27 @@ const BulkMessaging = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Powerful Bulk Messaging Features
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
               Everything you need to create and manage successful bulk messaging campaigns
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+              <div key={index} className="glass-card p-6">
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-green-600" />
+                  <feature.icon className="w-6 h-6 text-brand" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600 mb-4">{feature.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
+                <p className="text-ink-muted mb-4">{feature.description}</p>
                 <ul className="space-y-2">
                   {feature.benefits.map((benefit, benefitIndex) => (
                     <li key={benefitIndex} className="flex items-center text-sm">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                      <span className="text-gray-600">{benefit}</span>
+                      <span className="text-ink-muted">{benefit}</span>
                     </li>
                   ))}
                 </ul>
@@ -231,13 +231,13 @@ const BulkMessaging = () => {
       </section>
 
       {/* Use Cases Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Bulk Messaging Use Cases
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-ink-muted">
               See how businesses use bulk messaging to drive engagement and sales
             </p>
           </div>
@@ -246,16 +246,16 @@ const BulkMessaging = () => {
             {useCases.map((useCase, index) => (
               <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                 <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{useCase.title}</h3>
-                  <p className="text-lg text-gray-600 mb-6">{useCase.description}</p>
+                  <h3 className="text-2xl font-bold text-white mb-4">{useCase.title}</h3>
+                  <p className="text-lg text-ink-muted mb-6">{useCase.description}</p>
 
                   <div className="space-y-3">
                     {useCase.steps.map((step, stepIndex) => (
                       <div key={stepIndex} className="flex items-center">
-                        <div className="w-6 h-6 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
+                        <div className="w-6 h-6 bg-brand text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
                           {stepIndex + 1}
                         </div>
-                        <span className="text-gray-700">{step}</span>
+                        <span className="text-ink-muted">{step}</span>
                       </div>
                     ))}
                   </div>
@@ -277,7 +277,7 @@ const BulkMessaging = () => {
       <InternalLinksHub currentPath="/whatsapp-bulk-messaging" />
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-600">
+      <section className="py-20 bg-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Start Bulk Messaging?
@@ -288,13 +288,13 @@ const BulkMessaging = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="bg-white text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-surface-elevated transition-colors"
             >
               Contact sales
             </Link>
             <Link
               to="/contact"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-green-600 transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-brand transition-colors"
             >
               Contact Sales
             </Link>

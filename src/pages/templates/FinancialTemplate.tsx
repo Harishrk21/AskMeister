@@ -173,10 +173,10 @@ const FinancialTemplate = () => {
         <meta property="og:url" content="https://askmeister.com/whatsapp-banking-automation" />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
-    <div className="pt-16">
+    <div className="page-wrap">
       <SeoBreadcrumbs items={[{ name: 'WhatsApp banking automation', path: '/whatsapp-banking-automation' }]} />
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-50 via-white to-green-50 py-20">
+      <section className="page-hero py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -185,11 +185,11 @@ const FinancialTemplate = () => {
                   <Banknote className="w-4 h-4 mr-2" />
                   Financial Services Solution
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
                   Secure Banking with
-                  <span className="text-green-600 block">WhatsApp Automation</span>
+                  <span className="text-brand block">WhatsApp Automation</span>
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-xl text-ink-muted leading-relaxed">
                   Transform financial services with secure WhatsApp banking. Provide instant account updates, 
                   fraud alerts, payment assistance, and 24/7 customer support through encrypted messaging.
                 </p>
@@ -198,14 +198,14 @@ const FinancialTemplate = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center"
+                  className="bg-brand text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-dark transition-colors inline-flex items-center justify-center"
                 >
                   Start Free Trial
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 <Link
                   to="/contact"
-                  className="border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 hover:text-white transition-colors"
+                  className="border-2 border-brand text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand hover:text-white transition-colors"
                 >
                   Schedule Demo
                 </Link>
@@ -215,10 +215,10 @@ const FinancialTemplate = () => {
                 {benefits.map((benefit, index) => (
                   <div key={index} className="text-center">
                     <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-2">
-                      <benefit.icon className="w-6 h-6 text-green-600" />
+                      <benefit.icon className="w-6 h-6 text-brand" />
                     </div>
-                    <div className="text-2xl font-bold text-green-600">{benefit.metric}</div>
-                    <div className="text-sm text-gray-600">{benefit.description}</div>
+                    <div className="text-2xl font-bold text-brand">{benefit.metric}</div>
+                    <div className="text-sm text-ink-muted">{benefit.description}</div>
                   </div>
                 ))}
               </div>
@@ -230,7 +230,7 @@ const FinancialTemplate = () => {
                 alt="Financial Services WhatsApp Automation"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
-              <div className="absolute -top-4 -right-4 bg-green-600 text-white p-3 rounded-full animate-pulse">
+              <div className="absolute -top-4 -right-4 bg-brand text-white p-3 rounded-full animate-pulse">
                 <Lock className="w-6 h-6" />
               </div>
             </div>
@@ -242,24 +242,24 @@ const FinancialTemplate = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Complete Financial Services Coverage
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
               Automate all aspects of financial services through WhatsApp
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.name}</h3>
-                <p className="text-gray-600 mb-4">{service.description}</p>
+              <div key={index} className="glass-card p-6">
+                <h3 className="text-xl font-semibold text-white mb-3">{service.name}</h3>
+                <p className="text-ink-muted mb-4">{service.description}</p>
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-sm">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                      <span className="text-gray-600">{feature}</span>
+                      <span className="text-ink-muted">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -270,30 +270,30 @@ const FinancialTemplate = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Advanced Financial Features
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
               Secure and compliant financial automation tools
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+              <div key={index} className="glass-card p-6">
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-green-600" />
+                  <feature.icon className="w-6 h-6 text-brand" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600 mb-4">{feature.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
+                <p className="text-ink-muted mb-4">{feature.description}</p>
                 <ul className="space-y-2">
                   {feature.benefits.map((benefit, benefitIndex) => (
                     <li key={benefitIndex} className="flex items-center text-sm">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                      <span className="text-gray-600">{benefit}</span>
+                      <span className="text-ink-muted">{benefit}</span>
                     </li>
                   ))}
                 </ul>
@@ -307,10 +307,10 @@ const FinancialTemplate = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Financial Service Automation
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-ink-muted">
               See how financial institutions are transforming customer experience
             </p>
           </div>
@@ -319,16 +319,16 @@ const FinancialTemplate = () => {
             {useCases.map((useCase, index) => (
               <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                 <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{useCase.title}</h3>
-                  <p className="text-lg text-gray-600 mb-6">{useCase.description}</p>
+                  <h3 className="text-2xl font-bold text-white mb-4">{useCase.title}</h3>
+                  <p className="text-lg text-ink-muted mb-6">{useCase.description}</p>
                   
                   <div className="space-y-3">
                     {useCase.steps.map((step, stepIndex) => (
                       <div key={stepIndex} className="flex items-center">
-                        <div className="w-6 h-6 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
+                        <div className="w-6 h-6 bg-brand text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
                           {stepIndex + 1}
                         </div>
-                        <span className="text-gray-700">{step}</span>
+                        <span className="text-ink-muted">{step}</span>
                       </div>
                     ))}
                   </div>
@@ -348,13 +348,13 @@ const FinancialTemplate = () => {
       </section>
 
       {/* Security & Compliance */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Bank-Grade Security & Compliance
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-ink-muted">
               Your financial data is protected with the highest security standards
             </p>
           </div>
@@ -362,34 +362,34 @@ const FinancialTemplate = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-8 h-8 text-green-600" />
+                <Shield className="w-8 h-8 text-brand" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">End-to-End Encryption</h3>
-              <p className="text-gray-600 text-sm">All messages are encrypted with bank-grade security</p>
+              <h3 className="text-lg font-semibold text-white mb-2">End-to-End Encryption</h3>
+              <p className="text-ink-muted text-sm">All messages are encrypted with bank-grade security</p>
             </div>
             
             <div className="text-center">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Lock className="w-8 h-8 text-green-600" />
+                <Lock className="w-8 h-8 text-brand" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">PCI DSS Compliant</h3>
-              <p className="text-gray-600 text-sm">Meets all payment card industry standards</p>
+              <h3 className="text-lg font-semibold text-white mb-2">PCI DSS Compliant</h3>
+              <p className="text-ink-muted text-sm">Meets all payment card industry standards</p>
             </div>
             
             <div className="text-center">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <AlertTriangle className="w-8 h-8 text-green-600" />
+                <AlertTriangle className="w-8 h-8 text-brand" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Fraud Detection</h3>
-              <p className="text-gray-600 text-sm">Advanced AI-powered fraud detection and prevention</p>
+              <h3 className="text-lg font-semibold text-white mb-2">Fraud Detection</h3>
+              <p className="text-ink-muted text-sm">Advanced AI-powered fraud detection and prevention</p>
             </div>
             
             <div className="text-center">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <BarChart3 className="w-8 h-8 text-green-600" />
+                <BarChart3 className="w-8 h-8 text-brand" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Audit Trails</h3>
-              <p className="text-gray-600 text-sm">Complete audit trails for compliance and reporting</p>
+              <h3 className="text-lg font-semibold text-white mb-2">Audit Trails</h3>
+              <p className="text-ink-muted text-sm">Complete audit trails for compliance and reporting</p>
             </div>
           </div>
         </div>
@@ -397,13 +397,13 @@ const FinancialTemplate = () => {
 
       {/* Honest use-case note */}
       <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-600 leading-relaxed">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Built for regulated financial messaging</h2>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-ink-muted leading-relaxed">
+          <h2 className="text-2xl font-bold text-white mb-4">Built for regulated financial messaging</h2>
           <p>
             Ask Meister supports template workflows and team hand-off for banks and fintechs. We do not guarantee fraud prevention outcomes, call-center reductions, or revenue—those depend on your policies, integrations, and operations.
           </p>
           <p className="mt-4">
-            <Link to="/whatsapp-kyc-automation-for-banks" className="text-green-600 font-semibold hover:underline">
+            <Link to="/whatsapp-kyc-automation-for-banks" className="text-brand font-semibold hover:underline">
               WhatsApp KYC automation for banks →
             </Link>
           </p>
@@ -413,7 +413,7 @@ const FinancialTemplate = () => {
       <InternalLinksHub currentPath="/whatsapp-banking-automation" />
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-600">
+      <section className="py-20 bg-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Transform Financial Services?
@@ -424,13 +424,13 @@ const FinancialTemplate = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="bg-white text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-surface-elevated transition-colors"
             >
               Start Free Trial
             </Link>
             <Link
               to="/contact"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-green-600 transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-brand transition-colors"
             >
               Schedule Demo
             </Link>

@@ -173,35 +173,35 @@ const WhatsAppAPI = () => {
         <meta property="og:description" content="Get access to official WhatsApp Business API with maximum reliability and compliance." />
         <meta property="og:url" content="https://askmeister.com/whatsapp-api" />
       </Helmet>
-    <div className="pt-16">
+    <div className="page-wrap">
       {/* Hero Section */}
-     <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-20">
+     <section className="page-hero py-20">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
       {/* Left Content */}
       <div className="text-center md:text-left">
-        <div className="inline-flex items-center bg-[#25D366]/10 text-[#25D366] px-4 py-2 rounded-full text-sm font-medium mb-6">
+        <div className="inline-flex items-center bg-brand/10 text-brand px-4 py-2 rounded-full text-sm font-medium mb-6">
           <Shield className="w-4 h-4 mr-2" />
           Official WhatsApp Business API Partner
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold text-[#1C1C1C] mb-6">
+        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
           WhatsApp Business API
-          <span className="text-[#25D366] block">Made Simple</span>
+          <span className="text-brand block">Made Simple</span>
         </h1>
-        <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+        <p className="text-xl text-ink-muted mb-8 leading-relaxed">
           Connect with your customers through the official WhatsApp Business API. 
           Enjoy maximum deliverability, enhanced security, and clear onboarding support for API setup.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <Link
             to="/contact"
-            className="bg-[#25D366] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#128C7E] transition-colors"
+            className="bg-brand text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-dark transition-colors"
           >
             Get API Access
           </Link>
           <Link
             to="/contact"
-            className="border-2 border-[#25D366] text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#25D366] hover:text-white transition-colors"
+            className="border-2 border-brand text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand hover:text-white transition-colors"
           >
             Schedule Demo
           </Link>
@@ -224,89 +224,89 @@ const WhatsAppAPI = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               See Our Platform in Action
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-ink-muted">
               Watch how businesses use our WhatsApp Cloud API integration
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl p-6 shadow-lg">
-              <div className="aspect-video bg-gray-200 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+            <div className="glass-card p-6">
+              <div className="aspect-video bg-surface-elevated rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
                 <img 
                   src={bulks}
                   alt="API Setup Demo"
                   className="w-full h-full object-cover"
                 />
                 {/* <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                  <button className="w-12 h-12 bg-[#25D366] rounded-full flex items-center justify-center hover:bg-[#128C7E] transition-colors">
+                  <button className="w-12 h-12 bg-brand rounded-full flex items-center justify-center hover:bg-brand-dark transition-colors">
                     <Play className="w-6 h-6 text-white ml-1" />
                   </button>
                 </div> */}
               </div>
-              <h3 className="text-lg font-semibold text-[#1C1C1C] mb-2">Bulk Messaging</h3>
-              <p className="text-gray-600 text-sm">Connect your WhatsApp Business account in under 5 minutes</p>
+              <h3 className="text-lg font-semibold text-white mb-2">Bulk Messaging</h3>
+              <p className="text-ink-muted text-sm">Connect your WhatsApp Business account in under 5 minutes</p>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-lg">
-              <div className="aspect-video bg-gray-200 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+            <div className="glass-card p-6">
+              <div className="aspect-video bg-surface-elevated rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
                 <img 
                   src={chatbot}
                   alt="Chatbot Demo"
                   className="w-full h-full object-cover"
                 />
                 {/* <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                  <button className="w-12 h-12 bg-[#25D366] rounded-full flex items-center justify-center hover:bg-[#128C7E] transition-colors">
+                  <button className="w-12 h-12 bg-brand rounded-full flex items-center justify-center hover:bg-brand-dark transition-colors">
                     <Play className="w-6 h-6 text-white ml-1" />
                   </button>
                 </div> */}
               </div>
-              <h3 className="text-lg font-semibold text-[#1C1C1C] mb-2">Smart Chatbots</h3>
-              <p className="text-gray-600 text-sm">Build intelligent chatbots for any industry or use case</p>
+              <h3 className="text-lg font-semibold text-white mb-2">Smart Chatbots</h3>
+              <p className="text-ink-muted text-sm">Build intelligent chatbots for any industry or use case</p>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-lg">
-              <div className="aspect-video bg-gray-200 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+            <div className="glass-card p-6">
+              <div className="aspect-video bg-surface-elevated rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
                 <img 
                   src={analytics}
                   alt="Analytics Demo"
                   className="w-full h-full object-cover"
                 />
                 {/* <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                  <button className="w-12 h-12 bg-[#25D366] rounded-full flex items-center justify-center hover:bg-[#128C7E] transition-colors">
+                  <button className="w-12 h-12 bg-brand rounded-full flex items-center justify-center hover:bg-brand-dark transition-colors">
                     <Play className="w-6 h-6 text-white ml-1" />
                   </button>
                 </div> */}
               </div>
-              <h3 className="text-lg font-semibold text-[#1C1C1C] mb-2">Real-time Analytics</h3>
-              <p className="text-gray-600 text-sm">Track performance with detailed insights and reporting</p>
+              <h3 className="text-lg font-semibold text-white mb-2">Real-time Analytics</h3>
+              <p className="text-ink-muted text-sm">Track performance with detailed insights and reporting</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-[#F7F7F7]">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Why Choose Official WhatsApp API?
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
               Experience the full power of WhatsApp Business API with enterprise-grade features and reliability.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-                <div className="w-12 h-12 bg-[#25D366]/10 rounded-lg flex items-center justify-center mb-4">
-                  <benefit.icon className="w-6 h-6 text-[#25D366]" />
+              <div key={index} className="glass-card p-6">
+                <div className="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4">
+                  <benefit.icon className="w-6 h-6 text-brand" />
                 </div>
-                <h3 className="text-xl font-semibold text-[#1C1C1C] mb-3">{benefit.title}</h3>
-                <p className="text-gray-600">{benefit.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{benefit.title}</h3>
+                <p className="text-ink-muted">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -317,17 +317,17 @@ const WhatsAppAPI = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Industry-Specific Chatbot Solutions
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-ink-muted">
               Tailored chatbots for every industry with specialized features and workflows
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {industries.map((industry, index) => (
-              <div key={index} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <div key={index} className="glass-card overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative">
                   <img
                     src={industry.image}
@@ -335,26 +335,26 @@ const WhatsAppAPI = () => {
                     className="w-full h-48 object-cover"
                   />
                   <div className="absolute top-4 left-4 w-12 h-12 bg-white/90 rounded-lg flex items-center justify-center">
-                    <industry.icon className="w-6 h-6 text-[#25D366]" />
+                    <industry.icon className="w-6 h-6 text-brand" />
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-[#1C1C1C] mb-2">{industry.title}</h3>
-                  <p className="text-gray-600 mb-4">{industry.description}</p>
+                  <h3 className="text-xl font-semibold text-white mb-2">{industry.title}</h3>
+                  <p className="text-ink-muted mb-4">{industry.description}</p>
                   
                   <div className="space-y-2">
-                    <h4 className="font-medium text-[#1C1C1C] text-sm">Chatbot Features:</h4>
+                    <h4 className="font-medium text-white text-sm">Chatbot Features:</h4>
                     {industry.chatbots.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center text-sm">
-                        <CheckCircle className="w-4 h-4 text-[#25D366] mr-2 flex-shrink-0" />
-                        <span className="text-gray-600">{feature}</span>
+                        <CheckCircle className="w-4 h-4 text-brand mr-2 flex-shrink-0" />
+                        <span className="text-ink-muted">{feature}</span>
                       </div>
                     ))}
                   </div>
                   
                   <Link
                     to={industry.route}
-                    className="w-full mt-4 bg-[#25D366] text-white py-2 rounded-lg hover:bg-[#128C7E] transition-colors inline-flex items-center justify-center"
+                    className="w-full mt-4 bg-brand text-white py-2 rounded-lg hover:bg-brand-dark transition-colors inline-flex items-center justify-center"
                   >
                     Learn More
                   </Link>
@@ -366,40 +366,40 @@ const WhatsAppAPI = () => {
       </section>
 
       {/* Comparison Section */}
-      <section className="py-20 bg-[#F7F7F7]">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Official API vs Unofficial Tools
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-ink-muted">
               See why businesses choose the official WhatsApp Business API
             </p>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div className="glass-card overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full">
-                <thead className="bg-gray-50">
+                <thead className="bg-surface-muted">
                   <tr>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-[#25D366]">Official API</th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">Unofficial Tools</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-white">Feature</th>
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-brand">Official API</th>
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-white">Unofficial Tools</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
                   {comparison.map((item, index) => (
-                    <tr key={index} className="hover:bg-gray-50">
+                    <tr key={index} className="hover:bg-surface-muted">
                       <td className="px-6 py-4">
                         <div>
-                          <div className="font-medium text-gray-900">{item.feature}</div>
-                          <div className="text-sm text-gray-500">{item.description}</div>
+                          <div className="font-medium text-white">{item.feature}</div>
+                          <div className="text-sm text-slate-400">{item.description}</div>
                         </div>
                       </td>
                       <td className="px-6 py-4 text-center">
                         <div className="flex items-center justify-center">
-                          <CheckCircle className="w-5 h-5 text-[#25D366] mr-2" />
-                          <span className="font-medium text-[#25D366]">{item.official}</span>
+                          <CheckCircle className="w-5 h-5 text-brand mr-2" />
+                          <span className="font-medium text-brand">{item.official}</span>
                         </div>
                       </td>
                       <td className="px-6 py-4 text-center">
@@ -420,7 +420,7 @@ const WhatsAppAPI = () => {
       <InternalLinksHub currentPath="/whatsapp-api" />
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#25D366]">
+      <section className="py-20 bg-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Get Started with WhatsApp API?
@@ -431,14 +431,14 @@ const WhatsAppAPI = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-white text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
+              className="bg-white text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-surface-elevated transition-colors inline-flex items-center justify-center"
             >
               Get API Access Now
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
             <Link
               to="/contact"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#25D366] transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-brand transition-colors"
             >
               Talk to Expert
             </Link>

@@ -22,19 +22,19 @@ const FreeTrial = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
-      <div className="pt-16">
+      <div className="page-wrap">
         <SeoBreadcrumbs items={[{ name: 'Get started', path: '/free-trial' }]} />
 
-        <section className="bg-gradient-to-br from-[#25D366]/15 via-white to-[#128C7E]/10 py-20 px-4">
+        <section className="page-hero py-20 px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#1C1C1C] mb-4">Try Ask Meister</h1>
-            <p className="text-lg text-gray-600 mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Try Ask Meister</h1>
+            <p className="text-lg text-ink-muted mb-8">
               WhatsApp marketing depends on your Meta Business setup, template approvals, and messaging limits—there is no one-size-fits-all “instant” trial. Contact us and we’ll walk through the
               right path for your business.
             </p>
             <Link
               to="/contact"
-              className="inline-block bg-[#25D366] text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-[#128C7E]"
+              className="inline-block bg-brand text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-brand-dark"
             >
               Contact for demo
             </Link>

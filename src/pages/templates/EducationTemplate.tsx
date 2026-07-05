@@ -31,7 +31,7 @@ const EducationTemplate = () => {
       icon: UserCheck,
       title: 'Quick Admission Forms',
       description: 'Streamline the admission process with automated WhatsApp forms that collect student information instantly.',
-      benefits: ['Reduce paperwork by 80%', 'Instant form submission', 'Automated follow-ups']
+      benefits: ['Reduce manual paperwork', 'Instant form submission', 'Automated follow-ups']
     },
     {
       icon: Bell,
@@ -105,26 +105,10 @@ const EducationTemplate = () => {
   ];
 
   const benefits = [
-    {
-      metric: '85%',
-      description: 'Increase in parent engagement',
-      icon: Users
-    },
-    {
-      metric: '60%',
-      description: 'Reduction in administrative work',
-      icon: Clock
-    },
-    {
-      metric: '95%',
-      description: 'Student satisfaction rate',
-      icon: GraduationCap
-    },
-    {
-      metric: '40%',
-      description: 'Faster admission process',
-      icon: Zap
-    }
+    { metric: 'Opt-in', description: 'List-based messaging', icon: Users },
+    { metric: 'Templates', description: 'Meta-approved flows', icon: Clock },
+    { metric: 'Inbox', description: 'Team hand-off', icon: GraduationCap },
+    { metric: 'ERP-ready', description: 'Export & API paths', icon: Zap },
   ];
 
   const testimonials = [
@@ -156,10 +140,10 @@ const EducationTemplate = () => {
         <meta property="og:url" content="https://askmeister.com/whatsapp-software-for-universities" />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
-    <div className="pt-16">
+    <div className="page-wrap">
       <SeoBreadcrumbs items={[{ name: 'WhatsApp software for universities', path: '/whatsapp-software-for-universities' }]} />
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-50 via-white to-green-50 py-20">
+      <section className="page-hero py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -168,11 +152,11 @@ const EducationTemplate = () => {
                   <GraduationCap className="w-4 h-4 mr-2" />
                   Education Solution
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
                   Transform Education with
-                  <span className="text-green-600 block">WhatsApp Automation</span>
+                  <span className="text-brand block">WhatsApp Automation</span>
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-xl text-ink-muted leading-relaxed">
                   Streamline admissions, enhance parent communication, and improve student engagement 
                   with our specialized WhatsApp automation platform for educational institutions.
                 </p>
@@ -181,14 +165,14 @@ const EducationTemplate = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center"
+                  className="bg-brand text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-dark transition-colors inline-flex items-center justify-center"
                 >
                   Start Free Trial
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 <Link
                   to="/contact"
-                  className="border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 hover:text-white transition-colors"
+                  className="border-2 border-brand text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand hover:text-white transition-colors"
                 >
                   Schedule Demo
                 </Link>
@@ -198,10 +182,10 @@ const EducationTemplate = () => {
                 {benefits.map((benefit, index) => (
                   <div key={index} className="text-center">
                     <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-2">
-                      <benefit.icon className="w-6 h-6 text-green-600" />
+                      <benefit.icon className="w-6 h-6 text-brand" />
                     </div>
-                    <div className="text-2xl font-bold text-green-600">{benefit.metric}</div>
-                    <div className="text-sm text-gray-600">{benefit.description}</div>
+                    <div className="text-2xl font-bold text-brand">{benefit.metric}</div>
+                    <div className="text-sm text-ink-muted">{benefit.description}</div>
                   </div>
                 ))}
               </div>
@@ -213,7 +197,7 @@ const EducationTemplate = () => {
                 alt="Education WhatsApp Automation"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
-              <div className="absolute -top-4 -right-4 bg-green-600 text-white p-3 rounded-full animate-bounce">
+              <div className="absolute -top-4 -right-4 bg-brand text-white p-3 rounded-full animate-bounce">
                 <GraduationCap className="w-6 h-6" />
               </div>
             </div>
@@ -225,27 +209,27 @@ const EducationTemplate = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Comprehensive Education Features
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
               Everything you need to modernize your educational institution's communication
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+              <div key={index} className="glass-card p-6">
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-green-600" />
+                  <feature.icon className="w-6 h-6 text-brand" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600 mb-4">{feature.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
+                <p className="text-ink-muted mb-4">{feature.description}</p>
                 <ul className="space-y-2">
                   {feature.benefits.map((benefit, benefitIndex) => (
                     <li key={benefitIndex} className="flex items-center text-sm">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                      <span className="text-gray-600">{benefit}</span>
+                      <span className="text-ink-muted">{benefit}</span>
                     </li>
                   ))}
                 </ul>
@@ -256,13 +240,13 @@ const EducationTemplate = () => {
       </section>
 
       {/* Use Cases Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Real-World Use Cases
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-ink-muted">
               See how educational institutions are transforming their operations
             </p>
           </div>
@@ -271,16 +255,16 @@ const EducationTemplate = () => {
             {useCases.map((useCase, index) => (
               <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                 <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{useCase.title}</h3>
-                  <p className="text-lg text-gray-600 mb-6">{useCase.description}</p>
+                  <h3 className="text-2xl font-bold text-white mb-4">{useCase.title}</h3>
+                  <p className="text-lg text-ink-muted mb-6">{useCase.description}</p>
                   
                   <div className="space-y-3">
                     {useCase.steps.map((step, stepIndex) => (
                       <div key={stepIndex} className="flex items-center">
-                        <div className="w-6 h-6 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
+                        <div className="w-6 h-6 bg-brand text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
                           {stepIndex + 1}
                         </div>
-                        <span className="text-gray-700">{step}</span>
+                        <span className="text-ink-muted">{step}</span>
                       </div>
                     ))}
                   </div>
@@ -303,18 +287,18 @@ const EducationTemplate = () => {
       {/* <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               What Educators Say
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-ink-muted">
               Hear from educational leaders who transformed their institutions
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
-                <p className="text-gray-600 mb-6 italic text-lg">"{testimonial.content}"</p>
+              <div key={index} className="glass-card p-8">
+                <p className="text-ink-muted mb-6 italic text-lg">"{testimonial.content}"</p>
                 <div className="flex items-center">
                   <img
                     src={testimonial.image}
@@ -322,9 +306,9 @@ const EducationTemplate = () => {
                     className="w-16 h-16 rounded-full mr-4"
                   />
                   <div>
-                    <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                    <div className="text-green-600">{testimonial.role}</div>
-                    <div className="text-sm text-gray-500">{testimonial.school}</div>
+                    <div className="font-semibold text-white">{testimonial.name}</div>
+                    <div className="text-brand">{testimonial.role}</div>
+                    <div className="text-sm text-slate-400">{testimonial.school}</div>
                   </div>
                 </div>
               </div>
@@ -336,7 +320,7 @@ const EducationTemplate = () => {
       <InternalLinksHub currentPath="/whatsapp-software-for-universities" />
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-600">
+      <section className="py-20 bg-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Transform Your Educational Institution?
@@ -358,13 +342,13 @@ const EducationTemplate = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="bg-white text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-surface-elevated transition-colors"
             >
               Start Free Trial
             </Link>
             <Link
               to="/contact"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-green-600 transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-brand transition-colors"
             >
               Schedule Demo
             </Link>

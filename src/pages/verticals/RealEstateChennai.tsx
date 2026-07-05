@@ -19,7 +19,7 @@ const RealEstateChennai = () => {
         <meta property="og:url" content={canonical} />
       </Helmet>
 
-      <div className="pt-16">
+      <div className="page-wrap">
         <SeoBreadcrumbs
           items={[
             { name: 'Chennai', path: '/whatsapp-marketing-chennai' },
@@ -28,19 +28,19 @@ const RealEstateChennai = () => {
         />
 
         <section className="max-w-4xl mx-auto px-4 py-14">
-          <h1 className="text-4xl font-bold text-[#1C1C1C] mb-4">WhatsApp for Chennai real estate teams</h1>
-          <p className="text-gray-700 mb-6">
+          <h1 className="text-4xl font-bold text-white mb-4">WhatsApp for Chennai real estate teams</h1>
+          <p className="text-ink-muted mb-6">
             Brokers and developers use WhatsApp to respond faster than email and to send listings or slot confirmations to leads who have opted in. Ask Meister supports shared inbox, templates, and
             automation layers—you remain responsible for RERA and advertising rules that apply to your projects.
           </p>
-          <p className="text-gray-700 mb-6">
+          <p className="text-ink-muted mb-6">
             For a broader industry overview, see our{' '}
-            <Link to="/whatsapp-automation-for-real-estate" className="text-[#25D366] hover:underline">
+            <Link to="/whatsapp-automation-for-real-estate" className="text-brand hover:underline">
               real estate solutions
             </Link>{' '}
             page.
           </p>
-          <Link to="/contact" className="inline-block bg-[#25D366] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#128C7E]">
+          <Link to="/contact" className="inline-block bg-brand text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-dark">
             Contact sales
           </Link>
         </section>

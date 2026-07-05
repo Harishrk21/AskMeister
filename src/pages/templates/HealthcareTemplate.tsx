@@ -154,10 +154,10 @@ const HealthcareTemplate = () => {
         <meta property="og:description" content="Transform patient care with WhatsApp automation for appointments, communication, and healthcare management." />
         <meta property="og:url" content="https://askmeister.com/whatsapp-automation-for-healthcare" />
       </Helmet>
-    <div className="pt-16">
+    <div className="page-wrap">
       <SeoBreadcrumbs items={[{ name: 'WhatsApp automation for healthcare', path: '/whatsapp-automation-for-healthcare' }]} />
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-50 via-white to-emerald-50 py-20">
+      <section className="page-hero py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -166,11 +166,11 @@ const HealthcareTemplate = () => {
                   <Stethoscope className="w-4 h-4 mr-2" />
                   Healthcare Solution
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
                   Revolutionize Healthcare with
-                  <span className="text-green-600 block">WhatsApp Automation</span>
+                  <span className="text-brand block">WhatsApp Automation</span>
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-xl text-ink-muted leading-relaxed">
                   Streamline patient care, automate appointments across all departments, and enhance 
                   communication between patients, families, and medical staff with our HIPAA-compliant platform.
                 </p>
@@ -179,14 +179,14 @@ const HealthcareTemplate = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center"
+                  className="bg-brand text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-dark transition-colors inline-flex items-center justify-center"
                 >
                   Start Free Trial
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 <Link
                   to="/contact"
-                  className="border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 hover:text-white transition-colors"
+                  className="border-2 border-brand text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand hover:text-white transition-colors"
                 >
                   Schedule Demo
                 </Link>
@@ -196,10 +196,10 @@ const HealthcareTemplate = () => {
                 {benefits.map((benefit, index) => (
                   <div key={index} className="text-center">
                     <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-2">
-                      <benefit.icon className="w-6 h-6 text-green-600" />
+                      <benefit.icon className="w-6 h-6 text-brand" />
                     </div>
-                    <div className="text-2xl font-bold text-green-600">{benefit.metric}</div>
-                    <div className="text-sm text-gray-600">{benefit.description}</div>
+                    <div className="text-2xl font-bold text-brand">{benefit.metric}</div>
+                    <div className="text-sm text-ink-muted">{benefit.description}</div>
                   </div>
                 ))}
               </div>
@@ -211,7 +211,7 @@ const HealthcareTemplate = () => {
                 alt="Healthcare WhatsApp Automation"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
-              <div className="absolute -top-4 -right-4 bg-green-600 text-white p-3 rounded-full animate-pulse">
+              <div className="absolute -top-4 -right-4 bg-brand text-white p-3 rounded-full animate-pulse">
                 <Heart className="w-6 h-6" />
               </div>
             </div>
@@ -223,24 +223,24 @@ const HealthcareTemplate = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Complete Department Coverage
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
               Automate appointments and communication across all hospital departments
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {departments.map((department, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{department.name}</h3>
-                <p className="text-gray-600 mb-4">{department.description}</p>
+              <div key={index} className="glass-card p-6">
+                <h3 className="text-xl font-semibold text-white mb-3">{department.name}</h3>
+                <p className="text-ink-muted mb-4">{department.description}</p>
                 <ul className="space-y-2">
                   {department.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-sm">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                      <span className="text-gray-600">{feature}</span>
+                      <span className="text-ink-muted">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -251,30 +251,30 @@ const HealthcareTemplate = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Advanced Healthcare Features
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
               Comprehensive tools designed specifically for healthcare institutions
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+              <div key={index} className="glass-card p-6">
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-green-600" />
+                  <feature.icon className="w-6 h-6 text-brand" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600 mb-4">{feature.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
+                <p className="text-ink-muted mb-4">{feature.description}</p>
                 <ul className="space-y-2">
                   {feature.benefits.map((benefit, benefitIndex) => (
                     <li key={benefitIndex} className="flex items-center text-sm">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                      <span className="text-gray-600">{benefit}</span>
+                      <span className="text-ink-muted">{benefit}</span>
                     </li>
                   ))}
                 </ul>
@@ -288,10 +288,10 @@ const HealthcareTemplate = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Healthcare Automation Workflows
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-ink-muted">
               See how hospitals are transforming patient care with automation
             </p>
           </div>
@@ -300,16 +300,16 @@ const HealthcareTemplate = () => {
             {useCases.map((useCase, index) => (
               <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                 <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{useCase.title}</h3>
-                  <p className="text-lg text-gray-600 mb-6">{useCase.description}</p>
+                  <h3 className="text-2xl font-bold text-white mb-4">{useCase.title}</h3>
+                  <p className="text-lg text-ink-muted mb-6">{useCase.description}</p>
                   
                   <div className="space-y-3">
                     {useCase.steps.map((step, stepIndex) => (
                       <div key={stepIndex} className="flex items-center">
-                        <div className="w-6 h-6 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
+                        <div className="w-6 h-6 bg-brand text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
                           {stepIndex + 1}
                         </div>
-                        <span className="text-gray-700">{step}</span>
+                        <span className="text-ink-muted">{step}</span>
                       </div>
                     ))}
                   </div>
@@ -329,14 +329,14 @@ const HealthcareTemplate = () => {
       </section>
 
       {/* Trust & compliance note */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-600 leading-relaxed">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Patient messaging without overpromising</h2>
+      <section className="py-20 bg-surface-muted">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-ink-muted leading-relaxed">
+          <h2 className="text-2xl font-bold text-white mb-4">Patient messaging without overpromising</h2>
           <p>
             Hospital WhatsApp workflows must respect health regulations, what you send in chat, and patient consent. Ask Meister helps design compliant flows—we do not guarantee specific no-show reductions or satisfaction scores.
           </p>
           <p className="mt-4">
-            <Link to="/hospital-whatsapp" className="text-green-600 font-semibold hover:underline">
+            <Link to="/hospital-whatsapp" className="text-brand font-semibold hover:underline">
               Hospital WhatsApp automation overview →
             </Link>
           </p>
@@ -346,7 +346,7 @@ const HealthcareTemplate = () => {
       <InternalLinksHub currentPath="/whatsapp-automation-for-healthcare" />
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-600">
+      <section className="py-20 bg-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Transform Patient Care?
@@ -357,13 +357,13 @@ const HealthcareTemplate = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="bg-white text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-surface-elevated transition-colors"
             >
               Start Free Trial
             </Link>
             <Link
               to="/contact"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-green-600 transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-brand transition-colors"
             >
               Schedule Demo
             </Link>

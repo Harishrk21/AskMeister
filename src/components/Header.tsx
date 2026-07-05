@@ -1,7 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
-import logo from '../assets/ask.png';
+import {
+  Menu,
+  X,
+  ChevronDown,
+  Megaphone,
+  Bot,
+  BarChart3,
+  MessageCircle,
+  FileText,
+  GraduationCap,
+  Stethoscope,
+  ShoppingCart,
+  Plane,
+  Home,
+  Landmark,
+  Sparkles,
+} from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
+
+type NavItem = { name: string; href: string; description: string; icon: LucideIcon };
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,23 +29,20 @@ const Header = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   useEffect(() => {
     const handleResize = () => {
-      const mobile = window.innerWidth < 768;
+      const mobile = window.innerWidth < 1024;
       setIsMobile(mobile);
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 1024) {
         setIsMenuOpen(false);
         setActiveDropdown(null);
       }
     };
-    
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -35,51 +50,44 @@ const Header = () => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      // Only close dropdowns on desktop when clicking outside
       if (!isMobile) {
         const target = event.target as HTMLElement;
-        if (!target.closest('.dropdown-container')) {
-          setActiveDropdown(null);
-        }
+        if (!target.closest('.dropdown-container')) setActiveDropdown(null);
       }
     };
-    
     document.addEventListener('click', handleClickOutside);
     return () => document.removeEventListener('click', handleClickOutside);
   }, [isMobile]);
 
-  // Close menu when route changes
   useEffect(() => {
     setIsMenuOpen(false);
     setActiveDropdown(null);
   }, [location.pathname]);
 
   const navigation = [
-    { name: 'Home', href: '/' },
     { name: 'WhatsApp API', href: '/whatsapp-api' },
     { name: 'Chatbots', href: '/chatbots' },
     { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
     { name: 'Blog', href: '/blog' },
     { name: 'Tools', href: '/tools' },
-    // { name: 'Templates', href: '/whatsapp-message-templates' },
+    { name: 'Contact', href: '/contact' },
   ];
 
-  const features = [
-    { name: 'Bulk Messaging', href: '/whatsapp-bulk-messaging', description: 'Broadcasts with approved templates', icon: '📢' },
-    { name: 'Automation', href: '/whatsapp-marketing-automation', description: 'Automate your WhatsApp workflows', icon: '🤖' },
-    { name: 'Analytics', href: '/whatsapp-business-analytics', description: 'Track performance and engagement', icon: '📊' },
-    { name: 'Live Chat', href: '/whatsapp-live-chat', description: 'Collaborate with your team', icon: '💬' },
-    { name: 'Templates', href: '/whatsapp-message-templates', description: 'Pre-approved message templates', icon: '📝' },
+  const features: NavItem[] = [
+    { name: 'Bulk Messaging', href: '/whatsapp-bulk-messaging', description: 'Broadcasts with approved templates', icon: Megaphone },
+    { name: 'Automation', href: '/whatsapp-marketing-automation', description: 'Automate your WhatsApp workflows', icon: Bot },
+    { name: 'Analytics', href: '/whatsapp-business-analytics', description: 'Track performance and engagement', icon: BarChart3 },
+    { name: 'Live Chat', href: '/whatsapp-live-chat', description: 'Collaborate with your team', icon: MessageCircle },
+    { name: 'Templates', href: '/whatsapp-message-templates', description: 'Pre-approved message templates', icon: FileText },
   ];
 
-  const industries = [
-    { name: 'Education', href: '/whatsapp-software-for-universities', description: 'Streamline admissions and student communication', icon: '🎓' },
-    { name: 'Healthcare', href: '/whatsapp-automation-for-healthcare', description: 'Automate appointments and patient care', icon: '🏥' },
-    { name: 'E-commerce', href: '/whatsapp-automation-for-ecommerce', description: 'Boost sales with order updates and support', icon: '🛒' },
-    { name: 'Travel & Tourism', href: '/whatsapp-automation-for-travel-and-tourism', description: 'Coordinate projects and safety alerts', icon: '✈️' },
-    { name: 'RealEstate', href: '/whatsapp-automation-for-real-estate', description: 'Weather alerts and farming assistance', icon: '🏡' },
-    { name: 'Financial Services', href: '/whatsapp-banking-automation', description: 'Secure banking and transaction alerts', icon: '💰' },
+  const industries: NavItem[] = [
+    { name: 'Education', href: '/whatsapp-software-for-universities', description: 'Admissions and student communication', icon: GraduationCap },
+    { name: 'Healthcare', href: '/whatsapp-automation-for-healthcare', description: 'Appointments and patient care', icon: Stethoscope },
+    { name: 'E-commerce', href: '/whatsapp-automation-for-ecommerce', description: 'Order updates and support', icon: ShoppingCart },
+    { name: 'Travel & Tourism', href: '/whatsapp-automation-for-travel-and-tourism', description: 'Bookings and travel assistance', icon: Plane },
+    { name: 'Real Estate', href: '/whatsapp-automation-for-real-estate', description: 'Lead engagement and follow-ups', icon: Home },
+    { name: 'Financial Services', href: '/whatsapp-banking-automation', description: 'Banking and transaction alerts', icon: Landmark },
   ];
 
   const handleDropdownClick = (dropdown: string, e: React.MouseEvent) => {
@@ -98,234 +106,172 @@ const Header = () => {
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
   };
 
-  const toggleMobileMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-    if (!isMenuOpen) {
-      setActiveDropdown(null);
-    }
-  };
+  const isActive = (href: string) => location.pathname === href;
+
+  const MegaDropdown = ({ id, label, items }: { id: string; label: string; items: NavItem[] }) => (
+    <div
+      className="relative dropdown-container"
+      onMouseEnter={() => !isMobile && setActiveDropdown(id)}
+      onMouseLeave={() => !isMobile && setActiveDropdown(null)}
+    >
+      <button
+        onClick={(e) => handleDropdownClick(id, e)}
+        className={`nav-link flex items-center gap-1 ${activeDropdown === id ? 'nav-link-active text-brand' : ''}`}
+      >
+        {label}
+        <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === id ? 'rotate-180' : ''}`} />
+      </button>
+      <div className={`mega-menu ${activeDropdown === id ? 'mega-menu-open' : ''}`}>
+        <div className="px-4 py-3 border-b border-brand/10 mb-1">
+          <p className="text-xs font-semibold uppercase tracking-wider text-brand-dark">{label}</p>
+        </div>
+        <div className="grid grid-cols-1 gap-0.5 px-1 pb-1">
+          {items.map((item) => (
+            <Link key={item.name} to={item.href} onClick={handleDropdownItemClick} className="mega-item group">
+              <div className="mega-icon">
+                <item.icon className="w-5 h-5" />
+              </div>
+              <div>
+                <div className="font-semibold text-white text-sm group-hover:text-brand-light transition-colors">{item.name}</div>
+                <div className="text-xs text-ink-muted mt-0.5">{item.description}</div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'}`}>
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
-        <div className="flex justify-between items-center h-14 sm:h-16">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 sm:space-x-4 flex-shrink-0">
-            <img
-              src={logo}
-              alt="Ask Meister Logo"
-              className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 object-contain"
-            />
-            <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold tracking-tight leading-tight">
-              <span className="text-[#1C1C1C]">Ask</span>
-              <span className="text-[#25D366]">Meister</span>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled
+          ? 'glass-dark shadow-soft border-b border-white/10'
+          : 'bg-surface-soft/80 backdrop-blur-md border-b border-transparent'
+      }`}
+    >
+      <div className="container-wide">
+        <div className="flex justify-between items-center h-16 lg:h-[4.5rem]">
+          <Link to="/" className="flex items-center gap-2.5 flex-shrink-0 group">
+            <div className="relative">
+              <div className="absolute inset-0 bg-brand/20 rounded-xl blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <img
+                src="/favicon.png"
+                alt="Ask Meister logo"
+                className="relative w-10 h-10 sm:w-11 sm:h-11 object-contain"
+              />
+            </div>
+            <span className="text-xl sm:text-2xl font-extrabold tracking-tight">
+              <span className="text-white">Ask</span>
+              <span className="gradient-text">Meister</span>
             </span>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6">
-            {/* Features Dropdown */}
-            <div className="relative dropdown-container">
-              <button
-                onClick={(e) => handleDropdownClick('features', e)}
-                className={`flex items-center text-sm font-medium hover:text-[#25D366] transition-colors ${
-                  activeDropdown === 'features' || location.pathname.includes('/features') 
-                    ? 'text-[#25D366]' 
-                    : 'text-[#1C1C1C]'
-                }`}
-              >
-                Features <ChevronDown className={`w-4 h-4 ml-1 transition-transform ${activeDropdown === 'features' ? 'rotate-180' : ''}`} />
-              </button>
-              {activeDropdown === 'features' && (
-                <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-xl shadow-2xl border border-gray-100 py-4 z-50">
-                  <div className="px-4 py-2 border-b border-gray-100">
-                    <h3 className="font-semibold text-[#1C1C1C] text-sm">WhatsApp Features</h3>
-                    <p className="text-xs text-gray-500">Powerful tools for your business</p>
-                  </div>
-                  {features.map((feature) => (
-                    <Link key={feature.name} to={feature.href} onClick={handleDropdownItemClick}
-                      className="flex items-center px-4 py-3 hover:bg-gray-50 transition-colors">
-                      <span className="text-xl mr-3">{feature.icon}</span>
-                      <div>
-                        <div className="font-medium text-[#1C1C1C] text-sm">{feature.name}</div>
-                        <div className="text-xs text-gray-500">{feature.description}</div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Industries Dropdown */}
-            <div className="relative dropdown-container">
-              <button
-                onClick={(e) => handleDropdownClick('industries', e)}
-                className={`flex items-center text-sm font-medium hover:text-[#25D366] transition-colors ${
-                  activeDropdown === 'industries' || location.pathname.includes('/solutions') 
-                    ? 'text-[#25D366]' 
-                    : 'text-[#1C1C1C]'
-                }`}
-              >
-                Industries <ChevronDown className={`w-4 h-4 ml-1 transition-transform ${activeDropdown === 'industries' ? 'rotate-180' : ''}`} />
-              </button>
-              {activeDropdown === 'industries' && (
-                <div className="absolute top-full left-0 mt-2 w-96 bg-white rounded-xl shadow-2xl border border-gray-100 py-4 z-50">
-                  <div className="px-4 py-2 border-b border-gray-100">
-                    <h3 className="font-semibold text-[#1C1C1C] text-sm">Industry Solutions</h3>
-                    <p className="text-xs text-gray-500">Tailored for your industry</p>
-                  </div>
-                  {industries.map((industry) => (
-                    <Link key={industry.name} to={industry.href} onClick={handleDropdownItemClick}
-                      className="flex items-center px-4 py-3 hover:bg-gray-50 transition-colors">
-                      <span className="text-xl mr-3">{industry.icon}</span>
-                      <div>
-                        <div className="font-medium text-[#1C1C1C] text-sm">{industry.name}</div>
-                        <div className="text-xs text-gray-500">{industry.description}</div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Regular Navigation Items */}
+          <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
+            <Link to="/" className={`nav-link px-3 ${isActive('/') ? 'nav-link-active' : ''}`}>
+              Home
+            </Link>
+            <MegaDropdown id="features" label="Features" items={features} />
+            <MegaDropdown id="industries" label="Industries" items={industries} />
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium hover:text-[#25D366] transition-colors ${
-                  location.pathname === item.href ? 'text-[#25D366]' : 'text-[#1C1C1C]'
-                }`}
+                className={`nav-link px-3 ${isActive(item.href) ? 'nav-link-active' : ''}`}
               >
                 {item.name}
               </Link>
             ))}
           </nav>
 
-          {/* Tablet Nav (md to lg) */}
-          <nav className="hidden md:flex lg:hidden items-center space-x-3">
-            {navigation.slice(0, 4).map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`text-sm font-medium hover:text-[#25D366] transition-colors ${
-                  location.pathname === item.href ? 'text-[#25D366]' : 'text-[#1C1C1C]'
-                }`}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
-
-          {/* CTA Button */}
-          <div className="hidden md:flex items-center space-x-2 lg:space-x-4">
-            <Link 
-              to="/contact" 
-              className="bg-[#25D366] text-white px-3 py-2 lg:px-4 lg:py-2 rounded-lg text-xs lg:text-sm font-medium hover:bg-[#128C7E] transition-colors whitespace-nowrap"
-            >
+          <div className="hidden lg:flex items-center gap-3">
+            <Link to="/contact" className="btn-primary px-5 py-2.5 text-sm inline-flex items-center gap-2">
+              <Sparkles className="w-4 h-4" />
               Get Started
             </Link>
           </div>
 
-          {/* Mobile menu button */}
-          <button 
-            onClick={toggleMobileMenu}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="lg:hidden p-2.5 rounded-xl glass hover:bg-brand/5 transition-colors"
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X className="w-5 h-5 text-[#1C1C1C]" /> : <Menu className="w-5 h-5 text-[#1C1C1C]" />}
+            {isMenuOpen ? <X className="w-5 h-5 text-white" /> : <Menu className="w-5 h-5 text-white" />}
           </button>
         </div>
 
-        {/* Mobile & Tablet dropdown menu */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-100 max-h-[calc(100vh-4rem)] overflow-y-auto">
-            <div className="px-3 py-4 space-y-2">
-              {/* Features Dropdown */}
-              <div className="space-y-1">
+        {/* Mobile menu */}
+        <div
+          className={`lg:hidden overflow-hidden transition-all duration-300 ease-out ${
+            isMenuOpen ? 'max-h-[85vh] opacity-100 pb-4' : 'max-h-0 opacity-0'
+          }`}
+        >
+          <div className="glass-dark rounded-2xl mt-2 p-4 space-y-1 max-h-[calc(85vh-5rem)] overflow-y-auto border border-white/10">
+            <Link
+              to="/"
+              onClick={() => setIsMenuOpen(false)}
+              className={`block px-4 py-3 rounded-xl font-medium transition-colors ${
+                isActive('/') ? 'bg-brand/15 text-brand-light' : 'text-ink-soft hover:bg-white/5'
+              }`}
+            >
+              Home
+            </Link>
+
+            {(['features', 'industries'] as const).map((key) => (
+              <div key={key}>
                 <button
-                  onClick={(e) => handleMobileDropdownToggle('features', e)}
-                  className="flex items-center justify-between w-full text-left text-base font-medium text-[#1C1C1C] hover:text-[#25D366] px-3 py-2 rounded-md transition-colors"
+                  onClick={(e) => handleMobileDropdownToggle(key, e)}
+                  className="flex items-center justify-between w-full px-4 py-3 rounded-xl font-medium text-ink-soft hover:bg-white/5 transition-colors"
                 >
-                  Features
-                  <ChevronDown className={`w-4 h-4 transition-transform ${activeDropdown === 'features' ? 'rotate-180' : ''}`} />
+                  {key === 'features' ? 'Features' : 'Industries'}
+                  <ChevronDown className={`w-4 h-4 transition-transform ${activeDropdown === key ? 'rotate-180' : ''}`} />
                 </button>
-                {activeDropdown === 'features' && (
-                  <div className="pl-4 space-y-1 bg-gray-50 rounded-md py-2">
-                    {features.map((feature) => (
+                {activeDropdown === key && (
+                  <div className="pl-2 space-y-1 pb-2">
+                    {(key === 'features' ? features : industries).map((item) => (
                       <Link
-                        key={feature.name}
-                        to={feature.href}
+                        key={item.name}
+                        to={item.href}
                         onClick={handleDropdownItemClick}
-                        className="flex items-start px-3 py-2 text-sm text-gray-600 hover:text-[#25D366] hover:bg-white rounded-md transition-colors"
+                        className="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-brand/5 transition-colors"
                       >
-                        <span className="mr-3 text-base mt-0.5">{feature.icon}</span>
+                        <div className="w-9 h-9 rounded-lg bg-gradient-brand flex items-center justify-center text-white shrink-0">
+                          <item.icon className="w-4 h-4" />
+                        </div>
                         <div>
-                          <div className="font-medium text-[#1C1C1C]">{feature.name}</div>
-                          <div className="text-xs text-gray-500 leading-relaxed">{feature.description}</div>
+                          <div className="font-medium text-sm text-white">{item.name}</div>
+                          <div className="text-xs text-ink-muted">{item.description}</div>
                         </div>
                       </Link>
                     ))}
                   </div>
                 )}
               </div>
+            ))}
 
-              {/* Industries Dropdown */}
-              <div className="space-y-1">
-                <button
-                  onClick={(e) => handleMobileDropdownToggle('industries', e)}
-                  className="flex items-center justify-between w-full text-left text-base font-medium text-[#1C1C1C] hover:text-[#25D366] px-3 py-2 rounded-md transition-colors"
-                >
-                  Industries
-                  <ChevronDown className={`w-4 h-4 transition-transform ${activeDropdown === 'industries' ? 'rotate-180' : ''}`} />
-                </button>
-                {activeDropdown === 'industries' && (
-                  <div className="pl-4 space-y-1 bg-gray-50 rounded-md py-2">
-                    {industries.map((industry) => (
-                      <Link
-                        key={industry.name}
-                        to={industry.href}
-                        onClick={handleDropdownItemClick}
-                        className="flex items-start px-3 py-2 text-sm text-gray-600 hover:text-[#25D366] hover:bg-white rounded-md transition-colors"
-                      >
-                        <span className="mr-3 text-base mt-0.5">{industry.icon}</span>
-                        <div>
-                          <div className="font-medium text-[#1C1C1C]">{industry.name}</div>
-                          <div className="text-xs text-gray-500 leading-relaxed">{industry.description}</div>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {/* Regular Navigation Items */}
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`block text-base font-medium rounded-md px-3 py-2 transition-colors ${
-                    location.pathname === item.href 
-                      ? 'text-[#25D366] bg-[#25D366]/10' 
-                      : 'text-[#1C1C1C] hover:text-[#25D366] hover:bg-gray-50'
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-
-              {/* Mobile CTA */}
+            {navigation.map((item) => (
               <Link
-                to="/contact"
-                className="block mt-4 px-3 py-3 text-base font-medium bg-[#25D366] text-white rounded-md hover:bg-[#128C7E] transition-colors text-center"
+                key={item.name}
+                to={item.href}
                 onClick={() => setIsMenuOpen(false)}
+                className={`block px-4 py-3 rounded-xl font-medium transition-colors ${
+                  isActive(item.href) ? 'bg-brand/15 text-brand-light' : 'text-ink-soft hover:bg-white/5'
+                }`}
               >
-                Get Started
+                {item.name}
               </Link>
-            </div>
+            ))}
+
+            <Link
+              to="/contact"
+              onClick={() => setIsMenuOpen(false)}
+              className="btn-primary w-full mt-3 text-center justify-center"
+            >
+              Get Started
+            </Link>
           </div>
-        )}
+        </div>
       </div>
     </header>
   );

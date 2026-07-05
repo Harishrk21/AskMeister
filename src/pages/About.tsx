@@ -74,18 +74,18 @@ const About = () => {
         <meta property="og:description" content="How Ask Meister helps businesses use the WhatsApp Business Platform for bulk messaging, API campaigns, and chatbots." />
         <meta property="og:url" content="https://askmeister.com/about" />
       </Helmet>
-    <div className="pt-16">
+    <div className="page-wrap">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-20">
+      <section className="page-hero py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-[#1C1C1C] mb-6">
-            About <span className="text-[#25D366] block">Ask Meister™</span>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            About <span className="text-brand block">Ask Meister™</span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+          <p className="text-xl text-ink-muted mb-8 leading-relaxed">
             Product of <strong>Meister Solutions</strong>, initially focused on enterprise consulting for Sitecore & BigCommerce. We then built hospital chatbots before launching Ask Meister™ in 2024 — making affordable WhatsApp marketing accessible to growing businesses.
           </p>
-          <p className="text-gray-600 italic">
-            Check out our parent company at <a href="https://meistersolutions.net" className="text-[#25D366] underline">meistersolutions.net</a> to learn more.
+          <p className="text-ink-muted italic">
+            Check out our parent company at <a href="https://meistersolutions.net" className="text-brand underline">meistersolutions.net</a> to learn more.
           </p>
         </div>
       </section>
@@ -96,11 +96,11 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, i) => (
               <div key={i} className="text-center">
-                <div className="w-16 h-16 bg-[#25D366]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <stat.icon className="w-8 h-8 text-[#25D366]" />
+                <div className="w-16 h-16 bg-brand/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <stat.icon className="w-8 h-8 text-brand" />
                 </div>
-                <div className="text-3xl font-bold text-[#1C1C1C] mb-2">{stat.number}</div>
-                <div className="text-gray-600">{stat.label}</div>
+                <div className="text-3xl font-bold text-white mb-2">{stat.number}</div>
+                <div className="text-ink-muted">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -108,11 +108,11 @@ const About = () => {
       </section>
 
       {/* Story */}
-      <section className="py-20 bg-[#F7F7F7]">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-6">Our Story</h2>
-            <div className="space-y-4 text-gray-600 leading-relaxed">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Our Story</h2>
+            <div className="space-y-4 text-ink-muted leading-relaxed">
               <p>
                 Meister Solutions launched in 2019–2020 offering end-to-end software consulting, with specialization in Sitecore XP/XM and BigCommerce solutions.
               </p>
@@ -136,21 +136,21 @@ const About = () => {
       {/* Mission & Vision */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="bg-white rounded-xl p-8 shadow-lg">
-            <div className="w-12 h-12 bg-[#25D366]/10 rounded-lg flex items-center justify-center mb-6">
-              <Target className="w-6 h-6 text-[#25D366]" />
+          <div className="glass-card p-8">
+            <div className="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-6">
+              <Target className="w-6 h-6 text-brand" />
             </div>
-            <h3 className="text-2xl font-bold text-[#1C1C1C] mb-4">Our Mission</h3>
-            <p className="text-gray-600 leading-relaxed">
+            <h3 className="text-2xl font-bold text-white mb-4">Our Mission</h3>
+            <p className="text-ink-muted leading-relaxed">
               Empower small and mid‑sized businesses worldwide with WhatsApp marketing tools that are affordable, reliable, and results‑oriented.
             </p>
           </div>
-          <div className="bg-white rounded-xl p-8 shadow-lg">
+          <div className="glass-card p-8">
             <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
-              <Globe className="w-6 h-6 text-green-600" />
+              <Globe className="w-6 h-6 text-brand" />
             </div>
-            <h3 className="text-2xl font-bold text-[#1C1C1C] mb-4">Our Vision</h3>
-            <p className="text-gray-600 leading-relaxed">
+            <h3 className="text-2xl font-bold text-white mb-4">Our Vision</h3>
+            <p className="text-ink-muted leading-relaxed">
               To be the trusted platform for businesses seeking meaningful customer engagement—without breaking the bank on ads.
             </p>
           </div>
@@ -158,19 +158,19 @@ const About = () => {
       </section>
 
       {/* Values */}
-      <section className="py-20 bg-[#F7F7F7]">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">Our Values</h2>
-          <p className="text-lg text-gray-600">Fundamentals that guide every milestone</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Our Values</h2>
+          <p className="text-lg text-ink-muted">Fundamentals that guide every milestone</p>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {values.map((v, i) => (
-            <div key={i} className="bg-white rounded-xl p-6 shadow-lg text-center">
-              <div className="w-12 h-12 bg-[#25D366]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <v.icon className="w-6 h-6 text-[#25D366]" />
+            <div key={i} className="glass-card p-6 text-center">
+              <div className="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <v.icon className="w-6 h-6 text-brand" />
               </div>
-              <h3 className="text-xl font-semibold text-[#1C1C1C] mb-3">{v.title}</h3>
-              <p className="text-gray-600">{v.description}</p>
+              <h3 className="text-xl font-semibold text-white mb-3">{v.title}</h3>
+              <p className="text-ink-muted">{v.description}</p>
             </div>
           ))}
         </div>
@@ -179,17 +179,17 @@ const About = () => {
       {/* Timeline */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">Our Journey</h2>
-          <p className="text-lg text-gray-600">Milestones shaping our evolution</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Our Journey</h2>
+          <p className="text-lg text-ink-muted">Milestones shaping our evolution</p>
         </div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           {timeline.map((t, i) => (
             <div key={i} className="flex items-start">
-              <div className="w-24 text-right text-2xl font-bold text-[#25D366] mr-8">{t.year}</div>
-              <div className="w-4 h-4 bg-[#25D366] rounded-full mt-2 mr-8"></div>
+              <div className="w-24 text-right text-2xl font-bold text-brand mr-8">{t.year}</div>
+              <div className="w-4 h-4 bg-brand rounded-full mt-2 mr-8"></div>
               <div className="flex-1">
-                <h3 className="text-xl font-semibold text-[#1C1C1C] mb-2">{t.title}</h3>
-                <p className="text-gray-600">{t.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-2">{t.title}</h3>
+                <p className="text-ink-muted">{t.description}</p>
               </div>
             </div>
           ))}
@@ -197,15 +197,15 @@ const About = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[#25D366]">
+      <section className="py-20 bg-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Grow with Ask Meister™?</h2>
           <p className="text-lg text-white/90 mb-8">
             Join early adopters using WhatsApp to market smarter, engage better, and spend less.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="bg-white text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">Get Started Free</Link>
-            <Link to="/contact" className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#25D366] transition-colors">Contact Us</Link>
+            <Link to="/contact" className="bg-white text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-surface-elevated transition-colors">Get Started Free</Link>
+            <Link to="/contact" className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-brand transition-colors">Contact Us</Link>
           </div>
         </div>
       </section>

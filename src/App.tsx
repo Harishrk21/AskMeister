@@ -13,6 +13,7 @@ import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
 import Refund from './pages/Refund';
 import NotFound from './pages/NotFound';
+import { KEYWORD_PAGE_PATHS } from './data/keywordPages';
 
 // Lazy load heavy components
 const WhatsAppAPI = lazy(() => import('./pages/WhatsAppAPI'));
@@ -54,12 +55,16 @@ const RealEstateTemplate = lazy(() => import('./pages/templates/RealEstateTempla
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-surface-soft">
         <Header />
         <ScrollToTop />
         <Suspense fallback={
-          <div className="flex items-center justify-center min-h-screen">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-500"></div>
+          <div className="flex flex-col items-center justify-center min-h-screen gap-4">
+            <div className="relative">
+              <div className="w-14 h-14 rounded-full border-2 border-brand/20" />
+              <div className="absolute inset-0 w-14 h-14 rounded-full border-2 border-transparent border-t-brand animate-spin" />
+            </div>
+            <p className="text-sm text-ink-muted font-medium">Loading…</p>
           </div>
         }>
           <Routes>
@@ -119,11 +124,10 @@ function App() {
             <Route path="/whatsapp-automation-for-real-estate" element={<RealEstateTemplate />} />
             <Route path="/whatsapp-banking-automation" element={<FinancialTemplate />} />
 
-            {/* Long-tail keyword landing pages */}
-            <Route path="/whatsapp-software-for-colleges" element={<KeywordLanding />} />
-            <Route path="/hospital-whatsapp" element={<KeywordLanding />} />
-            <Route path="/whatsapp-kyc-automation-for-banks" element={<KeywordLanding />} />
-            <Route path="/education-whatsapp-automation" element={<KeywordLanding />} />
+            {/* Long-tail & SEO keyword landing pages */}
+            {KEYWORD_PAGE_PATHS.map((path) => (
+              <Route key={path} path={path} element={<KeywordLanding />} />
+            ))}
             <Route path="/whatsapp-for-finance" element={<Navigate to="/whatsapp-banking-automation" replace />} />
 
             {/* Redirects from legacy /features/* and /solutions/* URLs */}

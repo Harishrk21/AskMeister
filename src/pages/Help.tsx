@@ -138,27 +138,27 @@ const Help = () => {
         <meta property="og:url" content="https://askmeister.com/help" />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
-    <div className="pt-16">
+    <div className="page-wrap">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-20">
+      <section className="page-hero py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-[#1C1C1C] mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             How Can We
-            <span className="text-[#25D366] block">Help You?</span>
+            <span className="text-brand block">Help You?</span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-ink-muted mb-8">
             Find answers to your questions, browse our guides, or get in touch with our support team.
           </p>
           
           {/* Search Bar */}
           <div className="relative max-w-2xl mx-auto">
-            <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+            <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-500" />
             <input
               type="text"
               placeholder="Search for help..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-lg text-lg focus:ring-2 focus:ring-[#25D366] focus:border-transparent"
+              className="w-full pl-12 pr-4 py-4 border border-white/15 rounded-lg text-lg focus:ring-2 focus:ring-brand focus:border-transparent"
             />
           </div>
         </div>
@@ -168,35 +168,35 @@ const Help = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-white rounded-xl p-6 shadow-lg text-center">
-              <div className="w-12 h-12 bg-[#25D366]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <MessageCircle className="w-6 h-6 text-[#25D366]" />
+            <div className="glass-card p-6 text-center">
+              <div className="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <MessageCircle className="w-6 h-6 text-brand" />
               </div>
-              <h3 className="text-xl font-semibold text-[#1C1C1C] mb-2">Live Chat</h3>
-              <p className="text-gray-600 mb-4">Get instant help from our support team</p>
-              <button className="bg-[#25D366] text-white px-6 py-2 rounded-lg hover:bg-[#128C7E] transition-colors">
+              <h3 className="text-xl font-semibold text-white mb-2">Live Chat</h3>
+              <p className="text-ink-muted mb-4">Get instant help from our support team</p>
+              <button className="bg-brand text-white px-6 py-2 rounded-lg hover:bg-brand-dark transition-colors">
                 Start Chat
               </button>
             </div>
             
-            <div className="bg-white rounded-xl p-6 shadow-lg text-center">
+            <div className="glass-card p-6 text-center">
               <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Mail className="w-6 h-6 text-green-600" />
+                <Mail className="w-6 h-6 text-brand" />
               </div>
-              <h3 className="text-xl font-semibold text-[#1C1C1C] mb-2">Email Support</h3>
-              <p className="text-gray-600 mb-4">Send us a detailed message</p>
-              <button className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors">
+              <h3 className="text-xl font-semibold text-white mb-2">Email Support</h3>
+              <p className="text-ink-muted mb-4">Send us a detailed message</p>
+              <button className="bg-brand text-white px-6 py-2 rounded-lg hover:bg-brand-dark transition-colors">
                 Send Email
               </button>
             </div>
             
-            <div className="bg-white rounded-xl p-6 shadow-lg text-center">
+            <div className="glass-card p-6 text-center">
               <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Phone className="w-6 h-6 text-green-600" />
+                <Phone className="w-6 h-6 text-brand" />
               </div>
-              <h3 className="text-xl font-semibold text-[#1C1C1C] mb-2">Phone Support</h3>
-              <p className="text-gray-600 mb-4">Talk to our experts directly</p>
-              <button className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors">
+              <h3 className="text-xl font-semibold text-white mb-2">Phone Support</h3>
+              <p className="text-ink-muted mb-4">Talk to our experts directly</p>
+              <button className="bg-brand text-white px-6 py-2 rounded-lg hover:bg-brand-dark transition-colors">
                 Call Now
               </button>
             </div>
@@ -205,23 +205,23 @@ const Help = () => {
       </section>
 
       {/* How-to Guides */}
-      <section className="py-20 bg-[#F7F7F7]">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               How-to Guides
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-ink-muted">
               Step-by-step guides to help you get the most out of Ask Meister
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {guides.map((guide, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
-                <h3 className="text-lg font-semibold text-[#1C1C1C] mb-2">{guide.title}</h3>
-                <p className="text-gray-600 mb-4 text-sm">{guide.description}</p>
-                <span className="text-[#25D366] text-sm font-medium">{guide.time}</span>
+              <div key={index} className="glass-card p-6 hover:shadow-xl transition-shadow cursor-pointer">
+                <h3 className="text-lg font-semibold text-white mb-2">{guide.title}</h3>
+                <p className="text-ink-muted mb-4 text-sm">{guide.description}</p>
+                <span className="text-brand text-sm font-medium">{guide.time}</span>
               </div>
             ))}
           </div>
@@ -232,10 +232,10 @@ const Help = () => {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-ink-muted">
               Find quick answers to common questions
             </p>
           </div>
@@ -243,28 +243,28 @@ const Help = () => {
           <div className="space-y-8">
             {filteredFAQs.map((category, categoryIndex) => (
               <div key={categoryIndex}>
-                <h3 className="text-xl font-semibold text-[#1C1C1C] mb-4 pb-2 border-b border-gray-200">
+                <h3 className="text-xl font-semibold text-white mb-4 pb-2 border-b border-white/10">
                   {category.category}
                 </h3>
                 <div className="space-y-4">
                   {category.questions.map((faq, faqIndex) => {
                     const globalIndex = categoryIndex * 100 + faqIndex;
                     return (
-                      <div key={faqIndex} className="bg-white rounded-lg shadow-md">
+                      <div key={faqIndex} className="glass-card shadow-md">
                         <button
                           onClick={() => toggleFAQ(globalIndex)}
-                          className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 rounded-lg transition-colors"
+                          className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-surface-muted rounded-lg transition-colors"
                         >
-                          <span className="font-medium text-[#1C1C1C]">{faq.question}</span>
+                          <span className="font-medium text-white">{faq.question}</span>
                           {openFAQ === globalIndex ? (
-                            <ChevronUp className="w-5 h-5 text-gray-500" />
+                            <ChevronUp className="w-5 h-5 text-slate-400" />
                           ) : (
-                            <ChevronDown className="w-5 h-5 text-gray-500" />
+                            <ChevronDown className="w-5 h-5 text-slate-400" />
                           )}
                         </button>
                         {openFAQ === globalIndex && (
                           <div className="px-6 pb-4">
-                            <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                            <p className="text-ink-muted leading-relaxed">{faq.answer}</p>
                           </div>
                         )}
                       </div>
@@ -277,7 +277,7 @@ const Help = () => {
           
           {filteredFAQs.length === 0 && searchTerm && (
             <div className="text-center py-12">
-              <p className="text-gray-500 text-lg">
+              <p className="text-slate-400 text-lg">
                 No results found for "{searchTerm}". Try a different search term or contact our support team.
               </p>
             </div>
@@ -286,7 +286,7 @@ const Help = () => {
       </section>
 
       {/* Contact Support */}
-      <section className="py-20 bg-[#25D366]">
+      <section className="py-20 bg-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Still Need Help?
@@ -295,10 +295,10 @@ const Help = () => {
             Our support team is here to help you succeed with WhatsApp marketing.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-surface-elevated transition-colors">
               Contact Support
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#25D366] transition-colors">
+            <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-brand transition-colors">
               Schedule Call
             </button>
           </div>

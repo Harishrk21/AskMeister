@@ -73,6 +73,50 @@ const Blog = () => {
       category: 'Automation',
       readTime: '9 min read',
       featured: false
+    },
+    {
+      slug: 'shopify-whatsapp-integration-guide',
+      title: 'Shopify WhatsApp Integration: Complete Setup Guide for Indian Stores',
+      excerpt: 'Connect Shopify order events to WhatsApp templates for confirmations, shipping, and cart recovery—compliantly.',
+      image: 'https://images.pexels.com/photos/3985062/pexels-photo-3985062.jpeg?auto=compress&cs=tinysrgb&w=600',
+      author: 'Ask Meister Team',
+      date: '2026-06-10',
+      category: 'API',
+      readTime: '11 min read',
+      featured: false
+    },
+    {
+      slug: 'tally-whatsapp-payment-reminders',
+      title: 'Tally + WhatsApp: Invoice and Payment Reminder Workflows',
+      excerpt: 'How distributors using Tally Prime send party-wise payment nudges on WhatsApp without unofficial bulk tools.',
+      image: 'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=600',
+      author: 'Ask Meister Team',
+      date: '2026-06-15',
+      category: 'Automation',
+      readTime: '8 min read',
+      featured: false
+    },
+    {
+      slug: 'whatsapp-business-api-chennai-guide',
+      title: 'WhatsApp Business API in Chennai: Onboarding Checklist for SMEs',
+      excerpt: 'What Chennai businesses should prepare before API onboarding—templates, opt-in, display name, and integrations.',
+      image: 'https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=600',
+      author: 'Ask Meister Team',
+      date: '2026-06-20',
+      category: 'API',
+      readTime: '10 min read',
+      featured: false
+    },
+    {
+      slug: 'hrms-whatsapp-employee-alerts',
+      title: 'HRMS WhatsApp Alerts: Payroll, Leave, and Onboarding Notifications',
+      excerpt: 'Patterns for connecting HRMS and payroll systems to WhatsApp utility templates for employees who opt in.',
+      image: 'https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=600',
+      author: 'Ask Meister Team',
+      date: '2026-06-25',
+      category: 'Automation',
+      readTime: '7 min read',
+      featured: false
     }
   ];
 
@@ -94,15 +138,15 @@ const Blog = () => {
         <meta property="og:description" content="Expert insights and tips for WhatsApp marketing, automation, and business growth strategies." />
         <meta property="og:url" content="https://askmeister.com/blog" />
       </Helmet>
-    <div className="pt-16">
+    <div className="page-wrap">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-20">
+      <section className="page-hero py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-[#1C1C1C] mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             WhatsApp Marketing
-            <span className="text-[#25D366] block">Blog</span>
+            <span className="text-brand block">Blog</span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-ink-muted mb-8">
             Insights, tips, and strategies to master WhatsApp marketing. 
             Stay updated with the latest trends and best practices.
           </p>
@@ -110,7 +154,7 @@ const Blog = () => {
       </section>
 
       {/* Category Filter */}
-      <section className="py-12 bg-white border-b border-gray-200">
+      <section className="py-12 bg-surface border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-center gap-2">
             {categories.map((category) => (
@@ -119,8 +163,8 @@ const Blog = () => {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                   selectedCategory === category
-                    ? 'bg-[#25D366] text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    ? 'bg-brand text-white'
+                    : 'bg-surface-elevated text-ink-muted hover:bg-surface-elevated'
                 }`}
               >
                 {category}
@@ -134,31 +178,31 @@ const Blog = () => {
       {featuredPost && selectedCategory === 'All' && (
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="glass-card overflow-hidden">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div className="order-2 lg:order-1 p-8">
                   <div className="flex items-center mb-4">
-                    <span className="bg-[#25D366] text-white px-3 py-1 rounded-full text-xs font-medium">
+                    <span className="bg-brand text-white px-3 py-1 rounded-full text-xs font-medium">
                       Featured
                     </span>
-                    <span className="ml-3 text-sm text-gray-500">{featuredPost.readTime}</span>
+                    <span className="ml-3 text-sm text-slate-400">{featuredPost.readTime}</span>
                   </div>
-                  <h2 className="text-3xl font-bold text-[#1C1C1C] mb-4">
+                  <h2 className="text-3xl font-bold text-white mb-4">
                     {featuredPost.title}
                   </h2>
-                  <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+                  <p className="text-ink-muted mb-6 text-lg leading-relaxed">
                     {featuredPost.excerpt}
                   </p>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center">
-                      <User className="w-4 h-4 text-gray-400 mr-2" />
-                      <span className="text-sm text-gray-600 mr-4">{featuredPost.author}</span>
-                      <Calendar className="w-4 h-4 text-gray-400 mr-2" />
-                      <span className="text-sm text-gray-600">{featuredPost.date}</span>
+                      <User className="w-4 h-4 text-slate-500 mr-2" />
+                      <span className="text-sm text-ink-muted mr-4">{featuredPost.author}</span>
+                      <Calendar className="w-4 h-4 text-slate-500 mr-2" />
+                      <span className="text-sm text-ink-muted">{featuredPost.date}</span>
                     </div>
                     <Link
                       to={`/blog/${featuredPost.slug}`}
-                      className="inline-flex items-center text-[#25D366] font-semibold hover:underline"
+                      className="inline-flex items-center text-brand font-semibold hover:underline"
                     >
                       Read More
                       <ArrowRight className="w-4 h-4 ml-1" />
@@ -179,11 +223,11 @@ const Blog = () => {
       )}
 
       {/* Blog Posts Grid */}
-      <section className="py-20 bg-[#F7F7F7]">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {(selectedCategory === 'All' ? regularPosts : filteredPosts).map((post, index) => (
-              <article key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <article key={index} className="glass-card overflow-hidden hover:shadow-xl transition-shadow">
                 <img
                   src={post.image}
                   alt={post.title}
@@ -191,26 +235,26 @@ const Blog = () => {
                 />
                 <div className="p-6">
                   <div className="flex items-center mb-3">
-                    <Tag className="w-4 h-4 text-[#25D366] mr-2" />
-                    <span className="text-sm text-[#25D366] font-medium">{post.category}</span>
-                    <span className="ml-auto text-sm text-gray-500">{post.readTime}</span>
+                    <Tag className="w-4 h-4 text-brand mr-2" />
+                    <span className="text-sm text-brand font-medium">{post.category}</span>
+                    <span className="ml-auto text-sm text-slate-400">{post.readTime}</span>
                   </div>
-                  <h3 className="text-xl font-bold text-[#1C1C1C] mb-3 line-clamp-2">
+                  <h3 className="text-xl font-bold text-white mb-3 line-clamp-2">
                     {post.title}
                   </h3>
-                  <p className="text-gray-600 mb-4 line-clamp-3">
+                  <p className="text-ink-muted mb-4 line-clamp-3">
                     {post.excerpt}
                   </p>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center">
-                      <User className="w-4 h-4 text-gray-400 mr-2" />
-                      <span className="text-sm text-gray-600 mr-4">{post.author}</span>
-                      <Calendar className="w-4 h-4 text-gray-400 mr-2" />
-                      <span className="text-sm text-gray-600">{post.date}</span>
+                      <User className="w-4 h-4 text-slate-500 mr-2" />
+                      <span className="text-sm text-ink-muted mr-4">{post.author}</span>
+                      <Calendar className="w-4 h-4 text-slate-500 mr-2" />
+                      <span className="text-sm text-ink-muted">{post.date}</span>
                     </div>
                     <Link
                       to={`/blog/${post.slug}`}
-                      className="text-[#25D366] hover:underline font-medium text-sm"
+                      className="text-brand hover:underline font-medium text-sm"
                     >
                       Read More
                     </Link>
@@ -223,7 +267,7 @@ const Blog = () => {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="py-20 bg-[#25D366]">
+      <section className="py-20 bg-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Stay Updated with WhatsApp Marketing Insights
@@ -237,7 +281,7 @@ const Blog = () => {
               placeholder="Enter your email"
               className="flex-1 px-4 py-3 rounded-lg border-0 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#25D366]"
             />
-            <button className="bg-white text-[#25D366] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-brand px-6 py-3 rounded-lg font-semibold hover:bg-surface-elevated transition-colors">
               Subscribe
             </button>
           </div>

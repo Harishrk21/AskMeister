@@ -6,6 +6,7 @@ import InternalLinksHub from '../components/InternalLinksHub';
 import NotFound from './NotFound';
 import { getKeywordPageByPath } from '../data/keywordPages';
 import { toCanonical } from '../data/seoRoutes';
+import { OG_IMAGE, OG_SITE_NAME } from '../utils/seoDefaults';
 import { faqPageSchema, servicePageSchema } from '../utils/seoSchema';
 
 const KeywordLanding = () => {
@@ -20,7 +21,7 @@ const KeywordLanding = () => {
     name: page.h1,
     description: page.description,
     url: canonical,
-    areaServed: 'India',
+    areaServed: page.areaServed ?? 'India',
   });
 
   return (
@@ -34,23 +35,26 @@ const KeywordLanding = () => {
         <meta property="og:description" content={page.description} />
         <meta property="og:url" content={canonical} />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content={OG_IMAGE} />
+        <meta property="og:site_name" content={OG_SITE_NAME} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={page.title} />
         <meta name="twitter:description" content={page.description} />
+        <meta name="twitter:image" content={OG_IMAGE} />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
       </Helmet>
 
-      <div className="pt-16">
+      <div className="page-wrap">
         <SeoBreadcrumbs items={[{ name: page.h1, path: page.path }]} />
 
-        <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-16 md:py-20">
+        <section className="page-hero py-16 md:py-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#1C1C1C] mb-4">{page.h1}</h1>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">{page.intro}</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{page.h1}</h1>
+            <p className="text-lg text-ink-muted mb-8 leading-relaxed">{page.intro}</p>
             <Link
               to="/contact"
-              className="inline-flex items-center bg-[#25D366] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#128C7E] transition-colors"
+              className="inline-flex items-center bg-brand text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-dark transition-colors"
             >
               Request a demo
               <ArrowRight className="w-5 h-5 ml-2" />
@@ -59,30 +63,30 @@ const KeywordLanding = () => {
         </section>
 
         <section className="py-12 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#1C1C1C] mb-6">What teams typically automate</h2>
+          <h2 className="text-2xl font-bold text-white mb-6">What teams typically automate</h2>
           <ul className="space-y-3">
             {page.bullets.map((line) => (
-              <li key={line} className="flex items-start gap-3 text-gray-700">
-                <CheckCircle className="w-5 h-5 text-[#25D366] shrink-0 mt-0.5" />
+              <li key={line} className="flex items-start gap-3 text-ink-muted">
+                <CheckCircle className="w-5 h-5 text-brand shrink-0 mt-0.5" />
                 <span>{line}</span>
               </li>
             ))}
           </ul>
           <p className="mt-8">
-            <Link to={page.relatedPath} className="text-[#25D366] font-semibold hover:underline">
+            <Link to={page.relatedPath} className="text-brand font-semibold hover:underline">
               {page.relatedLabel} →
             </Link>
           </p>
         </section>
 
-        <section className="py-12 bg-[#F7F7F7]">
+        <section className="py-12 bg-surface-muted">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-[#1C1C1C] mb-6">Frequently asked questions</h2>
+            <h2 className="text-2xl font-bold text-white mb-6">Frequently asked questions</h2>
             <div className="space-y-6">
               {page.faq.map((item) => (
-                <div key={item.question} className="bg-white rounded-lg p-6 border border-gray-100">
-                  <h3 className="font-semibold text-[#1C1C1C] mb-2">{item.question}</h3>
-                  <p className="text-gray-600 leading-relaxed">{item.answer}</p>
+                <div key={item.question} className="glass-card p-6 border border-white/10">
+                  <h3 className="font-semibold text-white mb-2">{item.question}</h3>
+                  <p className="text-ink-muted leading-relaxed">{item.answer}</p>
                 </div>
               ))}
             </div>

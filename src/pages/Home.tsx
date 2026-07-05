@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
-import { MessageCircle, Users, Zap, BarChart3, CheckCircle, ArrowRight, Play, Shield, Clock, TrendingUp, Bot, Globe, Award } from 'lucide-react';
+import { MessageCircle, Users, Zap, BarChart3, CheckCircle, ArrowRight, Play, Shield, Clock, Bot, Globe, Award, Megaphone, Calendar, ShoppingBag, GraduationCap, Stethoscope, ShoppingCart, Home as HomeIcon, Plane, Landmark } from 'lucide-react';
+import Button from '../components/ui/Button';
+import SectionHeader from '../components/ui/SectionHeader';
 import EDU1 from '../assets/EDU1.jpg';
 import auto from '../assets/auto.png';
 import chatbot from '../assets/chatbot.png';
@@ -103,25 +105,25 @@ const Home = () => {
   const useCases = [
   {
     title: 'Auto-response for Website Inquiries',
-    icon: '💬',
+    icon: MessageCircle,
     industry: 'Real Estate',
     description: 'Convert web visitors into leads using instant WhatsApp replies.'
   },
   {
     title: 'Bulk Promotions to Donors',
-    icon: '📣',
+    icon: Megaphone,
     industry: 'NGOs',
     description: 'Engage past donors with timely updates and appeals automatically.'
   },
   {
     title: 'Appointment Reminders',
-    icon: '📅',
+    icon: Calendar,
     industry: 'Clinics & Hospitals',
     description: 'Reduce no-shows by automating appointment reminders via WhatsApp.'
   },
   {
     title: 'WhatsApp Shopping Assistant',
-    icon: '🛍️',
+    icon: ShoppingBag,
     industry: 'Retail',
     description: 'Guide customers from inquiry to checkout with automated flows.'
   }
@@ -132,35 +134,35 @@ const Home = () => {
       title: 'Education',
       description: 'Streamline admissions, student communication, and parent engagement',
       link: '/whatsapp-software-for-universities',
-      icon: '🎓',
+      icon: GraduationCap,
       benefits: ['Quick admission forms', 'Parent notifications', 'Student support']
     },
     {
       title: 'Healthcare',
       description: 'Automate appointments, patient care, and medical communications',
       link: '/whatsapp-automation-for-healthcare',
-      icon: '🏥',
+      icon: Stethoscope,
       benefits: ['Appointment booking', 'Patient reminders', 'Department coordination']
     },
     {
       title: 'E-commerce',
       description: 'Boost sales with order updates, cart recovery, and customer support',
       link: '/whatsapp-automation-for-ecommerce',
-      icon: '🛒',
+      icon: ShoppingCart,
       benefits: ['Order tracking', 'Cart recovery', 'Product recommendations']
     },
    {
   title: 'Real Estate',
   description: 'Promote properties, engage leads, and automate client interactions',
   link: '/whatsapp-automation-for-real-estate',
-  icon: '🏠',
+  icon: HomeIcon,
   benefits: ['Property listings', 'Lead engagement', 'Automated follow-ups']
 },
 {
   title: 'Travel & Tourism',
   description: 'Share tour packages, send booking alerts, and assist travelers instantly',
   link: '/whatsapp-automation-for-travel-and-tourism',
-  icon: '🌍',
+  icon: Plane,
   benefits: ['Tour packages', 'Booking alerts', 'Travel assistance']
 }
 ,
@@ -168,7 +170,7 @@ const Home = () => {
       title: 'Financial Services',
       description: 'Secure banking, transaction alerts, and customer support',
       link: '/whatsapp-banking-automation',
-      icon: '💰',
+      icon: Landmark,
       benefits: ['Transaction alerts', 'Account updates', 'Secure banking']
     }
   ];
@@ -236,125 +238,112 @@ const Home = () => {
         })}</script>
       </Helmet>
       
-    <div className="pt-16">
-      {/* Hero Section - WATI Inspired */}
-      <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-20 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="space-y-6">
-                <div className="inline-flex items-center bg-[#25D366]/10 text-[#25D366] px-4 py-2 rounded-full text-sm font-medium">
-                  <Award className="w-4 h-4 mr-2" />
-                  WhatsApp Business Platform · Tamil Nadu
-                </div>
-                <h1 className="text-5xl md:text-7xl font-bold text-[#1C1C1C] leading-tight">
-                  WhatsApp marketing platform for Tamil Nadu businesses
-                  <span className="text-[#25D366] block">Bulk messaging, API &amp; chatbots</span>
-                </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
-                  Ask Meister helps you run compliant WhatsApp campaigns: broadcasts with approved templates, chatbots and automation, and analytics—without shortcuts that risk account quality.
-                </p>
-              </div>
-              
+    <div className="page-wrap">
+      {/* Hero Section */}
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+        <div className="absolute inset-0 bg-mesh-hero" />
+        <div className="absolute inset-0 grid-pattern opacity-50" />
+        <div className="absolute top-20 right-[10%] w-72 h-72 bg-brand/15 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-20 left-[5%] w-96 h-96 bg-brand-dark/10 rounded-full blur-3xl animate-float-delay" />
+
+        <div className="container-wide relative py-16 lg:py-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="space-y-8 opacity-0 animate-fade-up">
+              <span className="section-eyebrow">
+                <Award className="w-4 h-4" />
+                WhatsApp Business Platform · Tamil Nadu
+              </span>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight">
+                WhatsApp marketing platform for{' '}
+                <span className="gradient-text">Tamil Nadu businesses</span>
+              </h1>
+              <p className="text-lg md:text-xl text-ink-muted leading-relaxed max-w-xl">
+                Ask Meister helps you run compliant WhatsApp campaigns: broadcasts with approved templates, chatbots and automation, and analytics—without shortcuts that risk account quality.
+              </p>
+
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  to="/contact"
-                  className="bg-[#25D366] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#128C7E] transition-all duration-300 inline-flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                >
-                  Request a demo
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
+                <Button to="/contact" size="lg" icon>Request a demo</Button>
                 <button
-                  onClick={() => {
-                    const demoSection = document.getElementById('demo-video');
-                    demoSection?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="border-2 border-[#25D366] text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#25D366] hover:text-white transition-all duration-300 inline-flex items-center justify-center"
+                  onClick={() => document.getElementById('demo-video')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="btn-secondary px-8 py-4 text-lg inline-flex items-center justify-center gap-2"
                 >
+                  <Play className="w-5 h-5" />
                   Watch Demo
                 </button>
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4">
                 {stats.map((stat, index) => (
-                  <div key={index} className="text-center">
-                    <div className="w-12 h-12 bg-[#25D366]/10 rounded-lg flex items-center justify-center mx-auto mb-2">
-                      <stat.icon className="w-6 h-6 text-[#25D366]" />
+                  <div key={index} className="stat-card">
+                    <div className="w-10 h-10 rounded-xl bg-brand/10 flex items-center justify-center mx-auto mb-2">
+                      <stat.icon className="w-5 h-5 text-brand" />
                     </div>
-                    <div className="text-2xl font-bold text-[#25D366]">{stat.number}</div>
-                    <div className="text-sm text-gray-600">{stat.label}</div>
+                    <div className="text-xl font-bold gradient-text">{stat.number}</div>
+                    <div className="text-xs text-ink-muted mt-1">{stat.label}</div>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="relative">
-              {/* Main Hero Image from WATI */}
-              <div className="relative z-10">
-                <img
-                  src={home}
-                  alt="WhatsApp Marketing Dashboard - Bulk Messaging and Chatbot Platform"
-                  className="w-full h-auto rounded-2xl shadow-2xl"
-                />
+            <div className="relative opacity-0 animate-fade-up-delay">
+              <div className="hero-glow-ring" />
+              <img
+                src={home}
+                alt="WhatsApp Marketing Dashboard - Bulk Messaging and Chatbot Platform"
+                className="relative w-full h-auto rounded-3xl shadow-card border border-white/60"
+              />
+              <div className="floating-badge -top-4 -right-2 lg:-right-6 animate-float">
+                <div className="w-8 h-8 rounded-lg bg-gradient-brand flex items-center justify-center">
+                  <Bot className="w-4 h-4 text-white" />
+                </div>
+                AI Chatbots
               </div>
-              
-              {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 bg-[#25D366] text-white p-3 rounded-full animate-bounce">
-                <Bot className="w-6 h-6" />
+              <div className="floating-badge -bottom-4 -left-2 lg:-left-6 animate-float-delay">
+                <div className="w-8 h-8 rounded-lg bg-gradient-brand flex items-center justify-center">
+                  <BarChart3 className="w-4 h-4 text-white" />
+                </div>
+                Live Analytics
               </div>
-              <div className="absolute -bottom-4 -left-4 bg-green-500 text-white p-3 rounded-full animate-pulse">
-                <BarChart3 className="w-6 h-6" />
-              </div>
-              
-              {/* Background Decoration */}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#25D366]/20 to-transparent rounded-2xl transform rotate-3 scale-105 -z-10"></div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-8 bg-[#F0FFF4] border-b border-[#25D366]/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <p className="text-gray-700 text-sm md:text-base">
+      <section className="relative py-5 glass border-y border-brand/10">
+        <div className="container-wide flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <p className="text-ink-muted text-sm md:text-base">
             Based in Chennai — WhatsApp marketing for Tamil Nadu:{' '}
-            <span className="text-[#128C7E] font-medium">Chennai</span>,{' '}
-            <span className="text-[#128C7E] font-medium">Coimbatore</span>,{' '}
-            <span className="text-[#128C7E] font-medium">Madurai</span>, and statewide.
+            <span className="text-brand-dark font-semibold">Chennai</span>,{' '}
+            <span className="text-brand-dark font-semibold">Coimbatore</span>,{' '}
+            <span className="text-brand-dark font-semibold">Madurai</span>, and statewide.
           </p>
           <div className="flex flex-wrap gap-3 shrink-0">
-            <Link
-              to="/whatsapp-marketing-chennai"
-              className="text-sm font-semibold text-[#25D366] hover:text-[#128C7E] underline underline-offset-2"
-            >
-              Chennai page
+            <Link to="/whatsapp-marketing-chennai" className="text-sm font-semibold text-brand hover:text-brand-dark transition-colors inline-flex items-center gap-1">
+              Chennai page <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link
-              to="/whatsapp-marketing-tamil-nadu"
-              className="text-sm font-semibold text-[#25D366] hover:text-[#128C7E] underline underline-offset-2"
-            >
-              Tamil Nadu page
+            <Link to="/whatsapp-marketing-tamil-nadu" className="text-sm font-semibold text-brand hover:text-brand-dark transition-colors inline-flex items-center gap-1">
+              Tamil Nadu page <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* Quick Navigation Links for SEO */}
-      <section className="py-12 bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-semibold text-[#1C1C1C] mb-2">
-              Explore WhatsApp Marketing Solutions
-            </h2>
-            <p className="text-gray-600">Quick access to our key features and services</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      <section className="section-padding bg-surface">
+        <div className="container-wide">
+          <SectionHeader
+            eyebrow="Explore"
+            title="WhatsApp Marketing Solutions"
+            description="Quick access to our key features and services"
+          />
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
             {quickLinks.map((link, index) => (
               <Link
                 key={index}
                 to={link.link}
-                className="text-center p-3 rounded-lg border border-gray-200 hover:border-[#25D366] hover:bg-[#25D366]/5 transition-all duration-300 group"
+                className="glass-card p-4 text-center group hover:border-brand/30"
               >
-                <span className="text-sm font-medium text-gray-700 group-hover:text-[#25D366]">
+                <span className="text-sm font-medium text-ink-muted group-hover:text-brand transition-colors">
                   {link.title}
                 </span>
               </Link>
@@ -364,39 +353,34 @@ const Home = () => {
       </section>
 
       {/* Demo Video Section */}
-      <section id="demo-video" className="py-20 bg-[#F7F7F7]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
-              See Our WhatsApp Marketing Dashboard in Action
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Watch how easy it is to manage your WhatsApp marketing campaigns, build chatbots, and send bulk messages with our intuitive dashboard.
-            </p>
-          </div>
+      <section id="demo-video" className="section-padding bg-surface-muted relative overflow-hidden">
+        <div className="absolute inset-0 grid-pattern opacity-30" />
+        <div className="container-wide relative">
+          <SectionHeader
+            eyebrow="Product tour"
+            title="See Our WhatsApp Marketing Dashboard in Action"
+            description="Watch how easy it is to manage campaigns, build chatbots, and send bulk messages with our intuitive dashboard."
+          />
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden">
-                <img 
+            <div className="glass-card p-6 md:p-8">
+              <div className="aspect-video rounded-2xl overflow-hidden shadow-soft ring-1 ring-brand/10">
+                <img
                   src={uploadingcontacts}
-                  alt="WhatsApp Marketing Dashboard Demo - Contact Upload and Bulk Messaging" 
-                  className="w-full h-full object-cover rounded-lg" 
+                  alt="WhatsApp Marketing Dashboard Demo - Contact Upload and Bulk Messaging"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="mt-6 text-center">
-                <h3 className="text-xl font-semibold text-[#1C1C1C] mb-2">
-                 One-Step Drag & Drop Contact Upload for Bulk WhatsApp Marketing
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  One-Step Drag & Drop Contact Upload for Bulk WhatsApp Marketing
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-ink-muted">
                   See how easy it is to import contacts and send bulk WhatsApp messages instantly with our marketing automation platform
                 </p>
                 <div className="mt-4">
-                  <Link
-                    to="/whatsapp-bulk-messaging"
-                    className="text-[#25D366] hover:underline font-medium"
-                  >
-                    Learn more about bulk messaging features →
+                  <Link to="/whatsapp-bulk-messaging" className="text-brand font-semibold hover:text-brand-dark inline-flex items-center gap-1 transition-colors">
+                    Learn more about bulk messaging <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
               </div>
@@ -406,122 +390,102 @@ const Home = () => {
       </section>
 
       {/* Industry Solutions Section */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
-              WhatsApp Marketing Solutions for Every Industry
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Tailored WhatsApp business solutions with industry-specific chatbot templates, automation workflows, and marketing strategies
-            </p>
-          </div>
+      <section className="section-padding">
+        <div className="container-wide">
+          <SectionHeader
+            eyebrow="Industries"
+            title="WhatsApp Marketing Solutions for Every Industry"
+            description="Tailored WhatsApp business solutions with industry-specific chatbot templates, automation workflows, and marketing strategies"
+          />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {industries.map((industry, index) => (
-              <Link
-                key={index}
-                to={industry.link}
-                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group hover:-translate-y-2"
-              >
-                <div className="text-4xl mb-4">{industry.icon}</div>
-                <h3 className="text-xl font-semibold text-[#1C1C1C] mb-3 group-hover:text-[#25D366] transition-colors">
+              <Link key={index} to={industry.link} className="industry-card group">
+                <div className="w-12 h-12 rounded-xl bg-gradient-brand flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <industry.icon className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-brand-light transition-colors">
                   WhatsApp Marketing for {industry.title}
                 </h3>
-                <p className="text-gray-600 mb-4">{industry.description}</p>
+                <p className="text-ink-muted mb-4 text-sm leading-relaxed">{industry.description}</p>
                 <ul className="space-y-2 mb-4">
                   {industry.benefits.map((benefit, benefitIndex) => (
                     <li key={benefitIndex} className="flex items-center text-sm">
-                      <CheckCircle className="w-4 h-4 text-[#25D366] mr-2" />
-                      <span className="text-gray-600">{benefit}</span>
+                      <CheckCircle className="w-4 h-4 text-brand mr-2 shrink-0" />
+                      <span className="text-ink-muted">{benefit}</span>
                     </li>
                   ))}
                 </ul>
-                <div className="flex items-center text-[#25D366] font-medium group-hover:underline">
+                <div className="flex items-center text-brand font-semibold text-sm group-hover:gap-2 transition-all">
                   Explore {industry.title} Solutions
-                  <ArrowRight className="w-4 h-4 ml-1" />
+                  <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
             ))}
           </div>
 
           <div className="text-center mt-12">
-            <Link
-              to="/contact"
-              className="bg-[#25D366] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#128C7E] transition-colors inline-flex items-center"
-            >
-              Get Custom Industry Solution
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Link>
+            <Button to="/contact" size="lg" icon>Get Custom Industry Solution</Button>
           </div>
         </div>
       </section>
 
       {/* Use Cases Section */}
-      <section className="py-20 bg-[#F7F7F7]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h3 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
-              Real-World WhatsApp Marketing Use Cases
-            </h3>
-            <p className="text-lg text-gray-600">
-              See how businesses across different industries leverage Ask Meister's WhatsApp marketing platform for growth
-            </p>
-          </div>
+      <section className="section-padding bg-surface-muted relative">
+        <div className="absolute inset-0 grid-pattern opacity-20" />
+        <div className="container-wide relative">
+          <SectionHeader
+            eyebrow="Use cases"
+            title="Real-World WhatsApp Marketing Use Cases"
+            description="See how businesses across different industries leverage Ask Meister's WhatsApp marketing platform for growth"
+          />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {useCases.map((useCase, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group hover:-translate-y-2">
-                <div className="text-4xl mb-4 text-center">{useCase.icon}</div>
-                <h4 className="text-lg font-semibold text-[#1C1C1C] mb-2 group-hover:text-[#25D366] transition-colors">
-                  {useCase.title}
-                </h4>
-                <div className="text-sm text-[#25D366] font-medium mb-3">{useCase.industry}</div>
-                <p className="text-gray-600 text-sm leading-relaxed">{useCase.description}</p>
+              <div key={index} className="feature-card text-center">
+                <div className="w-14 h-14 rounded-2xl bg-gradient-brand flex items-center justify-center mx-auto mb-4">
+                  <useCase.icon className="w-7 h-7 text-white" />
+                </div>
+                <h4 className="text-lg font-semibold text-ink mb-2">{useCase.title}</h4>
+                <div className="text-xs font-semibold uppercase tracking-wider text-brand mb-3">{useCase.industry}</div>
+                <p className="text-ink-muted text-sm leading-relaxed">{useCase.description}</p>
               </div>
             ))}
           </div>
 
           <div className="text-center mt-12">
-            <Link
-              to="/tools"
-              className="text-[#25D366] hover:underline font-medium"
-            >
-              Explore more WhatsApp marketing use cases →
+            <Link to="/tools" className="text-brand font-semibold hover:text-brand-dark inline-flex items-center gap-1 transition-colors">
+              Explore more use cases <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h3 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
-              How Our WhatsApp Marketing Platform Works
-            </h3>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Get started with WhatsApp marketing automation in just 4 simple steps. 
-              No technical knowledge required for our chatbot builder and bulk messaging tools!
-            </p>
-          </div>
+      <section className="section-padding">
+        <div className="container-wide">
+          <SectionHeader
+            eyebrow="How it works"
+            title="How Our WhatsApp Marketing Platform Works"
+            description="Get started with WhatsApp marketing automation in just 4 simple steps. No technical knowledge required for our chatbot builder and bulk messaging tools!"
+          />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {howItWorks.map((step, index) => (
               <div key={index} className="relative">
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group hover:-translate-y-2">
-                  <div className="w-16 h-16 bg-[#25D366]/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#25D366]/20 transition-colors">
-                    <step.icon className="w-8 h-8 text-[#25D366]" />
+                <div className="feature-card text-center">
+                  <div className="w-16 h-16 rounded-2xl bg-brand/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-brand/20 transition-colors">
+                    <step.icon className="w-8 h-8 text-brand" />
                   </div>
-                  <div className="w-8 h-8 bg-[#25D366] text-white rounded-full flex items-center justify-center text-sm font-bold absolute -top-3 -right-3">
+                  <div className="w-8 h-8 bg-gradient-brand text-white rounded-full flex items-center justify-center text-sm font-bold absolute top-4 right-4 shadow-glow-sm">
                     {step.step}
                   </div>
-                  <h4 className="text-xl font-semibold text-[#1C1C1C] mb-2">{step.title}</h4>
-                  <p className="text-gray-600">{step.description}</p>
+                  <h4 className="text-lg font-semibold text-ink mb-2">{step.title}</h4>
+                  <p className="text-ink-muted text-sm">{step.description}</p>
                 </div>
                 {index < howItWorks.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                    <ArrowRight className="w-6 h-6 text-[#25D366]" />
+                  <div className="hidden lg:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+                    <ArrowRight className="w-5 h-5 text-brand/50" />
                   </div>
                 )}
               </div>
@@ -529,92 +493,80 @@ const Home = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Link
-              to="/whatsapp-api"
-              className="text-[#25D366] hover:underline font-medium"
-            >
-              Learn more about WhatsApp API integration →
+            <Link to="/whatsapp-api" className="text-brand font-semibold hover:text-brand-dark inline-flex items-center gap-1 transition-colors">
+              Learn more about WhatsApp API integration <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-[#F7F7F7]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h3 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
-              Powerful WhatsApp Marketing Features for Modern Businesses
-            </h3>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Everything you need to create, manage, and optimize your WhatsApp marketing campaigns with our comprehensive business automation platform.
-            </p>
-          </div>
+      <section className="section-padding bg-surface-muted relative overflow-hidden">
+        <div className="absolute inset-0 grid-pattern opacity-20" />
+        <div className="container-wide relative">
+          <SectionHeader
+            eyebrow="Features"
+            title="Powerful WhatsApp Marketing Features"
+            description="Everything you need to create, manage, and optimize your WhatsApp marketing campaigns with our comprehensive business automation platform."
+          />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {features.map((feature, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group hover:-translate-y-1">
-                <div className="aspect-video mb-6 rounded-lg overflow-hidden">
+              <div key={index} className="feature-card group">
+                <div className="aspect-video mb-5 rounded-xl overflow-hidden ring-1 ring-brand/10">
                   <img
                     src={feature.image}
                     alt={`${feature.title} - WhatsApp Marketing Feature`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="w-12 h-12 bg-[#25D366]/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#25D366]/20 transition-colors">
-                  <feature.icon className="w-6 h-6 text-[#25D366]" />
+                <div className="w-11 h-11 rounded-xl bg-brand/10 flex items-center justify-center mb-3 group-hover:bg-brand/20 transition-colors">
+                  <feature.icon className="w-5 h-5 text-brand" />
                 </div>
-                <h4 className="text-xl font-semibold text-[#1C1C1C] mb-3">{feature.title}</h4>
-                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                <h4 className="text-lg font-semibold text-ink mb-2">{feature.title}</h4>
+                <p className="text-ink-muted text-sm leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>
 
           <div className="text-center">
-            <Link
-              to="/whatsapp-api"
-              className="bg-[#25D366] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#128C7E] transition-colors inline-flex items-center"
-            >
-              Explore All WhatsApp Marketing Features
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Link>
+            <Button to="/whatsapp-api" size="lg" icon>Explore All Features</Button>
           </div>
         </div>
       </section>
 
-      {/* Honest use-case framing (no fabricated testimonials) */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
-              How teams use WhatsApp with Ask Meister
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              The examples below describe typical patterns—not guaranteed results. Every business must follow WhatsApp and Meta policies, obtain opt-in where required, and get templates approved.
-            </p>
-          </div>
+      {/* Honest use-case framing */}
+      <section className="section-padding">
+        <div className="container-wide">
+          <SectionHeader
+            eyebrow="Teams"
+            title="How teams use WhatsApp with Ask Meister"
+            description="The examples below describe typical patterns—not guaranteed results. Every business must follow WhatsApp and Meta policies, obtain opt-in where required, and get templates approved."
+          />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {useCaseHighlights.map((item, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
-                <CheckCircle className="w-10 h-10 text-[#25D366] mb-4" />
-                <h3 className="text-xl font-semibold text-[#1C1C1C] mb-3">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{item.text}</p>
+              <div key={index} className="feature-card">
+                <div className="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center mb-4">
+                  <CheckCircle className="w-6 h-6 text-brand" />
+                </div>
+                <h3 className="text-lg font-semibold text-ink mb-3">{item.title}</h3>
+                <p className="text-ink-muted text-sm leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
 
           <div className="text-center mt-12">
-            <Link to="/case-studies" className="text-[#25D366] hover:underline font-medium">
-              Case studies &amp; stories →
+            <Link to="/case-studies" className="text-brand font-semibold hover:text-brand-dark inline-flex items-center gap-1 transition-colors">
+              Case studies & stories <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-white border-y border-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-gray-700 space-y-4 leading-relaxed">
-          <h2 className="text-2xl font-bold text-[#1C1C1C] mb-4">WhatsApp marketing in Tamil Nadu &amp; Chennai</h2>
+      <section className="py-16 bg-surface border-y border-brand/10">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-ink-muted space-y-4 leading-relaxed">
+          <h2 className="text-2xl font-bold text-white mb-4">WhatsApp marketing in Tamil Nadu &amp; Chennai</h2>
           <p>
             Customers in Chennai, Coimbatore, Madurai, and smaller towns already rely on WhatsApp for daily communication. For businesses, that means support, reminders, and marketing must respect user
             expectations: clear opt-in, transparent frequency, and messages that match approved WhatsApp categories (utility, authentication, marketing where allowed).
@@ -625,15 +577,15 @@ const Home = () => {
           </p>
           <p>
             If you serve retail, education, clinics, real estate, or services, start from our{' '}
-            <Link to="/whatsapp-api" className="text-[#25D366] hover:underline">
+            <Link to="/whatsapp-api" className="text-brand hover:text-brand-dark font-medium transition-colors">
               WhatsApp API overview
             </Link>
             ,{' '}
-            <Link to="/whatsapp-bulk-messaging" className="text-[#25D366] hover:underline">
+            <Link to="/whatsapp-bulk-messaging" className="text-brand hover:text-brand-dark font-medium transition-colors">
               bulk messaging
             </Link>
             , and{' '}
-            <Link to="/contact" className="text-[#25D366] hover:underline">
+            <Link to="/contact" className="text-brand hover:text-brand-dark font-medium transition-colors">
               contact
             </Link>{' '}
             team for onboarding questions.
@@ -642,92 +594,88 @@ const Home = () => {
       </section>
 
       {/* Internal Links Section for SEO */}
-      <section className="py-16 bg-[#F7F7F7]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h3 className="text-2xl font-bold text-[#1C1C1C] mb-4">
-              Explore More WhatsApp Marketing Resources
-            </h3>
-          </div>
-          
+      <section className="section-padding bg-surface-muted relative">
+        <div className="absolute inset-0 grid-pattern opacity-20" />
+        <div className="container-wide relative">
+          <SectionHeader title="Explore More WhatsApp Marketing Resources" />
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white rounded-lg p-6 shadow-md">
-              <h4 className="font-semibold text-[#1C1C1C] mb-3">Platform Features</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link to="/whatsapp-marketing-automation" className="text-gray-600 hover:text-[#25D366]">Marketing Automation</Link></li>
-                <li><Link to="/whatsapp-business-analytics" className="text-gray-600 hover:text-[#25D366]">Analytics Dashboard</Link></li>
-                <li><Link to="/whatsapp-live-chat" className="text-gray-600 hover:text-[#25D366]">Live Chat Support</Link></li>
-                <li><Link to="/whatsapp-message-templates" className="text-gray-600 hover:text-[#25D366]">Message Templates</Link></li>
-                <li><Link to="/whatsapp-bulk-messaging" className="text-gray-600 hover:text-[#25D366]">Bulk Messaging</Link></li>
-              </ul>
-            </div>
-            
-            <div className="bg-white rounded-lg p-6 shadow-md">
-              <h4 className="font-semibold text-[#1C1C1C] mb-3">Chatbot Solutions</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link to="/chatbots" className="text-gray-600 hover:text-[#25D366]">AI Chatbot Builder</Link></li>
-                <li><Link to="/whatsapp-software-for-universities" className="text-gray-600 hover:text-[#25D366]">Education Chatbots</Link></li>
-                <li><Link to="/whatsapp-automation-for-healthcare" className="text-gray-600 hover:text-[#25D366]">Healthcare Bots</Link></li>
-                <li><Link to="/whatsapp-automation-for-ecommerce" className="text-gray-600 hover:text-[#25D366]">E-commerce Bots</Link></li>
-                <li><Link to="/whatsapp-automation-for-real-estate" className="text-gray-600 hover:text-[#25D366]">Real Estate Bots</Link></li>
-              </ul>
-            </div>
-            
-            <div className="bg-white rounded-lg p-6 shadow-md">
-              <h4 className="font-semibold text-[#1C1C1C] mb-3">Business Resources</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link to="/contact" className="text-gray-600 hover:text-[#25D366]">Contact Sales</Link></li>
-                <li><Link to="/whatsapp-api" className="text-gray-600 hover:text-[#25D366]">WhatsApp API</Link></li>
-                <li><Link to="/whatsapp-marketing-chennai" className="text-gray-600 hover:text-[#25D366]">Chennai marketing</Link></li>
-                <li><Link to="/whatsapp-marketing-tamil-nadu" className="text-gray-600 hover:text-[#25D366]">Tamil Nadu marketing</Link></li>
-                <li><Link to="/tools" className="text-gray-600 hover:text-[#25D366]">Marketing Tools</Link></li>
-                <li><Link to="/blog" className="text-gray-600 hover:text-[#25D366]">Marketing Blog</Link></li>
-                <li><Link to="/help" className="text-gray-600 hover:text-[#25D366]">Help Center</Link></li>
-              </ul>
-            </div>
-            
-            <div className="bg-white rounded-lg p-6 shadow-md">
-              <h4 className="font-semibold text-[#1C1C1C] mb-3">Company Info</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link to="/about" className="text-gray-600 hover:text-[#25D366]">About Ask Meister</Link></li>
-                <li><Link to="/contact" className="text-gray-600 hover:text-[#25D366]">Contact Sales</Link></li>
-                <li><Link to="/case-studies" className="text-gray-600 hover:text-[#25D366]">Case studies</Link></li>
-                <li><Link to="/free-trial" className="text-gray-600 hover:text-[#25D366]">Get started</Link></li>
-                <li><Link to="/careers" className="text-gray-600 hover:text-[#25D366]">Careers</Link></li>
-                <li><Link to="/affiliate" className="text-gray-600 hover:text-[#25D366]">Partner Program</Link></li>
-                <li><Link to="/privacy" className="text-gray-600 hover:text-[#25D366]">Privacy Policy</Link></li>
-              </ul>
-            </div>
+            {[
+              { title: 'Platform Features', links: [
+                { label: 'Marketing Automation', to: '/whatsapp-marketing-automation' },
+                { label: 'Analytics Dashboard', to: '/whatsapp-business-analytics' },
+                { label: 'Live Chat Support', to: '/whatsapp-live-chat' },
+                { label: 'Message Templates', to: '/whatsapp-message-templates' },
+                { label: 'Bulk Messaging', to: '/whatsapp-bulk-messaging' },
+              ]},
+              { title: 'Chatbot Solutions', links: [
+                { label: 'AI Chatbot Builder', to: '/chatbots' },
+                { label: 'Education Chatbots', to: '/whatsapp-software-for-universities' },
+                { label: 'Healthcare Bots', to: '/whatsapp-automation-for-healthcare' },
+                { label: 'E-commerce Bots', to: '/whatsapp-automation-for-ecommerce' },
+                { label: 'Real Estate Bots', to: '/whatsapp-automation-for-real-estate' },
+              ]},
+              { title: 'Business Resources', links: [
+                { label: 'Contact Sales', to: '/contact' },
+                { label: 'WhatsApp API', to: '/whatsapp-api' },
+                { label: 'Chennai marketing', to: '/whatsapp-marketing-chennai' },
+                { label: 'Tamil Nadu marketing', to: '/whatsapp-marketing-tamil-nadu' },
+                { label: 'Marketing Tools', to: '/tools' },
+                { label: 'Marketing Blog', to: '/blog' },
+                { label: 'Help Center', to: '/help' },
+              ]},
+              { title: 'Company Info', links: [
+                { label: 'About Ask Meister', to: '/about' },
+                { label: 'Contact Sales', to: '/contact' },
+                { label: 'Case studies', to: '/case-studies' },
+                { label: 'Get started', to: '/free-trial' },
+                { label: 'Careers', to: '/careers' },
+                { label: 'Partner Program', to: '/affiliate' },
+                { label: 'Privacy Policy', to: '/privacy' },
+              ]},
+            ].map((col) => (
+              <div key={col.title} className="glass-card p-6">
+                <h4 className="font-semibold text-ink mb-4">{col.title}</h4>
+                <ul className="space-y-2.5 text-sm">
+                  {col.links.map((link) => (
+                    <li key={link.to}>
+                      <Link to={link.to} className="text-ink-muted hover:text-brand-light transition-colors">
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#25D366]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-brand" />
+        <div className="absolute inset-0 grid-pattern opacity-10" />
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-black/10 rounded-full blur-3xl" />
+
+        <div className="container-wide relative max-w-4xl text-center">
+          <h3 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">
             Ready to Transform Your Business with WhatsApp Marketing?
           </h3>
-          <p className="text-lg text-white/90 mb-8">
+          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
             Talk to us about WhatsApp broadcasts, chatbots, and analytics for your team—anchored in Chennai, serving businesses across Tamil Nadu and India.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="bg-white text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
-            >
+            <Link to="/contact" className="bg-white text-brand-dark px-8 py-4 rounded-xl text-lg font-semibold hover:bg-brand-muted hover:-translate-y-0.5 transition-all duration-300 inline-flex items-center justify-center shadow-card">
               Contact for demo
             </Link>
-            <Link
-              to="/free-trial"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#25D366] transition-colors inline-flex items-center justify-center"
-            >
+            <Link to="/free-trial" className="btn-outline px-8 py-4 text-lg inline-flex items-center justify-center">
               How trial &amp; onboarding work
             </Link>
           </div>
-          <div className="mt-6 text-sm text-white/80">
+          <p className="mt-6 text-sm text-white/70 max-w-xl mx-auto">
             Demo and onboarding terms are confirmed when you speak with our team—nothing on this page is a binding commercial offer.
-          </div>
+          </p>
         </div>
       </section>
     </div>

@@ -218,6 +218,99 @@ const BlogDetail = () => {
       category: 'Automation',
       readTime: '9 min read',
       tags: ['workflow', 'automation', 'roi', 'lifecycle']
+    },
+    'shopify-whatsapp-integration-guide': {
+      slug: 'shopify-whatsapp-integration-guide',
+      title: 'Shopify WhatsApp Integration: Complete Setup Guide for Indian Stores',
+      excerpt: 'Connect Shopify order events to WhatsApp templates for confirmations, shipping, and cart recovery—compliantly.',
+      content: `
+        <h2>Why Shopify stores add WhatsApp</h2>
+        <p>Indian shoppers already use WhatsApp daily. Connecting order events to approved templates reduces WISMO tickets and speeds up cart recovery for opted-in customers.</p>
+        <h2>Setup steps</h2>
+        <ol>
+          <li>Register WhatsApp Business API via a BSP like Ask Meister.</li>
+          <li>Create utility templates for order placed, shipped, and delivered.</li>
+          <li>Connect Shopify webhooks or Zapier to trigger sends.</li>
+          <li>Collect marketing opt-in at checkout for promotional messages.</li>
+        </ol>
+        <h2>Chennai merchants</h2>
+        <p>Local support helps map Tamil/English copy and courier integrations common in Tamil Nadu.</p>
+        <p><a href="/whatsapp-shopify-integration-chennai">Shopify WhatsApp integration in Chennai →</a></p>
+      `,
+      image: 'https://images.pexels.com/photos/3985062/pexels-photo-3985062.jpeg?auto=compress&cs=tinysrgb&w=800',
+      author: 'Ask Meister Team',
+      date: '2026-06-10',
+      category: 'API',
+      readTime: '11 min read',
+      tags: ['shopify', 'integration', 'ecommerce', 'chennai']
+    },
+    'tally-whatsapp-payment-reminders': {
+      slug: 'tally-whatsapp-payment-reminders',
+      title: 'Tally + WhatsApp: Invoice and Payment Reminder Workflows',
+      excerpt: 'How distributors using Tally Prime send party-wise payment nudges on WhatsApp without unofficial bulk tools.',
+      content: `
+        <h2>The Tally + WhatsApp pattern</h2>
+        <p>Distributors export outstanding balances from Tally, sync to a controlled contact list, and send utility templates with payment links—not ad-hoc bulk blasts.</p>
+        <h2>Recommended workflow</h2>
+        <ul>
+          <li>Weekly Tally export by party ledger.</li>
+          <li>Filter contacts with WhatsApp opt-in on file.</li>
+          <li>Send payment due template with amount and due date fields.</li>
+          <li>Log replies in team inbox for negotiation.</li>
+        </ul>
+        <p><a href="/whatsapp-tally-integration">Full Tally integration guide →</a></p>
+      `,
+      image: 'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800',
+      author: 'Ask Meister Team',
+      date: '2026-06-15',
+      category: 'Automation',
+      readTime: '8 min read',
+      tags: ['tally', 'finance', 'reminders', 'distribution']
+    },
+    'whatsapp-business-api-chennai-guide': {
+      slug: 'whatsapp-business-api-chennai-guide',
+      title: 'WhatsApp Business API in Chennai: Onboarding Checklist for SMEs',
+      excerpt: 'What Chennai businesses should prepare before API onboarding—templates, opt-in, display name, and integrations.',
+      content: `
+        <h2>Before you apply</h2>
+        <p>Gather business verification documents, a live website, and a clear use case (utility vs marketing templates).</p>
+        <h2>Checklist</h2>
+        <ul>
+          <li>Display name aligned with your registered brand.</li>
+          <li>Sample templates for your top 3 customer journeys.</li>
+          <li>Opt-in proof for existing customer lists.</li>
+          <li>Integration plan: Shopify, Tally, Zoho, or HRMS.</li>
+        </ul>
+        <p>Ask Meister is based in Ramapuram, Chennai—<a href="/whatsapp-business-api-chennai">API onboarding support →</a></p>
+      `,
+      image: 'https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=800',
+      author: 'Ask Meister Team',
+      date: '2026-06-20',
+      category: 'API',
+      readTime: '10 min read',
+      tags: ['chennai', 'api', 'onboarding', 'sme']
+    },
+    'hrms-whatsapp-employee-alerts': {
+      slug: 'hrms-whatsapp-employee-alerts',
+      title: 'HRMS WhatsApp Alerts: Payroll, Leave, and Onboarding Notifications',
+      excerpt: 'Patterns for connecting HRMS and payroll systems to WhatsApp utility templates for employees who opt in.',
+      content: `
+        <h2>What HR teams automate</h2>
+        <p>Payslip published alerts, leave approval status, interview reminders, and onboarding document checklists—always with employee consent.</p>
+        <h2>Integration options</h2>
+        <ul>
+          <li>HRMS webhook → WhatsApp template.</li>
+          <li>Scheduled CSV export from payroll.</li>
+          <li>Zapier middleware for smaller teams.</li>
+        </ul>
+        <p><a href="/whatsapp-hrms-integration">HRMS WhatsApp integration →</a></p>
+      `,
+      image: 'https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=800',
+      author: 'Ask Meister Team',
+      date: '2026-06-25',
+      category: 'Automation',
+      readTime: '7 min read',
+      tags: ['hrms', 'hr', 'payroll', 'notifications']
     }
   } as const;
 
@@ -247,7 +340,7 @@ const BlogDetail = () => {
     publisher: {
       '@type': 'Organization',
       name: 'Ask Meister',
-      logo: { '@type': 'ImageObject', url: 'https://askmeister.com/og-banner.webp' }
+      logo: { '@type': 'ImageObject', url: 'https://askmeister.com/favicon-192x192.png' }
     },
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl }
   };
@@ -271,12 +364,12 @@ const BlogDetail = () => {
         <meta name="twitter:image" content={blogPost.image} />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
       </Helmet>
-    <div className="pt-16">
+    <div className="page-wrap">
       {/* Back Button */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Link
           to="/blog"
-          className="inline-flex items-center text-[#25D366] hover:underline mb-8"
+          className="inline-flex items-center text-brand hover:underline mb-8"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to Blog
@@ -287,30 +380,30 @@ const BlogDetail = () => {
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="mb-8">
           <div className="flex items-center mb-4">
-            <Tag className="w-4 h-4 text-[#25D366] mr-2" />
-            <span className="text-[#25D366] font-medium text-sm">{blogPost.category}</span>
-            <span className="mx-2 text-gray-300">•</span>
-            <Clock className="w-4 h-4 text-gray-400 mr-2" />
-            <span className="text-gray-600 text-sm">{blogPost.readTime}</span>
+            <Tag className="w-4 h-4 text-brand mr-2" />
+            <span className="text-brand font-medium text-sm">{blogPost.category}</span>
+            <span className="mx-2 text-slate-500">•</span>
+            <Clock className="w-4 h-4 text-slate-500 mr-2" />
+            <span className="text-ink-muted text-sm">{blogPost.readTime}</span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl font-bold text-[#1C1C1C] mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
             {blogPost.title}
           </h1>
           
-          <p className="text-xl text-gray-600 mb-6 leading-relaxed">
+          <p className="text-xl text-ink-muted mb-6 leading-relaxed">
             {blogPost.excerpt}
           </p>
           
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center">
-              <User className="w-5 h-5 text-gray-400 mr-2" />
-              <span className="text-gray-700 font-medium mr-4">{blogPost.author}</span>
-              <Calendar className="w-5 h-5 text-gray-400 mr-2" />
-              <span className="text-gray-600">{blogPost.date}</span>
+              <User className="w-5 h-5 text-slate-500 mr-2" />
+              <span className="text-ink-muted font-medium mr-4">{blogPost.author}</span>
+              <Calendar className="w-5 h-5 text-slate-500 mr-2" />
+              <span className="text-ink-muted">{blogPost.date}</span>
             </div>
             
-            <button className="flex items-center text-[#25D366] hover:underline">
+            <button className="flex items-center text-brand hover:underline">
               <Share2 className="w-4 h-4 mr-2" />
               Share
             </button>
@@ -338,12 +431,12 @@ const BlogDetail = () => {
 
         {/* Tags */}
         <div className="mb-8">
-          <h3 className="text-lg font-semibold text-[#1C1C1C] mb-4">Tags</h3>
+          <h3 className="text-lg font-semibold text-white mb-4">Tags</h3>
           <div className="flex flex-wrap gap-2">
             {blogPost.tags.map((tag, index) => (
               <span
                 key={index}
-                className="bg-[#25D366]/10 text-[#25D366] px-3 py-1 rounded-full text-sm font-medium"
+                className="bg-brand/10 text-brand px-3 py-1 rounded-full text-sm font-medium"
               >
                 #{tag}
               </span>
@@ -352,15 +445,15 @@ const BlogDetail = () => {
         </div>
 
         {/* Author Bio */}
-        <div className="bg-[#F7F7F7] rounded-xl p-6 mb-12">
-          <h3 className="text-lg font-semibold text-[#1C1C1C] mb-2">About the Author</h3>
+        <div className="bg-surface-muted rounded-xl p-6 mb-12">
+          <h3 className="text-lg font-semibold text-white mb-2">About the Author</h3>
           <div className="flex items-center">
-            <div className="w-12 h-12 bg-[#25D366] rounded-full flex items-center justify-center mr-4">
+            <div className="w-12 h-12 bg-brand rounded-full flex items-center justify-center mr-4">
               <User className="w-6 h-6 text-white" />
             </div>
             <div>
-              <div className="font-medium text-[#1C1C1C]">{blogPost.author}</div>
-              <div className="text-gray-600 text-sm">
+              <div className="font-medium text-white">{blogPost.author}</div>
+              <div className="text-ink-muted text-sm">
                 Marketing Expert at Ask Meister with 5+ years of experience in WhatsApp marketing automation.
               </div>
             </div>
@@ -369,15 +462,15 @@ const BlogDetail = () => {
       </article>
 
       {/* Related Posts */}
-      <section className="py-20 bg-[#F7F7F7]">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#1C1C1C] mb-12 text-center">
+          <h2 className="text-3xl font-bold text-white mb-12 text-center">
             Related Articles
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {relatedPosts.map((post, index) => (
-              <article key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <article key={index} className="glass-card overflow-hidden hover:shadow-xl transition-shadow">
                 <img
                   src={post.image}
                   alt={post.title}
@@ -385,16 +478,16 @@ const BlogDetail = () => {
                 />
                 <div className="p-6">
                   <div className="flex items-center mb-3">
-                    <Tag className="w-4 h-4 text-[#25D366] mr-2" />
-                    <span className="text-sm text-[#25D366] font-medium">{post.category}</span>
-                    <span className="ml-auto text-sm text-gray-500">{post.readTime}</span>
+                    <Tag className="w-4 h-4 text-brand mr-2" />
+                    <span className="text-sm text-brand font-medium">{post.category}</span>
+                    <span className="ml-auto text-sm text-slate-400">{post.readTime}</span>
                   </div>
-                  <h3 className="text-lg font-bold text-[#1C1C1C] mb-4">
+                  <h3 className="text-lg font-bold text-white mb-4">
                     {post.title}
                   </h3>
                   <Link
                     to={`/blog/${post.slug}`}
-                    className="text-[#25D366] hover:underline font-medium text-sm"
+                    className="text-brand hover:underline font-medium text-sm"
                   >
                     Read More
                   </Link>
@@ -406,7 +499,7 @@ const BlogDetail = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#25D366]">
+      <section className="py-20 bg-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Implement These Strategies?
@@ -417,13 +510,13 @@ const BlogDetail = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-white text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="bg-white text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-surface-elevated transition-colors"
             >
               Get Started Free
             </Link>
             <Link
               to="/contact"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#25D366] transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-brand transition-colors"
             >
               Book a Demo
             </Link>

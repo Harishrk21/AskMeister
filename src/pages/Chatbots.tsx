@@ -100,7 +100,7 @@ const Chatbots = () => {
       description: 'Boost sales with intelligent product recommendations and order management',
       image: ecomm,
       features: ['Product catalog browsing', 'Order tracking & updates', 'Abandoned cart recovery'],
-      useCases: ['Reduce cart abandonment by 40%', 'Automate 80% of customer queries', 'Increase sales conversion by 25%'],
+      useCases: ['Cart recovery nudges for opted-in shoppers', 'FAQ automation with agent hand-off', 'Order status self-service'],
       link: '/whatsapp-automation-for-ecommerce'
     },
     {
@@ -110,7 +110,7 @@ const Chatbots = () => {
       description: 'Streamline patient care with automated appointment booking and medical assistance',
       image: hc,
       features: ['Multi-department appointment booking', 'Symptom checker & triage', 'Prescription reminders'],
-      useCases: ['Reduce appointment no-shows by 60%', 'Handle 90% of routine inquiries', 'Improve patient satisfaction scores'],
+      useCases: ['Appointment reminder templates', 'Routine FAQ routing to departments', 'Staff hand-off for clinical questions'],
       link: '/whatsapp-automation-for-healthcare'
     },
     {
@@ -120,7 +120,7 @@ const Chatbots = () => {
       description: 'Enhance learning experience with automated student support and communication',
       image: edusample,
       features: ['Course enrollment assistance', 'Assignment & exam reminders', 'Grade notifications'],
-      useCases: ['Increase student engagement by 50%', 'Automate administrative tasks', 'Improve parent communication'],
+      useCases: ['Admission inquiry capture', 'Administrative FAQ automation', 'Parent update broadcasts'],
       link: '/whatsapp-software-for-universities'
     },
   {
@@ -135,9 +135,9 @@ const Chatbots = () => {
     'Lead nurturing campaigns'
   ],
   useCases: [
-    'Boost lead conversions by 40%',
-    'Streamline agent-customer communication',
-    'Close property deals faster'
+    'Property inquiry auto-replies',
+    'Site visit scheduling flows',
+    'Agent follow-up reminders',
   ],
   link: '/whatsapp-automation-for-real-estate'
 },
@@ -153,9 +153,9 @@ const Chatbots = () => {
     'WhatsApp booking confirmations'
   ],
   useCases: [
-    'Increase tour bookings by 35%',
-    'Enhance customer experience',
-    'Automate repetitive travel agent tasks'
+    'Tour package inquiry bots',
+    'Itinerary update templates',
+    'Booking confirmation messages',
   ],
   link: '/whatsapp-automation-for-travel-and-tourism'
 }
@@ -167,7 +167,7 @@ const Chatbots = () => {
       description: 'Provide secure banking assistance and financial guidance to customers',
       image: bankoverview,
       features: ['Account balance inquiries', 'Transaction notifications', 'Loan application assistance'],
-      useCases: ['Reduce call center load by 70%', 'Improve customer satisfaction', 'Enhance security monitoring'],
+      useCases: ['Balance inquiry bots (policy permitting)', 'Transaction alert templates', 'Secure escalation to agents'],
       link: '/whatsapp-banking-automation'
     }
   ];
@@ -234,33 +234,33 @@ const Chatbots = () => {
         <meta property="og:description" content="Build WhatsApp chatbots and automation with Ask Meister. Results depend on your flows and compliance." />
         <meta property="og:url" content="https://askmeister.com/chatbots" />
       </Helmet>
-    <div className="pt-16">
+    <div className="page-wrap">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-20">
+      <section className="page-hero py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <div className="inline-flex items-center bg-[#25D366]/10 text-[#25D366] px-4 py-2 rounded-full text-sm font-medium">
+                <div className="inline-flex items-center bg-brand/10 text-brand px-4 py-2 rounded-full text-sm font-medium">
                   <Bot className="w-4 h-4 mr-2" />
                   AI-Powered WhatsApp Chatbots
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold text-[#1C1C1C] leading-tight">
+                <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
                   Intelligent Chatbots for
-                  <span className="text-[#25D366] block">Every Industry</span>
+                  <span className="text-brand block">Every Industry</span>
                 </h1>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-lg text-ink-muted leading-relaxed">
                   Transform your customer service with AI-powered WhatsApp chatbots. 
                   Automate conversations, boost engagement, and provide 24/7 support across any industry.
                 </p>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/contact" className="bg-[#25D366] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#128C7E] transition-colors inline-flex items-center justify-center">
+                <Link to="/contact" className="bg-brand text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-dark transition-colors inline-flex items-center justify-center">
                   Build Your Bot
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
-                <Link to="/contact" className="border-2 border-[#25D366] text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#25D366] hover:text-white transition-colors inline-flex items-center justify-center">
+                <Link to="/contact" className="border-2 border-brand text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand hover:text-white transition-colors inline-flex items-center justify-center">
                   {/* <Play className="w-5 h-5 mr-2" /> */}
                   Contact Sales
                 </Link>
@@ -268,47 +268,47 @@ const Chatbots = () => {
 
               <div className="flex flex-wrap gap-8 pt-4">
                 {[
-                  { value: '99%', label: 'Accuracy Rate' },
-                  { value: '24/7', label: 'Availability' },
-                  { value: '80%', label: 'Cost Reduction' }
+                  { value: 'Official API', label: 'Meta Platform' },
+                  { value: '24/7', label: 'Bot availability' },
+                  { value: 'Human', label: 'Hand-off built in' }
                 ].map((stat, index) => (
                   <div key={index} className="text-center">
-                    <div className="text-2xl font-bold text-[#25D366]">{stat.value}</div>
-                    <div className="text-sm text-gray-600">{stat.label}</div>
+                    <div className="text-2xl font-bold text-brand">{stat.value}</div>
+                    <div className="text-sm text-ink-muted">{stat.label}</div>
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="relative">
-              <div className="bg-white rounded-2xl shadow-2xl p-6 max-w-md mx-auto relative z-10">
+              <div className="glass-card p-6 max-w-md mx-auto relative z-10">
                 <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-10 h-10 bg-[#25D366] rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-brand rounded-full flex items-center justify-center">
                     <Bot className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <div className="font-semibold text-[#1C1C1C]">Ask Meister</div>
-                    <div className="text-sm text-gray-500">Online • Typing...</div>
+                    <div className="font-semibold text-white">Ask Meister</div>
+                    <div className="text-sm text-slate-400">Online • Typing...</div>
                   </div>
                 </div>
                 <div className="space-y-3">
-                  <div className="bg-[#25D366]/10 p-3 rounded-lg">
+                  <div className="bg-brand/10 p-3 rounded-lg">
                     <p className="text-sm">👋 Hi! I'm your Chatbot assistant. How can I help you today?</p>
                   </div>
-                  <div className="bg-gray-100 p-3 rounded-lg ml-8">
+                  <div className="bg-surface-elevated p-3 rounded-lg ml-8">
                     <p className="text-sm">I need help with my order</p>
                   </div>
-                  <div className="bg-[#25D366]/10 p-3 rounded-lg">
+                  <div className="bg-brand/10 p-3 rounded-lg">
                     <p className="text-sm">I'd be happy to help! Please share your order number and I'll check the status for you 📦</p>
                   </div>
                   <div className="flex space-x-2">
-                    <button className="bg-[#25D366] text-white px-3 py-1 rounded text-xs">Track Order</button>
-                    <button className="bg-gray-200 text-gray-700 px-3 py-1 rounded text-xs">Cancel Order</button>
+                    <button className="bg-brand text-white px-3 py-1 rounded text-xs">Track Order</button>
+                    <button className="bg-surface-elevated text-ink-muted px-3 py-1 rounded text-xs">Cancel Order</button>
                   </div>
                 </div>
               </div>
               
-              <div className="absolute -top-4 -right-4 bg-[#25D366] text-white p-3 rounded-full animate-bounce">
+              <div className="absolute -top-4 -right-4 bg-brand text-white p-3 rounded-full animate-bounce">
                 <Brain className="w-6 h-6" />
               </div>
               <div className="absolute -bottom-4 -left-4 bg-green-500 text-white p-3 rounded-full animate-pulse">
@@ -320,59 +320,59 @@ const Chatbots = () => {
       </section>
 
       {/* Enhanced Demo Section */}
-<section className="py-20 bg-gradient-to-br from-[#F7F7F7] via-white to-[#25D366]/5 relative overflow-hidden">
+<section className="py-20 bg-surface-muted relative overflow-hidden">
   {/* Background Elements */}
   <div className="absolute inset-0 opacity-10">
-    <div className="absolute top-20 left-10 w-72 h-72 bg-[#25D366] rounded-full blur-3xl"></div>
-    <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#128C7E] rounded-full blur-3xl"></div>
+    <div className="absolute top-20 left-10 w-72 h-72 bg-brand rounded-full blur-3xl"></div>
+    <div className="absolute bottom-20 right-10 w-96 h-96 bg-brand-dark rounded-full blur-3xl"></div>
   </div>
   
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     {/* Section Header */}
     <div className="text-center mb-20">
-      <div className="inline-flex items-center bg-[#25D366]/10 text-[#25D366] px-6 py-3 rounded-full text-sm font-medium mb-6">
+      <div className="inline-flex items-center bg-brand/10 text-brand px-6 py-3 rounded-full text-sm font-medium mb-6">
         <MessageCircle className="w-5 h-5 mr-2" />
         AI-Powered Conversations
       </div>
-      <h2 className="text-4xl md:text-6xl font-bold text-[#1C1C1C] mb-6">
+      <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
         See AI Chatbots in 
-        <span className="text-[#25D366] block">Action</span>
+        <span className="text-brand block">Action</span>
       </h2>
-      <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+      <p className="text-xl text-ink-muted max-w-3xl mx-auto leading-relaxed">
         Discover how our intelligent chatbots transform customer interactions across different industries with seamless automation and human-like conversations
       </p>
     </div>
 
     {/* Main Featured Demo */}
     <div className="mb-20">
-      <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+      <div className="glass-card overflow-hidden border border-white/10">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           <div className="p-8 lg:p-12">
-            <div className="inline-flex items-center bg-[#25D366]/10 text-[#25D366] px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <div className="inline-flex items-center bg-brand/10 text-brand px-4 py-2 rounded-full text-sm font-medium mb-4">
               <Zap className="w-4 h-4 mr-2" />
               Featured Demo
             </div>
-            <h3 className="text-3xl font-bold text-[#1C1C1C] mb-4">
+            <h3 className="text-3xl font-bold text-white mb-4">
               E-commerce Order Assistant
             </h3>
-            <p className="text-gray-600 mb-6 text-lg">
+            <p className="text-ink-muted mb-6 text-lg">
                Our AI handles complex order inquiries, provides real-time tracking, and offers personalized product recommendations with human-like understanding.
             </p>
             <div className="space-y-3 mb-6">
-              <div className="flex items-center text-gray-700">
-                <CheckCircle className="w-5 h-5 text-[#25D366] mr-3" />
+              <div className="flex items-center text-ink-muted">
+                <CheckCircle className="w-5 h-5 text-brand mr-3" />
                 <span>Instant order status updates</span>
               </div>
-              <div className="flex items-center text-gray-700">
-                <CheckCircle className="w-5 h-5 text-[#25D366] mr-3" />
+              <div className="flex items-center text-ink-muted">
+                <CheckCircle className="w-5 h-5 text-brand mr-3" />
                 <span>Smart product recommendations</span>
               </div>
-              <div className="flex items-center text-gray-700">
-                <CheckCircle className="w-5 h-5 text-[#25D366] mr-3" />
+              <div className="flex items-center text-ink-muted">
+                <CheckCircle className="w-5 h-5 text-brand mr-3" />
                 <span>24/7 customer support</span>
               </div>
             </div>
-            {/* <button className="bg-[#25D366] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#128C7E] transition-all duration-300 transform hover:scale-105 shadow-lg">
+            {/* <button className="bg-brand text-white px-8 py-4 rounded-xl font-semibold hover:bg-brand-dark transition-all duration-300 transform hover:scale-105 shadow-lg">
               Try Demo Now
             </button> */}
           </div>
@@ -383,8 +383,8 @@ const Chatbots = () => {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-            <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2">
-              {/* <div className="flex items-center text-sm font-medium text-gray-700">
+            <div className="absolute top-6 right-6 glass rounded-lg px-4 py-2">
+              {/* <div className="flex items-center text-sm font-medium text-ink-muted">
                 <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
                 Live Demo
               </div> */}
@@ -397,7 +397,7 @@ const Chatbots = () => {
     {/* Interactive Demo Grid */}
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
       {/* Healthcare Demo */}
-      <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-[#25D366]/30">
+      <div className="group glass-card shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-white/10 hover:border-brand/30">
         <div className="relative h-48 overflow-hidden">
           <img
             src={hc}
@@ -405,8 +405,8 @@ const Chatbots = () => {
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-          <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-2">
-            <Stethoscope className="w-6 h-6 text-[#25D366]" />
+          <div className="absolute top-4 left-4 glass rounded-lg p-2">
+            <Stethoscope className="w-6 h-6 text-brand" />
           </div>
           <div className="absolute bottom-4 left-4 right-4">
             <div className="bg-white/20 backdrop-blur-sm rounded-lg p-3">
@@ -420,21 +420,21 @@ const Chatbots = () => {
           </div>
         </div>
         <div className="p-6">
-          <h3 className="text-xl font-bold text-[#1C1C1C] mb-3">Healthcare Assistant</h3>
-          <p className="text-gray-600 mb-4">
+          <h3 className="text-xl font-bold text-white mb-3">Healthcare Assistant</h3>
+          <p className="text-ink-muted mb-4">
             Streamline patient interactions with appointment booking, symptom checking, and medication reminders.
           </p>
           <div className="flex items-center justify-between">
-            <div className="text-sm text-gray-500">
-              <span className="font-medium text-[#25D366]">95%</span> patient satisfaction
+            <div className="text-sm text-slate-400">
+              Appointment &amp; FAQ flows
             </div>
-            <ArrowRight className="w-5 h-5 text-[#25D366] group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-5 h-5 text-brand group-hover:translate-x-1 transition-transform" />
           </div>
         </div>
       </div>
 
       {/* Education Demo */}
-      <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-[#25D366]/30">
+      <div className="group glass-card shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-white/10 hover:border-brand/30">
         <div className="relative h-48 overflow-hidden">
           <img
             src={edusample}
@@ -442,8 +442,8 @@ const Chatbots = () => {
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-          <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-2">
-            <GraduationCap className="w-6 h-6 text-[#25D366]" />
+          <div className="absolute top-4 left-4 glass rounded-lg p-2">
+            <GraduationCap className="w-6 h-6 text-brand" />
           </div>
           <div className="absolute bottom-4 left-4 right-4">
             <div className="bg-white/20 backdrop-blur-sm rounded-lg p-3">
@@ -457,21 +457,21 @@ const Chatbots = () => {
           </div>
         </div>
         <div className="p-6">
-          <h3 className="text-xl font-bold text-[#1C1C1C] mb-3">Education Hub</h3>
-          <p className="text-gray-600 mb-4">
+          <h3 className="text-xl font-bold text-white mb-3">Education Hub</h3>
+          <p className="text-ink-muted mb-4">
             Enhance learning experience with instant answers, assignment reminders, and academic support.
           </p>
           <div className="flex items-center justify-between">
-            <div className="text-sm text-gray-500">
-              <span className="font-medium text-[#25D366]">87%</span> engagement boost
+            <div className="text-sm text-slate-400">
+              Student FAQ &amp; reminders
             </div>
-            <ArrowRight className="w-5 h-5 text-[#25D366] group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-5 h-5 text-brand group-hover:translate-x-1 transition-transform" />
           </div>
         </div>
       </div>
 
       {/* Construction Demo */}
-      <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-[#25D366]/30">
+      <div className="group glass-card shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-white/10 hover:border-brand/30">
         <div className="relative h-48 overflow-hidden">
           <img
             src={construction}
@@ -479,8 +479,8 @@ const Chatbots = () => {
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-          <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-2">
-            <Hammer className="w-6 h-6 text-[#25D366]" />
+          <div className="absolute top-4 left-4 glass rounded-lg p-2">
+            <Hammer className="w-6 h-6 text-brand" />
           </div>
           <div className="absolute bottom-4 left-4 right-4">
             <div className="bg-white/20 backdrop-blur-sm rounded-lg p-3">
@@ -494,15 +494,15 @@ const Chatbots = () => {
           </div>
         </div>
         <div className="p-6">
-          <h3 className="text-xl font-bold text-[#1C1C1C] mb-3">Construction Control</h3>
-          <p className="text-gray-600 mb-4">
+          <h3 className="text-xl font-bold text-white mb-3">Construction Control</h3>
+          <p className="text-ink-muted mb-4">
             Coordinate teams, track equipment, and ensure safety compliance with intelligent automation.
           </p>
           <div className="flex items-center justify-between">
-            <div className="text-sm text-gray-500">
-              <span className="font-medium text-[#25D366]">92%</span> efficiency gain
+            <div className="text-sm text-slate-400">
+              Site safety &amp; coordination
             </div>
-            <ArrowRight className="w-5 h-5 text-[#25D366] group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-5 h-5 text-brand group-hover:translate-x-1 transition-transform" />
           </div>
         </div>
       </div>
@@ -510,7 +510,7 @@ const Chatbots = () => {
 
     {/* WhatsApp Chatbot Capabilities Showcase */}
 {/* Chatbot Features Showcase */}
-<div className="bg-gradient-to-r from-[#25D366] to-[#128C7E] rounded-3xl p-8 lg:p-12 text-white mb-20">
+<div className="bg-gradient-brand rounded-3xl p-8 lg:p-12 text-white mb-20">
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
     <div>
       <h3 className="text-3xl font-bold mb-6">Dynamic WhatsApp Chatbots</h3>
@@ -566,23 +566,23 @@ const Chatbots = () => {
 
     {/* Capabilities (no fabricated benchmark stats) */}
     <div className="text-center">
-      <h3 className="text-3xl font-bold text-[#1C1C1C] mb-8">What you can build</h3>
+      <h3 className="text-3xl font-bold text-white mb-8">What you can build</h3>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-        <div className="bg-white rounded-xl p-6 shadow-lg">
-          <div className="text-xl font-bold text-[#25D366] mb-2">Flows</div>
-          <div className="text-sm text-gray-600">FAQ, routing, handoff</div>
+        <div className="glass-card p-6">
+          <div className="text-xl font-bold text-brand mb-2">Flows</div>
+          <div className="text-sm text-ink-muted">FAQ, routing, handoff</div>
         </div>
-        <div className="bg-white rounded-xl p-6 shadow-lg">
-          <div className="text-xl font-bold text-[#25D366] mb-2">Templates</div>
-          <div className="text-sm text-gray-600">Aligned with WhatsApp rules</div>
+        <div className="glass-card p-6">
+          <div className="text-xl font-bold text-brand mb-2">Templates</div>
+          <div className="text-sm text-ink-muted">Aligned with WhatsApp rules</div>
         </div>
-        <div className="bg-white rounded-xl p-6 shadow-lg">
-          <div className="text-xl font-bold text-[#25D366] mb-2">Team inbox</div>
-          <div className="text-sm text-gray-600">Collaborate on chats</div>
+        <div className="glass-card p-6">
+          <div className="text-xl font-bold text-brand mb-2">Team inbox</div>
+          <div className="text-sm text-ink-muted">Collaborate on chats</div>
         </div>
-        <div className="bg-white rounded-xl p-6 shadow-lg">
-          <div className="text-xl font-bold text-[#25D366] mb-2">India focus</div>
-          <div className="text-sm text-gray-600">Tamil Nadu &amp; nationwide</div>
+        <div className="glass-card p-6">
+          <div className="text-xl font-bold text-brand mb-2">India focus</div>
+          <div className="text-sm text-ink-muted">Tamil Nadu &amp; nationwide</div>
         </div>
       </div>
     </div>
@@ -592,20 +592,20 @@ const Chatbots = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">Powerful AI Features</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Powerful AI Features</h2>
+            <p className="text-lg text-ink-muted max-w-2xl mx-auto">
               Our chatbots are powered by advanced AI technology to deliver human-like conversations
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-                <div className="w-12 h-12 bg-[#25D366]/10 rounded-lg flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-[#25D366]" />
+              <div key={index} className="glass-card p-6">
+                <div className="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4">
+                  <feature.icon className="w-6 h-6 text-brand" />
                 </div>
-                <h3 className="text-xl font-semibold text-[#1C1C1C] mb-3">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
+                <p className="text-ink-muted">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -613,18 +613,18 @@ const Chatbots = () => {
       </section>
 
       {/* Bot Types */}
-      <section className="py-20 bg-[#F7F7F7]">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">Choose Your Bot Type</h2>
-            <p className="text-lg text-gray-600">Pre-built chatbot templates for common business use cases</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Choose Your Bot Type</h2>
+            <p className="text-lg text-ink-muted">Pre-built chatbot templates for common business use cases</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {botTypes.map((bot, index) => (
               <div key={index} className="relative">
                 <div 
-                  className={`bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105 ${
+                  className={`glass-card p-6 hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105 ${
                     selectedBotType === bot.id ? 'ring-2 ring-[#25D366] shadow-2xl' : ''
                   }`}
                   onClick={() => setSelectedBotType(selectedBotType === bot.id ? null : bot.id)}
@@ -633,19 +633,19 @@ const Chatbots = () => {
                     <div className={`w-16 h-16 ${bot.color} rounded-full flex items-center justify-center mx-auto mb-4 transition-colors`}>
                       <bot.icon className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-lg font-semibold text-[#1C1C1C] mb-2">{bot.title}</h3>
-                    <p className="text-gray-600 text-sm mb-4">{bot.description}</p>
+                    <h3 className="text-lg font-semibold text-white mb-2">{bot.title}</h3>
+                    <p className="text-ink-muted text-sm mb-4">{bot.description}</p>
                     
                     <div className="space-y-2 mb-4">
-                      <div className="text-sm font-medium text-[#25D366]">{bot.tagline}</div>
-                      <div className="text-xs text-gray-500">Setup in {bot.setupTime}</div>
+                      <div className="text-sm font-medium text-brand">{bot.tagline}</div>
+                      <div className="text-xs text-slate-400">Setup in {bot.setupTime}</div>
                     </div>
                     
-                    {/* <button className="bg-[#25D366] text-white px-4 py-2 rounded-lg hover:bg-[#128C7E] transition-colors text-sm w-full mb-2">
+                    {/* <button className="bg-brand text-white px-4 py-2 rounded-lg hover:bg-brand-dark transition-colors text-sm w-full mb-2">
                       Select Template
                     </button>
                     
-                    <button className="text-[#25D366] text-sm hover:text-[#128C7E] transition-colors flex items-center justify-center w-full">
+                    <button className="text-brand text-sm hover:text-brand-light transition-colors flex items-center justify-center w-full">
                       View Details
                       <ChevronRight className={`w-4 h-4 ml-1 transition-transform ${selectedBotType === bot.id ? 'rotate-90' : ''}`} />
                     </button> */}
@@ -653,21 +653,21 @@ const Chatbots = () => {
                 </div>
                 
                 {selectedBotType === bot.id && (
-                  <div className="absolute top-full left-0 right-0 z-10 mt-2 bg-white rounded-xl p-6 shadow-xl border border-gray-100">
-                    <h4 className="font-semibold text-[#1C1C1C] mb-3">Key Features:</h4>
+                  <div className="absolute top-full left-0 right-0 z-10 mt-2 glass-card p-6 shadow-xl border border-white/10">
+                    <h4 className="font-semibold text-white mb-3">Key Features:</h4>
                     <ul className="space-y-2 mb-4">
                       {bot.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-center text-sm">
-                          <CheckCircle className="w-4 h-4 text-[#25D366] mr-2 flex-shrink-0" />
-                          <span className="text-gray-600">{feature}</span>
+                          <CheckCircle className="w-4 h-4 text-brand mr-2 flex-shrink-0" />
+                          <span className="text-ink-muted">{feature}</span>
                         </li>
                       ))}
                     </ul>
                     <div className="flex gap-2">
-                      <button className="bg-[#25D366] text-white px-4 py-2 rounded-lg hover:bg-[#128C7E] transition-colors text-sm flex-1">
+                      <button className="bg-brand text-white px-4 py-2 rounded-lg hover:bg-brand-dark transition-colors text-sm flex-1">
                         Get Started
                       </button>
-                      <button className="border border-[#25D366] text-[#25D366] px-4 py-2 rounded-lg hover:bg-[#25D366] hover:text-white transition-colors text-sm flex items-center">
+                      <button className="border border-brand text-brand px-4 py-2 rounded-lg hover:bg-brand hover:text-white transition-colors text-sm flex items-center">
                         <ExternalLink className="w-4 h-4" />
                       </button>
                     </div>
@@ -683,8 +683,8 @@ const Chatbots = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">Industry-Specific Solutions</h2>
-            <p className="text-lg text-gray-600">Tailored chatbot solutions designed for your industry's unique needs</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Industry-Specific Solutions</h2>
+            <p className="text-lg text-ink-muted">Tailored chatbot solutions designed for your industry's unique needs</p>
           </div>
 
           <div className="space-y-20">
@@ -692,41 +692,41 @@ const Chatbots = () => {
               <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                 <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                   <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-[#25D366]/10 rounded-lg flex items-center justify-center mr-4">
-                      <industry.icon className="w-6 h-6 text-[#25D366]" />
+                    <div className="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mr-4">
+                      <industry.icon className="w-6 h-6 text-brand" />
                     </div>
-                    <h3 className="text-2xl font-bold text-[#1C1C1C]">{industry.title}</h3>
+                    <h3 className="text-2xl font-bold text-white">{industry.title}</h3>
                   </div>
                   
-                  <p className="text-lg text-gray-600 mb-6">{industry.description}</p>
+                  <p className="text-lg text-ink-muted mb-6">{industry.description}</p>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                     <div>
-                      <h4 className="font-semibold text-[#1C1C1C] mb-3">Key Features:</h4>
+                      <h4 className="font-semibold text-white mb-3">Key Features:</h4>
                       <ul className="space-y-2">
                         {industry.features.map((feature, featureIndex) => (
                           <li key={featureIndex} className="flex items-center text-sm">
-                            <CheckCircle className="w-4 h-4 text-[#25D366] mr-2 flex-shrink-0" />
-                            <span className="text-gray-600">{feature}</span>
+                            <CheckCircle className="w-4 h-4 text-brand mr-2 flex-shrink-0" />
+                            <span className="text-ink-muted">{feature}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
                     
                     <div>
-                      <h4 className="font-semibold text-[#1C1C1C] mb-3">Benefits:</h4>
+                      <h4 className="font-semibold text-white mb-3">Benefits:</h4>
                       <ul className="space-y-2">
                         {industry.useCases.map((useCase, useCaseIndex) => (
                           <li key={useCaseIndex} className="flex items-center text-sm">
-                            <CheckCircle className="w-4 h-4 text-[#25D366] mr-2 flex-shrink-0" />
-                            <span className="text-gray-600">{useCase}</span>
+                            <CheckCircle className="w-4 h-4 text-brand mr-2 flex-shrink-0" />
+                            <span className="text-ink-muted">{useCase}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
                   </div>
                   
-                  <Link to={industry.link} className="bg-[#25D366] text-white px-6 py-3 rounded-lg hover:bg-[#128C7E] transition-colors inline-flex items-center">
+                  <Link to={industry.link} className="bg-brand text-white px-6 py-3 rounded-lg hover:bg-brand-dark transition-colors inline-flex items-center">
                     Get {industry.title} Bot
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
@@ -748,31 +748,31 @@ const Chatbots = () => {
       </section>
 
       {/* Success Stories */}
-      <section className="py-20 bg-[#F7F7F7]">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">Typical patterns (not guarantees)</h2>
-            <p className="text-lg text-gray-600">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Typical patterns (not guarantees)</h2>
+            <p className="text-lg text-ink-muted">
               Examples only—your outcomes depend on flows, compliance, and operations. We do not publish unaudited performance claims as facts.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {successStories.map((story, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg">
+              <div key={index} className="glass-card p-6">
                 <div className="flex items-center mb-4">
                   <div className={`w-12 h-12 bg-${story.color}/10 rounded-lg flex items-center justify-center mr-4`}>
                     <story.icon className={`w-6 h-6 text-${story.color}`} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-[#1C1C1C]">{story.company}</h3>
-                    <p className="text-sm text-gray-600">{story.industry}</p>
+                    <h3 className="font-semibold text-white">{story.company}</h3>
+                    <p className="text-sm text-ink-muted">{story.industry}</p>
                   </div>
                 </div>
-                <p className="text-gray-600 mb-4">"{story.quote}"</p>
+                <p className="text-ink-muted mb-4">"{story.quote}"</p>
                 <div className="flex items-center justify-between text-sm">
-                  <span className="text-[#25D366] font-medium">{story.metric}</span>
-                  <span className="text-gray-500">{story.timeframe}</span>
+                  <span className="text-brand font-medium">{story.metric}</span>
+                  <span className="text-slate-400">{story.timeframe}</span>
                 </div>
               </div>
             ))}
@@ -783,18 +783,18 @@ const Chatbots = () => {
       <InternalLinksHub currentPath="/chatbots" />
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#25D366]">
+      <section className="py-20 bg-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Build Your AI Chatbot?</h2>
           <p className="text-lg text-white/90 mb-8">
             Start automating your customer conversations today with our intelligent WhatsApp chatbots.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="bg-white text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center">
+            <Link to="/contact" className="bg-white text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-surface-elevated transition-colors inline-flex items-center justify-center">
               Start Building
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
-            <Link to="/contact" className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#25D366] transition-colors">
+            <Link to="/contact" className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-brand transition-colors">
               Schedule Demo
             </Link>
           </div>

@@ -93,24 +93,24 @@ const Affiliate = () => {
         <meta property="og:description" content="Affiliate program for Ask Meister—commission details provided when you apply and qualify." />
         <meta property="og:url" content="https://askmeister.com/affiliate" />
       </Helmet>
-    <div className="pt-16">
+    <div className="page-wrap">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-20">
+      <section className="page-hero py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-[#1C1C1C] mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Earn with Our
-            <span className="text-[#25D366] block">Affiliate Program</span>
+            <span className="text-brand block">Affiliate Program</span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-ink-muted mb-8">
             Promote Ask Meister’s WhatsApp marketing platform. Commission structure and eligibility are shared when you apply—we avoid exaggerated income claims.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-[#25D366] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#128C7E] transition-colors">
+            <button className="bg-brand text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-dark transition-colors">
               Join Affiliate Program
             </button>
             <Link
               to="/contact"
-              className="border-2 border-[#25D366] text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#25D366] hover:text-white transition-colors"
+              className="border-2 border-brand text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand hover:text-white transition-colors"
             >
               Learn More
             </Link>
@@ -122,22 +122,22 @@ const Affiliate = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Why Join Our Affiliate Program?
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-ink-muted">
               Commission details are shared after your application is reviewed
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg text-center">
-                <div className="w-12 h-12 bg-[#25D366]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <benefit.icon className="w-6 h-6 text-[#25D366]" />
+              <div key={index} className="glass-card p-6 text-center">
+                <div className="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <benefit.icon className="w-6 h-6 text-brand" />
                 </div>
-                <h3 className="text-xl font-semibold text-[#1C1C1C] mb-3">{benefit.title}</h3>
-                <p className="text-gray-600">{benefit.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{benefit.title}</h3>
+                <p className="text-ink-muted">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -145,42 +145,42 @@ const Affiliate = () => {
       </section>
 
       {/* Commission Structure */}
-      <section className="py-20 bg-[#F7F7F7]">
+      <section className="py-20 bg-surface-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Commission Structure
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-ink-muted">
               The more you refer, the more you earn
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {commissionTiers.map((tier, index) => (
-              <div key={index} className={`bg-white rounded-xl p-8 shadow-lg text-center ${
+              <div key={index} className={`glass-card p-8 text-center ${
                 index === 1 ? 'ring-2 ring-[#25D366] scale-105' : ''
               }`}>
                 {index === 1 && (
-                  <div className="bg-[#25D366] text-white px-4 py-1 rounded-full text-sm font-medium mb-4 inline-block">
+                  <div className="bg-brand text-white px-4 py-1 rounded-full text-sm font-medium mb-4 inline-block">
                     Most Popular
                   </div>
                 )}
-                <div className="text-3xl font-bold text-[#1C1C1C] mb-2">{tier.commission}</div>
-                <div className="text-gray-600 mb-4">Commission Rate</div>
-                <div className="text-lg font-semibold text-[#25D366] mb-4">{tier.referrals} Referrals</div>
-                <div className="text-sm text-gray-500 mb-6">{tier.bonus}</div>
+                <div className="text-3xl font-bold text-white mb-2">{tier.commission}</div>
+                <div className="text-ink-muted mb-4">Commission Rate</div>
+                <div className="text-lg font-semibold text-brand mb-4">{tier.referrals} Referrals</div>
+                <div className="text-sm text-slate-400 mb-6">{tier.bonus}</div>
                 <ul className="text-left space-y-2">
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-[#25D366] mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand mr-2" />
                     <span className="text-sm">Recurring monthly payments</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-[#25D366] mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand mr-2" />
                     <span className="text-sm">Real-time tracking</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-[#25D366] mr-2" />
+                    <CheckCircle className="w-4 h-4 text-brand mr-2" />
                     <span className="text-sm">Marketing materials</span>
                   </li>
                 </ul>
@@ -194,10 +194,10 @@ const Affiliate = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               How It Works
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-ink-muted">
               Start earning in just 3 simple steps
             </p>
           </div>
@@ -205,14 +205,14 @@ const Affiliate = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((step, index) => (
               <div key={index} className="text-center relative">
-                <div className="w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                <div className="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                   {step.step}
                 </div>
-                <h3 className="text-xl font-semibold text-[#1C1C1C] mb-3">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{step.title}</h3>
+                <p className="text-ink-muted">{step.description}</p>
                 {index < steps.length - 1 && (
                   <div className="hidden md:block absolute top-8 -right-4 transform translate-x-1/2">
-                    <ArrowRight className="w-6 h-6 text-[#25D366]" />
+                    <ArrowRight className="w-6 h-6 text-brand" />
                   </div>
                 )}
               </div>
@@ -221,9 +221,9 @@ const Affiliate = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-[#F7F7F7]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-700">
-          <h2 className="text-3xl font-bold text-[#1C1C1C] mb-4">Partner stories</h2>
+      <section className="py-20 bg-surface-muted">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-ink-muted">
+          <h2 className="text-3xl font-bold text-white mb-4">Partner stories</h2>
           <p>
             We only publish named affiliate earnings with written consent. Ask us for the current partner overview and agreement terms after you apply.
           </p>
@@ -234,19 +234,19 @@ const Affiliate = () => {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-ink-muted">
               Everything you need to know about our affiliate program
             </p>
           </div>
           
           <div className="space-y-6">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg">
-                <h3 className="text-lg font-semibold text-[#1C1C1C] mb-3">{faq.question}</h3>
-                <p className="text-gray-600">{faq.answer}</p>
+              <div key={index} className="glass-card p-6">
+                <h3 className="text-lg font-semibold text-white mb-3">{faq.question}</h3>
+                <p className="text-ink-muted">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -254,7 +254,7 @@ const Affiliate = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#25D366]">
+      <section className="py-20 bg-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Start Earning?
@@ -263,12 +263,12 @@ const Affiliate = () => {
             Join our affiliate program today and start earning recurring commissions from day one.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-[#25D366] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-brand px-8 py-4 rounded-lg text-lg font-semibold hover:bg-surface-elevated transition-colors">
               Join Now - It's Free
             </button>
             <Link
               to="/contact"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#25D366] transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-brand transition-colors"
             >
               Have Questions?
             </Link>

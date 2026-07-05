@@ -41,16 +41,16 @@ const AlternativeLanding = ({
         <meta property="og:url" content={`https://askmeister.com/${path}`} />
       </Helmet>
 
-      <div className="pt-16">
-        <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-20">
+      <div className="page-wrap">
+        <section className="page-hero py-20">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-[#1C1C1C] mb-6">{primaryKeyword}</h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">{primaryKeyword}</h1>
+            <p className="text-xl text-ink-muted mb-8">
               Compare {competitorName} with Ask Meister for WhatsApp automation, templates, and support—your fit depends on workflows and onboarding (evaluate with a demo).
             </p>
             <Link
               to="/contact"
-              className="bg-[#25D366] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#128C7E] transition-colors inline-block"
+              className="bg-brand text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-dark transition-colors inline-block"
             >
               Get Migration Help
             </Link>
@@ -59,10 +59,10 @@ const AlternativeLanding = ({
 
         <section className="py-16">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-[#1C1C1C] mb-6">Why teams choose Ask Meister over {competitorName}</h2>
+            <h2 className="text-3xl font-bold text-white mb-6">Why teams choose Ask Meister over {competitorName}</h2>
             <div className="grid md:grid-cols-2 gap-4">
               {secondaryKeywords.map((item) => (
-                <div key={item} className="bg-white border border-gray-200 rounded-lg p-4 text-gray-700">
+                <div key={item} className="glass-card p-4 text-ink-muted">
                   {item}
                 </div>
               ))}
@@ -70,10 +70,10 @@ const AlternativeLanding = ({
           </div>
         </section>
 
-        <section className="py-16 bg-[#F7F7F7]">
+        <section className="py-16 bg-surface-muted">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 className="text-2xl font-bold text-[#1C1C1C] mb-6">Use cases and long-tail opportunities</h3>
-            <ul className="space-y-3 text-gray-700">
+            <h3 className="text-2xl font-bold text-white mb-6">Use cases and long-tail opportunities</h3>
+            <ul className="space-y-3 text-ink-muted">
               {longTailKeywords.map((item) => (
                 <li key={item}>- {item}</li>
               ))}
@@ -83,24 +83,24 @@ const AlternativeLanding = ({
 
         <section className="py-16">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 className="text-2xl font-bold text-[#1C1C1C] mb-6">FAQs</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">FAQs</h3>
             <div className="space-y-4">
               {faq.map((item) => (
-                <div key={item.q} className="bg-white border border-gray-200 rounded-lg p-5">
-                  <h4 className="font-semibold text-[#1C1C1C] mb-2">{item.q}</h4>
-                  <p className="text-gray-600">{item.a}</p>
+                <div key={item.q} className="glass-card p-5">
+                  <h4 className="font-semibold text-white mb-2">{item.q}</h4>
+                  <p className="text-ink-muted">{item.a}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="py-16 bg-[#F7F7F7]">
+        <section className="py-16 bg-surface-muted">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 className="text-2xl font-bold text-[#1C1C1C] mb-6">Common problems we solve</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">Common problems we solve</h3>
             <div className="grid md:grid-cols-2 gap-4">
               {problemKeywords.map((item) => (
-                <div key={item} className="bg-white border border-gray-200 rounded-lg p-4 text-gray-700">
+                <div key={item} className="glass-card p-4 text-ink-muted">
                   {item}
                 </div>
               ))}

@@ -113,97 +113,97 @@ END:VCARD`,
     <div className="space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+          <label className="block text-sm font-medium text-ink-muted mb-2">Phone Number *</label>
           <input
             type="text"
             value={formData.phoneNumber}
             onChange={(e) => handleInputChange('phoneNumber', e.target.value)}
             placeholder="+91"
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#25D366] focus:border-transparent"
+            className="w-full px-3 py-2 border border-white/15 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Business Name</label>
+          <label className="block text-sm font-medium text-ink-muted mb-2">Business Name</label>
           <input
             type="text"
             value={formData.businessName}
             onChange={(e) => handleInputChange('businessName', e.target.value)}
             placeholder="Your Business"
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#25D366] focus:border-transparent"
+            className="w-full px-3 py-2 border border-white/15 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
           />
         </div>
       </div>
       
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">Pre-filled Message</label>
+        <label className="block text-sm font-medium text-ink-muted mb-2">Pre-filled Message</label>
         <textarea
           value={formData.linkText}
           onChange={(e) => handleInputChange('linkText', e.target.value)}
           placeholder="Hello! I'm interested in your services..."
           rows={2}
-          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#25D366] focus:border-transparent"
+          className="w-full px-3 py-2 border border-white/15 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
         />
       </div>
       
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Group Invite Code</label>
+          <label className="block text-sm font-medium text-ink-muted mb-2">Group Invite Code</label>
           <input
             type="text"
             value={formData.groupInvite}
             onChange={(e) => handleInputChange('groupInvite', e.target.value)}
             placeholder="ABC123DEF456"
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#25D366] focus:border-transparent"
+            className="w-full px-3 py-2 border border-white/15 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+          <label className="block text-sm font-medium text-ink-muted mb-2">Email</label>
           <input
             type="email"
             value={formData.email}
             onChange={(e) => handleInputChange('email', e.target.value)}
             placeholder="contact@business.com"
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#25D366] focus:border-transparent"
+            className="w-full px-3 py-2 border border-white/15 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Website</label>
+          <label className="block text-sm font-medium text-ink-muted mb-2">Website</label>
           <input
             type="url"
             value={formData.website}
             onChange={(e) => handleInputChange('website', e.target.value)}
             placeholder="https://mybusiness.com"
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#25D366] focus:border-transparent"
+            className="w-full px-3 py-2 border border-white/15 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
           />
         </div>
       </div>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Status Message</label>
+          <label className="block text-sm font-medium text-ink-muted mb-2">Status Message</label>
           <input
             type="text"
             value={formData.statusText}
             onChange={(e) => handleInputChange('statusText', e.target.value)}
             placeholder="Check out our latest update!"
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#25D366] focus:border-transparent"
+            className="w-full px-3 py-2 border border-white/15 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Address</label>
+          <label className="block text-sm font-medium text-ink-muted mb-2">Address</label>
           <input
             type="text"
             value={formData.address}
             onChange={(e) => handleInputChange('address', e.target.value)}
             placeholder="123 Business Street, City"
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#25D366] focus:border-transparent"
+            className="w-full px-3 py-2 border border-white/15 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
           />
         </div>
       </div>
       
       <button
         onClick={generateOutputs}
-        className="w-full bg-[#25D366] text-white py-3 rounded-lg font-semibold hover:bg-[#128C7E] transition-colors"
+        className="w-full bg-brand text-white py-3 rounded-lg font-semibold hover:bg-brand-dark transition-colors"
       >
         Generate All Tools
       </button>
@@ -213,8 +213,8 @@ END:VCARD`,
   const renderOutputSection = () => {
     if (!outputs.waLink) {
       return (
-        <div className="text-center py-12 text-gray-500">
-          <MessageCircle className="w-12 h-12 mx-auto mb-4 text-gray-300" />
+        <div className="text-center py-12 text-slate-400">
+          <MessageCircle className="w-12 h-12 mx-auto mb-4 text-slate-500" />
           <p>Generate tools to see all outputs</p>
         </div>
       );
@@ -225,21 +225,21 @@ END:VCARD`,
         {/* Basic Tools */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">WhatsApp Link</label>
+            <label className="block text-sm font-medium text-ink-muted mb-2">WhatsApp Link</label>
             <div className="relative">
-              <input type="text" value={outputs.waLink} readOnly className="w-full px-3 py-2 border border-gray-300 rounded-lg bg-gray-50 pr-10 text-xs" />
+              <input type="text" value={outputs.waLink} readOnly className="w-full px-3 py-2 border border-white/15 rounded-lg bg-surface-muted pr-10 text-xs" />
               <button onClick={() => copyToClipboard(outputs.waLink)} className="absolute right-2 top-1/2 transform -translate-y-1/2">
-                <Copy className="w-4 h-4 text-gray-500" />
+                <Copy className="w-4 h-4 text-slate-400" />
               </button>
             </div>
           </div>
           
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Click-to-Call Link</label>
+            <label className="block text-sm font-medium text-ink-muted mb-2">Click-to-Call Link</label>
             <div className="relative">
-              <input type="text" value={outputs.callLink} readOnly className="w-full px-3 py-2 border border-gray-300 rounded-lg bg-gray-50 pr-10 text-xs" />
+              <input type="text" value={outputs.callLink} readOnly className="w-full px-3 py-2 border border-white/15 rounded-lg bg-surface-muted pr-10 text-xs" />
               <button onClick={() => copyToClipboard(outputs.callLink)} className="absolute right-2 top-1/2 transform -translate-y-1/2">
-                <Copy className="w-4 h-4 text-gray-500" />
+                <Copy className="w-4 h-4 text-slate-400" />
               </button>
             </div>
           </div>
@@ -248,16 +248,16 @@ END:VCARD`,
         {/* QR Code and Chat Button */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="text-center">
-            <label className="block text-sm font-medium text-gray-700 mb-2">QR Code</label>
+            <label className="block text-sm font-medium text-ink-muted mb-2">QR Code</label>
             <img src={outputs.qrCode} alt="QR" className="mx-auto border rounded-lg mb-2" style={{width: '120px', height: '120px'}} />
-            <button onClick={downloadQR} className="text-xs bg-[#25D366] text-white px-3 py-1 rounded hover:bg-[#128C7E]">
+            <button onClick={downloadQR} className="text-xs bg-brand text-white px-3 py-1 rounded hover:bg-brand-dark">
               <Download className="w-3 h-3 inline mr-1" />Download
             </button>
           </div>
           
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Chat Button Preview</label>
-            <div className="p-4 bg-gray-50 rounded-lg text-center mb-2">
+            <label className="block text-sm font-medium text-ink-muted mb-2">Chat Button Preview</label>
+            <div className="p-4 bg-surface-muted rounded-lg text-center mb-2">
               <div dangerouslySetInnerHTML={{ __html: outputs.chatButton.replace('12px 24px', '8px 16px') }} />
             </div>
             <button onClick={() => copyToClipboard(outputs.chatButton)} className="text-xs bg-purple-500 text-white px-3 py-1 rounded hover:bg-purple-600">
@@ -271,9 +271,9 @@ END:VCARD`,
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {outputs.groupLink && (
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Group Invite Link</label>
+                <label className="block text-sm font-medium text-ink-muted mb-2">Group Invite Link</label>
                 <div className="relative">
-                  <input type="text" value={outputs.groupLink} readOnly className="w-full px-3 py-2 border border-gray-300 rounded-lg bg-gray-50 pr-10 text-xs" />
+                  <input type="text" value={outputs.groupLink} readOnly className="w-full px-3 py-2 border border-white/15 rounded-lg bg-surface-muted pr-10 text-xs" />
                   <button onClick={() => copyToClipboard(outputs.groupLink)} className="absolute right-2 top-1/2 transform -translate-y-1/2">
                     <Copy className="w-4 h-4 text-orange-500" />
                   </button>
@@ -283,9 +283,9 @@ END:VCARD`,
             
             {outputs.statusLink && (
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Status Link (Mobile)</label>
+                <label className="block text-sm font-medium text-ink-muted mb-2">Status Link (Mobile)</label>
                 <div className="relative">
-                  <input type="text" value={outputs.statusWeb} readOnly className="w-full px-3 py-2 border border-gray-300 rounded-lg bg-gray-50 pr-10 text-xs" />
+                  <input type="text" value={outputs.statusWeb} readOnly className="w-full px-3 py-2 border border-white/15 rounded-lg bg-surface-muted pr-10 text-xs" />
                   <button onClick={() => copyToClipboard(outputs.statusWeb)} className="absolute right-2 top-1/2 transform -translate-y-1/2">
                     <Copy className="w-4 h-4 text-pink-500" />
                   </button>
@@ -297,7 +297,7 @@ END:VCARD`,
 
         {/* Multi-Platform Links */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Multi-Platform Links</label>
+          <label className="block text-sm font-medium text-ink-muted mb-2">Multi-Platform Links</label>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
             {[
               { name: 'Telegram', link: outputs.telegramLink, color: 'bg-blue-500' },
@@ -318,7 +318,7 @@ END:VCARD`,
 
         {/* Business Card */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Business Card (vCard)</label>
+          <label className="block text-sm font-medium text-ink-muted mb-2">Business Card (vCard)</label>
           <div className="flex gap-2">
             <button
               onClick={() => copyToClipboard(outputs.businessCard)}
@@ -349,15 +349,15 @@ END:VCARD`,
         <meta property="og:description" content="Create WhatsApp links, QR codes, and chat buttons for your website. Free tools for business." />
         <meta property="og:url" content="https://askmeister.com/tools" />
       </Helmet>
-    <div className="pt-16">
+    <div className="page-wrap">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#25D366]/10 via-white to-[#128C7E]/5 py-20">
+      <section className="page-hero py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-[#1C1C1C] mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Complete WhatsApp
-            <span className="text-[#25D366] block">Toolkit Suite</span>
+            <span className="text-brand block">Toolkit Suite</span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-ink-muted mb-8">
             8 powerful tools in one place. Generate links, QR codes, business cards, and more.
           </p>
         </div>
@@ -368,12 +368,12 @@ END:VCARD`,
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {tools.map((tool, index) => (
-              <div key={index} className="text-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+              <div key={index} className="text-center p-4 glass-card shadow-sm hover:shadow-md transition-shadow">
                 <div className={`w-10 h-10 ${tool.color} rounded-lg flex items-center justify-center mx-auto mb-3`}>
                   <tool.icon className="w-5 h-5 text-white" />
                 </div>
-                <h3 className="text-base font-semibold text-[#1C1C1C] mb-1">{tool.title}</h3>
-                <p className="text-xs text-gray-600">{tool.description}</p>
+                <h3 className="text-base font-semibold text-white mb-1">{tool.title}</h3>
+                <p className="text-xs text-ink-muted">{tool.description}</p>
               </div>
             ))}
           </div>
@@ -381,10 +381,10 @@ END:VCARD`,
       </section>
 
       {/* Main Generator */}
-      <section className="py-16 bg-[#F7F7F7]">
+      <section className="py-16 bg-surface-muted">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-xl p-6 shadow-lg">
-            <h2 className="text-2xl font-bold text-[#1C1C1C] mb-6 text-center">All-in-One Generator</h2>
+          <div className="glass-card p-6">
+            <h2 className="text-2xl font-bold text-white mb-6 text-center">All-in-One Generator</h2>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {renderInputSection()}
@@ -395,15 +395,15 @@ END:VCARD`,
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-[#25D366]">
+      <section className="py-16 bg-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Need Advanced WhatsApp Automation?</h2>
           <p className="text-lg text-white/90 mb-8">Get chatbots, analytics, team collaboration, and more with Ask Meister Pro.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-[#25D366] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-brand px-6 py-3 rounded-lg font-semibold hover:bg-surface-elevated transition-colors">
               Contact Sales
             </button>
-            <button className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#25D366] transition-colors">
+            <button className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-brand transition-colors">
               Contact Sales
             </button>
           </div>

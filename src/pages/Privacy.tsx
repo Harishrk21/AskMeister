@@ -17,12 +17,12 @@ const Privacy = () => {
         <meta name="twitter:title" content="Privacy Policy | Ask Meister" />
         <meta name="twitter:description" content="Understand how your information is protected on Ask Meister." />
       </Helmet>
-    <div className="pt-16">
+    <div className="page-wrap">
       {/* Header */}
-      <section className="bg-[#F7F7F7] py-16">
+      <section className="bg-surface-muted py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-[#1C1C1C] mb-4">Privacy Policy</h1>
-          <p className="text-lg text-gray-600">
+          <h1 className="text-4xl font-bold text-white mb-4">Privacy Policy</h1>
+          <p className="text-lg text-ink-muted">
             Last updated: January 1, 2026
           </p>
         </div>
@@ -174,14 +174,14 @@ const Privacy = () => {
             <p>European residents have rights under the General Data Protection Regulation, including the right to access, rectify, erase, restrict processing, and data portability.</p>
           </div>
 
-          <div className="mt-12 p-6 bg-[#F7F7F7] rounded-lg">
-            <h3 className="text-lg font-semibold text-[#1C1C1C] mb-4">Questions About Privacy?</h3>
-            <p className="text-gray-600 mb-4">
+          <div className="mt-12 p-6 bg-surface-muted rounded-lg">
+            <h3 className="text-lg font-semibold text-white mb-4">Questions About Privacy?</h3>
+            <p className="text-ink-muted mb-4">
               We're committed to protecting your privacy. If you have any questions or concerns about how we handle your data, please don't hesitate to reach out.
             </p>
             <Link
               to="/contact"
-              className="bg-[#25D366] text-white px-6 py-2 rounded-lg hover:bg-[#128C7E] transition-colors inline-block"
+              className="bg-brand text-white px-6 py-2 rounded-lg hover:bg-brand-dark transition-colors inline-block"
             >
               Contact Privacy Team
             </Link>
