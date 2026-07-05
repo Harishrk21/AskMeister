@@ -5,7 +5,7 @@ import SeoBreadcrumbs from '../../components/SeoBreadcrumbs';
 import { TN_CITY_PAGES } from '../../data/localCities';
 import NotFound from '../NotFound';
 
-const SITE = 'https://www.askmeister.com';
+const SITE = 'https://askmeister.com';
 const PHONE_DISPLAY = '+91 7299817996';
 const PHONE_E164 = '+917299817996';
 

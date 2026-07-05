@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Zap, Bot, Clock, CheckCircle, ArrowRight, MessageCircle, Users, Target, Settings, Workflow } from 'lucide-react';
 import automation from '../../assets/Automation-2.webp';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../../components/InternalLinksHub';
+import SeoBreadcrumbs from '../../components/SeoBreadcrumbs';
 const Automation = () => {
   const features = [
     {
@@ -99,12 +101,13 @@ const Automation = () => {
         <title>WhatsApp Marketing Automation | AI-Powered Workflows | Ask Meister</title>
         <meta name="description" content="WhatsApp automation: AI workflows for bulk messaging, chatbots & campaigns. 24/7 engagement, lead nurturing. WhatsApp marketing automation – free trial." />
         <meta name="keywords" content="whatsapp automation software, automate whatsapp messages, business whatsapp automation, crm whatsapp automation, drip campaigns whatsapp, event triggered whatsapp messages, marketing automation whatsapp, whatsapp auto reply system, whatsapp campaign automation, whatsapp lead automation, whatsapp workflow automation, whatsapp sequence messaging" />
-        <link rel="canonical" href="https://www.askmeister.com/features/automation" />
+        <link rel="canonical" href="https://askmeister.com/whatsapp-marketing-automation" />
         <meta property="og:title" content="WhatsApp Marketing Automation | AI-Powered Workflows" />
         <meta property="og:description" content="Automate your WhatsApp marketing with intelligent workflows and AI-powered customer engagement." />
-        <meta property="og:url" content="https://www.askmeister.com/features/automation" />
+        <meta property="og:url" content="https://askmeister.com/whatsapp-marketing-automation" />
       </Helmet>
     <div className="pt-16">
+      <SeoBreadcrumbs items={[{ name: 'WhatsApp marketing automation', path: '/whatsapp-marketing-automation' }]} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-green-50 via-white to-pink-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -231,6 +234,8 @@ const Automation = () => {
           </div>
         </div>
       </section>
+
+      <InternalLinksHub currentPath="/whatsapp-marketing-automation" />
 
       {/* CTA Section */}
       <section className="py-20 bg-green-600">

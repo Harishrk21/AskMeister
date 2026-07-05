@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Search, MessageCircle, Mail, Phone } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../components/InternalLinksHub';
+
 const Help = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
@@ -130,10 +132,10 @@ const Help = () => {
         <title>WhatsApp Marketing Help Center | Support & Guides | Ask Meister</title>
         <meta name="description" content="WhatsApp marketing help: FAQs on bulk messaging, WhatsApp Business API, chatbot setup & automation. Guides, 24/7 support. Get started in 10 minutes." />
         <meta name="keywords" content="whatsapp marketing help, customer support, whatsapp guides, chatbot help, automation support, technical support, user guides, faq" />
-        <link rel="canonical" href="https://www.askmeister.com/help" />
+        <link rel="canonical" href="https://askmeister.com/help" />
         <meta property="og:title" content="WhatsApp Marketing Help Center | Support & Guides" />
         <meta property="og:description" content="Comprehensive help and support for WhatsApp marketing, chatbots, and business automation." />
-        <meta property="og:url" content="https://www.askmeister.com/help" />
+        <meta property="og:url" content="https://askmeister.com/help" />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
     <div className="pt-16">
@@ -302,6 +304,8 @@ const Help = () => {
           </div>
         </div>
       </section>
+
+      <InternalLinksHub currentPath="/help" />
     </div>
     </>
   );

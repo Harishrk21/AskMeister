@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Mail, Phone, MapPin, Clock, MessageCircle, Send, CheckCircle } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../components/InternalLinksHub';
 
 /**
  * FormSubmit.co — use a literal `https://formsubmit.co/your@email.com` action (not %40 encoding).
@@ -78,7 +79,7 @@ const Contact = () => {
     '@type': 'LocalBusiness',
     name: 'Ask Meister',
     description: 'WhatsApp marketing platform: bulk messaging, WhatsApp Business API & AI chatbot. Free demo and support.',
-    url: 'https://www.askmeister.com',
+    url: 'https://askmeister.com',
     telephone: '+917299817996',
     email: CONTACT_EMAIL,
     address: {
@@ -108,10 +109,10 @@ const Contact = () => {
         <title>Contact Ask Meister | WhatsApp Marketing Chennai &amp; Tamil Nadu</title>
         <meta name="description" content="Contact Ask Meister in Chennai: WhatsApp Business API, bulk messaging, and chatbot support. We reply to business inquiries as soon as we can during working hours." />
         <meta name="keywords" content="whatsapp marketing contact, chatbot support, whatsapp api help, business consultation, marketing experts, customer support, free demo, whatsapp automation help" />
-        <link rel="canonical" href="https://www.askmeister.com/contact" />
+        <link rel="canonical" href="https://askmeister.com/contact" />
         <meta property="og:title" content="Contact WhatsApp Marketing Experts | Ask Meister" />
         <meta property="og:description" content="Get expert help with WhatsApp marketing, chatbots, and business automation. Free consultation available." />
-        <meta property="og:url" content="https://www.askmeister.com/contact" />
+        <meta property="og:url" content="https://askmeister.com/contact" />
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
       </Helmet>
     <div className="pt-16">
@@ -147,7 +148,7 @@ const Contact = () => {
                 onSubmit={handleSubmit}
                 className="space-y-6"
               >
-                <input type="hidden" name="_next" value="https://www.askmeister.com/contact?thankyou=1" />
+                <input type="hidden" name="_next" value="https://askmeister.com/contact?thankyou=1" />
                 <input type="hidden" name="_subject" value="Ask Meister – New contact form submission" />
                 {/* Omit _captcha so FormSubmit default reCAPTCHA applies (disabling it can limit or block delivery). */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -382,6 +383,8 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      <InternalLinksHub currentPath="/contact" title="Explore WhatsApp solutions before you contact us" />
     </div>
     </>
   );

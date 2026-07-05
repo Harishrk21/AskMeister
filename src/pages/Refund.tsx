@@ -45,10 +45,10 @@ const Refund = () => {
         <title>Refund Policy | 30-Day Money-Back Guarantee | Ask Meister</title>
         <meta name="description" content="Ask Meister refund policy. 30-day money-back guarantee. Learn how to request a refund and eligibility criteria." />
         <meta name="keywords" content="ask meister refund policy, refund terms, subscription refund, money back policy, billing support, ask meister cancellation policy" />
-        <link rel="canonical" href="https://www.askmeister.com/refund" />
+        <link rel="canonical" href="https://askmeister.com/refund" />
         <meta property="og:title" content="Refund Policy | Ask Meister" />
         <meta property="og:description" content="Review Ask Meister refund eligibility, timelines, and request process." />
-        <meta property="og:url" content="https://www.askmeister.com/refund" />
+        <meta property="og:url" content="https://askmeister.com/refund" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Refund Policy | Ask Meister" />
         <meta name="twitter:description" content="Understand refund terms and how to submit a refund request." />

@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import SeoBreadcrumbs from '../components/SeoBreadcrumbs';
+import InternalLinksHub from '../components/InternalLinksHub';
 
 const CaseStudies = () => {
   const title = 'Case Studies & Customer Stories | Ask Meister';
   const description =
     'How teams use Ask Meister for WhatsApp marketing and automation. We publish verified stories when customers agree to share; contact us to participate.';
-  const canonical = 'https://www.askmeister.com/case-studies';
+  const canonical = 'https://askmeister.com/case-studies';
 
   return (
     <>
@@ -43,17 +44,17 @@ const CaseStudies = () => {
           </p>
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              <Link to="/solutions/ecommerce" className="text-[#25D366] hover:underline">
+              <Link to="/whatsapp-automation-for-ecommerce" className="text-[#25D366] hover:underline">
                 E-commerce and order updates
               </Link>
             </li>
             <li>
-              <Link to="/solutions/healthcare" className="text-[#25D366] hover:underline">
+              <Link to="/whatsapp-automation-for-healthcare" className="text-[#25D366] hover:underline">
                 Healthcare appointment reminders
               </Link>
             </li>
             <li>
-              <Link to="/solutions/education" className="text-[#25D366] hover:underline">
+              <Link to="/whatsapp-software-for-universities" className="text-[#25D366] hover:underline">
                 Education admissions and parent communication
               </Link>
             </li>
@@ -65,6 +66,8 @@ const CaseStudies = () => {
             Request a conversation
           </Link>
         </section>
+
+        <InternalLinksHub currentPath="/case-studies" />
       </div>
     </>
   );

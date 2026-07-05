@@ -34,6 +34,7 @@ const FreeTrial = lazy(() => import('./pages/FreeTrial'));
 const WhatsAppMarketingForEcommerce = lazy(() => import('./pages/WhatsAppMarketingForEcommerce'));
 const RestaurantsChennai = lazy(() => import('./pages/verticals/RestaurantsChennai'));
 const RealEstateChennai = lazy(() => import('./pages/verticals/RealEstateChennai'));
+const KeywordLanding = lazy(() => import('./pages/KeywordLanding'));
 
 // Feature Pages - Lazy loaded
 const LiveChat = lazy(() => import('./pages/features/LiveChat'));
@@ -77,7 +78,6 @@ function App() {
             <Route path="/whatsapp-marketing-for-real-estate-chennai" element={<RealEstateChennai />} />
             <Route path="/locations/chennai" element={<Navigate to="/whatsapp-marketing-chennai" replace />} />
             <Route path="/locations/tamil-nadu" element={<Navigate to="/whatsapp-marketing-tamil-nadu" replace />} />
-            <Route path="/whatsapp-bulk-messaging" element={<Navigate to="/features/bulk-messaging" replace />} />
             <Route path="/whatsapp-chatbot" element={<Navigate to="/chatbots" replace />} />
             <Route path="/whatsapp-api-integration" element={<Navigate to="/whatsapp-api" replace />} />
             <Route path="/whatsapp-api" element={<WhatsAppAPI />} />
@@ -104,20 +104,40 @@ function App() {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/refund" element={<Refund />} />
             
-            {/* Feature Pages */}
-            <Route path="/features/livechat" element={<LiveChat />} />
-            <Route path="/features/automation" element={<Automation />} />
-            <Route path="/features/analytics" element={<Analytics />} />
-            <Route path="/features/templates" element={<Templates />} />
-            <Route path="/features/bulk-messaging" element={<BulkMessaging />} />
-            
-            {/* Industry Template Pages */}
-            <Route path="/solutions/education" element={<EducationTemplate />} />
-            <Route path="/solutions/healthcare" element={<HealthcareTemplate />} />
-            <Route path="/solutions/ecommerce" element={<EcommerceTemplate />} />
-            <Route path="/solutions/travel-and-tourism" element={<TravelTourismTemplate />} />
-            <Route path="/solutions/real-estate" element={<RealEstateTemplate/>} />
-            <Route path="/solutions/financial" element={<FinancialTemplate />} />
+            {/* Feature Pages — keyword URLs */}
+            <Route path="/whatsapp-live-chat" element={<LiveChat />} />
+            <Route path="/whatsapp-marketing-automation" element={<Automation />} />
+            <Route path="/whatsapp-business-analytics" element={<Analytics />} />
+            <Route path="/whatsapp-message-templates" element={<Templates />} />
+            <Route path="/whatsapp-bulk-messaging" element={<BulkMessaging />} />
+
+            {/* Industry pages — keyword URLs */}
+            <Route path="/whatsapp-software-for-universities" element={<EducationTemplate />} />
+            <Route path="/whatsapp-automation-for-healthcare" element={<HealthcareTemplate />} />
+            <Route path="/whatsapp-automation-for-ecommerce" element={<EcommerceTemplate />} />
+            <Route path="/whatsapp-automation-for-travel-and-tourism" element={<TravelTourismTemplate />} />
+            <Route path="/whatsapp-automation-for-real-estate" element={<RealEstateTemplate />} />
+            <Route path="/whatsapp-banking-automation" element={<FinancialTemplate />} />
+
+            {/* Long-tail keyword landing pages */}
+            <Route path="/whatsapp-software-for-colleges" element={<KeywordLanding />} />
+            <Route path="/hospital-whatsapp" element={<KeywordLanding />} />
+            <Route path="/whatsapp-kyc-automation-for-banks" element={<KeywordLanding />} />
+            <Route path="/education-whatsapp-automation" element={<KeywordLanding />} />
+            <Route path="/whatsapp-for-finance" element={<Navigate to="/whatsapp-banking-automation" replace />} />
+
+            {/* Redirects from legacy /features/* and /solutions/* URLs */}
+            <Route path="/features/livechat" element={<Navigate to="/whatsapp-live-chat" replace />} />
+            <Route path="/features/automation" element={<Navigate to="/whatsapp-marketing-automation" replace />} />
+            <Route path="/features/analytics" element={<Navigate to="/whatsapp-business-analytics" replace />} />
+            <Route path="/features/templates" element={<Navigate to="/whatsapp-message-templates" replace />} />
+            <Route path="/features/bulk-messaging" element={<Navigate to="/whatsapp-bulk-messaging" replace />} />
+            <Route path="/solutions/education" element={<Navigate to="/whatsapp-software-for-universities" replace />} />
+            <Route path="/solutions/healthcare" element={<Navigate to="/whatsapp-automation-for-healthcare" replace />} />
+            <Route path="/solutions/ecommerce" element={<Navigate to="/whatsapp-automation-for-ecommerce" replace />} />
+            <Route path="/solutions/travel-and-tourism" element={<Navigate to="/whatsapp-automation-for-travel-and-tourism" replace />} />
+            <Route path="/solutions/real-estate" element={<Navigate to="/whatsapp-automation-for-real-estate" replace />} />
+            <Route path="/solutions/financial" element={<Navigate to="/whatsapp-banking-automation" replace />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

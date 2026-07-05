@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import SeoBreadcrumbs from '../components/SeoBreadcrumbs';
 
 const WhatsAppMarketingForEcommerce = () => {
-  const canonical = 'https://www.askmeister.com/whatsapp-marketing-for-ecommerce';
+  const canonical = 'https://askmeister.com/whatsapp-marketing-for-ecommerce';
   const title = 'WhatsApp Marketing for E-commerce | Tamil Nadu | Ask Meister';
   const description =
     'Order updates, cart recovery flows, and support on WhatsApp for online stores—via Business API, templates, and chatbots. See our e-commerce solution hub for details.';
@@ -29,7 +29,7 @@ const WhatsAppMarketingForEcommerce = () => {
             provide the messaging layer on top of the official WhatsApp Business Platform.
           </p>
           <Link
-            to="/solutions/ecommerce"
+            to="/whatsapp-automation-for-ecommerce"
             className="inline-flex items-center gap-2 text-[#25D366] font-semibold hover:underline text-lg"
           >
             Open e-commerce industry solution →

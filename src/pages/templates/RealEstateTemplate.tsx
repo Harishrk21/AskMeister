@@ -6,6 +6,8 @@ import re1 from '../../assets/re1.webp';
 import re2 from '../../assets/re2.webp';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../../components/InternalLinksHub';
+import SeoBreadcrumbs from '../../components/SeoBreadcrumbs';
 const RealEstateTemplate = () => {
   const features = [
     {
@@ -129,17 +131,18 @@ const RealEstateTemplate = () => {
       name="keywords"
       content="property leads whatsapp, real estate whatsapp automation, whatsapp marketing for real estate, real estate lead nurturing"
     />
-    <link rel="canonical" href="https://www.askmeister.com/solutions/real-estate" />
+    <link rel="canonical" href="https://askmeister.com/whatsapp-automation-for-real-estate" />
     <meta property="og:title" content="WhatsApp for Real Estate | Automate Inquiries & Follow-ups" />
     <meta
       property="og:description"
       content="Use WhatsApp automation to convert real estate leads faster. Automate inquiries, schedule visits, and engage clients easily."
     />
-    <meta property="og:url" content="https://www.askmeister.com/solutions/real-estate" />
+    <meta property="og:url" content="https://askmeister.com/whatsapp-automation-for-real-estate" />
   </Helmet>
 
 
     <div className="pt-16">
+      <SeoBreadcrumbs items={[{ name: 'WhatsApp automation for real estate', path: '/whatsapp-automation-for-real-estate' }]} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-green-50 via-white to-indigo-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -316,6 +319,8 @@ const RealEstateTemplate = () => {
           </p>
         </div>
       </section>
+
+      <InternalLinksHub currentPath="/whatsapp-automation-for-real-estate" />
 
       {/* CTA Section */}
       <section className="py-20 bg-green-600">

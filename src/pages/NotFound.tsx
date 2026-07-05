@@ -8,7 +8,7 @@ const NotFound = () => {
         <title>Page Not Found | Ask Meister</title>
         <meta name="description" content="The page you are looking for could not be found." />
         <meta name="robots" content="noindex,follow" />
-        <link rel="canonical" href="https://www.askmeister.com/" />
+        <link rel="canonical" href="https://askmeister.com/" />
       </Helmet>
       <div className="pt-20 pb-24 px-4 text-center">
         <h1 className="text-4xl font-bold text-[#1C1C1C] mb-4">Page Not Found</h1>

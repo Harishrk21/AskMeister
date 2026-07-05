@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../components/InternalLinksHub';
 import { ArrowRight, CheckCircle, ExternalLink } from 'lucide-react';
 
 const Integrations = () => {
@@ -110,10 +111,10 @@ const Integrations = () => {
         <title>WhatsApp Integrations | WooCommerce, Shopify, Zapier & CRM | Ask Meister</title>
         <meta name="description" content="WhatsApp API integrations: WooCommerce, Shopify, Zapier, HubSpot, Salesforce. Connect bulk messaging & chatbot to your CRM & store. Free trial." />
         <meta name="keywords" content="whatsapp integrations, whatsapp api integrations, shopify whatsapp integration, woocommerce whatsapp integration, zapier whatsapp automation, hubspot whatsapp, salesforce whatsapp, crm whatsapp integration" />
-        <link rel="canonical" href="https://www.askmeister.com/integrations" />
+        <link rel="canonical" href="https://askmeister.com/integrations" />
         <meta property="og:title" content="WhatsApp Integrations | E-commerce, CRM & Automation | Ask Meister" />
         <meta property="og:description" content="Integrate WhatsApp with your e-commerce, CRM, and automation tools. One-click connections." />
-        <meta property="og:url" content="https://www.askmeister.com/integrations" />
+        <meta property="og:url" content="https://askmeister.com/integrations" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}
@@ -268,6 +269,8 @@ const Integrations = () => {
           </div>
         </div>
       </section>
+
+      <InternalLinksHub currentPath="/integrations" />
     </div>
     </>
   );

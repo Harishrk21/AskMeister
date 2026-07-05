@@ -7,7 +7,26 @@ import bankoverview from '../../assets/bankoverview.jpg';
 import insurance from '../../assets/insurance.webp';
 import checking from '../../assets/checking.webp';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../../components/InternalLinksHub';
+import SeoBreadcrumbs from '../../components/SeoBreadcrumbs';
+import { faqPageSchema } from '../../utils/seoSchema';
 const FinancialTemplate = () => {
+  const financialFaq = [
+    {
+      question: 'What is WhatsApp banking automation?',
+      answer:
+        'It uses the WhatsApp Business Platform for transaction alerts, payment reminders, KYC nudges, and support—via approved templates and opt-in where required.',
+    },
+    {
+      question: 'Can banks use WhatsApp for KYC follow-up?',
+      answer:
+        'Yes, for reminders and status updates. Sensitive document collection is usually handled on a secure portal, with WhatsApp guiding the customer through the process.',
+    },
+  ];
+  const faqSchema = faqPageSchema(
+    financialFaq.map((f) => ({ question: f.question, answer: f.answer }))
+  );
+
   const features = [
     {
       icon: Bell,
@@ -121,56 +140,41 @@ const FinancialTemplate = () => {
 
   const benefits = [
     {
-      metric: '70%',
-      description: 'Reduction in call center load',
-      icon: Users
+      metric: 'Secure',
+      description: 'Template-based utility messaging',
+      icon: Shield
     },
     {
-      metric: '90%',
-      description: 'Faster query resolution',
+      metric: '24/7',
+      description: 'Automated customer notifications',
       icon: Clock
     },
     {
-      metric: '95%',
-      description: 'Customer satisfaction rate',
+      metric: 'Compliant',
+      description: 'Workflows aligned with bank policies',
+      icon: Users
+    },
+    {
+      metric: 'Audit-ready',
+      description: 'Conversation history for teams',
       icon: TrendingUp
-    },
-    {
-      metric: '80%',
-      description: 'Fraud detection improvement',
-      icon: Shield
-    }
-  ];
-
-  const testimonials = [
-    {
-      name: 'Priya Sharma',
-      role: 'Digital Banking Head',
-      company: 'Metro Bank',
-      content: 'WhatsApp banking reduced our call center load by 70%. Customers love the instant responses and 24/7 availability.',
-      image: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=150'
-    },
-    {
-      name: 'James Wilson',
-      role: 'Chief Technology Officer',
-      company: 'FinTech Solutions',
-      content: 'The fraud detection alerts through WhatsApp helped us prevent millions in fraudulent transactions. Security improved significantly.',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150'
     }
   ];
 
   return (
      <>
       <Helmet>
-        <title>WhatsApp for Banking & Finance | Secure Financial Services Automation | Ask Meister</title>
-        <meta name="description" content="WhatsApp for banking & finance: transaction alerts, payment reminders, secure messaging. Bulk messaging for banks & financial services. Free trial." />
-        <meta name="keywords" content="whatsapp banking, financial services automation, secure banking, transaction alerts, payment reminders, investment updates, financial chatbot, banking automation" />
-        <link rel="canonical" href="https://www.askmeister.com/solutions/financial" />
+        <title>WhatsApp for Finance Solutions | Banking Automation Platform | Ask Meister</title>
+        <meta name="description" content="WhatsApp for finance solutions with banking automation: transaction alerts, KYC reminders, payment follow-ups, and secure customer messaging for banks and financial firms." />
+        <meta name="keywords" content="whatsapp for finance, whatsapp banking automation, whatsapp finance automation platform, whatsapp for financial industry, whatsapp messaging for finance, whatsapp for financial firms, whatsapp for finance professionals, whatsapp kyc automation for banks" />
+        <link rel="canonical" href="https://askmeister.com/whatsapp-banking-automation" />
         <meta property="og:title" content="WhatsApp for Banking & Finance | Secure Automation" />
         <meta property="og:description" content="Secure financial services automation with WhatsApp for banking, payments, and customer support." />
-        <meta property="og:url" content="https://www.askmeister.com/solutions/financial" />
+        <meta property="og:url" content="https://askmeister.com/whatsapp-banking-automation" />
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
     <div className="pt-16">
+      <SeoBreadcrumbs items={[{ name: 'WhatsApp banking automation', path: '/whatsapp-banking-automation' }]} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-green-50 via-white to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -391,39 +395,22 @@ const FinancialTemplate = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Honest use-case note */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              What Financial Leaders Say
-            </h2>
-            <p className="text-lg text-gray-600">
-              Hear from financial institutions who transformed their customer service
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
-                <p className="text-gray-600 mb-6 italic text-lg">"{testimonial.content}"</p>
-                <div className="flex items-center">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-16 h-16 rounded-full mr-4"
-                  />
-                  <div>
-                    <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                    <div className="text-green-600">{testimonial.role}</div>
-                    <div className="text-sm text-gray-500">{testimonial.company}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-600 leading-relaxed">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Built for regulated financial messaging</h2>
+          <p>
+            Ask Meister supports template workflows and team hand-off for banks and fintechs. We do not guarantee fraud prevention outcomes, call-center reductions, or revenue—those depend on your policies, integrations, and operations.
+          </p>
+          <p className="mt-4">
+            <Link to="/whatsapp-kyc-automation-for-banks" className="text-green-600 font-semibold hover:underline">
+              WhatsApp KYC automation for banks →
+            </Link>
+          </p>
         </div>
       </section>
+
+      <InternalLinksHub currentPath="/whatsapp-banking-automation" />
 
       {/* CTA Section */}
       <section className="py-20 bg-green-600">

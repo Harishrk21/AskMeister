@@ -3,6 +3,8 @@ import { MessageCircle, BarChart3, Calendar, Users, Zap, FileText, Image, Video,
 import live from '../../assets/live.png';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../../components/InternalLinksHub';
+import SeoBreadcrumbs from '../../components/SeoBreadcrumbs';
 const LiveChat = () => {
   const features = [
     {
@@ -99,12 +101,13 @@ const LiveChat = () => {
         <title>WhatsApp Live Chat | Collaborative Customer Support | Ask Meister</title>
         <meta name="description" content="WhatsApp live chat & team inbox: shared inbox, agent assignment, customer support. Manage bulk messaging & chatbots as a team. Free trial." />
         <meta name="keywords" content="whatsapp live chat software, multi agent whatsapp inbox, shared whatsapp inbox, team whatsapp chat software, whatsapp customer support tool, whatsapp live support system, whatsapp helpdesk software" />
-        <link rel="canonical" href="https://www.askmeister.com/features/livechat" />
+        <link rel="canonical" href="https://askmeister.com/whatsapp-live-chat" />
         <meta property="og:title" content="WhatsApp LiveChat| Collaborative Customer Support" />
         <meta property="og:description" content="Collaborate seamlessly with team inbox for WhatsApp customer support and messaging." />
-        <meta property="og:url" content="https://www.askmeister.com/features/livechat" />
+        <meta property="og:url" content="https://askmeister.com/whatsapp-live-chat" />
       </Helmet>
     <div className="pt-16">
+      <SeoBreadcrumbs items={[{ name: 'WhatsApp live chat', path: '/whatsapp-live-chat' }]} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-green-50 via-white to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -323,6 +326,8 @@ const LiveChat = () => {
           </div>
         </div>
       </section>
+
+      <InternalLinksHub currentPath="/whatsapp-live-chat" />
 
       {/* CTA Section */}
       <section className="py-20 bg-green-600">

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ChevronRight, Home } from 'lucide-react';
 
-const SITE = 'https://www.askmeister.com';
+const SITE = 'https://askmeister.com';
 
 export type BreadcrumbItem = { name: string; path?: string };
 

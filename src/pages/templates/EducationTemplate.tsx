@@ -5,8 +5,27 @@ import edus from '../../assets/edus.webp';
 import pta from '../../assets/pta.jpeg';
 import edusample from '../../assets/edusample.webp';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../../components/InternalLinksHub';
+import SeoBreadcrumbs from '../../components/SeoBreadcrumbs';
+import { faqPageSchema } from '../../utils/seoSchema';
 
 const EducationTemplate = () => {
+  const educationFaq = [
+    {
+      question: 'What is WhatsApp software for universities?',
+      answer:
+        'It is a messaging layer on the WhatsApp Business Platform for admissions, student services, and parent updates—using approved templates and opt-in lists.',
+    },
+    {
+      question: 'Can colleges integrate WhatsApp with an ERP?',
+      answer:
+        'Many institutions pair WhatsApp automation with an ERP via exports, APIs, or manual uploads. Ask Meister focuses on the messaging and workflow side.',
+    },
+  ];
+  const faqSchema = faqPageSchema(
+    educationFaq.map((f) => ({ question: f.question, answer: f.answer }))
+  );
+
   const features = [
     {
       icon: UserCheck,
@@ -128,15 +147,17 @@ const EducationTemplate = () => {
   return (
       <>
       <Helmet>
-        <title>WhatsApp for Education | Student Communication & Admission Automation | Ask Meister</title>
-        <meta name="description" content="WhatsApp for education: admission forms, parent notifications, student engagement. Bulk messaging for schools & universities. Free trial." />
-        <meta name="keywords" content="whatsapp marketing for schools, whatsapp for coaching institutes, student engagement whatsapp, admission leads whatsapp" />
-        <link rel="canonical" href="https://www.askmeister.com/solutions/education" />
+        <title>WhatsApp Software for Universities & Colleges | Education Automation | Ask Meister</title>
+        <meta name="description" content="WhatsApp software for universities, colleges, and schools: educational admissions automation, parent communication, and ERP-integrated student workflows." />
+        <meta name="keywords" content="whatsapp software for universities, whatsapp software for colleges, whatsapp software for higher ed, whatsapp automation for educational admissions, education whatsapp automation, school erp with whatsapp integration" />
+        <link rel="canonical" href="https://askmeister.com/whatsapp-software-for-universities" />
         <meta property="og:title" content="WhatsApp for Education | Student Communication Automation" />
         <meta property="og:description" content="Streamline education communication with WhatsApp automation for admissions, student support, and parent engagement." />
-        <meta property="og:url" content="https://www.askmeister.com/solutions/education" />
+        <meta property="og:url" content="https://askmeister.com/whatsapp-software-for-universities" />
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
     <div className="pt-16">
+      <SeoBreadcrumbs items={[{ name: 'WhatsApp software for universities', path: '/whatsapp-software-for-universities' }]} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-green-50 via-white to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -312,14 +333,27 @@ const EducationTemplate = () => {
         </div>
       </section> */}
 
+      <InternalLinksHub currentPath="/whatsapp-software-for-universities" />
+
       {/* CTA Section */}
       <section className="py-20 bg-green-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Transform Your Educational Institution?
           </h2>
-          <p className="text-lg text-green-100 mb-8">
-            Join hundreds of schools and universities already using Ask Meister to enhance their communication.
+          <p className="text-lg text-green-100 mb-4">
+            Talk to us about WhatsApp for admissions, parent communication, and student support.
+          </p>
+          <p className="text-sm text-green-100/90 mb-8">
+            Also see{' '}
+            <Link to="/whatsapp-software-for-colleges" className="underline font-medium text-white">
+              WhatsApp software for colleges
+            </Link>{' '}
+            and{' '}
+            <Link to="/education-whatsapp-automation" className="underline font-medium text-white">
+              education WhatsApp automation
+            </Link>
+            .
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Calendar, User, ArrowLeft, Share2, BookOpen, Tag, Clock } from 'lucide-react';
+import InternalLinksHub from '../components/InternalLinksHub';
 
 const BlogDetail = () => {
   const { slug } = useParams();
@@ -225,7 +226,7 @@ const BlogDetail = () => {
   const relatedPosts = Object.values(postsBySlug).filter((post) => post.slug !== blogPost.slug).slice(0, 3);
 
   const canonicalSlug = hasMatchedSlug ? slug! : blogPost.slug;
-  const canonicalUrl = `https://www.askmeister.com/blog/${canonicalSlug}`;
+  const canonicalUrl = `https://askmeister.com/blog/${canonicalSlug}`;
   const keywordContent = [
     'whatsapp marketing',
     'whatsapp automation',
@@ -246,7 +247,7 @@ const BlogDetail = () => {
     publisher: {
       '@type': 'Organization',
       name: 'Ask Meister',
-      logo: { '@type': 'ImageObject', url: 'https://www.askmeister.com/og-banner.webp' }
+      logo: { '@type': 'ImageObject', url: 'https://askmeister.com/og-banner.webp' }
     },
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl }
   };
@@ -429,6 +430,8 @@ const BlogDetail = () => {
           </div>
         </div>
       </section>
+
+      <InternalLinksHub />
     </div>
     </>
   );

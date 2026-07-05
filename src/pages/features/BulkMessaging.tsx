@@ -13,6 +13,8 @@ import {
   Filter
 } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../../components/InternalLinksHub';
+import SeoBreadcrumbs from '../../components/SeoBreadcrumbs';
 
 // Import local images
 import promoImage from '../../assets/bulks.webp';
@@ -126,12 +128,13 @@ const BulkMessaging = () => {
         <title>WhatsApp Bulk Messaging | Broadcasts & Templates | Ask Meister</title>
         <meta name="description" content="Bulk WhatsApp messaging with templates, segmentation, and reporting. Actual throughput depends on WhatsApp limits, approvals, and list quality—contact us to scope volume." />
         <meta name="keywords" content="whatsapp bulk messaging software, bulk whatsapp sender, send whatsapp messages in bulk, whatsapp broadcast tool, whatsapp mass messaging, whatsapp campaign sender" />
-        <link rel="canonical" href="https://www.askmeister.com/features/bulk-messaging" />
+        <link rel="canonical" href="https://askmeister.com/whatsapp-bulk-messaging" />
         <meta property="og:title" content="WhatsApp Bulk Messaging | Ask Meister" />
         <meta property="og:description" content="Broadcast campaigns using approved WhatsApp templates, segmentation, and analytics." />
-        <meta property="og:url" content="https://www.askmeister.com/features/bulk-messaging" />
+        <meta property="og:url" content="https://askmeister.com/whatsapp-bulk-messaging" />
       </Helmet>
     <div className="pt-16">
+      <SeoBreadcrumbs items={[{ name: 'WhatsApp bulk messaging', path: '/whatsapp-bulk-messaging' }]} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-green-50 via-white to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -270,6 +273,8 @@ const BulkMessaging = () => {
           </div>
         </div>
       </section>
+
+      <InternalLinksHub currentPath="/whatsapp-bulk-messaging" />
 
       {/* CTA Section */}
       <section className="py-20 bg-green-600">

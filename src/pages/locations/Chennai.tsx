@@ -1,10 +1,11 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../../components/InternalLinksHub';
 
 const Chennai = () => {
   const { pathname } = useLocation();
   const pathOnly = pathname.replace(/\/$/, '') || '/';
-  const canonical = `https://www.askmeister.com${pathOnly}`;
+  const canonical = `https://askmeister.com${pathOnly}`;
   const title = 'WhatsApp Marketing Software Chennai | Bulk Messaging & API | Ask Meister';
   const description =
     'Chennai businesses use Ask Meister for WhatsApp bulk messaging, WhatsApp Business API onboarding, chatbots, and automation—Tamil Nadu support team. சென்னையில் WhatsApp மார்க்கெட்டிங் & ஆட்டோமேஷன்.';
@@ -133,6 +134,8 @@ const Chennai = () => {
             </Link>
           </div>
         </section>
+
+        <InternalLinksHub currentPath="/whatsapp-marketing-chennai" />
       </div>
     </>
   );

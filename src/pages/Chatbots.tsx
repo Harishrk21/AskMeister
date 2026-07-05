@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Bot, MessageCircle, Zap, Brain, CheckCircle, Play, ArrowRight, Building, ShoppingCart, GraduationCap, Stethoscope, Hammer, Wheat, Banknote, Truck, Users, Clock, BarChart3, Shield, ChevronRight, ExternalLink,Home,Plane } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../components/InternalLinksHub';
 import ecomm from '../assets/ecomm.webp';
 import hc from '../assets/hc.webp';
 import edusample from '../assets/edusample.webp';
@@ -100,7 +101,7 @@ const Chatbots = () => {
       image: ecomm,
       features: ['Product catalog browsing', 'Order tracking & updates', 'Abandoned cart recovery'],
       useCases: ['Reduce cart abandonment by 40%', 'Automate 80% of customer queries', 'Increase sales conversion by 25%'],
-      link: '/solutions/ecommerce'
+      link: '/whatsapp-automation-for-ecommerce'
     },
     {
       id: 'healthcare',
@@ -110,7 +111,7 @@ const Chatbots = () => {
       image: hc,
       features: ['Multi-department appointment booking', 'Symptom checker & triage', 'Prescription reminders'],
       useCases: ['Reduce appointment no-shows by 60%', 'Handle 90% of routine inquiries', 'Improve patient satisfaction scores'],
-      link: '/solutions/healthcare'
+      link: '/whatsapp-automation-for-healthcare'
     },
     {
       id: 'education',
@@ -120,7 +121,7 @@ const Chatbots = () => {
       image: edusample,
       features: ['Course enrollment assistance', 'Assignment & exam reminders', 'Grade notifications'],
       useCases: ['Increase student engagement by 50%', 'Automate administrative tasks', 'Improve parent communication'],
-      link: '/solutions/education'
+      link: '/whatsapp-software-for-universities'
     },
   {
   id: 'real-estate',
@@ -138,7 +139,7 @@ const Chatbots = () => {
     'Streamline agent-customer communication',
     'Close property deals faster'
   ],
-  link: '/solutions/real-estate'
+  link: '/whatsapp-automation-for-real-estate'
 },
 {
   id: 'travel-tourism',
@@ -156,7 +157,7 @@ const Chatbots = () => {
     'Enhance customer experience',
     'Automate repetitive travel agent tasks'
   ],
-  link: '/solutions/travel-and-tourism'
+  link: '/whatsapp-automation-for-travel-and-tourism'
 }
 ,
     {
@@ -167,7 +168,7 @@ const Chatbots = () => {
       image: bankoverview,
       features: ['Account balance inquiries', 'Transaction notifications', 'Loan application assistance'],
       useCases: ['Reduce call center load by 70%', 'Improve customer satisfaction', 'Enhance security monitoring'],
-      link: '/solutions/financial'
+      link: '/whatsapp-banking-automation'
     }
   ];
 
@@ -228,10 +229,10 @@ const Chatbots = () => {
         <title>WhatsApp Chatbot Builder &amp; Automation | Ask Meister</title>
         <meta name="description" content="WhatsApp chatbot builder for businesses in India: flows, automation, and handoff to humans. No fabricated rankings—see if Ask Meister fits your use case." />
         <meta name="keywords" content="whatsapp chatbot software, ai whatsapp chatbot, automated whatsapp chatbot, best whatsapp chatbot builder, chatbot for whatsapp business, create whatsapp chatbot, chatbot automation whatsapp, no code whatsapp chatbot, whatsapp ai automation, whatsapp chatbot for sales, whatsapp chatbot integration, whatsapp chatbot marketing, whatsapp chatbot platform, whatsapp chatbot service, whatsapp chatbot software india" />
-        <link rel="canonical" href="https://www.askmeister.com/chatbots" />
+        <link rel="canonical" href="https://askmeister.com/chatbots" />
         <meta property="og:title" content="WhatsApp Chatbot Builder &amp; Automation | Ask Meister" />
         <meta property="og:description" content="Build WhatsApp chatbots and automation with Ask Meister. Results depend on your flows and compliance." />
-        <meta property="og:url" content="https://www.askmeister.com/chatbots" />
+        <meta property="og:url" content="https://askmeister.com/chatbots" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}
@@ -778,6 +779,8 @@ const Chatbots = () => {
           </div>
         </div>
       </section>
+
+      <InternalLinksHub currentPath="/chatbots" />
 
       {/* CTA Section */}
       <section className="py-20 bg-[#25D366]">

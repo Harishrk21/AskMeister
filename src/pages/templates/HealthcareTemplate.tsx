@@ -6,6 +6,8 @@ import healthcare1 from '../../assets/healthcare1.jpg'
 import healthcare from '../../assets/healthcare.webp';
 import healthcare2 from '../../assets/healthcare2.jpg';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../../components/InternalLinksHub';
+import SeoBreadcrumbs from '../../components/SeoBreadcrumbs';
 const HealthcareTemplate = () => {
   const features = [
     {
@@ -120,56 +122,40 @@ const HealthcareTemplate = () => {
 
   const benefits = [
     {
-      metric: '60%',
-      description: 'Reduction in no-shows',
+      metric: 'Scheduling',
+      description: 'Appointment booking flows',
       icon: Calendar
     },
     {
-      metric: '80%',
-      description: 'Faster appointment booking',
+      metric: 'Reminders',
+      description: 'Template-based patient nudges',
       icon: Clock
     },
     {
-      metric: '95%',
-      description: 'Patient satisfaction rate',
+      metric: 'Team inbox',
+      description: 'Hand-off when bots are not enough',
       icon: Heart
     },
     {
-      metric: '50%',
-      description: 'Reduction in admin work',
+      metric: 'Reporting',
+      description: 'Delivery and response visibility',
       icon: Zap
-    }
-  ];
-
-  const testimonials = [
-    {
-      name: 'Dr. Emily Chen',
-      role: 'Chief Medical Officer',
-      hospital: 'Metropolitan General Hospital',
-      content: 'Ask Meister revolutionized our patient communication. Appointment no-shows dropped by 60% and patient satisfaction increased significantly.',
-      image: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=150'
-    },
-    {
-      name: 'Dr. Robert Martinez',
-      role: 'Head of Emergency',
-      hospital: 'City Medical Center',
-      content: 'The emergency alert system helped us coordinate better during critical situations. Staff response time improved by 40%.',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150'
     }
   ];
 
   return (
      <>
       <Helmet>
-        <title>WhatsApp for Healthcare | Hospital Appointment Booking & Patient Care | Ask Meister</title>
-        <meta name="description" content="WhatsApp for healthcare: appointment booking, patient reminders, HIPAA-compliant messaging. Bulk messaging for hospitals & clinics. Free trial." />
-        <meta name="keywords" content="whatsapp appointment reminders, whatsapp for clinics, patient engagement whatsapp, healthcare whatsapp automation" />
-        <link rel="canonical" href="https://www.askmeister.com/solutions/healthcare" />
+        <title>Hospital WhatsApp Automation | Medical Scheduling on WhatsApp | Ask Meister</title>
+        <meta name="description" content="Hospital WhatsApp automation for medical health scheduling, appointment reminders, and patient care workflows for clinics and hospitals." />
+        <meta name="keywords" content="hospital whatsapp, whatsapp for medical health scheduling, healthcare whatsapp automation, whatsapp appointment reminders, whatsapp for clinics, patient engagement whatsapp" />
+        <link rel="canonical" href="https://askmeister.com/whatsapp-automation-for-healthcare" />
         <meta property="og:title" content="WhatsApp for Healthcare | Hospital Automation" />
         <meta property="og:description" content="Transform patient care with WhatsApp automation for appointments, communication, and healthcare management." />
-        <meta property="og:url" content="https://www.askmeister.com/solutions/healthcare" />
+        <meta property="og:url" content="https://askmeister.com/whatsapp-automation-for-healthcare" />
       </Helmet>
     <div className="pt-16">
+      <SeoBreadcrumbs items={[{ name: 'WhatsApp automation for healthcare', path: '/whatsapp-automation-for-healthcare' }]} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-green-50 via-white to-emerald-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -342,39 +328,22 @@ const HealthcareTemplate = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Trust & compliance note */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              What Healthcare Leaders Say
-            </h2>
-            <p className="text-lg text-gray-600">
-              Hear from medical professionals who transformed their patient care
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
-                <p className="text-gray-600 mb-6 italic text-lg">"{testimonial.content}"</p>
-                <div className="flex items-center">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-16 h-16 rounded-full mr-4"
-                  />
-                  <div>
-                    <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                    <div className="text-green-600">{testimonial.role}</div>
-                    <div className="text-sm text-gray-500">{testimonial.hospital}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-600 leading-relaxed">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Patient messaging without overpromising</h2>
+          <p>
+            Hospital WhatsApp workflows must respect health regulations, what you send in chat, and patient consent. Ask Meister helps design compliant flows—we do not guarantee specific no-show reductions or satisfaction scores.
+          </p>
+          <p className="mt-4">
+            <Link to="/hospital-whatsapp" className="text-green-600 font-semibold hover:underline">
+              Hospital WhatsApp automation overview →
+            </Link>
+          </p>
         </div>
       </section>
+
+      <InternalLinksHub currentPath="/whatsapp-automation-for-healthcare" />
 
       {/* CTA Section */}
       <section className="py-20 bg-green-600">

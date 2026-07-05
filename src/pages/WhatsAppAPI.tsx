@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../components/InternalLinksHub';
 import { CheckCircle, X, ArrowRight, MessageCircle, Zap, Shield, BarChart3, Users, Clock, Play, Building, GraduationCap, ShoppingCart, Stethoscope, Hammer, Wheat } from 'lucide-react';
 import allinone from '../assets/allinone.png';
 import chatbot from '../assets/chatbot.png';
@@ -86,7 +87,7 @@ const WhatsAppAPI = () => {
       title: 'E-commerce & Retail',
       description: 'Order confirmations, shipping updates, abandoned cart recovery, product recommendations',
       image: ecomm,
-      route: '/solutions/ecommerce',
+      route: '/whatsapp-automation-for-ecommerce',
       chatbots: [
         'Product catalog browsing',
         'Order tracking and updates',
@@ -99,7 +100,7 @@ const WhatsAppAPI = () => {
       title: 'Healthcare & Hospitals',
       description: 'Appointment booking, test results, medication reminders, department coordination',
       image: hc,
-      route: '/solutions/healthcare',
+      route: '/whatsapp-automation-for-healthcare',
       chatbots: [
         'Appointment scheduling for all departments',
         'Symptom checker and triage',
@@ -112,7 +113,7 @@ const WhatsAppAPI = () => {
       title: 'Education',
       description: 'Course updates, assignment reminders, parent communication, student support',
       image: edusample,
-      route: '/solutions/education',
+      route: '/whatsapp-software-for-universities',
       chatbots: [
         'Course enrollment assistance',
         'Assignment and exam reminders',
@@ -151,7 +152,7 @@ const WhatsAppAPI = () => {
       title: 'Financial Services',
       description: 'Transaction alerts, payment reminders, account updates, investment tips',
       image: banking,
-      route: '/solutions/financial',
+      route: '/whatsapp-banking-automation',
       chatbots: [
         'Account balance inquiries',
         'Transaction notifications',
@@ -167,10 +168,10 @@ const WhatsAppAPI = () => {
         <title>Trusted WhatsApp Business API | Official WhatsApp API Partner | Ask Meister</title>
         <meta name="description" content="WhatsApp Business API for bulk messaging, templates, and chatbots. Delivery and limits depend on Meta policies and your setup—contact Ask Meister for onboarding." />
         <meta name="keywords" content="whatsapp business api provider india, official whatsapp api provider, meta whatsapp cloud api, whatsapp api integration service, whatsapp api setup guide, whatsapp api documentation, whatsapp api webhook, whatsapp api authentication, whatsapp api endpoint, whatsapp api for crm, send message via whatsapp api, cloud whatsapp api, get whatsapp api access, apply whatsapp business api, rest api whatsapp integration, developer whatsapp api, whatsapp api onboarding, whatsapp api verification" />
-        <link rel="canonical" href="https://www.askmeister.com/whatsapp-api" />
+        <link rel="canonical" href="https://askmeister.com/whatsapp-api" />
         <meta property="og:title" content="Trusted WhatsApp Business API | Official Partner" />
         <meta property="og:description" content="Get access to official WhatsApp Business API with maximum reliability and compliance." />
-        <meta property="og:url" content="https://www.askmeister.com/whatsapp-api" />
+        <meta property="og:url" content="https://askmeister.com/whatsapp-api" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}
@@ -415,6 +416,8 @@ const WhatsAppAPI = () => {
           </div>
         </div>
       </section>
+
+      <InternalLinksHub currentPath="/whatsapp-api" />
 
       {/* CTA Section */}
       <section className="py-20 bg-[#25D366]">

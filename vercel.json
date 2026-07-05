@@ -1,0 +1,32 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.askmeister.com" }],
+      "destination": "https://askmeister.com/:path*",
+      "permanent": true
+    },
+    { "source": "/pricing", "destination": "/contact", "permanent": true },
+    { "source": "/locations/chennai", "destination": "/whatsapp-marketing-chennai", "permanent": true },
+    { "source": "/locations/tamil-nadu", "destination": "/whatsapp-marketing-tamil-nadu", "permanent": true },
+    { "source": "/whatsapp-chatbot", "destination": "/chatbots", "permanent": true },
+    { "source": "/whatsapp-api-integration", "destination": "/whatsapp-api", "permanent": true },
+    { "source": "/wati-alternative", "destination": "/alternatives/wati-alternative", "permanent": true },
+    { "source": "/aisensy-alternative", "destination": "/alternatives/aisensy-alternative", "permanent": true },
+    { "source": "/interakt-alternative", "destination": "/alternatives/interakt-alternative", "permanent": true },
+    { "source": "/gallabox-alternative", "destination": "/alternatives/gallabox-alternative", "permanent": true },
+    { "source": "/whatsapp-for-finance", "destination": "/whatsapp-banking-automation", "permanent": true },
+    { "source": "/features/livechat", "destination": "/whatsapp-live-chat", "permanent": true },
+    { "source": "/features/automation", "destination": "/whatsapp-marketing-automation", "permanent": true },
+    { "source": "/features/analytics", "destination": "/whatsapp-business-analytics", "permanent": true },
+    { "source": "/features/templates", "destination": "/whatsapp-message-templates", "permanent": true },
+    { "source": "/features/bulk-messaging", "destination": "/whatsapp-bulk-messaging", "permanent": true },
+    { "source": "/solutions/education", "destination": "/whatsapp-software-for-universities", "permanent": true },
+    { "source": "/solutions/healthcare", "destination": "/whatsapp-automation-for-healthcare", "permanent": true },
+    { "source": "/solutions/ecommerce", "destination": "/whatsapp-automation-for-ecommerce", "permanent": true },
+    { "source": "/solutions/travel-and-tourism", "destination": "/whatsapp-automation-for-travel-and-tourism", "permanent": true },
+    { "source": "/solutions/real-estate", "destination": "/whatsapp-automation-for-real-estate", "permanent": true },
+    { "source": "/solutions/financial", "destination": "/whatsapp-banking-automation", "permanent": true }
+  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}

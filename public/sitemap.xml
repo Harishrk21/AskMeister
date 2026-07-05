@@ -228,71 +228,95 @@
 
   <!-- Feature Pages -->
   <url>
-    <loc>https://askmeister.com/features/livechat</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://askmeister.com/whatsapp-live-chat</loc>
+    <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://askmeister.com/features/automation</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://askmeister.com/whatsapp-marketing-automation</loc>
+    <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://askmeister.com/features/analytics</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://askmeister.com/whatsapp-business-analytics</loc>
+    <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://askmeister.com/features/templates</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://askmeister.com/whatsapp-message-templates</loc>
+    <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://askmeister.com/features/bulk-messaging</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://askmeister.com/whatsapp-bulk-messaging</loc>
+    <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Industry Solutions -->
   <url>
-    <loc>https://askmeister.com/solutions/education</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://askmeister.com/whatsapp-software-for-universities</loc>
+    <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://askmeister.com/solutions/healthcare</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://askmeister.com/whatsapp-automation-for-healthcare</loc>
+    <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://askmeister.com/solutions/ecommerce</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://askmeister.com/whatsapp-automation-for-ecommerce</loc>
+    <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://askmeister.com/solutions/travel-and-tourism</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://askmeister.com/whatsapp-automation-for-travel-and-tourism</loc>
+    <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://askmeister.com/solutions/real-estate</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://askmeister.com/whatsapp-automation-for-real-estate</loc>
+    <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://askmeister.com/solutions/financial</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://askmeister.com/whatsapp-banking-automation</loc>
+    <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://askmeister.com/whatsapp-software-for-colleges</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://askmeister.com/hospital-whatsapp</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://askmeister.com/whatsapp-kyc-automation-for-banks</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://askmeister.com/education-whatsapp-automation</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
 </urlset>

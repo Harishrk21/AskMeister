@@ -1,6 +1,6 @@
-# robots.txt — Ask Meister (prefer https://www.askmeister.com in Google Search Console)
+# robots.txt — Ask Meister (prefer https://askmeister.com in Google Search Console)
 
 User-agent: *
 Allow: /
 
-Sitemap: https://www.askmeister.com/sitemap.xml
+Sitemap: https://askmeister.com/sitemap.xml

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, User, ArrowRight, Tag } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../components/InternalLinksHub';
 const Blog = () => {
   const categories = ['All', 'API', 'Marketing Tips', 'Broadcasts', 'Chatbots', 'Automation'];
   const [selectedCategory, setSelectedCategory] = React.useState('All');
@@ -88,10 +89,10 @@ const Blog = () => {
         <title>WhatsApp Marketing Tips & Guides | Ask Meister Blog</title>
         <meta name="description" content="WhatsApp marketing blog: bulk messaging, WhatsApp Business API, chatbot and automation guidance for teams in India and Tamil Nadu." />
         <meta name="keywords" content="whatsapp marketing blog, business insights, marketing tips, automation strategies, whatsapp trends, marketing guides, business growth, customer engagement tips" />
-        <link rel="canonical" href="https://www.askmeister.com/blog" />
+        <link rel="canonical" href="https://askmeister.com/blog" />
         <meta property="og:title" content="WhatsApp Marketing Blog | Business Insights & Tips" />
         <meta property="og:description" content="Expert insights and tips for WhatsApp marketing, automation, and business growth strategies." />
-        <meta property="og:url" content="https://www.askmeister.com/blog" />
+        <meta property="og:url" content="https://askmeister.com/blog" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}
@@ -242,6 +243,8 @@ const Blog = () => {
           </div>
         </div>
       </section>
+
+      <InternalLinksHub currentPath="/blog" title="Related WhatsApp marketing guides" />
     </div>
     </>
   );

@@ -9,10 +9,10 @@ const Privacy = () => {
         <title>Privacy Policy | Ask Meister WhatsApp Marketing Platform</title>
         <meta name="description" content="Privacy Policy for Ask Meister. Learn how we collect, use, and protect your data when you use our WhatsApp marketing platform." />
         <meta name="keywords" content="ask meister privacy policy, data privacy, whatsapp business data protection, customer data security, gdpr compliance, privacy policy ask meister" />
-        <link rel="canonical" href="https://www.askmeister.com/privacy" />
+        <link rel="canonical" href="https://askmeister.com/privacy" />
         <meta property="og:title" content="Privacy Policy | Ask Meister" />
         <meta property="og:description" content="Learn how Ask Meister collects, uses, and protects your data." />
-        <meta property="og:url" content="https://www.askmeister.com/privacy" />
+        <meta property="og:url" content="https://askmeister.com/privacy" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Privacy Policy | Ask Meister" />
         <meta name="twitter:description" content="Understand how your information is protected on Ask Meister." />

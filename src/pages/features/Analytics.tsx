@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { BarChart3, TrendingUp, Eye, CheckCircle, ArrowRight, MessageCircle, Users, Target, Clock, PieChart } from 'lucide-react';
 import analytics from '../../assets/analytics.png';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../../components/InternalLinksHub';
+import SeoBreadcrumbs from '../../components/SeoBreadcrumbs';
 const Analytics = () => {
   const features = [
     {
@@ -99,12 +101,13 @@ const Analytics = () => {
         <title>WhatsApp Marketing Analytics | Business Insights & Performance Tracking | Ask Meister</title>
         <meta name="description" content="WhatsApp marketing analytics: track bulk messaging, chatbot & campaign performance. Delivery rates, ROI, real-time reports. Free with Ask Meister." />
         <meta name="keywords" content="whatsapp analytics dashboard, whatsapp campaign tracking, whatsapp click tracking, whatsapp engagement analytics, whatsapp marketing insights, whatsapp message analytics" />
-        <link rel="canonical" href="https://www.askmeister.com/features/analytics" />
+        <link rel="canonical" href="https://askmeister.com/whatsapp-business-analytics" />
         <meta property="og:title" content="WhatsApp Marketing Analytics | Business Insights" />
         <meta property="og:description" content="Advanced analytics and business insights for WhatsApp marketing campaigns and customer engagement." />
-        <meta property="og:url" content="https://www.askmeister.com/features/analytics" />
+        <meta property="og:url" content="https://askmeister.com/whatsapp-business-analytics" />
       </Helmet>
     <div className="pt-16">
+      <SeoBreadcrumbs items={[{ name: 'WhatsApp business analytics', path: '/whatsapp-business-analytics' }]} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-green-50 via-white to-emerald-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -226,6 +229,8 @@ const Analytics = () => {
           </div>
         </div>
       </section>
+
+      <InternalLinksHub currentPath="/whatsapp-business-analytics" />
 
       {/* CTA Section */}
       <section className="py-20 bg-green-600">

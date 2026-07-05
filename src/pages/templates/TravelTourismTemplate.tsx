@@ -6,6 +6,8 @@ import travel3 from '../../assets/travel3.png';
 import travel4 from '../../assets/travel4.png';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../../components/InternalLinksHub';
+import SeoBreadcrumbs from '../../components/SeoBreadcrumbs';
 
 const TravelTourismTemplate = () => {
   const features = [
@@ -130,17 +132,18 @@ const TravelTourismTemplate = () => {
       name="keywords"
       content="travel agency whatsapp marketing, whatsapp tour promotions, whatsapp booking automation, travel whatsapp automation"
     />
-    <link rel="canonical" href="https://www.askmeister.com/solutions/travel-and-tourism" />
+    <link rel="canonical" href="https://askmeister.com/whatsapp-automation-for-travel-and-tourism" />
     <meta property="og:title" content="WhatsApp for Travel & Tourism | Automate Bookings & Support" />
     <meta
       property="og:description"
       content="Automate bookings, respond to queries instantly, and provide seamless travel support via WhatsApp for your tourism business."
     />
-    <meta property="og:url" content="https://www.askmeister.com/solutions/travel-and-tourism" />
+    <meta property="og:url" content="https://askmeister.com/whatsapp-automation-for-travel-and-tourism" />
   </Helmet>
 
 
     <div className="pt-16">
+      <SeoBreadcrumbs items={[{ name: 'WhatsApp automation for travel & tourism', path: '/whatsapp-automation-for-travel-and-tourism' }]} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-green-50 via-white to-cyan-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -340,6 +343,8 @@ const TravelTourismTemplate = () => {
           </div>
         </div>
       </section> */}
+
+      <InternalLinksHub currentPath="/whatsapp-automation-for-travel-and-tourism" />
 
       {/* CTA Section */}
       <section className="py-20 bg-green-600">

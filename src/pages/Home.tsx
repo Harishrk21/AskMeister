@@ -131,35 +131,35 @@ const Home = () => {
     {
       title: 'Education',
       description: 'Streamline admissions, student communication, and parent engagement',
-      link: '/solutions/education',
+      link: '/whatsapp-software-for-universities',
       icon: '🎓',
       benefits: ['Quick admission forms', 'Parent notifications', 'Student support']
     },
     {
       title: 'Healthcare',
       description: 'Automate appointments, patient care, and medical communications',
-      link: '/solutions/healthcare',
+      link: '/whatsapp-automation-for-healthcare',
       icon: '🏥',
       benefits: ['Appointment booking', 'Patient reminders', 'Department coordination']
     },
     {
       title: 'E-commerce',
       description: 'Boost sales with order updates, cart recovery, and customer support',
-      link: '/solutions/ecommerce',
+      link: '/whatsapp-automation-for-ecommerce',
       icon: '🛒',
       benefits: ['Order tracking', 'Cart recovery', 'Product recommendations']
     },
    {
   title: 'Real Estate',
   description: 'Promote properties, engage leads, and automate client interactions',
-  link: '/solutions/real-estate',
+  link: '/whatsapp-automation-for-real-estate',
   icon: '🏠',
   benefits: ['Property listings', 'Lead engagement', 'Automated follow-ups']
 },
 {
   title: 'Travel & Tourism',
   description: 'Share tour packages, send booking alerts, and assist travelers instantly',
-  link: '/solutions/travel-and-tourism',
+  link: '/whatsapp-automation-for-travel-and-tourism',
   icon: '🌍',
   benefits: ['Tour packages', 'Booking alerts', 'Travel assistance']
 }
@@ -167,7 +167,7 @@ const Home = () => {
     {
       title: 'Financial Services',
       description: 'Secure banking, transaction alerts, and customer support',
-      link: '/solutions/financial',
+      link: '/whatsapp-banking-automation',
       icon: '💰',
       benefits: ['Transaction alerts', 'Account updates', 'Secure banking']
     }
@@ -179,12 +179,15 @@ const Home = () => {
     { title: 'Contact Sales', link: '/contact' },
     { title: 'Marketing Tools', link: '/tools' },
     { title: 'WhatsApp Chatbots', link: '/chatbots' },
-    { title: 'Analytics Dashboard', link: '/features/analytics' },
-    { title: 'Bulk Messaging', link: '/features/bulk-messaging' },
-    { title: 'Templates Library', link: '/features/templates' },
-    { title: 'Live Chat Support', link: '/features/livechat' },
+    { title: 'WhatsApp business analytics', link: '/whatsapp-business-analytics' },
+    { title: 'WhatsApp bulk messaging', link: '/whatsapp-bulk-messaging' },
+    { title: 'WhatsApp message templates', link: '/whatsapp-message-templates' },
+    { title: 'WhatsApp live chat', link: '/whatsapp-live-chat' },
     { title: 'Chennai marketing', link: '/whatsapp-marketing-chennai' },
-    { title: 'Case studies', link: '/case-studies' }
+    { title: 'Case studies', link: '/case-studies' },
+    { title: 'Hospital WhatsApp', link: '/hospital-whatsapp' },
+    { title: 'WhatsApp for colleges', link: '/whatsapp-software-for-colleges' },
+    { title: 'Banking automation', link: '/whatsapp-banking-automation' },
   ];
 
   return (
@@ -192,11 +195,11 @@ const Home = () => {
     <Helmet>
         <title>WhatsApp Marketing Platform in Chennai | Ask Meister</title>
         <meta name="description" content="Ask Meister helps Tamil Nadu businesses use WhatsApp for bulk messaging, Business API campaigns, chatbots & automation. Chennai HQ. Contact us for a demo." />
-        <meta name="keywords" content="whatsapp marketing platform, whatsapp business api provider, bulk whatsapp messaging software, whatsapp chatbot builder, whatsapp marketing automation, whatsapp crm tool, whatsapp lead generation, whatsapp notification system, whatsapp engagement platform, whatsapp marketing software india, whatsapp sales automation, ecommerce whatsapp automation" />
-        <link rel="canonical" href="https://www.askmeister.com/" />
+        <meta name="keywords" content="whatsapp marketing platform, whatsapp business api provider, bulk whatsapp messaging software, whatsapp chatbot builder, whatsapp marketing automation, whatsapp business analytics, whatsapp crm tool, whatsapp lead generation, whatsapp notification system, whatsapp engagement platform, whatsapp marketing software india, whatsapp sales automation, ecommerce whatsapp automation, ask meister" />
+        <link rel="canonical" href="https://askmeister.com/" />
         <meta property="og:title" content="WhatsApp Marketing Platform in Chennai | Ask Meister" />
         <meta property="og:description" content="Ask Meister helps Tamil Nadu businesses use WhatsApp for bulk messaging, Business API campaigns, chatbots & automation. Demo by request." />
-        <meta property="og:url" content="https://www.askmeister.com/" />
+        <meta property="og:url" content="https://askmeister.com/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="WhatsApp Marketing Platform in Chennai | Ask Meister" />
@@ -390,7 +393,7 @@ const Home = () => {
                 </p>
                 <div className="mt-4">
                   <Link
-                    to="/features/bulk-messaging"
+                    to="/whatsapp-bulk-messaging"
                     className="text-[#25D366] hover:underline font-medium"
                   >
                     Learn more about bulk messaging features →
@@ -626,7 +629,7 @@ const Home = () => {
               WhatsApp API overview
             </Link>
             ,{' '}
-            <Link to="/features/bulk-messaging" className="text-[#25D366] hover:underline">
+            <Link to="/whatsapp-bulk-messaging" className="text-[#25D366] hover:underline">
               bulk messaging
             </Link>
             , and{' '}
@@ -651,11 +654,11 @@ const Home = () => {
             <div className="bg-white rounded-lg p-6 shadow-md">
               <h4 className="font-semibold text-[#1C1C1C] mb-3">Platform Features</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link to="/features/automation" className="text-gray-600 hover:text-[#25D366]">Marketing Automation</Link></li>
-                <li><Link to="/features/analytics" className="text-gray-600 hover:text-[#25D366]">Analytics Dashboard</Link></li>
-                <li><Link to="/features/livechat" className="text-gray-600 hover:text-[#25D366]">Live Chat Support</Link></li>
-                <li><Link to="/features/templates" className="text-gray-600 hover:text-[#25D366]">Message Templates</Link></li>
-                <li><Link to="/features/bulk-messaging" className="text-gray-600 hover:text-[#25D366]">Bulk Messaging</Link></li>
+                <li><Link to="/whatsapp-marketing-automation" className="text-gray-600 hover:text-[#25D366]">Marketing Automation</Link></li>
+                <li><Link to="/whatsapp-business-analytics" className="text-gray-600 hover:text-[#25D366]">Analytics Dashboard</Link></li>
+                <li><Link to="/whatsapp-live-chat" className="text-gray-600 hover:text-[#25D366]">Live Chat Support</Link></li>
+                <li><Link to="/whatsapp-message-templates" className="text-gray-600 hover:text-[#25D366]">Message Templates</Link></li>
+                <li><Link to="/whatsapp-bulk-messaging" className="text-gray-600 hover:text-[#25D366]">Bulk Messaging</Link></li>
               </ul>
             </div>
             
@@ -663,10 +666,10 @@ const Home = () => {
               <h4 className="font-semibold text-[#1C1C1C] mb-3">Chatbot Solutions</h4>
               <ul className="space-y-2 text-sm">
                 <li><Link to="/chatbots" className="text-gray-600 hover:text-[#25D366]">AI Chatbot Builder</Link></li>
-                <li><Link to="/solutions/education" className="text-gray-600 hover:text-[#25D366]">Education Chatbots</Link></li>
-                <li><Link to="/solutions/healthcare" className="text-gray-600 hover:text-[#25D366]">Healthcare Bots</Link></li>
-                <li><Link to="/solutions/ecommerce" className="text-gray-600 hover:text-[#25D366]">E-commerce Bots</Link></li>
-                <li><Link to="/solutions/real-estate" className="text-gray-600 hover:text-[#25D366]">Real Estate Bots</Link></li>
+                <li><Link to="/whatsapp-software-for-universities" className="text-gray-600 hover:text-[#25D366]">Education Chatbots</Link></li>
+                <li><Link to="/whatsapp-automation-for-healthcare" className="text-gray-600 hover:text-[#25D366]">Healthcare Bots</Link></li>
+                <li><Link to="/whatsapp-automation-for-ecommerce" className="text-gray-600 hover:text-[#25D366]">E-commerce Bots</Link></li>
+                <li><Link to="/whatsapp-automation-for-real-estate" className="text-gray-600 hover:text-[#25D366]">Real Estate Bots</Link></li>
               </ul>
             </div>
             

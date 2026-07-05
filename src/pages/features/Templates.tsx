@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { FileText, CheckCircle, ArrowRight, MessageCircle, Zap, Shield, Edit, Copy, Globe } from 'lucide-react';
 import template from '../../assets/templates.png'
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../../components/InternalLinksHub';
+import SeoBreadcrumbs from '../../components/SeoBreadcrumbs';
 const Templates = () => {
   const [copiedTemplate, setCopiedTemplate] = useState<string | null>(null);
 
@@ -357,12 +359,13 @@ See you there!
         <title>WhatsApp Message Templates | Pre-approved Templates & Builder | Ask Meister</title>
         <meta name="description" content="WhatsApp message templates: 500+ pre-approved templates for bulk messaging & campaigns. Template builder for business. Compliant with WhatsApp API." />
         <meta name="keywords" content="whatsapp templates, message templates, whatsapp business templates, pre-approved templates, template builder, promotional templates, notification templates" />
-        <link rel="canonical" href="https://www.askmeister.com/features/templates" />
+        <link rel="canonical" href="https://askmeister.com/whatsapp-message-templates" />
         <meta property="og:title" content="WhatsApp Message Templates | Pre-approved Templates" />
         <meta property="og:description" content="Professional WhatsApp message templates for business communication and marketing campaigns." />
-        <meta property="og:url" content="https://www.askmeister.com/features/templates" />
+        <meta property="og:url" content="https://askmeister.com/whatsapp-message-templates" />
       </Helmet>
     <div className="pt-16">
+      <SeoBreadcrumbs items={[{ name: 'WhatsApp message templates', path: '/whatsapp-message-templates' }]} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-green-50 via-white to-yellow-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -558,6 +561,8 @@ See you there!
           </div>
         </div>
       </section>
+
+      <InternalLinksHub currentPath="/whatsapp-message-templates" />
 
       {/* CTA Section */}
       <section className="py-20 bg-green-600">

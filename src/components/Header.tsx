@@ -62,24 +62,24 @@ const Header = () => {
     { name: 'Contact', href: '/contact' },
     { name: 'Blog', href: '/blog' },
     { name: 'Tools', href: '/tools' },
-    // { name: 'Templates', href: '/features/templates' },
+    // { name: 'Templates', href: '/whatsapp-message-templates' },
   ];
 
   const features = [
-    { name: 'Bulk Messaging', href: '/features/bulk-messaging', description: 'Broadcasts with approved templates', icon: '📢' },
-    { name: 'Automation', href: '/features/automation', description: 'Automate your WhatsApp workflows', icon: '🤖' },
-    { name: 'Analytics', href: '/features/analytics', description: 'Track performance and engagement', icon: '📊' },
-    { name: 'Live Chat', href: '/features/LiveChat', description: 'Collaborate with your team', icon: '💬' },
-    { name: 'Templates', href: '/features/templates', description: 'Pre-approved message templates', icon: '📝' },
+    { name: 'Bulk Messaging', href: '/whatsapp-bulk-messaging', description: 'Broadcasts with approved templates', icon: '📢' },
+    { name: 'Automation', href: '/whatsapp-marketing-automation', description: 'Automate your WhatsApp workflows', icon: '🤖' },
+    { name: 'Analytics', href: '/whatsapp-business-analytics', description: 'Track performance and engagement', icon: '📊' },
+    { name: 'Live Chat', href: '/whatsapp-live-chat', description: 'Collaborate with your team', icon: '💬' },
+    { name: 'Templates', href: '/whatsapp-message-templates', description: 'Pre-approved message templates', icon: '📝' },
   ];
 
   const industries = [
-    { name: 'Education', href: '/solutions/education', description: 'Streamline admissions and student communication', icon: '🎓' },
-    { name: 'Healthcare', href: '/solutions/healthcare', description: 'Automate appointments and patient care', icon: '🏥' },
-    { name: 'E-commerce', href: '/solutions/ecommerce', description: 'Boost sales with order updates and support', icon: '🛒' },
-    { name: 'Travel & Tourism', href: '/solutions/travel-and-tourism', description: 'Coordinate projects and safety alerts', icon: '✈️' },
-    { name: 'RealEstate', href: '/solutions/real-estate', description: 'Weather alerts and farming assistance', icon: '🏡' },
-    { name: 'Financial Services', href: '/solutions/financial', description: 'Secure banking and transaction alerts', icon: '💰' },
+    { name: 'Education', href: '/whatsapp-software-for-universities', description: 'Streamline admissions and student communication', icon: '🎓' },
+    { name: 'Healthcare', href: '/whatsapp-automation-for-healthcare', description: 'Automate appointments and patient care', icon: '🏥' },
+    { name: 'E-commerce', href: '/whatsapp-automation-for-ecommerce', description: 'Boost sales with order updates and support', icon: '🛒' },
+    { name: 'Travel & Tourism', href: '/whatsapp-automation-for-travel-and-tourism', description: 'Coordinate projects and safety alerts', icon: '✈️' },
+    { name: 'RealEstate', href: '/whatsapp-automation-for-real-estate', description: 'Weather alerts and farming assistance', icon: '🏡' },
+    { name: 'Financial Services', href: '/whatsapp-banking-automation', description: 'Secure banking and transaction alerts', icon: '💰' },
   ];
 
   const handleDropdownClick = (dropdown: string, e: React.MouseEvent) => {

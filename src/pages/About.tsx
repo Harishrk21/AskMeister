@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Users, Target, Award, Globe, MessageCircle, Zap, Heart, TrendingUp } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../components/InternalLinksHub';
+
 const About = () => {
   const stats = [
     { number: 'IN', label: 'India & Tamil Nadu focus', icon: Globe },
@@ -67,10 +69,10 @@ const About = () => {
         <title>About Ask Meister | WhatsApp Platform for Tamil Nadu | Ask Meister</title>
         <meta name="description" content="About Ask Meister: WhatsApp marketing software from Meister Solutions. Built for bulk messaging, Business API, and chatbots—Chennai HQ, customers across India." />
         <meta name="keywords" content="about Ask Meister, whatsapp marketing company, whatsapp business platform, business communication, company story, meister solutions" />
-        <link rel="canonical" href="https://www.askmeister.com/about" />
+        <link rel="canonical" href="https://askmeister.com/about" />
         <meta property="og:title" content="About Ask Meister | WhatsApp Platform for Tamil Nadu" />
         <meta property="og:description" content="How Ask Meister helps businesses use the WhatsApp Business Platform for bulk messaging, API campaigns, and chatbots." />
-        <meta property="og:url" content="https://www.askmeister.com/about" />
+        <meta property="og:url" content="https://askmeister.com/about" />
       </Helmet>
     <div className="pt-16">
       {/* Hero */}
@@ -207,6 +209,8 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <InternalLinksHub currentPath="/about" />
     </div>
     </>
   );

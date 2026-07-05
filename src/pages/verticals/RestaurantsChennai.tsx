@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import SeoBreadcrumbs from '../../components/SeoBreadcrumbs';
 
 const RestaurantsChennai = () => {
-  const canonical = 'https://www.askmeister.com/whatsapp-marketing-for-restaurants-chennai';
+  const canonical = 'https://askmeister.com/whatsapp-marketing-for-restaurants-chennai';
   const title = 'WhatsApp Marketing for Restaurants in Chennai | Ask Meister';
   const description =
     'Use WhatsApp for reservations, menu updates, and delivery alerts in Chennai—Business API, templates, and chatbots. Compliant opt-in and Meta policies apply.';

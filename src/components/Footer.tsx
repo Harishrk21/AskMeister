@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#075E54] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Company Info */}
           <div className="space-y-4 lg:col-span-1">
             <Link to="/" className="flex items-center space-x-2">
@@ -64,11 +64,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Features</h3>
             <ul className="space-y-2">
-              <li><Link to="/features/livechat" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Live Chat</Link></li>
-              <li><Link to="/features/automation" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Automation</Link></li>
-              <li><Link to="/features/analytics" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Analytics</Link></li>
-              <li><Link to="/features/templates" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Templates</Link></li>
-              <li><Link to="/features/bulk-messaging" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Bulk Messaging</Link></li>
+              <li><Link to="/whatsapp-live-chat" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">WhatsApp live chat</Link></li>
+              <li><Link to="/whatsapp-marketing-automation" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">WhatsApp marketing automation</Link></li>
+              <li><Link to="/whatsapp-business-analytics" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">WhatsApp business analytics</Link></li>
+              <li><Link to="/whatsapp-message-templates" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">WhatsApp message templates</Link></li>
+              <li><Link to="/whatsapp-bulk-messaging" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">WhatsApp bulk messaging</Link></li>
             </ul>
           </div>
 
@@ -76,12 +76,22 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Industry</h3>
             <ul className="space-y-2">
-              <li><Link to="/solutions/education" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Education</Link></li>
-              <li><Link to="/solutions/healthcare" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Healthcare</Link></li>
-              <li><Link to="/solutions/ecommerce" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">E-commerce</Link></li>
-              <li><Link to="/solutions/travel-and-tourism" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Travel & Tourism</Link></li>
-              <li><Link to="/solutions/real-estate" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Real Estate</Link></li>
-              <li><Link to="/solutions/financial" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Financial</Link></li>
+              <li><Link to="/whatsapp-software-for-universities" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Universities & colleges</Link></li>
+              <li><Link to="/whatsapp-automation-for-healthcare" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Healthcare automation</Link></li>
+              <li><Link to="/whatsapp-automation-for-ecommerce" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Ecommerce automation</Link></li>
+              <li><Link to="/whatsapp-automation-for-travel-and-tourism" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Travel & tourism</Link></li>
+              <li><Link to="/whatsapp-automation-for-real-estate" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Real estate automation</Link></li>
+              <li><Link to="/whatsapp-banking-automation" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Banking automation</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Popular searches</h3>
+            <ul className="space-y-2">
+              <li><Link to="/whatsapp-software-for-colleges" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Colleges</Link></li>
+              <li><Link to="/hospital-whatsapp" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Hospital WhatsApp</Link></li>
+              <li><Link to="/whatsapp-kyc-automation-for-banks" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Bank KYC automation</Link></li>
+              <li><Link to="/education-whatsapp-automation" className="text-gray-300 hover:text-[#25D366] transition-colors text-sm">Education automation</Link></li>
             </ul>
           </div>
 

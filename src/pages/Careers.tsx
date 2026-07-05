@@ -153,10 +153,10 @@ const Careers = () => {
         <title>Careers | Join Our Team | Ask Meister</title>
         <meta name="description" content="Join Ask Meister. We're hiring for engineering, marketing, customer success & more. Build the future of WhatsApp marketing with us." />
         <meta name="keywords" content="ask meister careers, whatsapp marketing jobs, saas jobs, remote tech jobs, customer success jobs, product marketing jobs, engineering careers, careers at ask meister" />
-        <link rel="canonical" href="https://www.askmeister.com/careers" />
+        <link rel="canonical" href="https://askmeister.com/careers" />
         <meta property="og:title" content="Careers at Ask Meister | We're Hiring" />
         <meta property="og:description" content="Join our team building the leading WhatsApp marketing platform. Open roles in engineering, product, and more." />
-        <meta property="og:url" content="https://www.askmeister.com/careers" />
+        <meta property="og:url" content="https://askmeister.com/careers" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}

@@ -35,10 +35,10 @@ const AlternativeLanding = ({
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         <meta name="keywords" content={keywords} />
-        <link rel="canonical" href={`https://www.askmeister.com/${path}`} />
+        <link rel="canonical" href={`https://askmeister.com/${path}`} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta property="og:url" content={`https://www.askmeister.com/${path}`} />
+        <meta property="og:url" content={`https://askmeister.com/${path}`} />
       </Helmet>
 
       <div className="pt-16">

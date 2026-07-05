@@ -10,8 +10,8 @@ Actionable next steps to grow visibility and leads from search. Do these in orde
 
 | Action | How |
 |--------|-----|
-| **Verify ownership** | Add property for `https://www.askmeister.com` (HTML tag or DNS). |
-| **Submit sitemap** | URL: `https://www.askmeister.com/sitemap.xml` in Sitemaps. |
+| **Verify ownership** | Add property for `https://askmeister.com` (HTML tag or DNS). |
+| **Submit sitemap** | URL: `https://askmeister.com/sitemap.xml` in Sitemaps. |
 | **Request indexing** | For homepage + key pages (Pricing, Contact, WhatsApp API). |
 | **Check Coverage** | Fix any “Excluded” or “Error” URLs. |
 | **Use Performance** | See which queries and pages get clicks; create more content around winning topics. |

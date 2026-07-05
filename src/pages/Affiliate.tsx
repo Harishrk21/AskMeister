@@ -88,10 +88,10 @@ const Affiliate = () => {
         <title>Affiliate Program | Ask Meister</title>
         <meta name="description" content="Apply to the Ask Meister affiliate program. Commission terms and materials are provided to approved partners after review." />
         <meta name="keywords" content="ask meister affiliate program, whatsapp marketing affiliate, recurring commission affiliate, saas affiliate program, referral partner program, affiliate marketing whatsapp tools" />
-        <link rel="canonical" href="https://www.askmeister.com/affiliate" />
+        <link rel="canonical" href="https://askmeister.com/affiliate" />
         <meta property="og:title" content="Affiliate Program | Earn with Ask Meister" />
         <meta property="og:description" content="Affiliate program for Ask Meister—commission details provided when you apply and qualify." />
-        <meta property="og:url" content="https://www.askmeister.com/affiliate" />
+        <meta property="og:url" content="https://askmeister.com/affiliate" />
       </Helmet>
     <div className="pt-16">
       {/* Hero Section */}

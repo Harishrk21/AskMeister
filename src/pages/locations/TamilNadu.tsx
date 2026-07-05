@@ -1,10 +1,11 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../../components/InternalLinksHub';
 
 const TamilNadu = () => {
   const { pathname } = useLocation();
   const pathOnly = pathname.replace(/\/$/, '') || '/';
-  const canonical = `https://www.askmeister.com${pathOnly}`;
+  const canonical = `https://askmeister.com${pathOnly}`;
   const title = 'WhatsApp Marketing Tamil Nadu | API, Bulk SMS Alternative & Automation | Ask Meister';
   const description =
     'Tamil Nadu businesses: WhatsApp bulk messaging, WhatsApp Business API, chatbots, and marketing automation with India-focused onboarding. தமிழ்நாடு முழுவதும் WhatsApp மார்க்கெட்டிங் & ஆட்டோமேஷன்.';
@@ -124,7 +125,7 @@ const TamilNadu = () => {
               </Link>
             </li>
             <li>
-              <Link to="/features/bulk-messaging" className="hover:underline">
+              <Link to="/whatsapp-bulk-messaging" className="hover:underline">
                 Bulk messaging
               </Link>
             </li>
@@ -135,6 +136,8 @@ const TamilNadu = () => {
             </li>
           </ul>
         </section>
+
+        <InternalLinksHub currentPath="/whatsapp-marketing-tamil-nadu" />
       </div>
     </>
   );

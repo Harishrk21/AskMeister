@@ -5,6 +5,8 @@ import atoz from '../../assets/atoz.png';
 import cartabandoned from '../../assets/cartabandoned.webp';
 import crprogram from '../../assets/crprogram.webp';
 import { Helmet } from 'react-helmet-async';
+import InternalLinksHub from '../../components/InternalLinksHub';
+import SeoBreadcrumbs from '../../components/SeoBreadcrumbs';
 const EcommerceTemplate = () => {
   const features = [
     {
@@ -122,12 +124,13 @@ const EcommerceTemplate = () => {
         <title>WhatsApp for E-commerce | Boost Online Sales & Customer Support | Ask Meister</title>
         <meta name="description" content="WhatsApp for e-commerce: order updates, cart reminders for opted-in shoppers, and support chat—integrations depend on your stack; contact us to confirm." />
         <meta name="keywords" content="whatsapp shopify integration, abandoned cart whatsapp, ecommerce whatsapp automation, whatsapp ecommerce marketing" />
-        <link rel="canonical" href="https://www.askmeister.com/solutions/ecommerce" />
+        <link rel="canonical" href="https://askmeister.com/whatsapp-automation-for-ecommerce" />
         <meta property="og:title" content="WhatsApp for E-commerce | Boost Online Sales" />
         <meta property="og:description" content="Transform your online store with WhatsApp automation for sales, support, and customer engagement." />
-        <meta property="og:url" content="https://www.askmeister.com/solutions/ecommerce" />
+        <meta property="og:url" content="https://askmeister.com/whatsapp-automation-for-ecommerce" />
       </Helmet>
     <div className="pt-16">
+      <SeoBreadcrumbs items={[{ name: 'WhatsApp automation for ecommerce', path: '/whatsapp-automation-for-ecommerce' }]} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-green-50 via-white to-pink-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -306,6 +309,8 @@ const EcommerceTemplate = () => {
           </p>
         </div>
       </section>
+
+      <InternalLinksHub currentPath="/whatsapp-automation-for-ecommerce" />
 
       {/* CTA Section */}
       <section className="py-20 bg-green-600">

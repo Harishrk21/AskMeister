@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import SeoBreadcrumbs from '../components/SeoBreadcrumbs';
+import InternalLinksHub from '../components/InternalLinksHub';
 
 const FreeTrial = () => {
   const title = 'Get Started with Ask Meister | Demo & Onboarding';
   const description =
     'Start a conversation with Ask Meister: WhatsApp Business API, bulk messaging, and chatbots. We’ll explain setup and templates for your use case—Chennai & Tamil Nadu.';
-  const canonical = 'https://www.askmeister.com/free-trial';
+  const canonical = 'https://askmeister.com/free-trial';
 
   return (
     <>
@@ -39,6 +40,8 @@ const FreeTrial = () => {
             </Link>
           </div>
         </section>
+
+        <InternalLinksHub currentPath="/free-trial" />
       </div>
     </>
   );

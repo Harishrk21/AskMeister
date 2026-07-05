@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import SeoBreadcrumbs from '../../components/SeoBreadcrumbs';
 
 const RealEstateChennai = () => {
-  const canonical = 'https://www.askmeister.com/whatsapp-marketing-for-real-estate-chennai';
+  const canonical = 'https://askmeister.com/whatsapp-marketing-for-real-estate-chennai';
   const title = 'WhatsApp Marketing for Real Estate in Chennai | Ask Meister';
   const description =
     'Lead follow-up, site visit reminders, and brochure sharing for Chennai real estate—WhatsApp Business API and chatbots. No guaranteed leads; compliance and opt-in required.';
@@ -35,7 +35,7 @@ const RealEstateChennai = () => {
           </p>
           <p className="text-gray-700 mb-6">
             For a broader industry overview, see our{' '}
-            <Link to="/solutions/real-estate" className="text-[#25D366] hover:underline">
+            <Link to="/whatsapp-automation-for-real-estate" className="text-[#25D366] hover:underline">
               real estate solutions
             </Link>{' '}
             page.
