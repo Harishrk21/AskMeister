@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { Mail, Phone, MapPin, Clock, MessageCircle, Send, CheckCircle } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import InternalLinksHub from '../components/InternalLinksHub';
@@ -53,8 +53,8 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: '4,3A, Asvini Amarisa ,Ramapuram,Chennai-600089',
-      description: 'Schedule an appointment'
+      details: '4, 3A, Asvini Amarisa, Ramapuram, Chennai 600089, Tamil Nadu, India',
+      description: 'Schedule an appointment at our Chennai office'
     },
     {
       icon: Clock,
@@ -79,17 +79,30 @@ const Contact = () => {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Ask Meister',
-    description: 'WhatsApp marketing platform: bulk messaging, WhatsApp Business API & AI chatbot. Free demo and support.',
-    url: 'https://askmeister.com',
+    description:
+      'WhatsApp marketing company in Chennai, Tamil Nadu, India: bulk messaging, WhatsApp Business API & AI chatbot. Serving businesses across India and worldwide.',
+    url: 'https://askmeister.com/contact',
     telephone: '+917299817996',
     email: CONTACT_EMAIL,
     address: {
       '@type': 'PostalAddress',
       streetAddress: '4, 3A, Asvini Amarisa, Ramapuram',
       addressLocality: 'Chennai',
+      addressRegion: 'Tamil Nadu',
       postalCode: '600089',
       addressCountry: 'IN'
     },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 13.0339,
+      longitude: 80.1819
+    },
+    areaServed: [
+      { '@type': 'City', name: 'Chennai' },
+      { '@type': 'State', name: 'Tamil Nadu' },
+      { '@type': 'Country', name: 'India' },
+      'Worldwide'
+    ],
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
@@ -107,20 +120,21 @@ const Contact = () => {
   return (
      <>
       <Helmet>
-        <title>Contact Ask Meister | WhatsApp Marketing Chennai &amp; Tamil Nadu</title>
-        <meta name="description" content="Contact Ask Meister in Chennai: WhatsApp Business API, bulk messaging, and chatbot support. We reply to business inquiries as soon as we can during working hours." />
-        <meta name="keywords" content="whatsapp marketing contact, chatbot support, whatsapp api help, business consultation, marketing experts, customer support, free demo, whatsapp automation help" />
+        <title>Contact Ask Meister | WhatsApp Marketing Chennai, Tamil Nadu &amp; India</title>
+        <meta name="description" content="Contact Ask Meister in Ramapuram, Chennai, Tamil Nadu, India for WhatsApp Business API, bulk messaging, and chatbot support. Serving India and worldwide. Mon–Fri 9am–6pm IST." />
+        <meta name="keywords" content="ask meister contact chennai, whatsapp marketing chennai, whatsapp marketing tamil nadu, whatsapp business api india, whatsapp marketing company chennai, chatbot support chennai, free demo chennai, whatsapp automation india, ramapuram chennai office" />
         <link rel="canonical" href="https://askmeister.com/contact" />
-        <meta property="og:title" content="Contact WhatsApp Marketing Experts | Ask Meister" />
-        <meta property="og:description" content="Get expert help with WhatsApp marketing, chatbots, and business automation. Free consultation available." />
+        <meta property="og:title" content="Contact Ask Meister | Chennai, Tamil Nadu &amp; India" />
+        <meta property="og:description" content="Reach our Chennai, Tamil Nadu office for WhatsApp marketing, Business API, and chatbot help. Serving India and worldwide." />
         <meta property="og:url" content="https://askmeister.com/contact" />
+        <meta property="og:locale" content="en_IN" />
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
       </Helmet>
     <div className="page-wrap">
       <PageHero
-        eyebrow="Contact"
+        eyebrow="Contact · Chennai, Tamil Nadu, India"
         title="Get in Touch with Ask Meister"
-        description="Ready to transform your business communication with WhatsApp marketing? Let's discuss how we can help you grow your business."
+        description="Registered office in Ramapuram, Chennai. We help businesses across Tamil Nadu, India, and worldwide with WhatsApp marketing, Business API, and chatbots."
         compact
       />
 
@@ -306,6 +320,30 @@ const Contact = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Local SEO: Chennai / Tamil Nadu / India */}
+      <section className="py-16 bg-surface border-y border-brand/10">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-ink-muted space-y-4 leading-relaxed">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            Ask Meister office in Chennai, Tamil Nadu, India
+          </h2>
+          <p>
+            Our registered office is at 4, 3A, Asvini Amarisa, Ramapuram, Chennai 600089, Tamil Nadu, India.
+            Teams across Chennai, Coimbatore, Madurai, and the rest of Tamil Nadu—and businesses elsewhere in India and abroad—can book a demo, ask about WhatsApp Business API onboarding, or get help with bulk messaging and chatbots.
+          </p>
+          <p>
+            Prefer a city-focused page? Visit{' '}
+            <Link to="/whatsapp-marketing-chennai" className="text-brand hover:text-brand-dark font-medium transition-colors">
+              WhatsApp marketing in Chennai
+            </Link>
+            {' '}or{' '}
+            <Link to="/whatsapp-marketing-tamil-nadu" className="text-brand hover:text-brand-dark font-medium transition-colors">
+              WhatsApp marketing in Tamil Nadu
+            </Link>
+            . Business hours: Monday–Friday, 9am–6pm IST. Call +91 7299817996 or use the form above.
+          </p>
         </div>
       </section>
 

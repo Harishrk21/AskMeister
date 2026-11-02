@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet-async';
 import { MessageCircle, Users, Zap, BarChart3, CheckCircle, ArrowRight, Play, Shield, Clock, Bot, Globe, Award, Megaphone, Calendar, ShoppingBag, GraduationCap, Stethoscope, ShoppingCart, Home as HomeIcon, Plane, Landmark } from 'lucide-react';
 import Button from '../components/ui/Button';
 import SectionHeader from '../components/ui/SectionHeader';
+import ClientsMarquee from '../components/ClientsMarquee';
 import EDU1 from '../assets/EDU1.jpg';
 import auto from '../assets/auto.png';
 import chatbot from '../assets/chatbot.png';
@@ -185,7 +186,7 @@ const Home = () => {
     { title: 'WhatsApp bulk messaging', link: '/whatsapp-bulk-messaging' },
     { title: 'WhatsApp message templates', link: '/whatsapp-message-templates' },
     { title: 'WhatsApp live chat', link: '/whatsapp-live-chat' },
-    { title: 'Chennai marketing', link: '/whatsapp-marketing-chennai' },
+    { title: 'Contact & locations', link: '/contact' },
     { title: 'Case studies', link: '/case-studies' },
     { title: 'Hospital WhatsApp', link: '/hospital-whatsapp' },
     { title: 'WhatsApp for colleges', link: '/whatsapp-software-for-colleges' },
@@ -195,17 +196,17 @@ const Home = () => {
   return (
     <>
     <Helmet>
-        <title>WhatsApp Marketing Platform in Chennai | Ask Meister</title>
-        <meta name="description" content="Ask Meister helps Tamil Nadu businesses use WhatsApp for bulk messaging, Business API campaigns, chatbots & automation. Chennai HQ. Contact us for a demo." />
-        <meta name="keywords" content="whatsapp marketing platform, whatsapp business api provider, bulk whatsapp messaging software, whatsapp chatbot builder, whatsapp marketing automation, whatsapp business analytics, whatsapp crm tool, whatsapp lead generation, whatsapp notification system, whatsapp engagement platform, whatsapp marketing software india, whatsapp sales automation, ecommerce whatsapp automation, ask meister" />
+        <title>WhatsApp Marketing Platform | Bulk Messaging, API & Chatbots | Ask Meister</title>
+        <meta name="description" content="Ask Meister is a WhatsApp marketing platform for businesses worldwide: bulk messaging, Business API campaigns, chatbots & automation. Request a demo." />
+        <meta name="keywords" content="whatsapp marketing platform, whatsapp business api provider, bulk whatsapp messaging software, whatsapp chatbot builder, whatsapp marketing automation, whatsapp business analytics, whatsapp crm tool, whatsapp lead generation, whatsapp notification system, whatsapp engagement platform, whatsapp sales automation, ecommerce whatsapp automation, ask meister" />
         <link rel="canonical" href="https://askmeister.com/" />
-        <meta property="og:title" content="WhatsApp Marketing Platform in Chennai | Ask Meister" />
-        <meta property="og:description" content="Ask Meister helps Tamil Nadu businesses use WhatsApp for bulk messaging, Business API campaigns, chatbots & automation. Demo by request." />
+        <meta property="og:title" content="WhatsApp Marketing Platform | Ask Meister" />
+        <meta property="og:description" content="Run compliant WhatsApp campaigns worldwide: bulk messaging, Business API, chatbots & automation. Demo by request." />
         <meta property="og:url" content="https://askmeister.com/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="WhatsApp Marketing Platform in Chennai | Ask Meister" />
-        <meta name="twitter:description" content="WhatsApp Business Platform support for Tamil Nadu: bulk messaging, API onboarding, chatbots & automation." />
+        <meta name="twitter:title" content="WhatsApp Marketing Platform | Ask Meister" />
+        <meta name="twitter:description" content="WhatsApp Business Platform: bulk messaging, API onboarding, chatbots & automation for businesses worldwide." />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
@@ -220,10 +221,10 @@ const Home = () => {
             },
             {
               '@type': 'Question',
-              name: 'Does Ask Meister serve Tamil Nadu and Chennai?',
+              name: 'Who can use Ask Meister?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes. Ask Meister supports businesses across Tamil Nadu, with operations anchored in Chennai.'
+                text: 'Ask Meister supports businesses of all sizes that want compliant WhatsApp broadcasts, chatbots, and automation. Office and regional details are on our Contact page.'
               }
             },
             {
@@ -251,14 +252,14 @@ const Home = () => {
             <div className="space-y-8 opacity-0 animate-fade-up">
               <span className="section-eyebrow">
                 <Award className="w-4 h-4" />
-                WhatsApp Business Platform · Tamil Nadu
+                WhatsApp Business Platform · Worldwide
               </span>
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight">
                 WhatsApp marketing platform for{' '}
-                <span className="gradient-text">Tamil Nadu businesses</span>
+                <span className="gradient-text">modern businesses</span>
               </h1>
               <p className="text-lg md:text-xl text-ink-muted leading-relaxed max-w-xl">
-                Ask Meister helps you run compliant WhatsApp campaigns: broadcasts with approved templates, chatbots and automation, and analytics—without shortcuts that risk account quality.
+                Ask Meister helps teams worldwide run compliant WhatsApp campaigns: broadcasts with approved templates, chatbots and automation, and analytics—without shortcuts that risk account quality.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -312,21 +313,20 @@ const Home = () => {
       <section className="relative py-5 glass border-y border-brand/10">
         <div className="container-wide flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <p className="text-ink-muted text-sm md:text-base">
-            Based in Chennai — WhatsApp marketing for Tamil Nadu:{' '}
-            <span className="text-brand-dark font-semibold">Chennai</span>,{' '}
-            <span className="text-brand-dark font-semibold">Coimbatore</span>,{' '}
-            <span className="text-brand-dark font-semibold">Madurai</span>, and statewide.
+            Built for teams everywhere — retail, education, healthcare, real estate, travel, and more.
           </p>
           <div className="flex flex-wrap gap-3 shrink-0">
-            <Link to="/whatsapp-marketing-chennai" className="text-sm font-semibold text-brand hover:text-brand-dark transition-colors inline-flex items-center gap-1">
-              Chennai page <ArrowRight className="w-4 h-4" />
+            <Link to="/contact" className="text-sm font-semibold text-brand hover:text-brand-dark transition-colors inline-flex items-center gap-1">
+              Contact &amp; office <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link to="/whatsapp-marketing-tamil-nadu" className="text-sm font-semibold text-brand hover:text-brand-dark transition-colors inline-flex items-center gap-1">
-              Tamil Nadu page <ArrowRight className="w-4 h-4" />
+            <Link to="/tools" className="text-sm font-semibold text-brand hover:text-brand-dark transition-colors inline-flex items-center gap-1">
+              Explore tools <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
       </section>
+
+      <ClientsMarquee />
 
       {/* Quick Navigation Links for SEO */}
       <section className="section-padding bg-surface">
@@ -566,9 +566,9 @@ const Home = () => {
 
       <section className="py-16 bg-surface border-y border-brand/10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-ink-muted space-y-4 leading-relaxed">
-          <h2 className="text-2xl font-bold text-white mb-4">WhatsApp marketing in Tamil Nadu &amp; Chennai</h2>
+          <h2 className="text-2xl font-bold text-white mb-4">WhatsApp marketing that respects your customers</h2>
           <p>
-            Customers in Chennai, Coimbatore, Madurai, and smaller towns already rely on WhatsApp for daily communication. For businesses, that means support, reminders, and marketing must respect user
+            People worldwide already rely on WhatsApp for daily communication. For businesses, that means support, reminders, and marketing must respect user
             expectations: clear opt-in, transparent frequency, and messages that match approved WhatsApp categories (utility, authentication, marketing where allowed).
           </p>
           <p>
@@ -618,8 +618,7 @@ const Home = () => {
               { title: 'Business Resources', links: [
                 { label: 'Contact Sales', to: '/contact' },
                 { label: 'WhatsApp API', to: '/whatsapp-api' },
-                { label: 'Chennai marketing', to: '/whatsapp-marketing-chennai' },
-                { label: 'Tamil Nadu marketing', to: '/whatsapp-marketing-tamil-nadu' },
+                { label: 'Case studies', to: '/case-studies' },
                 { label: 'Marketing Tools', to: '/tools' },
                 { label: 'Marketing Blog', to: '/blog' },
                 { label: 'Help Center', to: '/help' },
@@ -663,7 +662,7 @@ const Home = () => {
             Ready to Transform Your Business with WhatsApp Marketing?
           </h3>
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Talk to us about WhatsApp broadcasts, chatbots, and analytics for your team—anchored in Chennai, serving businesses across Tamil Nadu and India.
+            Talk to us about WhatsApp broadcasts, chatbots, and analytics for your team—wherever you operate.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="bg-white text-brand-dark px-8 py-4 rounded-xl text-lg font-semibold hover:bg-brand-muted hover:-translate-y-0.5 transition-all duration-300 inline-flex items-center justify-center shadow-card">

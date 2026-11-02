@@ -41,6 +41,7 @@ export default {
         'float-delay': 'float 6s ease-in-out 2s infinite',
         shimmer: 'shimmer 2.5s linear infinite',
         'pulse-soft': 'pulseSoft 3s ease-in-out infinite',
+        marquee: 'marquee 40s linear infinite',
       },
       keyframes: {
         fadeUp: {
@@ -58,6 +59,10 @@ export default {
         pulseSoft: {
           '0%, 100%': { opacity: '0.6', transform: 'scale(1)' },
           '50%': { opacity: '1', transform: 'scale(1.05)' },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
       },
       backgroundImage: {

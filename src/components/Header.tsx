@@ -122,21 +122,23 @@ const Header = () => {
         <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === id ? 'rotate-180' : ''}`} />
       </button>
       <div className={`mega-menu ${activeDropdown === id ? 'mega-menu-open' : ''}`}>
-        <div className="px-4 py-3 border-b border-brand/10 mb-1">
-          <p className="text-xs font-semibold uppercase tracking-wider text-brand-dark">{label}</p>
-        </div>
-        <div className="grid grid-cols-1 gap-0.5 px-1 pb-1">
-          {items.map((item) => (
-            <Link key={item.name} to={item.href} onClick={handleDropdownItemClick} className="mega-item group">
-              <div className="mega-icon">
-                <item.icon className="w-5 h-5" />
-              </div>
-              <div>
-                <div className="font-semibold text-white text-sm group-hover:text-brand-light transition-colors">{item.name}</div>
-                <div className="text-xs text-ink-muted mt-0.5">{item.description}</div>
-              </div>
-            </Link>
-          ))}
+        <div className="mega-menu-panel">
+          <div className="px-4 py-3 border-b border-brand/10 mb-1">
+            <p className="text-xs font-semibold uppercase tracking-wider text-brand-dark">{label}</p>
+          </div>
+          <div className="grid grid-cols-1 gap-0.5 px-1 pb-1">
+            {items.map((item) => (
+              <Link key={item.name} to={item.href} onClick={handleDropdownItemClick} className="mega-item group">
+                <div className="mega-icon">
+                  <item.icon className="w-5 h-5" />
+                </div>
+                <div>
+                  <div className="font-semibold text-white text-sm group-hover:text-brand-light transition-colors">{item.name}</div>
+                  <div className="text-xs text-ink-muted mt-0.5">{item.description}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </div>
