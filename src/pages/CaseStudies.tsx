@@ -9,14 +9,14 @@ const studies = [
     title: 'E-commerce order updates (workflow pattern)',
     industry: 'Retail / Shopify',
     summary:
-      'A Chennai online retailer connected order events to WhatsApp utility templates: payment received, packed, shipped, and delivered. Support tickets about “where is my order?” dropped because status moved to a channel customers already check.',
+      'An online retailer connected order events to WhatsApp utility templates: payment received, packed, shipped, and delivered. Support tickets about “where is my order?” dropped because status moved to a channel customers already check.',
     bullets: [
       'Triggers: Shopify order webhooks → Zapier → WhatsApp template send',
       'Templates: utility category for transactional updates',
       'Hand-off: “Talk to agent” button on delivery exceptions',
     ],
     link: '/whatsapp-shopify-integration-chennai',
-    linkLabel: 'Shopify integration in Chennai',
+    linkLabel: 'Shopify WhatsApp integration',
   },
   {
     title: 'Clinic appointment reminders (workflow pattern)',
@@ -25,7 +25,7 @@ const studies = [
       'A multi-specialty clinic replaced manual reminder calls with WhatsApp utility reminders 24 hours and 2 hours before appointments. No-shows improved when patients could confirm or reschedule in-thread—results vary by specialty and patient demographics.',
     bullets: [
       'Opt-in collected at front desk and online booking',
-      'Tamil and English template variants',
+      'Multi-language template variants',
       'Staff inbox for reschedule requests',
     ],
     link: '/hospital-whatsapp',
@@ -42,7 +42,7 @@ const studies = [
       'Compliance: retailers opted in during onboarding',
     ],
     link: '/whatsapp-tally-integration-chennai',
-    linkLabel: 'Tally integration Chennai',
+    linkLabel: 'Tally WhatsApp integration',
   },
 ];
 

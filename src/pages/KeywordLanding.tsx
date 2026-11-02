@@ -21,7 +21,7 @@ const KeywordLanding = () => {
     name: page.h1,
     description: page.description,
     url: canonical,
-    areaServed: page.areaServed ?? 'India',
+    areaServed: page.areaServed ?? 'Worldwide',
   });
 
   return (

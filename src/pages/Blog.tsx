@@ -131,7 +131,7 @@ const Blog = () => {
      <>
       <Helmet>
         <title>WhatsApp Marketing Tips & Guides | Ask Meister Blog</title>
-        <meta name="description" content="WhatsApp marketing blog: bulk messaging, WhatsApp Business API, chatbot and automation guidance for teams in India and Tamil Nadu." />
+        <meta name="description" content="WhatsApp marketing blog: bulk messaging, WhatsApp Business API, chatbot and automation guidance for teams worldwide." />
         <meta name="keywords" content="whatsapp marketing blog, business insights, marketing tips, automation strategies, whatsapp trends, marketing guides, business growth, customer engagement tips" />
         <link rel="canonical" href="https://askmeister.com/blog" />
         <meta property="og:title" content="WhatsApp Marketing Blog | Business Insights & Tips" />

@@ -227,8 +227,8 @@ const Chatbots = () => {
      <>
       <Helmet>
         <title>WhatsApp Chatbot Builder &amp; Automation | Ask Meister</title>
-        <meta name="description" content="WhatsApp chatbot builder for businesses in India: flows, automation, and handoff to humans. No fabricated rankings—see if Ask Meister fits your use case." />
-        <meta name="keywords" content="whatsapp chatbot software, ai whatsapp chatbot, automated whatsapp chatbot, best whatsapp chatbot builder, chatbot for whatsapp business, create whatsapp chatbot, chatbot automation whatsapp, no code whatsapp chatbot, whatsapp ai automation, whatsapp chatbot for sales, whatsapp chatbot integration, whatsapp chatbot marketing, whatsapp chatbot platform, whatsapp chatbot service, whatsapp chatbot software india" />
+        <meta name="description" content="WhatsApp chatbot builder for businesses worldwide: flows, automation, and handoff to humans. No fabricated rankings—see if Ask Meister fits your use case." />
+        <meta name="keywords" content="whatsapp chatbot software, ai whatsapp chatbot, automated whatsapp chatbot, best whatsapp chatbot builder, chatbot for whatsapp business, create whatsapp chatbot, chatbot automation whatsapp, no code whatsapp chatbot, whatsapp ai automation, whatsapp chatbot for sales, whatsapp chatbot integration, whatsapp chatbot marketing, whatsapp chatbot platform, whatsapp chatbot service" />
         <link rel="canonical" href="https://askmeister.com/chatbots" />
         <meta property="og:title" content="WhatsApp Chatbot Builder &amp; Automation | Ask Meister" />
         <meta property="og:description" content="Build WhatsApp chatbots and automation with Ask Meister. Results depend on your flows and compliance." />
@@ -581,8 +581,8 @@ const Chatbots = () => {
           <div className="text-sm text-ink-muted">Collaborate on chats</div>
         </div>
         <div className="glass-card p-6">
-          <div className="text-xl font-bold text-brand mb-2">India focus</div>
-          <div className="text-sm text-ink-muted">Tamil Nadu &amp; nationwide</div>
+          <div className="text-xl font-bold text-brand mb-2">Global teams</div>
+          <div className="text-sm text-ink-muted">Built for businesses worldwide</div>
         </div>
       </div>
     </div>

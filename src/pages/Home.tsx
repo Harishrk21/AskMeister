@@ -196,21 +196,30 @@ const Home = () => {
   return (
     <>
     <Helmet>
-        <title>WhatsApp Marketing Platform | Bulk Messaging, API & Chatbots | Ask Meister</title>
-        <meta name="description" content="Ask Meister is a WhatsApp marketing platform for businesses worldwide: bulk messaging, Business API campaigns, chatbots & automation. Request a demo." />
-        <meta name="keywords" content="whatsapp marketing platform, whatsapp business api provider, bulk whatsapp messaging software, whatsapp chatbot builder, whatsapp marketing automation, whatsapp business analytics, whatsapp crm tool, whatsapp lead generation, whatsapp notification system, whatsapp engagement platform, whatsapp sales automation, ecommerce whatsapp automation, ask meister" />
+        <title>Ask Meister | WhatsApp Marketing Platform — Bulk Messaging, API &amp; Chatbots</title>
+        <meta name="description" content="Ask Meister is a WhatsApp marketing platform for businesses worldwide: bulk messaging, Business API campaigns, chatbots &amp; automation. Request a demo at askmeister.com." />
+        <meta name="keywords" content="ask meister, askmeister, whatsapp marketing platform, whatsapp business api provider, bulk whatsapp messaging software, whatsapp chatbot builder, whatsapp marketing automation, whatsapp business analytics, whatsapp crm tool, whatsapp lead generation, whatsapp sales automation, ecommerce whatsapp automation" />
         <link rel="canonical" href="https://askmeister.com/" />
-        <meta property="og:title" content="WhatsApp Marketing Platform | Ask Meister" />
-        <meta property="og:description" content="Run compliant WhatsApp campaigns worldwide: bulk messaging, Business API, chatbots & automation. Demo by request." />
+        <meta property="og:title" content="Ask Meister | WhatsApp Marketing Platform" />
+        <meta property="og:description" content="Run compliant WhatsApp campaigns worldwide: bulk messaging, Business API, chatbots &amp; automation. Demo by request." />
         <meta property="og:url" content="https://askmeister.com/" />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Ask Meister" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="WhatsApp Marketing Platform | Ask Meister" />
-        <meta name="twitter:description" content="WhatsApp Business Platform: bulk messaging, API onboarding, chatbots & automation for businesses worldwide." />
+        <meta name="twitter:title" content="Ask Meister | WhatsApp Marketing Platform" />
+        <meta name="twitter:description" content="WhatsApp Business Platform: bulk messaging, API onboarding, chatbots &amp; automation for businesses worldwide." />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
           mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'What is Ask Meister?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Ask Meister (askmeister.com) is a WhatsApp marketing platform for bulk messaging, WhatsApp Business API campaigns, chatbots, and automation.'
+              }
+            },
             {
               '@type': 'Question',
               name: 'What is WhatsApp marketing?',

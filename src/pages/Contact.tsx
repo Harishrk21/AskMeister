@@ -135,7 +135,7 @@ const Contact = () => {
     sameAs: [
       'https://www.facebook.com/profile.php?id=61578309674729',
       'https://x.com/AskMeister',
-      'https://www.linkedin.com/in/ask-meister-42a0a4377/',
+      'https://www.linkedin.com/company/ask-meister',
       'https://www.instagram.com/ask_meister'
     ]
   };

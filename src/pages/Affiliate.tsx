@@ -18,7 +18,7 @@ const Affiliate = () => {
     {
       icon: TrendingUp,
       title: 'Growing channel',
-      description: 'WhatsApp is widely used for business messaging in India—help teams adopt it responsibly.'
+      description: 'WhatsApp is widely used for business messaging worldwide—help teams adopt it responsibly.'
     },
     {
       icon: Gift,

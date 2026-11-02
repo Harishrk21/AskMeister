@@ -4,7 +4,7 @@ import SeoBreadcrumbs from '../components/SeoBreadcrumbs';
 
 const WhatsAppMarketingForEcommerce = () => {
   const canonical = 'https://askmeister.com/whatsapp-marketing-for-ecommerce';
-  const title = 'WhatsApp Marketing for E-commerce | Tamil Nadu | Ask Meister';
+  const title = 'WhatsApp Marketing for E-commerce | Ask Meister';
   const description =
     'Order updates, cart recovery flows, and support on WhatsApp for online stores—via Business API, templates, and chatbots. See our e-commerce solution hub for details.';
 

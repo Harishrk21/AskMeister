@@ -160,8 +160,8 @@ const Integrations = () => {
     <>
       <Helmet>
         <title>WhatsApp Integrations | Shopify, WooCommerce, Zoho, Tally, HRMS & ERP | Ask Meister</title>
-        <meta name="description" content="WhatsApp integrations for Shopify, WooCommerce, Zoho, Tally, HRMS, ERP, Zapier, and HubSpot. Connect bulk messaging and chatbots to your store, CRM, and finance stack. Chennai support." />
-        <meta name="keywords" content="whatsapp integrations, shopify whatsapp integration, woocommerce whatsapp, zoho whatsapp integration, tally whatsapp integration, hrms whatsapp, erp whatsapp integration, zapier whatsapp, hubspot whatsapp, chennai whatsapp integration" />
+        <meta name="description" content="WhatsApp integrations for Shopify, WooCommerce, Zoho, Tally, HRMS, ERP, Zapier, and HubSpot. Connect bulk messaging and chatbots to your store, CRM, and finance stack." />
+        <meta name="keywords" content="whatsapp integrations, shopify whatsapp integration, woocommerce whatsapp, zoho whatsapp integration, tally whatsapp integration, hrms whatsapp, erp whatsapp integration, zapier whatsapp, hubspot whatsapp" />
         <link rel="canonical" href="https://askmeister.com/integrations" />
         <meta property="og:title" content="WhatsApp Integrations | E-commerce, CRM & Automation | Ask Meister" />
         <meta property="og:description" content="Integrate WhatsApp with your e-commerce, CRM, and automation tools. One-click connections." />

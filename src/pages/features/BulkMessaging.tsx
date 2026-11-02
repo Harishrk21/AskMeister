@@ -283,7 +283,7 @@ const BulkMessaging = () => {
             Ready to Start Bulk Messaging?
           </h2>
           <p className="text-lg text-green-100 mb-8">
-            Ask Meister helps teams in Tamil Nadu and India run compliant bulk messaging flows—scope fit on a call.
+            Ask Meister helps teams worldwide run compliant bulk messaging flows—scope fit on a call.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

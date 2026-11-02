@@ -6,7 +6,7 @@ import InternalLinksHub from '../components/InternalLinksHub';
 const FreeTrial = () => {
   const title = 'Get Started with Ask Meister | Demo & Onboarding';
   const description =
-    'Start a conversation with Ask Meister: WhatsApp Business API, bulk messaging, and chatbots. We’ll explain setup and templates for your use case—Chennai & Tamil Nadu.';
+    'Start a conversation with Ask Meister: WhatsApp Business API, bulk messaging, and chatbots. We’ll explain setup and templates for your use case—wherever you operate.';
   const canonical = 'https://askmeister.com/free-trial';
 
   return (

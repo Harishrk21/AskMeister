@@ -5,9 +5,9 @@ const Pricing = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Ask Meister | Chennai & Tamil Nadu</title>
-        <meta name="description" content="Connect with Ask Meister for WhatsApp API onboarding, automation setup, and campaign guidance for Chennai and Tamil Nadu teams." />
-        <meta name="keywords" content="whatsapp business api onboarding, whatsapp automation setup, chatbot implementation support, whatsapp campaign guidance india" />
+        <title>Contact Ask Meister | WhatsApp Business Support</title>
+        <meta name="description" content="Connect with Ask Meister for WhatsApp API onboarding, automation setup, and campaign guidance for teams worldwide." />
+        <meta name="keywords" content="whatsapp business api onboarding, whatsapp automation setup, chatbot implementation support, whatsapp campaign guidance" />
         <meta name="robots" content="noindex,follow" />
         <link rel="canonical" href="https://askmeister.com/contact" />
         <meta property="og:title" content="Contact Ask Meister | WhatsApp Business Support" />

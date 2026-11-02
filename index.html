@@ -18,20 +18,21 @@
     <meta name="robots" content="index,follow,max-image-preview:large">
     
     
-    <!-- SEO Meta Tags (global homepage; local geo signals live on /contact and location pages) -->
-    <title>WhatsApp Marketing Platform | Bulk Messaging, API & Chatbots | Ask Meister</title>
-    <meta name="description" content="Ask Meister is a WhatsApp marketing platform for businesses worldwide: bulk messaging, Business API campaigns, chatbots & automation. Contact us for a demo." />
+    <!-- SEO Meta Tags (brand-first for “askmeister” queries; local geo on /contact + locations) -->
+    <title>Ask Meister | WhatsApp Marketing Platform — Bulk Messaging, API &amp; Chatbots</title>
+    <meta name="description" content="Ask Meister is a WhatsApp marketing platform for businesses worldwide: bulk messaging, Business API campaigns, chatbots &amp; automation. Request a demo at askmeister.com." />
     
-    <meta name="keywords" content="whatsapp marketing platform, whatsapp business api provider, bulk whatsapp messaging software, whatsapp chatbot builder, whatsapp marketing automation, whatsapp crm tool, whatsapp lead generation, whatsapp notification system, whatsapp engagement platform, whatsapp sales automation, ecommerce whatsapp automation" />
+    <meta name="keywords" content="ask meister, askmeister, whatsapp marketing platform, whatsapp business api provider, bulk whatsapp messaging software, whatsapp chatbot builder, whatsapp marketing automation, whatsapp crm tool, whatsapp lead generation, whatsapp sales automation" />
     
     <meta name="author" content="Ask Meister" />
+    <meta name="application-name" content="Ask Meister" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="WhatsApp Marketing Platform | Ask Meister" />
-    <meta property="og:description" content="Run compliant WhatsApp campaigns worldwide: bulk messaging, Business API, chatbots & automation. Demo by request." />
+    <meta property="og:title" content="Ask Meister | WhatsApp Marketing Platform" />
+    <meta property="og:description" content="Run compliant WhatsApp campaigns worldwide: bulk messaging, Business API, chatbots &amp; automation. Demo by request." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://askmeister.com" />
+    <meta property="og:url" content="https://askmeister.com/" />
     <meta property="og:image" content="https://askmeister.com/og-image.png" />
     <meta property="og:site_name" content="Ask Meister" />
     <meta property="og:locale" content="en_US" />
@@ -39,10 +40,11 @@
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="WhatsApp Marketing Platform | Ask Meister" />
-    <meta name="twitter:description" content="WhatsApp Business Platform: bulk messaging, API onboarding, chatbots & automation for businesses worldwide." />
+    <meta name="twitter:title" content="Ask Meister | WhatsApp Marketing Platform" />
+    <meta name="twitter:description" content="WhatsApp Business Platform: bulk messaging, API onboarding, chatbots &amp; automation for businesses worldwide." />
     <meta name="twitter:image" content="https://askmeister.com/og-image.png" />
     <meta name="twitter:creator" content="@AskMeister" />
+    <meta name="twitter:site" content="@AskMeister" />
     
     <!-- Additional SEO Tags -->
     <meta name="theme-color" content="#25D366" />
@@ -62,7 +64,7 @@
     <!-- Preload Main Banner Image -->
     <link rel="preload" as="image" href="/og-banner.webp" />
 
-    <!-- Structured Data (JSON-LD) for rich results -->
+    <!-- Structured Data (JSON-LD): brand entity + main nav for sitelinks discovery -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -70,23 +72,27 @@
         {
           "@type": "WebSite",
           "@id": "https://askmeister.com/#website",
-          "url": "https://askmeister.com",
+          "url": "https://askmeister.com/",
           "name": "Ask Meister",
-          "description": "WhatsApp marketing platform with bulk messaging, WhatsApp Business API and AI chatbot builder for business.",
+          "alternateName": ["AskMeister", "askmeister", "Ask Meister WhatsApp"],
+          "description": "Ask Meister WhatsApp marketing platform: bulk messaging, WhatsApp Business API, and chatbot builder.",
           "publisher": { "@id": "https://askmeister.com/#organization" },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": { "@type": "EntryPoint", "urlTemplate": "https://askmeister.com/help?q={search_term_string}" },
-            "query-input": "required name=search_term_string"
-          }
+          "inLanguage": "en"
         },
         {
           "@type": "Organization",
           "@id": "https://askmeister.com/#organization",
           "name": "Ask Meister",
-          "alternateName": ["Ask Meister", "meister"],
-          "url": "https://askmeister.com",
-          "logo": "https://askmeister.com/favicon-192x192.png",
+          "legalName": "Ask Meister",
+          "alternateName": ["AskMeister", "askmeister", "Ask Meister WhatsApp", "Meister Solutions Ask Meister"],
+          "url": "https://askmeister.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://askmeister.com/favicon-192x192.png",
+            "width": 192,
+            "height": 192
+          },
+          "image": "https://askmeister.com/og-image.png",
           "email": "contact@askmeister.com",
           "telephone": "+91-7299817996",
           "address": {
@@ -97,22 +103,55 @@
             "postalCode": "600089",
             "addressCountry": "IN"
           },
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+91-7299817996",
-            "contactType": "sales",
-            "areaServed": ["Worldwide", "IN", "Tamil Nadu", "Chennai"],
-            "availableLanguage": ["English", "Tamil"]
-          }
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "+91-7299817996",
+              "contactType": "sales",
+              "email": "contact@askmeister.com",
+              "areaServed": ["Worldwide", "IN", "Tamil Nadu", "Chennai"],
+              "availableLanguage": ["English", "Tamil"]
+            },
+            {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "email": "contact@askmeister.com",
+              "url": "https://askmeister.com/contact",
+              "areaServed": "Worldwide",
+              "availableLanguage": ["English", "Tamil"]
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=61578309674729",
+            "https://x.com/AskMeister",
+            "https://www.linkedin.com/company/ask-meister",
+            "https://www.instagram.com/ask_meister"
+          ]
         },
         {
           "@type": "SoftwareApplication",
           "name": "Ask Meister",
+          "alternateName": "AskMeister",
           "description": "WhatsApp marketing platform with bulk messaging, WhatsApp Business API and chatbots for business messaging.",
-          "url": "https://askmeister.com",
+          "url": "https://askmeister.com/",
           "applicationCategory": "BusinessApplication",
           "operatingSystem": "Web",
           "publisher": { "@id": "https://askmeister.com/#organization" }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://askmeister.com/#sitenav",
+          "name": "Ask Meister main pages",
+          "itemListElement": [
+            { "@type": "SiteNavigationElement", "position": 1, "name": "WhatsApp API", "url": "https://askmeister.com/whatsapp-api" },
+            { "@type": "SiteNavigationElement", "position": 2, "name": "Chatbots", "url": "https://askmeister.com/chatbots" },
+            { "@type": "SiteNavigationElement", "position": 3, "name": "Bulk Messaging", "url": "https://askmeister.com/whatsapp-bulk-messaging" },
+            { "@type": "SiteNavigationElement", "position": 4, "name": "Integrations", "url": "https://askmeister.com/integrations" },
+            { "@type": "SiteNavigationElement", "position": 5, "name": "Contact", "url": "https://askmeister.com/contact" },
+            { "@type": "SiteNavigationElement", "position": 6, "name": "About", "url": "https://askmeister.com/about" },
+            { "@type": "SiteNavigationElement", "position": 7, "name": "Blog", "url": "https://askmeister.com/blog" },
+            { "@type": "SiteNavigationElement", "position": 8, "name": "Pricing / Demo", "url": "https://askmeister.com/free-trial" }
+          ]
         }
       ]
     }

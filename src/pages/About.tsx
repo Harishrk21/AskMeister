@@ -6,10 +6,10 @@ import InternalLinksHub from '../components/InternalLinksHub';
 
 const About = () => {
   const stats = [
-    { number: 'IN', label: 'India & Tamil Nadu focus', icon: Globe },
+    { number: 'WW', label: 'Built for teams worldwide', icon: Globe },
     { number: 'API', label: 'WhatsApp Business platform', icon: MessageCircle },
     { number: '2024', label: 'Ask Meister launch', icon: Users },
-    { number: 'CS', label: 'Chennai registered office', icon: Award }
+    { number: 'HQ', label: 'Official product company', icon: Award }
   ];
 
   const values = [
@@ -66,12 +66,12 @@ const About = () => {
   return (
      <>
       <Helmet>
-        <title>About Ask Meister | WhatsApp Platform for Tamil Nadu | Ask Meister</title>
-        <meta name="description" content="About Ask Meister: WhatsApp marketing software from Meister Solutions. Built for bulk messaging, Business API, and chatbots—Chennai HQ, customers across India." />
+        <title>About Ask Meister | WhatsApp Marketing Platform | Ask Meister</title>
+        <meta name="description" content="About Ask Meister: WhatsApp marketing software from Meister Solutions. Built for bulk messaging, Business API, and chatbots for businesses worldwide." />
         <meta name="keywords" content="about Ask Meister, whatsapp marketing company, whatsapp business platform, business communication, company story, meister solutions" />
         <link rel="canonical" href="https://askmeister.com/about" />
-        <meta property="og:title" content="About Ask Meister | WhatsApp Platform for Tamil Nadu" />
-        <meta property="og:description" content="How Ask Meister helps businesses use the WhatsApp Business Platform for bulk messaging, API campaigns, and chatbots." />
+        <meta property="og:title" content="About Ask Meister | WhatsApp Marketing Platform" />
+        <meta property="og:description" content="How Ask Meister helps businesses worldwide use the WhatsApp Business Platform for bulk messaging, API campaigns, and chatbots." />
         <meta property="og:url" content="https://askmeister.com/about" />
       </Helmet>
     <div className="page-wrap">

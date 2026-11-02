@@ -65,7 +65,7 @@ const keywordRoutes = JSON.parse(
   readFileSync(join(__dirname, 'keyword-routes.json'), 'utf8')
 );
 
-const lastmod = '2026-07-05';
+const lastmod = new Date().toISOString().slice(0, 10);
 const domain = 'https://askmeister.com';
 
 const urls = [
