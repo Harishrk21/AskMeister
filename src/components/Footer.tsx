@@ -155,7 +155,7 @@ const Footer = () => {
             <div className="w-9 h-9 rounded-lg bg-brand/20 flex items-center justify-center shrink-0">
               <Mail className="w-4 h-4 text-brand-light" />
             </div>
-            harishradhakrishnan2001@gmail.com
+            contact@askmeister.com
           </div>
           <div className="flex items-center gap-3 text-sm text-slate-400">
             <div className="w-9 h-9 rounded-lg bg-brand/20 flex items-center justify-center shrink-0">

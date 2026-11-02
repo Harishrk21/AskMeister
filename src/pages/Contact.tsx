@@ -1,22 +1,17 @@
 import React, { useState } from 'react';
-import { Link, useSearchParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Clock, MessageCircle, Send, CheckCircle } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import InternalLinksHub from '../components/InternalLinksHub';
 import PageHero from '../components/ui/PageHero';
 
-/**
- * FormSubmit.co — use a literal `https://formsubmit.co/your@email.com` action (not %40 encoding).
- * First time: check inbox for FormSubmit’s “Confirm your form” link or you won’t receive mail.
- * https://formsubmit.co
- */
-const CONTACT_EMAIL = 'harishradhakrishnan2001@gmail.com';
-const FORM_SUBMIT_ACTION = 'https://formsubmit.co/harishradhakrishnan2001@gmail.com';
+const CONTACT_EMAIL = 'contact@askmeister.com';
+const WEB3FORMS_ACCESS_KEY = '90c5d995-7526-4d8e-a491-fb5f05af273d';
 const WHATSAPP_NUMBER_E164 = '917299817996';
 
 const Contact = () => {
-  const [searchParams] = useSearchParams();
-  const showThankYou = searchParams.get('thankyou') === '1';
+  const [result, setResult] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -33,8 +28,36 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = () => {
-    // Form submits to FormSubmit.co – no preventDefault so POST goes through
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setResult('sending');
+    setErrorMessage('');
+
+    const form = e.currentTarget;
+    const payload = new FormData(form);
+    payload.append('access_key', WEB3FORMS_ACCESS_KEY);
+    payload.append('subject', `Ask Meister – ${formData.subject || 'Contact form'}`);
+    payload.append('from_name', 'Ask Meister Website');
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: payload
+      });
+      const data = (await response.json()) as { success?: boolean; message?: string };
+
+      if (data.success) {
+        setResult('success');
+        setFormData({ name: '', email: '', phone: '', company: '', subject: '', message: '' });
+        form.reset();
+      } else {
+        setResult('error');
+        setErrorMessage(data.message || 'Something went wrong. Please try again.');
+      }
+    } catch {
+      setResult('error');
+      setErrorMessage('Unable to send right now. Please email us or try again.');
+    }
   };
 
   const contactInfo = [
@@ -144,21 +167,18 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Contact Form */}
             <div className="glass-card p-6 md:p-8">
-              {showThankYou && (
+              {result === 'success' && (
                 <div className="mb-6 p-4 bg-brand/10 border border-brand/30 rounded-lg text-brand-light font-medium">
                   Thank you! We&apos;ll get back to you within 24 hours.
                 </div>
               )}
+              {result === 'error' && (
+                <div className="mb-6 p-4 bg-red-500/10 border border-red-500/30 rounded-lg text-red-300 font-medium">
+                  {errorMessage}
+                </div>
+              )}
               <h2 className="text-2xl font-bold text-white mb-6">Send us a Message</h2>
-              <form
-                action={FORM_SUBMIT_ACTION}
-                method="POST"
-                onSubmit={handleSubmit}
-                className="space-y-6"
-              >
-                <input type="hidden" name="_next" value="https://askmeister.com/contact?thankyou=1" />
-                <input type="hidden" name="_subject" value="Ask Meister – New contact form submission" />
-                {/* Omit _captcha so FormSubmit default reCAPTCHA applies (disabling it can limit or block delivery). */}
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-ink-muted mb-2">
@@ -189,7 +209,7 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-ink-muted mb-2">
@@ -219,15 +239,15 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-ink-muted mb-2">
                     How can we help you? *
                   </label>
                   <select
-                    name="subject"
+                    name="inquiry_type"
                     value={formData.subject}
-                    onChange={handleChange}
+                    onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                     required
                     className="input-field"
                   >
@@ -240,7 +260,7 @@ const Contact = () => {
                     <option value="other">Other</option>
                   </select>
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-ink-muted mb-2">
                     Tell us more about your requirements *
@@ -255,13 +275,14 @@ const Contact = () => {
                     placeholder="Describe your business needs, expected message volume, team size, etc."
                   />
                 </div>
-                
+
                 <button
                   type="submit"
-                  className="w-full bg-brand text-white py-3 px-6 rounded-lg font-semibold hover:bg-brand-dark transition-colors flex items-center justify-center"
+                  disabled={result === 'sending'}
+                  className="w-full bg-brand text-white py-3 px-6 rounded-lg font-semibold hover:bg-brand-dark transition-colors flex items-center justify-center disabled:opacity-60 disabled:cursor-not-allowed"
                 >
                   <Send className="w-5 h-5 mr-2" />
-                  Send Message
+                  {result === 'sending' ? 'Sending…' : 'Send Message'}
                 </button>
               </form>
             </div>
